@@ -80,6 +80,14 @@ Le jeu de données provient de [Inside Airbnb](https://insideairbnb.com/get-the-
 - Exemple complet avec PostgreSQL (Docker)
 - Orchestration sans dbt Cloud (Airflow, GitHub Actions, Makefile)
 
+### [Chapitre 12 : Jinja et Macros dans dbt](12-jinja-macros.md)
+- Moteur de templating Jinja2 : expressions, instructions, commentaires
+- Filtres, tests et structures de contrôle (if, for, set)
+- Création de macros réutilisables (safe_divide, pivot, SCD Type 2)
+- Macros dynamiques avec `run_query()` et `dispatch()`
+- Organisation, documentation et bonnes pratiques
+- Packages de la communauté (dbt_utils, codegen, expectations)
+
 ### [Exercices dbt](10-exercices.md)
 - Exercice 1 : Modélisation staging et marts
 - Exercice 2 : Tests et documentation

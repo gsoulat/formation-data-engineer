@@ -21,11 +21,14 @@ Ce parcours est conçu pour vous emmener de la maîtrise du terminal à la mise 
 ### 🔴 Phase 3 : L'Architecture (Mois 4-5)
 *Objectif : Penser "Pipeline", "Scale" et "Cloud".*
 - [ ] [Data Warehouse](05-Databases/DataWarehouse/) : Modélisation (Star Schema).
+- [ ] [Data Lake](05-Databases/DataLake/) : Architecture multi-zones, formats (Parquet, Delta), gouvernance.
 - [ ] [Spark](06-Data-Engineering/Spark/) : Traitement distribué.
 - [ ] [Cloud Platforms (Azure/GCP)](04-Cloud-Platforms/) : Stockage et calcul managé.
+- [ ] [Brief Data Lake](99-Brief/DataLake/BRIEF_DATALAKE.md) : Mini-projet Data Lake avec MinIO, Spark et Delta Lake.
 
 ### 🚀 Phase 4 : Mise en Production (Mois 6)
 - [ ] [Terraform](03-Infrastructure-as-Code/Terraform/) : Infrastructure as Code.
+- [ ] [dbt](06-Data-Engineering/Dbt/) : Transformation SQL, Jinja et macros.
 - [ ] [CI/CD](07-DevOps/01-CI-CD/) : Automatisation des tests et déploiements.
 - [ ] **Projet Final End-to-End** (Voir ci-dessous).
 
@@ -38,6 +41,7 @@ Ce parcours est conçu pour vous emmener de la maîtrise du terminal à la mise 
 | **Fondamentaux** | Maîtriser l'automatisation CLI | Scripts Bash de nettoyage |
 | **Python Data** | Manipuler des volumes via Pandas/Spark | Notebook d'analyse exploratoire |
 | **Storage** | Modéliser un entrepôt (Snowflake/BigQuery) | Schéma SQL normalisé |
+| **Data Lake** | Construire un Data Lake multi-zones avec Delta Lake | Pipeline Data Lake complet (Brief) |
 | **Cloud & IaC** | Déployer une infra reproductible | Code Terraform (Provider Azure/GCP) |
 
 ---

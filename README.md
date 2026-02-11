@@ -44,7 +44,7 @@ formation-data-engineer/
 ├── 02-Containerisation/       # Standardisation (Docker, Kubernetes)
 ├── 03-Infrastructure-as-Code/ # Automatisation (Ansible, Terraform)
 ├── 04-Cloud-Platforms/        # Cloud Providers (Azure, GCP, Snowflake)
-├── 05-Databases/              # Stockage (DWH, NoSQL)
+├── 05-Databases/              # Stockage (DWH, Data Lake, NoSQL)
 ├── 06-Data-Engineering/       # Cœur du métier (Spark, dbt, dlt)
 ├── 07-DevOps/                 # Industrialisation (CI/CD, Monitoring)
 ├── 08-Machine-Learning/       # ML classique (Scikit-learn, régression, classification)
@@ -67,7 +67,7 @@ formation-data-engineer/
 
 ## 🛠️ Technologies Couvertes
 
-**Bash / Zsh** | **Git / GitHub** | **Python (POO, Data)** | **SQL** | **Docker & K8s** | **Terraform & Ansible** | **Azure & GCP** | **Spark & dbt** | **Scikit-learn & PyTorch** | **LangChain & RAG**
+**Bash / Zsh** | **Git / GitHub** | **Python (POO, Data)** | **SQL** | **Docker & K8s** | **Terraform & Ansible** | **Azure & GCP** | **Spark & dbt** | **Delta Lake & Parquet** | **Scikit-learn & PyTorch** | **LangChain & RAG**
 
 ---
 
