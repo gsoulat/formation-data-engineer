@@ -1,3 +1,10 @@
+# [2.11.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.10.0...v2.11.0) (2026-02-11)
+
+
+### Features
+
+* **DataLake:** Ajout cours + Brief DataLake ([0103432](https://github.com/gsoulat/formation-data-engineer/commit/01034329ae23439576406e90a3eed7d5b59fc7e1))
+
 # [2.10.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.9.0...v2.10.0) (2026-02-10)
 
 
