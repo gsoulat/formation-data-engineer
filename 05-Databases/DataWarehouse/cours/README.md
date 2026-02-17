@@ -1,5 +1,7 @@
 # Formation Data Warehouse
 
+![Synthèse Data Warehouse](../synthese.png)
+
 ## Objectifs pédagogiques
 
 A l'issue de cette formation, vous serez capable de :
@@ -26,7 +28,8 @@ A l'issue de cette formation, vous serez capable de :
 |--------|-------|-------|
 | 01 | [Introduction au Data Warehouse](./01-introduction.md) | 1h |
 | 02 | [OLTP vs OLAP](./02-oltp-vs-olap.md) | 45min |
-| 03 | [Modélisation dimensionnelle](./03-modelisation.md) | 1h30 |
+| 03a | [Modélisation dimensionnelle : fondamentaux](./03a-modelisation-fondamentaux.md) | 1h |
+| 03b | [Modélisation avancée : SCD, Factless Facts, Data Vault](./03b-modelisation-avancee.md) | 45min |
 | 04 | [Architectures et Patterns](./04-architectures.md) | 1h30 |
 | 05 | [Opérations OLAP & ROLAP/MOLAP/HOLAP](./05-operations-olap.md) | 1h30 |
 | 06 | [Technologies Cloud](./06-technologies-cloud.md) | 1h |
@@ -35,11 +38,23 @@ A l'issue de cette formation, vous serez capable de :
 
 **Durée totale cours :** ~9 heures
 
+> **Note :** L'ancien module 03 unique a été scindé en 03a (fondamentaux) et 03b (avancé) pour faciliter l'apprentissage progressif. L'ancien fichier [03-modelisation.md](./03-modelisation.md) reste disponible comme référence complète.
+
+## Notebook interactif
+
+Pour pratiquer les opérations OLAP sans installer PostgreSQL :
+
+| Ressource | Description |
+|-----------|-------------|
+| [Notebook OLAP interactif](./notebook-olap-interactif.ipynb) | Pratiquez ROLLUP, CUBE, GROUPING SETS et Window Functions directement dans Jupyter avec DuckDB |
+
+Le notebook fonctionne avec DuckDB (installé automatiquement), aucune configuration serveur nécessaire.
+
 ## Exercices pratiques
 
 | Exercice | Titre | Durée | Prérequis |
 |----------|-------|-------|-----------|
-| TD | [Conception conceptuelle d'un DW](../exercices/TD-conception-conceptuelle.md) | 2h30 | Modules 01, 03 |
+| TD | [Conception conceptuelle d'un DW](../exercices/TD-conception-conceptuelle.md) | 2h30 | Modules 01, 03a |
 | TP 1 | [Conception logique ROLAP](../exercices/TP-conception-logique-rolap.md) | 2h | TD + Module 05 |
 | TP 2 | [SQL OLAP PostgreSQL](../exercices/TP-sql-olap-postgresql.md) | 3h | TP 1 + Module 05 |
 | TP 3 | [PostgreSQL vers BigQuery](../exercices/TP-postgresql-vers-bigquery.md) | 1h | Module 07 |
@@ -52,12 +67,14 @@ A l'issue de cette formation, vous serez capable de :
 Jour 1 : Fondamentaux et Modélisation (~6h)
 ├── Module 01 - Introduction au Data Warehouse (1h)
 ├── Module 02 - OLTP vs OLAP (45min)
-├── Module 03 - Modélisation dimensionnelle (1h30)
+├── Module 03a - Modélisation : fondamentaux (1h)
+├── Module 03b - Modélisation : avancée (45min)
 └── TD : Conception conceptuelle d'un DW (2h30)
 
 Jour 2 : Architectures et Pratique OLAP (~7h)
 ├── Module 04 - Architectures et Patterns (1h30)
 ├── Module 05 - Opérations OLAP & ROLAP/MOLAP/HOLAP (1h30)
+├── 📓 Notebook OLAP interactif (30min, optionnel)
 ├── TP 1 : Conception logique ROLAP (2h)
 └── TP 2 : SQL OLAP PostgreSQL (début - 2h)
 
@@ -78,17 +95,24 @@ Jours 4-5 : Brief pratique
 ```
  CONCEPTS                MODÉLISATION             ARCHITECTURES
 ┌──────────┐  ┌──────────┐  ┌──────────────┐  ┌──────────────┐
-│Module 01 │─►│Module 02 │─►│  Module 03   │─►│  Module 04   │
+│Module 01 │─►│Module 02 │─►│ Module 03a   │─►│  Module 04   │
 │  Intro   │  │OLTP/OLAP │  │Star/Snowflake│  │Inmon/Kimball │
 └──────────┘  └──────────┘  └──────┬───────┘  └──────┬───────┘
                                    │                  │
-                                   ▼                  ▼
+                                   ▼                  │
+                             ┌──────────────┐         │
+                             │ Module 03b   │         │
+                             │SCD/DataVault │         │
+                             └──────┬───────┘         │
+                                    │                 │
+                                    ▼                 ▼
                              ┌──────────┐       ┌──────────┐
                              │    TD    │       │Module 05 │
                              │Conception│       │Opér. OLAP│
                              └────┬─────┘       └────┬─────┘
-                                  │                  │
-                                  └──────┬───────────┘
+                                  │    📓 Notebook    │
+                                  │    OLAP (opt.)    │
+                                  └──────┬────────────┘
                                          ▼
                                   ┌──────────┐  ┌──────────┐
                                   │   TP 1   │─►│   TP 2   │

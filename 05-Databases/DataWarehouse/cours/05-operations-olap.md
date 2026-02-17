@@ -1,5 +1,32 @@
 # Module 05 - Opérations OLAP & Approches d'implantation
 
+> **Question business :** Le CEO regarde le CA annuel et dit "c'est bien, mais je veux voir par trimestre". Puis "montre-moi seulement l'Île-de-France". Puis "compare avec l'année dernière". Chaque demande correspond à une opération OLAP précise. Ce module vous apprend à toutes les maîtriser.
+
+---
+
+## Avant de commencer : l'analogie du Rubik's Cube
+
+<!-- 🔴 IMAGE : Cube OLAP 3D avec les 6 opérations annotées -->
+<!-- 🟢 PROMPT IMAGE : "Illustration 3D d'un cube de données OLAP semi-transparent avec 3 axes visibles : axe X = 'Géographie' (Paris, Lyon, Marseille), axe Y = 'Temps' (T1, T2, T3, T4), axe Z = 'Produit' (Électronique, Vêtements). Chaque cellule visible contient un montant en euros. Autour du cube, 5 flèches annotées : 1) une lame qui tranche le cube = 'SLICE (fixer 1 dimension)', 2) un petit cube découpé à l'intérieur = 'DICE (filtrer N dimensions)', 3) une flèche vers le haut avec une loupe qui s'éloigne = 'ROLL-UP (agréger)', 4) une flèche vers le bas avec une loupe qui zoome = 'DRILL-DOWN (détailler)', 5) des flèches circulaires = 'PIVOT (tourner)'. Style 3D isométrique, couleurs bleu/orange/vert, format paysage 16:9." -->
+
+<!-- 🔴 VIDÉO : Animation "Les 6 opérations OLAP sur un cube de ventes" (LA PLUS IMPORTANTE) -->
+<!-- 🟢 PROMPT VIDÉO : "Animation motion design de 2 minutes montrant un cube 3D de données de ventes (3 dimensions : Temps, Géographie, Produit). Chaque opération est démontrée visuellement : (1) SLICE (15s) : une lame coupe le cube, on ne garde qu'une tranche 'Électronique', les autres disparaissent. (2) DICE (15s) : on sélectionne un petit cube à l'intérieur (T1+T2, IDF, Électronique), le reste devient transparent. (3) ROLL-UP (20s) : on zoome arrière, les villes fusionnent en régions, les mois en trimestres, les sous-catégories en catégories. Les chiffres se somment visuellement. (4) DRILL-DOWN (20s) : l'inverse, on zoome sur une cellule, elle éclate en détail (région → villes, trimestre → mois). (5) PIVOT (15s) : le cube tourne, les régions passent de l'axe X à l'axe Y, le tableau se réorganise. (6) DRILL-THROUGH (15s) : on clique sur une cellule agrégée, elle explose pour montrer les transactions individuelles. Style 3D low-poly coloré, transitions fluides." -->
+
+Imaginez un **Rubik's Cube** où chaque face représente une dimension (Temps, Géographie, Produit) et chaque case contient un chiffre (le CA) :
+
+- **Slice** = regarder **une seule face** du cube (ex: uniquement les ventes 2024)
+- **Dice** = découper un **petit cube** à l'intérieur (ex: ventes 2024 + IDF + Électronique)
+- **Roll-up** = prendre du recul, **voir le cube de plus loin** (mois → trimestre → année)
+- **Drill-down** = zoomer, **entrer dans le cube** (année → trimestre → mois → jour)
+- **Pivot** = **tourner le cube** pour changer la perspective (régions en lignes ↔ en colonnes)
+
+Et pour stocker ce cube, 3 approches existent :
+- **MOLAP** = le cube est **pré-construit** en mémoire (rapide mais rigide, comme une carte routière papier)
+- **ROLAP** = le cube est **calculé à la volée** en SQL à chaque question (flexible, comme un GPS)
+- **HOLAP** = un mix des deux (les trajets fréquents sont pré-calculés, le reste est calculé à la demande)
+
+---
+
 ## Approches d'implantation OLAP
 
 Il existe trois grandes approches pour implémenter un système OLAP, selon la façon dont les données sont stockées et les calculs effectués.

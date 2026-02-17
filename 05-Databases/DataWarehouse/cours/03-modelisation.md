@@ -1,5 +1,38 @@
 # Module 03 - Modélisation dimensionnelle
 
+> **Question business :** Un client a déménagé de Paris à Lyon en juin, puis a pris la carte fidélité en septembre. Quand le directeur demande "quel est le CA par ville ?", faut-il compter ce client à Paris ou à Lyon ? Et comment garder l'historique des deux ? C'est tout l'enjeu de la modélisation dimensionnelle.
+
+---
+
+## Avant de commencer : l'analogie du ticket de caisse
+
+Prenez un **ticket de caisse** de supermarché. Vous y trouvez :
+
+- **Les chiffres** (ce qu'on mesure) : prix total, quantité, remise → ce sont les **mesures** d'une **table de faits**
+- **Le contexte** (qui, quoi, quand, où) :
+  - **Quand ?** → la date et l'heure → `DIM_DATE`
+  - **Où ?** → le magasin, la ville → `DIM_MAGASIN`
+  - **Quoi ?** → les produits achetés → `DIM_PRODUIT`
+  - **Qui ?** → le client (carte fidélité) → `DIM_CLIENT`
+  - **Comment ?** → CB, espèces, chèque → `DIM_PAIEMENT`
+
+Le ticket de caisse EST un fait. Les informations autour sont les dimensions. **Un Star Schema, c'est un ticket de caisse généralisé à des millions de transactions.**
+
+```
+          DIM_DATE
+              │
+DIM_MAGASIN ──┼── DIM_PRODUIT
+              │
+         FAIT_VENTE          (le ticket de caisse)
+         (montant,
+          quantité,          (les chiffres)
+          remise)
+              │
+DIM_CLIENT ───┼── DIM_PAIEMENT
+```
+
+---
+
 ## Concepts fondamentaux
 
 ### Tables de faits (Fact Tables)

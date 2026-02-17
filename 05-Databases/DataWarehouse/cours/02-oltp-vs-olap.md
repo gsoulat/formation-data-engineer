@@ -1,5 +1,26 @@
 # Module 02 - OLTP vs OLAP
 
+> **Question business :** Votre data analyst lance une requête SQL qui calcule le chiffre d'affaires par région sur 2 ans. Résultat : le site e-commerce rame pendant 30 secondes pour tous les clients. Pourquoi ? Parce qu'on mélange deux usages incompatibles sur la même base de données.
+
+---
+
+## Avant de commencer : l'analogie du restaurant
+
+<!-- 🔴 IMAGE/VIDÉO : Split screen "Cuisine vs Bureau du gérant" -->
+<!-- 🟢 PROMPT IMAGE : "Illustration split screen en flat design. À gauche : une cuisine de restaurant animée avec un chef qui traite des commandes rapides une par une (tickets qui arrivent), label 'OLTP - Transactions rapides'. À droite : un bureau calme avec un gérant assis devant des graphiques, des tableaux et des tendances hebdomadaires sur son écran, label 'OLAP - Analyse historique'. Au centre, une ligne de séparation rouge avec un panneau 'Ne pas mélanger !'. Style éducatif, couleurs chaudes côté cuisine, couleurs froides côté bureau. Format paysage 16:9." -->
+<!-- 🟢 PROMPT VIDÉO : "Animation motion design de 45 secondes. Scène 1 (15s) : un restaurant vu de haut, la cuisine traite des commandes INSERT/UPDATE à toute vitesse, les tickets s'empilent et disparaissent rapidement. Scène 2 (15s) : le gérant entre DANS la cuisine avec un gros classeur 'SELECT SUM(revenue) GROUP BY...', tout le monde s'arrête, la cuisine est bloquée, les clients attendent. Scène 3 (15s) : solution — le gérant va dans son bureau séparé (Data Warehouse) qui contient une copie des données, la cuisine reprend normalement. Texte final : 'OLTP = cuisine, OLAP = bureau. Ne jamais mélanger.' Style cartoon professionnel." -->
+
+Imaginez un **restaurant** :
+
+- La **cuisine** = le système **OLTP**. Le chef reçoit les commandes une par une, les traite vite, met à jour les stocks en temps réel. Chaque commande est une petite transaction rapide. Si la cuisine est lente, les clients partent.
+- Le **bureau du gérant** le lundi matin = le système **OLAP**. Le gérant regarde les chiffres de la semaine : "Quel plat s'est le mieux vendu ? Quel jour a eu le plus de couverts ? La marge a-t-elle augmenté ?" Il ne passe pas de commandes, il **analyse** des données historiques.
+
+Si le gérant va en cuisine pour faire ses analyses sur le carnet de commandes pendant le service du midi, il **bloque la cuisine**. C'est exactement ce qui se passe quand on lance des requêtes analytiques sur une base de production.
+
+**La solution : séparer la cuisine (OLTP) du bureau d'analyse (OLAP).**
+
+---
+
 ## Deux mondes, deux besoins
 
 Les systèmes de données se divisent en deux grandes catégories selon leur usage :
@@ -198,6 +219,6 @@ ORDER BY 1, 3 DESC;
 
 ---
 
-**Prochain module :** [03 - Modélisation dimensionnelle](./03-modelisation.md)
+**Prochain module :** [03a - Modélisation dimensionnelle : fondamentaux](./03a-modelisation-fondamentaux.md)
 
 [Module précédent](./01-introduction.md) | [Retour au sommaire](./README.md)

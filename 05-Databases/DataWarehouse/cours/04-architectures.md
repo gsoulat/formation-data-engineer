@@ -1,5 +1,32 @@
 # Module 04 - Architectures et Patterns
 
+> **Question business :** Votre entreprise a 3 équipes (Marketing, Finance, Logistique) qui veulent chacune leur tableau de bord. L'équipe data centrale a 6 mois de backlog. Faut-il tout construire d'un bloc ou démarrer par un département ? C'est le débat Inmon vs Kimball qui structure le monde du Data Warehousing depuis 30 ans.
+
+---
+
+## Avant de commencer : l'analogie de la construction
+
+<!-- 🔴 IMAGE : Split screen "Urbaniste (Inmon) vs Promoteur (Kimball)" -->
+<!-- 🟢 PROMPT IMAGE : "Infographie split screen en flat design. À gauche 'Approche Inmon - Top Down' : un urbaniste avec un plan complet d'un quartier vu du ciel, toutes les routes et bâtiments planifiés, un chronomètre montrant '18 mois', label 'Plan global d'abord'. À droite 'Approche Kimball - Bottom Up' : un promoteur qui construit un premier immeuble rapidement (label 'Data Mart Marketing'), puis un deuxième à côté ('Data Mart Finance'), avec un chronomètre '3 mois', label 'Premier résultat vite'. Au centre : 'Aucune approche n'est meilleure, ça dépend de votre contexte'. Style architectural moderne, format paysage 16:9." -->
+
+<!-- 🔴 VIDÉO : Animation "Inmon vs Kimball en 90 secondes" -->
+<!-- 🟢 PROMPT VIDÉO : "Animation motion design de 90 secondes. Scène 1 (20s) : Un terrain vide représente l'entreprise sans DW. Des données arrivent de partout (CRM, ERP, fichiers) en désordre. Scène 2 (30s) - Approche Inmon : un architecte dessine un plan complet, construit les fondations, les routes (modèle 3NF), puis les bâtiments (Data Marts). C'est long mais tout est cohérent. Timer : 18 mois. Scène 3 (30s) - Approche Kimball : un promoteur construit directement un premier bâtiment (Data Mart Ventes en Star Schema), les utilisateurs emménagent immédiatement, puis un deuxième bâtiment (Data Mart Finance). Timer : 3 mois pour le premier résultat. Scène 4 (10s) : tableau comparatif animé avec les cas d'usage. Style flat design professionnel." -->
+
+Imaginez que vous devez **construire un quartier** :
+
+- **Approche Inmon (Top-Down)** = l'urbaniste. Il dessine le **plan complet du quartier** avant de poser la première brique : routes, réseaux, espaces verts, puis les immeubles. C'est long et cher au départ, mais tout est cohérent.
+- **Approche Kimball (Bottom-Up)** = le promoteur. Il construit un **premier immeuble** (Data Mart Marketing) rapidement, puis un deuxième (Data Mart Finance), et relie le tout progressivement. Résultat visible vite, mais risque de devoir casser des murs plus tard.
+
+Aucune approche n'est "meilleure" : ça dépend de la taille de votre ville (entreprise) et de l'urgence.
+
+| Analogie | Inmon | Kimball |
+|----------|-------|---------|
+| Construction | Plan du quartier d'abord | Premier immeuble d'abord |
+| Pizza | Pizza entière livrée en 45 min | Parts livrées toutes les 10 min |
+| Entreprise type | Groupe CAC40, 10 000 employés | PME/startup, 50-500 employés |
+
+---
+
 ## Les deux écoles fondatrices
 
 ### Bill Inmon - Top-Down (Enterprise DW)
@@ -313,4 +340,4 @@ Le **Data Mesh** (Zhamak Dehghani, 2019) propose 4 principes :
 
 **Prochain module :** [05 - Opérations OLAP & Approches d'implantation](./05-operations-olap.md)
 
-[Module précédent](./03-modelisation.md) | [Retour au sommaire](./README.md)
+[Module précédent](./03b-modelisation-avancee.md) | [Retour au sommaire](./README.md)

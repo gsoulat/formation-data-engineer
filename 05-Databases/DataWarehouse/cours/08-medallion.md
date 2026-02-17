@@ -1,5 +1,29 @@
 # Module 08 - Architecture Medallion
 
+> **Question business :** Votre pipeline de données charge des CSV chaque nuit. Ce matin, un fichier contenait des montants négatifs et des emails invalides. Les dashboards affichent n'importe quoi. Le directeur financier est furieux. Comment éviter ça ? L'architecture Medallion organise le nettoyage progressif des données.
+
+---
+
+## Avant de commencer : l'analogie du recyclage
+
+<!-- 🔴 IMAGE : Pipeline de recyclage "Bronze → Silver → Gold" -->
+<!-- 🟢 PROMPT IMAGE : "Infographie horizontale en flat design montrant une chaîne de recyclage en 3 étapes, de gauche à droite. Étape 1 'BRONZE' (couleur cuivre/marron) : une grande poubelle de tri avec des déchets bruts mélangés (papier froissé, bouteilles, canettes), label 'Données brutes. On ne touche à rien. On conserve tout.'. Une flèche vers l'étape 2 'SILVER' (couleur argent) : un centre de tri avec un ouvrier qui sépare, nettoie, trie (plastique d'un côté, verre de l'autre), label 'Données nettoyées, typées, dédupliquées.'. Une flèche vers l'étape 3 'GOLD' (couleur or) : des granulés de plastique propres et du verre fondu parfait, prêts à être utilisés en usine, label 'KPIs, agrégations, prêts pour les dashboards.'. En bas : 'Règle d'or : le Bronze ne se modifie JAMAIS.' Format paysage 16:9." -->
+
+<!-- 🔴 VIDÉO : Animation "De la donnée brute au dashboard" -->
+<!-- 🟢 PROMPT VIDÉO : "Animation motion design de 90 secondes. Scène 1 (20s) BRONZE : des fichiers CSV arrivent (certains avec des erreurs visibles : montants négatifs en rouge, emails invalides, doublons). Ils tombent dans un grand conteneur cuivré 'Bronze'. Rien n'est modifié. Scène 2 (30s) SILVER : les données passent sur un tapis roulant. Des robots trient : les montants négatifs sont envoyés en 'Quarantaine', les doublons sont supprimés, les emails sont normalisés, les types sont convertis (string '2024-01-15' → icône calendrier). Le tout arrive dans un conteneur argenté 'Silver'. Scène 3 (20s) GOLD : les données Silver sont agrégées (des milliers de lignes fusionnent en quelques lignes de KPIs), des graphiques apparaissent (CA par mois, top clients). Le tout arrive dans un conteneur doré 'Gold'. Scène 4 (20s) : un analyste ouvre Power BI, connecté au Gold, et voit un dashboard parfait. Un bug est trouvé. On revient au Bronze (intact), on recalcule Silver et Gold. Texte : 'Le Bronze est votre filet de sécurité.' Style flat design, couleurs bronze/argent/or." -->
+
+L'architecture Medallion, c'est comme une **chaîne de recyclage** :
+
+| Couche | Analogie recyclage | Données |
+|--------|-------------------|---------|
+| **Bronze** | La **poubelle de tri** : on jette tout dedans tel quel. On ne modifie rien, on conserve tout. Si on a un doute, on peut toujours revenir fouiller. | Données brutes, telles que reçues. Aucune transformation. |
+| **Silver** | Le **centre de tri** : on sépare le plastique du verre, on enlève les déchets non recyclables, on nettoie. | Données nettoyées, typées, dédupliquées, validées. |
+| **Gold** | La **matière première** prête pour l'industrie : des granulés de plastique propres, du verre fondu, prêt à l'emploi. | Données agrégées, KPIs calculés, prêts pour les dashboards. |
+
+**Règle d'or :** le Bronze ne se modifie JAMAIS. Si quelque chose casse en Silver ou Gold, on peut toujours tout recalculer depuis le Bronze. C'est votre filet de sécurité.
+
+---
+
 ## Concept
 
 L'architecture **Medallion** (Bronze/Silver/Gold) est un pattern de design pour organiser les données en couches progressives de qualité.

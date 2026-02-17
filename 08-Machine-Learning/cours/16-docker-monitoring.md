@@ -975,4 +975,4 @@ curl -X POST http://localhost:8000/predict \
 
 **Précédent** : [Chapitre 15 : Du Notebook à l'API — Mettre en Production](15-notebook-api.md)
 
-**Suivant** : Projet final de la formation
+**Suivant** : [Chapitre 17 : MLflow — Tracker, Reproduire et Déployer](17-mlflow.md)

@@ -1,5 +1,27 @@
 # Module 01 - Introduction au Data Warehouse
 
+> **Question business :** Le directeur marketing veut comprendre pourquoi les ventes baissent en Île-de-France depuis 3 mois, mais les données sont éparpillées entre le CRM, l'ERP et Google Analytics. Comment lui donner une réponse fiable ? C'est exactement le problème que résout un Data Warehouse.
+
+---
+
+## Avant de commencer : l'analogie de la bibliothèque
+
+<!-- 🔴 IMAGE/VIDÉO : Schéma animé "Librairies vs Bibliothèque" -->
+<!-- 🟢 PROMPT IMAGE : "Illustration infographique en flat design montrant à gauche 4 petites librairies désorganisées (Fnac, Amazon, librairie locale) avec des fiches en désordre, et à droite une grande bibliothèque municipale moderne et ordonnée avec un catalogue numérique unifié. Une flèche relie les librairies à la bibliothèque avec le label 'ETL'. Style : éducatif, couleurs vives, texte en français. Format paysage 16:9." -->
+<!-- 🟢 PROMPT VIDÉO : "Animation motion design de 30 secondes : on voit 4 magasins (CRM, ERP, Site Web, Excel) chacun avec ses propres données désordonnées. Les données sortent de chaque magasin, passent par un entonnoir labellisé 'ETL', et arrivent dans un grand bâtiment central labellisé 'Data Warehouse', où elles sont rangées proprement sur des étagères par catégorie (Ventes, Clients, Produits). Un analyste consulte ensuite un écran 'Power BI' relié au bâtiment. Style flat design, couleurs bleues et vertes." -->
+
+Imaginez une **bibliothèque municipale** :
+
+- Les **librairies** de la ville (Fnac, Amazon, petites librairies) = les **systèmes opérationnels** (CRM, ERP, site web). Chacun vend des livres dans son coin, avec ses propres fiches.
+- La **bibliothèque municipale** = le **Data Warehouse**. Elle ne vend rien, mais elle a récupéré un exemplaire de chaque livre, les a classés par genre, auteur, année, et créé un catalogue unifié.
+- Le **catalogue en ligne** de la bibliothèque = les **outils de BI** (Power BI, Tableau). Il permet à n'importe qui de chercher, filtrer, comparer.
+
+Sans la bibliothèque, pour savoir "quel auteur français a le plus publié en 2024", il faudrait appeler chaque librairie une par une. Avec la bibliothèque, c'est une recherche de 10 secondes.
+
+**Un Data Warehouse, c'est la bibliothèque de votre entreprise.**
+
+---
+
 ## Qu'est-ce qu'un Data Warehouse ?
 
 Un **Data Warehouse** (entrepôt de données) est un système de stockage centralisé conçu pour l'analyse et le reporting. Il consolide les données provenant de multiples sources pour permettre la prise de décision.

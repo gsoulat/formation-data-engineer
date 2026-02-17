@@ -1,5 +1,21 @@
 # Module 07 - PostgreSQL vs BigQuery
 
+> **Question business :** Votre équipe utilise PostgreSQL depuis 2 ans. Le volume de données explose (500 Go, bientôt 2 To). Les requêtes analytiques ralentissent. Faut-il migrer vers BigQuery ? Qu'est-ce qu'on gagne, qu'est-ce qu'on perd ? Et est-ce que les requêtes SQL changent ?
+
+---
+
+## Avant de commencer : l'analogie de la cuisine
+
+<!-- 🔴 IMAGE : Split screen "Cuisine maison (PG) vs Traiteur pro (BQ)" -->
+<!-- 🟢 PROMPT IMAGE : "Illustration split screen en flat design. À gauche 'PostgreSQL = Cuisine maison' : une cuisine domestique chaleureuse, une personne qui cuisine seule, des casseroles qu'elle lave elle-même, un frigo de taille normale, label 'Gratuit, flexible, mais vous faites tout'. À droite 'BigQuery = Traiteur professionnel' : une immense cuisine industrielle avec 50 cuisiniers en parallèle, un comptoir où un client pose juste sa commande (une requête SQL), un ticket de caisse label '$5/TB scanné'. Au centre : 'PG pour prototyper et apprendre. BQ pour la production à grande échelle.' Format paysage 16:9, style flat design, couleurs chaudes à gauche, couleurs froides/tech à droite." -->
+
+- **PostgreSQL** = votre **cuisine maison**. Vous contrôlez tout : les ingrédients, le four, le frigo. C'est gratuit (open source), flexible, mais si vous recevez 50 personnes, votre cuisine est trop petite. Et c'est vous qui faites la vaisselle (administration, VACUUM, backups).
+- **BigQuery** = un **traiteur professionnel**. Vous envoyez la commande (requête SQL), il gère les cuisiniers, le matériel, le nettoyage. Ça scale à 50 000 personnes sans problème. Mais vous payez à chaque plat commandé (TB scanné), et vous ne pouvez pas personnaliser la cuisine (pas d'index, pas de FOREIGN KEY).
+
+**PostgreSQL pour apprendre et prototyper. BigQuery pour la production à grande échelle.**
+
+---
+
 ## Deux philosophies, deux mondes
 
 PostgreSQL et BigQuery représentent deux approches fondamentalement différentes du Data Warehousing :

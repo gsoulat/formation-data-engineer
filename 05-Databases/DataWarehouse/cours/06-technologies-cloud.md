@@ -1,5 +1,27 @@
 # Module 06 - Technologies Cloud Data Warehouse
 
+> **Question business :** Votre DW PostgreSQL tourne sur un serveur à 500€/mois, mais les requêtes prennent 2 minutes sur vos 50 Go de données. Le CTO veut passer au cloud. Snowflake, BigQuery, Redshift... lequel choisir ? Et combien ça va coûter ? Ce module vous donne les clés pour décider.
+
+---
+
+## Avant de commencer : l'analogie des transports
+
+<!-- 🔴 IMAGE : Infographie "4 transports = 4 DW cloud" -->
+<!-- 🟢 PROMPT IMAGE : "Infographie horizontale en flat design montrant 4 moyens de transport alignés, chacun associé à un DW cloud. 1) Un taxi jaune avec le logo 'BigQuery' et le label 'Payer à la course ($5/TB scanné). Zéro entretien.'. 2) Une voiture de location bleue avec 'Snowflake' et 'Louer à l'heure (crédits). Choisir la taille.'. 3) Une voiture personnelle rouge avec 'Redshift / PostgreSQL' et 'Votre propre véhicule. Coût fixe + entretien.'. 4) Un pass transport en commun violet avec 'Synapse (Azure)' et 'Abonnement écosystème Microsoft.'. En bas : 'La question n'est pas lequel est le meilleur, mais lequel correspond à votre trajet.' Format paysage 16:9, style flat design moderne." -->
+
+Choisir un Data Warehouse cloud, c'est comme choisir un **moyen de transport** :
+
+| Analogie | Technologie | Caractéristique |
+|----------|-------------|-----------------|
+| **Taxi** (vous payez la course) | **BigQuery** | Serverless, vous payez par requête (TB scanné). Pas de voiture à entretenir. |
+| **Location de voiture** (vous payez à l'heure) | **Snowflake** | Vous louez de la puissance (crédits). Vous choisissez la taille. Auto-suspend quand vous roulez pas. |
+| **Votre propre voiture** (achat + essence + entretien) | **Redshift / PostgreSQL** | Vous gérez le serveur. Coût fixe. Performance prévisible. |
+| **Abonnement transport en commun** | **Synapse** | Intégré dans l'écosystème Microsoft. Pratique si vous êtes déjà dans Azure/Office 365. |
+
+**La question n'est pas "lequel est le meilleur ?" mais "lequel correspond à votre trajet ?"**
+
+---
+
 ## Vue d'ensemble du marché
 
 Les Data Warehouses cloud ont révolutionné l'analytique en offrant :

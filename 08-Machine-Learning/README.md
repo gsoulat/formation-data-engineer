@@ -67,6 +67,7 @@ Ce module vous emmène du **vrai zéro** jusqu'à la **mise en production** d'un
 |---|---------|-------|--------|
 | 15 | [Du Notebook à l'API](cours/15-notebook-api.md) | 4h | Avancé |
 | 16 | [Docker, Monitoring et MLOps](cours/16-docker-monitoring.md) | 4h | Avancé |
+| 17 | [MLflow — Tracker, Reproduire et Déployer](cours/17-mlflow.md) | 4h | Avancé |
 
 | - | [Cheatsheet ML](cours/CHEATSHEET-ml.md) | - | Référence |
 
