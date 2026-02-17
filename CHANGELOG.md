@@ -1,3 +1,10 @@
+# [2.12.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.11.0...v2.12.0) (2026-02-17)
+
+
+### Features
+
+* **claude code:** Ajout cours claude code + OpenMetada ([53d9bcf](https://github.com/gsoulat/formation-data-engineer/commit/53d9bcf7fd81acd7418a8cccb009d04d3c7bacee))
+
 # [2.11.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.10.0...v2.11.0) (2026-02-11)
 
 
