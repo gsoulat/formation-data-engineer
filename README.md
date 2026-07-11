@@ -40,16 +40,20 @@ L'objectif n’est pas de tout faire, mais de suivre un parcours clair et progre
 
 ```
 formation-data-engineer/
-├── 01-Fondamentaux/           # Socle technique indispensable (Linux, Git, Python, SQL)
+├── 01-Fondamentaux/           # Socle technique (Linux, Git, Python, SQL, FastAPI, Django, Java, Rust, Veille)
 ├── 02-Containerisation/       # Standardisation (Docker, Kubernetes)
 ├── 03-Infrastructure-as-Code/ # Automatisation (Ansible, Terraform)
-├── 04-Cloud-Platforms/        # Cloud Providers (Azure, GCP, Snowflake)
-├── 05-Databases/              # Stockage (DWH, Data Lake, NoSQL)
-├── 06-Data-Engineering/       # Cœur du métier (Spark, dbt, dlt)
-├── 07-DevOps/                 # Industrialisation (CI/CD, Monitoring)
-├── 08-Machine-Learning/       # ML classique (Scikit-learn, régression, classification)
+├── 04-Cloud-Platforms/        # Cloud Providers (Azure, GCP, Snowflake, AI-Services)
+├── 05-Databases/              # Stockage (DWH, Data Lake, NoSQL, VectorDB, ORM)
+├── 06-Data-Engineering/       # Cœur du métier (Spark, dbt, dlt, Airflow, Kafka)
+├── 07-DevOps/                 # Industrialisation (CI/CD, Monitoring, Pre-commit)
+├── 08-Machine-Learning/       # ML classique + MLOps + Data Drift
 ├── 09-Deep-Learning/          # CNN, NLP, Transformers
-├── 10-Large-Language-Model/   # LLM, RAG, Agents, Fine-tuning
+├── 10-Large-Language-Model/   # LangChain, RAG, HuggingFace, Agents (LangGraph, CrewAI)
+├── 11-Gestion-Projet/         # Agile/Scrum, ADR, C4 Architecture
+├── 12-Frontend-IA/            # Gradio, Streamlit
+├── 13-Developpement-Web/      # JavaScript, React, VueJS, Angular
+├── 14-Mobile/                 # React Native
 └── 99-Brief/                  # Projets finaux et évaluations
 ```
 
@@ -67,7 +71,7 @@ formation-data-engineer/
 
 ## 🛠️ Technologies Couvertes
 
-**Bash / Zsh** | **Git / GitHub** | **Python (POO, Data)** | **SQL** | **Docker & K8s** | **Terraform & Ansible** | **Azure & GCP** | **Spark & dbt** | **Delta Lake & Parquet** | **Scikit-learn & PyTorch** | **LangChain & RAG**
+**Bash / Zsh** | **Git / GitHub** | **Python** | **SQL** | **Java** | **Rust** | **JavaScript / TypeScript** | **Docker & K8s** | **Terraform & Ansible** | **Azure & GCP & Snowflake** | **FastAPI & Django** | **Spark & dbt & Airflow & Kafka** | **Delta Lake & Parquet** | **Scikit-learn** | **MLflow & DVC & MLOps** | **LangChain & RAG & LangGraph & CrewAI** | **HuggingFace** | **Gradio & Streamlit** | **React & VueJS & Angular** | **React Native** | **Prometheus & Grafana** | **VectorDB (Chroma, Qdrant)**
 
 ---
 

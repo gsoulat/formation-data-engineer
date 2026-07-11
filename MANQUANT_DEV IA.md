@@ -1,42 +1,63 @@
- Markdown : Liste des Cours à Créer
+# 🛠️ Modules Complémentaires — Référentiel Dev IA
 
+Dernière mise à jour : mars 2026
 
-    1 # 🛠️ Modules Complémentaires à implémenter (Référentiel IA)
-    2
-    3 Pour être en totale conformité avec l'examen, voici les modules de cours à ajouter :
-    4
-    5 ## 01-Fondamentaux / ⚖️ RGPD & Éthique
-    6 - **RGPD pour la Data** : Registre des traitements, anonymisation, durées de conservation.
-    7 - **Sécurité des données** : Mise en conformité d'une base de données IA.
-    8
-    9 ## 01-Fondamentaux / 🏗️ Modélisation
-   10 - **Méthode MERISE** : Conception de Modèles Conceptuels de Données (MCD) et Physiques (MPD).
-   11 - **Outils** : Utilisation de Looping ou MySQL Workbench.
-   12
-   13 ## 01-Fondamentaux / 🌐 Web Scraping
-   14 - **Collecte de données** : Programmation de scripts de scraping (BeautifulSoup, Selenium).
-   15 - **Éthique du scraping** : Respect du fichier robots.txt et des CGU.
-   16
-   17 ## 07-DevOps / 📡 Veille & Benchmark
-   18 - **Méthodes de veille** : Mise en place de flux RSS (Feedly), agrégation et partage.
-   19 - **Benchmark IA** : Comparaison de services IA (coûts, performance, éco-responsabilité).
-   20
-   21 ## 07-DevOps / 🔄 MLOps Avancé
-   22 - **DVC (Data Version Control)** : Versionnement des datasets et des modèles.
-   23 - **Reporting CI/CD** : Automatisation des rapports de performance (Accuracy, Confusion Matrix).
-   24
-   25 ## 11-Gestion de Projet & Soft Skills
-   26 - **Méthodes Agiles** : Scrum, Kanban, rédaction de User Stories (C16).
-   27 - **Accessibilité Numérique** : Standards WCAG, RGAA, outils de test d'accessibilité (C17).
-   28 - **Éco-conception** : Bonnes pratiques Green IT pour les applications IA.
-   29
-   30 ## 12-Frontend / 🎨 Interfaces IA
-   31 - **UX/UI pour la Data** : Storyboarding, Wireframing.
-   32 - **Frameworks Légers** : Streamlit ou Dash (pour la mise à disposition rapide de modèles).
-   33 - **Standards d'utilisabilité** : Créer des interfaces centrées utilisateur.
+---
 
+## ✅ Modules ajoutés (comblés)
 
-  💡 Conseil Stratégique
-  Le référentiel insiste lourdement sur la documentation technique et le versionnement Git. Assure-toi que chaque module existant contient une
-  section "Documentation" qui respecte les standards OpenAPI (pour les APIs) et que tous les scripts d'agrégation/nettoyage du Bloc 1 sont
-  systématiquement versionnés.
+| Module | Emplacement | Compétences |
+|---|---|---|
+| FastAPI | `01-Fondamentaux/FastAPI/` | C5, C9 |
+| Django + DRF | `01-Fondamentaux/Django/` | C17 |
+| Veille Technologique | `01-Fondamentaux/Veille-Technologique/` | C6 |
+| Streamlit | `12-Frontend-IA/Streamlit/` | C10 |
+| Gradio | `12-Frontend-IA/Gradio/` | C10, C17 |
+| LangChain | `10-Large-Language-Model/LangChain/` | C17 |
+| RAG | `10-Large-Language-Model/RAG/` | C17 |
+| HuggingFace Transformers | `10-Large-Language-Model/HuggingFace/` | C17 |
+| LangGraph + CrewAI | `10-Large-Language-Model/Agents/` | C17 |
+| VectorDB (Chroma, Qdrant) | `05-Databases/VectorDB/` | C17 |
+| Cloud AI Services (Azure/AWS/GCP) | `04-Cloud-Platforms/AI-Services/` | C7, C8 |
+| MLOps pipeline bout-en-bout | `08-Machine-Learning/MLOps/` | C12, C13 |
+| Data Drift Detection (Evidently AI) | `08-Machine-Learning/cours/18-data-drift.md` | C11 |
+| Agile / Scrum | `11-Gestion-Projet/Agile-Scrum/` | C16 |
+| ADR | `11-Gestion-Projet/ADR/` | C15 |
+| C4 Architecture + PlantUML | `11-Gestion-Projet/C4-Architecture/` | C14, C15 |
+| ORM Python (SQLAlchemy, SQLModel, etc.) | `05-Databases/ORM/Python/` | C4 |
+
+---
+
+## ⚠️ Modules encore manquants
+
+### RGPD Avancé & Sécurité
+- Registre des traitements
+- Anonymisation / pseudonymisation des datasets
+- Analyse d'impact (DPIA)
+- Procédures de purge automatique
+
+### Méthode MERISE
+- MCD (Modèle Conceptuel de Données)
+- MPD (Modèle Physique)
+- Outils : Looping ou MySQL Workbench
+
+### Web Scraping
+- BeautifulSoup, Selenium, Playwright
+- Gestion légale (robots.txt, CGU)
+- Rotation proxies, gestion des bans
+
+### Éco-conception
+- Green IT pour les applications IA
+- Calcul empreinte carbone des traitements ML
+- Optimisation énergétique des modèles
+
+### Accessibilité Numérique
+- Standards WCAG / RGAA
+- Tests d'accessibilité des interfaces Gradio/Streamlit
+- Outils : axe, Lighthouse
+
+---
+
+## 💡 Conseil Stratégique
+
+Le référentiel insiste sur la **documentation technique** et le **versionnement Git**. S'assurer que chaque module contient une section OpenAPI (pour les APIs) et que tous les scripts sont versionnés avec des messages de commit clairs.
