@@ -485,7 +485,43 @@ A: Oui, Ansible est open-source (GPL v3). Ansible Tower est payant, AWX est grat
 
 ---
 
-## Roadmap du cours
+## Programme intensif - 4 jours
+
+Ce programme suit le référentiel de formation officiel. Chaque section contient un cours théorique et un TP formalisé.
+
+### [Jour 1 : Fondamentaux et prise en main](./Jour-1/)
+
+| Créneau | Module | Contenu |
+|---------|--------|---------|
+| **Matin** | [01 - Installation et configuration](./Jour-1/01-Installation-Configuration/) | Présentation d'Ansible, prérequis, installation, configuration ansible.cfg. **TP : Installer Ansible et configurer les paramètres de base** |
+| **Après-midi** | [02 - Inventaires et commandes ad hoc](./Jour-1/02-Inventaires-Commandes-Ad-Hoc/) | Inventaires statiques/dynamiques, commandes ad hoc (ping, copy, shell). **TP : Configurer un inventaire et exécuter des commandes ad hoc** |
+
+### [Jour 2 : Playbooks](./Jour-2/)
+
+| Créneau | Module | Contenu |
+|---------|--------|---------|
+| **Matin** | [03 - Introduction aux playbooks](./Jour-2/03-Introduction-Playbooks/) | Structure, syntaxe YAML, tasks, handlers, idempotence, tags. **TP : Créer un playbook pour déployer un service web** |
+| **Après-midi** | [04 - Playbooks complexes](./Jour-2/04-Playbooks-Complexes/) | Conditions, boucles, variables, blocks, error handling. **TP : Playbook pour environnement multi-services** |
+
+### [Jour 3 : Organisation et sécurité](./Jour-3/)
+
+| Créneau | Module | Contenu |
+|---------|--------|---------|
+| **Matin (1)** | [05 - Rôles Ansible](./Jour-3/05-Roles-Ansible/) | Structure des rôles, déploiement, dépendances. **TP : Créer un rôle pour une application** |
+| **Matin (2)** | [06 - Ansible Vault](./Jour-3/06-Ansible-Vault/) | Gestion des secrets, chiffrement AES-256. **TP : Playbook avec données sécurisées via Vault** |
+| **Après-midi** | [07 - Ansible Tower et Vagrant](./Jour-3/07-Tower-Vagrant/) | AWX (Web UI), Vagrant (environnements de test). **TP : Configurer AWX pour exécuter et superviser des playbooks** |
+
+### [Jour 4 : Production et projet global](./Jour-4/)
+
+| Créneau | Module | Contenu |
+|---------|--------|---------|
+| **Matin (1)** | [08 - Déploiement de projets complexes](./Jour-4/08-Deploiement-Projets-Complexes/) | Bonnes pratiques, structuration, déploiement multi-tiers. **TP : Projet de bout en bout** |
+| **Matin (2)** | [09 - Optimisation et dépannage](./Jour-4/09-Optimisation-Depannage/) | Erreurs courantes, performances, filtres Jinja2. **TP : Résoudre des erreurs simulées dans des playbooks** |
+| **Après-midi** | [10 - Projet global](./Jour-4/10-Projet-Global/) | Infrastructure complète (web + BDD + firewall), simulation de cas réels. **TP : Projet global en autonomie** |
+
+---
+
+## Roadmap du cours complet (auto-formation)
 
 ```
 Semaine 1 : Fondamentaux
@@ -511,6 +547,6 @@ Semaine 4 : Projets
 
 ---
 
-**Bon apprentissage avec Ansible ! 🚀**
+**Bon apprentissage avec Ansible !**
 
 "Ansible makes infrastructure simple, powerful, and agentless."
