@@ -21,7 +21,7 @@
 
 Avant de commencer cette étape, vous devez avoir complété :
 
-- ✅ [Étape 0 : Préparation de l'environnement](01_Etape_0_Preparation_Environnement.md)
+- ✅ [Étape 0 : Préparation de l'environnement](Etape_0_Preparation_Environnement.md)
   - Trial Fabric activé
   - Workspace `WindPowerAnalytics` créé
 
@@ -349,7 +349,7 @@ Delta Lake est un format de stockage open-source qui apporte :
 
 Excellent ! Vos Lakehouses sont prêts à recevoir des données.
 
-➡️ **Passez à l'étape suivante :** [Étape 2 : Ingestion des données (Bronze)](03_Etape_2_Ingestion_Bronze.md)
+➡️ **Passez à l'étape suivante :** [Étape 2 : Ingestion des données (Bronze)](Etape_6_Ingestion_Bronze.md)
 
 Dans la prochaine étape, vous allez :
 - Créer votre premier Notebook

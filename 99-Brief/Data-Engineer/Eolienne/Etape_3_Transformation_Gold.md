@@ -18,7 +18,7 @@
 
 ## 📋 Prérequis
 
-- ✅ [Étape 3 : Transformation Silver](Etape_3_Transformation_Silver.md) complétée
+- ✅ [Étape 3 : Transformation Silver](Etape_2_Transformation_Silver.md) complétée
 - ✅ Données enrichies dans le Lakehouse Silver
 
 ---
@@ -295,6 +295,6 @@ git push
 
 ## 🎯 Prochaine étape
 
-➡️ **[Étape 5 : Orchestration Pipeline](Etape_5_Orchestration_Pipeline.md)**
+➡️ **[Étape 5 : Orchestration Pipeline](Etape_7_Orchestration_Pipeline.md)**
 
 *Étape 4 complétée ✅ | Temps : ~90 min | Total : ~300 min (~5h)*

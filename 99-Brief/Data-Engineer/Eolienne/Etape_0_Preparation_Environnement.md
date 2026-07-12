@@ -334,7 +334,7 @@ Dans cette étape, vous avez :
 
 Excellent travail ! Vous avez maintenant un environnement prêt pour commencer le développement.
 
-➡️ **Passez à l'étape suivante :** [Étape 1 : Création des Lakehouses](02_Etape_1_Creation_Lakehouses.md)
+➡️ **Passez à l'étape suivante :** [Étape 1 : Création des Lakehouses](Etape_1_Creation_Lakehouses.md)
 
 Dans la prochaine étape, vous allez créer les 3 Lakehouses qui constituent les couches Bronze, Silver et Gold de votre architecture.
 

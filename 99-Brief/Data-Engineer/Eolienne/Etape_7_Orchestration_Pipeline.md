@@ -112,6 +112,6 @@
 
 ## 🎯 Prochaine étape
 
-➡️ **[Étape 6 : Semantic Model](07_Etape_6_Semantic_Model.md)**
+➡️ **[Étape 6 : Semantic Model](Etape_4_Semantic_Model.md)**
 
 *Étape 5 complétée ✅ | Temps : ~60 min | Total : ~360 min (~6h)*

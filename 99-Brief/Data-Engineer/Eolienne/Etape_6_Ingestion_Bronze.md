@@ -20,7 +20,7 @@
 
 ## 📋 Prérequis
 
-- ✅ [Étape 1 : Création des Lakehouses](02_Etape_1_Creation_Lakehouses.md) complétée
+- ✅ [Étape 1 : Création des Lakehouses](Etape_1_Creation_Lakehouses.md) complétée
 - ✅ Les 3 Lakehouses (Bronze, Silver, Gold) créés
 
 ---
@@ -312,6 +312,6 @@ Si tout s'est bien passé, vous devriez avoir environ 518 400 lignes (2 jours de
 
 ## 🎯 Prochaine étape
 
-➡️ **[Étape 3 : Transformation Bronze → Silver](04_Etape_3_Transformation_Silver.md)**
+➡️ **[Étape 3 : Transformation Bronze → Silver](Etape_2_Transformation_Silver.md)**
 
 *Étape 2 complétée ✅ | Temps : ~60 min | Total cumulé : ~135 min*

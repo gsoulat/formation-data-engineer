@@ -151,6 +151,6 @@ DIVIDE(
 
 ## 🎯 Prochaine étape
 
-➡️ **[Étape 7 : Rapports Power BI](Etape_7_Rapports_PowerBI.md)**
+➡️ **[Étape 7 : Rapports Power BI](Etape_5_Rapports_PowerBI.md)**
 
 *Étape 6 complétée ✅ | Temps : ~75 min | Total : ~435 min (~7h15)*

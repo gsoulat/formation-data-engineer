@@ -21,7 +21,7 @@
 
 ## 📋 Prérequis
 
-- ✅ [Étape 2 : Ingestion Bronze](03_Etape_2_Ingestion_Bronze.md) complétée
+- ✅ [Étape 2 : Ingestion Bronze](Etape_6_Ingestion_Bronze.md) complétée
 - ✅ Données présentes dans le Lakehouse Bronze (≥2 jours)
 
 ---
@@ -442,7 +442,7 @@ df_transformed.count()  # Force l'évaluation
 
 Excellent ! Vos données sont maintenant nettoyées et enrichies dans la couche Silver.
 
-➡️ **[Étape 4 : Transformation Silver → Gold](05_Etape_4_Transformation_Gold.md)**
+➡️ **[Étape 4 : Transformation Silver → Gold](Etape_3_Transformation_Gold.md)**
 
 Dans la prochaine étape, vous allez créer le modèle dimensionnel (star schema) dans la couche Gold.
 
