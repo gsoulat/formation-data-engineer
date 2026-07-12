@@ -1,0 +1,41 @@
+# =====================================================================
+# Bouquineo — kit de démarrage brief 03 (Gouvernance des données)
+# PostgreSQL seul. OpenMetadata se déploie séparément avec le compose
+# officiel (voir solution/openmetadata/README-deploiement.md).
+#
+# AVANT le premier lancement :
+#   python3 scripts/generate_data.py        (génère les CSV dans ./data)
+#   cp .env.example .env                     (puis modifier le mot de passe)
+# Puis :
+#   docker compose up -d
+# =====================================================================
+
+services:
+  postgres-bouquineo:
+    image: postgres:16-alpine
+    container_name: postgres-bouquineo
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-bouquineo}
+      POSTGRES_USER: ${POSTGRES_USER:-bouquineo_admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?definir POSTGRES_PASSWORD dans .env}
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"   # 5433 pour ne pas heurter un Postgres local
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d:ro
+      - ./data:/data:ro
+      - pgdata_bouquineo:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-bouquineo_admin} -d ${POSTGRES_DB:-bouquineo}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - bouquineo_net
+
+volumes:
+  pgdata_bouquineo:
+
+networks:
+  # Réseau nommé : OpenMetadata devra le rejoindre pour voir "postgres-bouquineo"
+  # (docker network connect starter-kit_bouquineo_net openmetadata_ingestion)
+  bouquineo_net:
