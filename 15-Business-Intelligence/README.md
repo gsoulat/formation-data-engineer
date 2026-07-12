@@ -67,13 +67,13 @@ Ce module couvre le cœur du métier de **Data Analyst** tel que défini par le 
 | # | Sous-module | Contenu | Compétences RNCP |
 |---|---|---|---|
 | 01 | [Metier-Data-Analyst](01-Metier-Data-Analyst/) | Le métier de Data Analyst, le référentiel RNCP-38616, la posture professionnelle, méthode & veille | Référentiel RNCP-38616 |
-| 02 | [Panorama-Outils-BI](02-Panorama-Outils-BI/) | Installation des outils, panorama SQL / Python / Power BI / Looker Studio / Tableau | — |
-| 03 | [Analyse-Besoin-Metier](03-Analyse-Besoin-Metier/) | Recueil du besoin métier, formalisation d'une problématique | — |
-| 04 | [Analyse-Exploratoire-EDA](04-Analyse-Exploratoire-EDA/) | Analyse exploratoire des données (EDA) avec pandas | — |
-| 05 | [Tendances-Series-Temporelles](05-Tendances-Series-Temporelles/) | Analyse de tendances, séries temporelles | — |
-| 06 | [KPI-Indicateurs](06-KPI-Indicateurs/) | Définir des KPI pertinents, objectifs SMART | — |
-| 07 | [Dashboards-Fondamentaux](07-Dashboards-Fondamentaux/) | Construire un premier tableau de bord | — |
-| 08 | [Restitution-Storytelling](08-Restitution-Storytelling/) | Restituer et présenter les résultats d'une analyse | — |
+| 02 | [Panorama-Outils-BI](02-Panorama-Outils-BI/) | Installation des outils, panorama SQL / Python / Power BI / Looker Studio / Tableau | — (outillage, socle) |
+| 03 | [Analyse-Besoin-Metier](03-Analyse-Besoin-Metier/) | Recueil du besoin métier, formalisation d'une problématique | **C11** (niveau 1→3) |
+| 04 | [Analyse-Exploratoire-EDA](04-Analyse-Exploratoire-EDA/) | Analyse exploratoire des données (EDA) avec pandas | **C4, C5** (niveau 1) |
+| 05 | [Tendances-Series-Temporelles](05-Tendances-Series-Temporelles/) | Analyse de tendances, séries temporelles | **C6** (niveau 1) |
+| 06 | [KPI-Indicateurs](06-KPI-Indicateurs/) | Définir des KPI pertinents, objectifs SMART | **C16** (niveau 1→2) |
+| 07 | [Dashboards-Fondamentaux](07-Dashboards-Fondamentaux/) | Construire un premier tableau de bord | **C17, C18** (niveau 1→2) |
+| 08 | [Restitution-Storytelling](08-Restitution-Storytelling/) | Restituer et présenter les résultats d'une analyse | **C15** (niveau 1→3), **C17** |
 | 09 | [Modelisation-Etoile-PowerQuery](09-Modelisation-Etoile-PowerQuery/) | Table de faits et dimensions, granularité, schéma en étoile, relations Power BI, table de dates | C18 (BC06) |
 | 10 | [DAX](10-DAX/) | Mesures DAX, colonnes calculées, contexte de filtre, CALCULATE, Time Intelligence | C18 (BC06) |
 | 11 | [Visualisations-Avancees](11-Visualisations-Avancees/) | Drill-down, hiérarchies, interactivité, infobulles, accessibilité WCAG | C17 (niveau 2) |

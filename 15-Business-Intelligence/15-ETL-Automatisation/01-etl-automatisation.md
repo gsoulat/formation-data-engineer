@@ -438,6 +438,264 @@ Planifie ton script pour qu'il s'exécute tous les jours à 6 h (cron sur Mac/Li
 - Vérifier le lendemain que le log s'est bien rempli et que le CSV a été régénéré. ✅
 </details>
 
+### TP — Extraction robuste depuis une API publique (Open-Meteo)
+
+Jusqu'ici tu as extrait des **fichiers**. En vrai, une partie de tes sources sont des **API** : elles répondent sur le réseau, donc elles peuvent être **lentes, indisponibles ou renvoyer une erreur**. Un extracteur d'API digne de ce nom doit donc **réessayer intelligemment** et **journaliser** ce qui se passe.
+
+**Contexte fil rouge :** l'équipe NordRetail se demande si le **chiffre d'affaires** est corrélé à la **météo** (une vague de froid dope-t-elle les ventes de boissons chaudes ?). On va donc **enrichir les ventes avec la température quotidienne** de chaque ville. On commence par **Lille** (coordonnées `50.63, 3.06`), sur janvier 2024.
+
+On utilise l'**API archive d'Open-Meteo** : publique, **gratuite et sans authentification** (pas de clé à gérer), idéale pour apprendre les bons réflexes.
+
+> 🌐 **L'URL qu'on va appeler** (à coller dans un navigateur pour voir le JSON) :
+> `https://archive-api.open-meteo.com/v1/archive?latitude=50.63&longitude=3.06&start_date=2024-01-01&end_date=2024-01-31&daily=temperature_2m_mean&timezone=Europe/Paris`
+
+#### a) Paramétrer proprement l'appel (jamais d'URL concaténée à la main)
+
+La règle d'or : **on ne construit pas l'URL en collant des chaînes**. On passe un **dictionnaire `params`** à `requests` — il se charge d'encoder correctement les valeurs (dates, virgules, accents…). C'est plus lisible, plus sûr, et trivial à faire varier (autre ville, autre période).
+
+```python
+import requests
+
+URL = "https://archive-api.open-meteo.com/v1/archive"
+
+# Chaque paramètre est une clé du dictionnaire : pas de concaténation, pas d'oubli d'encodage
+params = {
+    "latitude": 50.63,          # Lille
+    "longitude": 3.06,
+    "start_date": "2024-01-01",
+    "end_date": "2024-01-31",
+    "daily": "temperature_2m_mean",   # variable demandée : température moyenne journalière
+    "timezone": "Europe/Paris",
+}
+
+# requests encode 'params' dans l'URL à notre place, avec un timeout obligatoire
+response = requests.get(URL, params=params, timeout=10)
+print(response.url)   # affiche l'URL finale réellement appelée (pratique pour déboguer)
+```
+
+> 💡 Le `timeout=10` n'est **pas optionnel** en production : sans lui, un appel peut rester **bloqué indéfiniment** si le serveur ne répond jamais, et ton pipeline se fige.
+
+#### b) Gérer les erreurs : réseau, HTTP, JSON invalide
+
+Trois familles d'erreurs peuvent survenir, et on les traite **séparément** :
+
+1. **Erreurs réseau** — `requests.exceptions.Timeout` (trop lent), `ConnectionError` (pas de réseau / serveur injoignable).
+2. **Erreurs HTTP** — le serveur répond mais avec un code d'échec (404 introuvable, 429 trop de requêtes, 500 panne serveur). On le détecte avec `response.raise_for_status()`.
+3. **Réponse illisible** — le corps n'est pas du JSON valide → `response.json()` lève une erreur.
+
+```python
+import requests
+
+def extraire_meteo(params: dict) -> dict:
+    """Appelle l'API Open-Meteo une fois et renvoie le JSON, ou lève une exception claire."""
+    response = requests.get(URL, params=params, timeout=10)
+    response.raise_for_status()          # lève HTTPError si code 4xx / 5xx
+    return response.json()               # lève ValueError si le corps n'est pas du JSON
+
+# Exemple d'appel protégé
+try:
+    data = extraire_meteo(params)
+except requests.exceptions.Timeout:
+    print("Le serveur a mis trop de temps à répondre.")
+except requests.exceptions.ConnectionError:
+    print("Impossible de joindre le serveur (réseau ?).")
+except requests.exceptions.HTTPError as e:
+    print(f"Le serveur a renvoyé une erreur HTTP : {e}")
+except ValueError:
+    print("La réponse n'est pas un JSON valide.")
+```
+
+> ⚠️ **Erreur courante :** croire qu'un appel « qui n'a pas planté » a réussi. Un code **404** ou **500** renvoie bien une réponse — sans `raise_for_status()`, tu enregistres une **page d'erreur** à la place de tes données.
+
+#### c) Réessayer intelligemment : le retry avec backoff exponentiel
+
+Beaucoup d'erreurs réseau sont **temporaires** (micro-coupure, serveur momentanément saturé). Plutôt qu'abandonner au premier échec, on **réessaie** — mais en **attendant de plus en plus longtemps** entre chaque tentative : c'est le **backoff exponentiel** (`2 ** tentative` secondes → 1 s, 2 s, 4 s…). Cela évite de **marteler** un serveur déjà en difficulté.
+
+```python
+import time
+import logging
+import requests
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler("logs/etl_meteo.log", encoding="utf-8"),
+        logging.StreamHandler(),
+    ],
+)
+logger = logging.getLogger("etl_meteo")
+
+
+def extraire_avec_retry(params: dict, max_retries: int = 4) -> dict:
+    """Extrait la météo avec retry + backoff exponentiel. Renvoie le JSON ou lève après échec final."""
+    logger.info("Démarrage extraction météo (lat=%s, lon=%s)", params["latitude"], params["longitude"])
+
+    for tentative in range(max_retries):
+        try:
+            response = requests.get(URL, params=params, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+            logger.info("Succès : %d jours reçus", len(data["daily"]["time"]))
+            return data
+
+        except (requests.exceptions.Timeout,
+                requests.exceptions.ConnectionError,
+                requests.exceptions.HTTPError,
+                ValueError) as e:
+            attente = 2 ** tentative          # backoff exponentiel : 1s, 2s, 4s, 8s...
+            if tentative < max_retries - 1:
+                logger.warning(
+                    "Tentative %d/%d échouée (%s). Nouvel essai dans %ds.",
+                    tentative + 1, max_retries, type(e).__name__, attente,
+                )
+                time.sleep(attente)
+            else:
+                logger.error(
+                    "Échec définitif après %d tentatives : %s", max_retries, e
+                )
+                raise                          # on relance : l'appelant doit savoir que ça a échoué
+```
+
+> 📌 **En production, on ne réécrit pas ça à la main.** La bibliothèque [`tenacity`](https://tenacity.readthedocs.io/) offre un décorateur `@retry(...)` clé en main, et l'objet `Retry` de `urllib3` (via un `HTTPAdapter` monté sur la session `requests`) gère le backoff au niveau du transport. On code la version « maison » ici pour **comprendre le mécanisme** ; ensuite, on utilise l'outil.
+
+#### d) Charger le résultat brut, daté, dans une couche `raw` (idempotence)
+
+On sauvegarde la réponse **telle quelle**, dans une couche **`raw`** (données brutes non transformées), avec un nom **daté** : `data/raw/meteo_lille_2024-01.csv`. Séparer le **brut** du **transformé** est un réflexe pro : si un bug de transformation apparaît plus tard, on **rejoue** depuis le brut sans redémander l'API.
+
+Le nom de fichier est **déterministe** (il dépend de la ville et du mois) : rejouer l'extraction **écrase** le fichier au lieu d'en créer un doublon. C'est ça, l'**idempotence** — *« rejouer produit le même état, sans accumuler de déchets »*.
+
+```python
+import csv
+from pathlib import Path
+
+DOSSIER_RAW = Path("data/raw")
+
+def charger_raw(data: dict, ville: str, mois: str) -> Path:
+    """Écrit le JSON météo en CSV daté dans la couche raw. Idempotent : réécrit le même fichier."""
+    DOSSIER_RAW.mkdir(parents=True, exist_ok=True)
+    chemin = DOSSIER_RAW / f"meteo_{ville}_{mois}.csv"
+
+    dates = data["daily"]["time"]
+    temperatures = data["daily"]["temperature_2m_mean"]
+
+    with open(chemin, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["date", "temperature_moyenne", "ville"])   # en-tête
+        for date, temp in zip(dates, temperatures):
+            writer.writerow([date, temp, ville])
+
+    logger.info("Sauvegarde raw : %s (%d lignes)", chemin, len(dates))
+    return chemin
+```
+
+> 💡 **Variante pandas** (plus courte si pandas est déjà chargé) :
+> ```python
+> import pandas as pd
+> df = pd.DataFrame({
+>     "date": data["daily"]["time"],
+>     "temperature_moyenne": data["daily"]["temperature_2m_mean"],
+>     "ville": ville,
+> })
+> df.to_csv(DOSSIER_RAW / f"meteo_{ville}_{mois}.csv", index=False, encoding="utf-8")
+> ```
+
+#### e) Assembler le tout
+
+```python
+def main():
+    params = {
+        "latitude": 50.63,
+        "longitude": 3.06,
+        "start_date": "2024-01-01",
+        "end_date": "2024-01-31",
+        "daily": "temperature_2m_mean",
+        "timezone": "Europe/Paris",
+    }
+    try:
+        data = extraire_avec_retry(params)
+        charger_raw(data, ville="lille", mois="2024-01")
+        logger.info("Extraction météo terminée avec succès.")
+    except Exception:
+        logger.error("Extraction météo abandonnée. Le pipeline s'arrête proprement.")
+        raise
+
+if __name__ == "__main__":
+    main()
+```
+
+Sortie attendue (exemple) :
+```
+2024-... [INFO] Démarrage extraction météo (lat=50.63, lon=3.06)
+2024-... [INFO] Succès : 31 jours reçus
+2024-... [INFO] Sauvegarde raw : data/raw/meteo_lille_2024-01.csv (31 lignes)
+2024-... [INFO] Extraction météo terminée avec succès.
+```
+
+> 🔗 **Vers le projet :** ce TP prépare directement la **collecte API du projet certificatif (BRIEF_3, compétence C2)** : mêmes réflexes de robustesse — paramétrage propre, `try/except` ciblés, retry avec backoff, journalisation et sauvegarde datée en couche `raw`. Tu réutiliseras cette structure quasi telle quelle.
+
+#### Exercice
+
+Généralise `extraire_avec_retry` pour extraire la météo des **6 villes NordRetail** en une seule exécution. On te donne la table de coordonnées :
+
+```python
+VILLES = {
+    "lille":        (50.63, 3.06),
+    "roubaix":      (50.69, 3.17),
+    "tourcoing":    (50.72, 3.16),
+    "valenciennes": (50.36, 3.52),
+    "arras":        (50.29, 2.78),
+    "dunkerque":    (51.03, 2.38),
+}
+```
+
+**Attendu :**
+- Boucler sur `VILLES.items()`, appeler l'extraction pour chacune, sauvegarder un fichier `raw` par ville.
+- **Un log par ville** (démarrage + succès/échec), pour savoir précisément laquelle a posé problème.
+- Ajouter une **temporisation** (`time.sleep(1)`) entre deux villes pour rester poli avec l'API (éviter le code HTTP **429 — Too Many Requests**).
+- **Ne pas tout arrêter** si une ville échoue : logue l'erreur (`logger.error`) et **passe à la suivante** (le pipeline doit livrer 5 villes sur 6 plutôt que 0).
+
+<details>
+<summary>Corrigé de l'exercice</summary>
+
+```python
+def extraire_toutes_les_villes(villes: dict, mois: str = "2024-01") -> None:
+    """Extrait la météo de chaque ville, une par une, sans qu'un échec bloque les autres."""
+    reussites, echecs = 0, 0
+
+    for ville, (lat, lon) in villes.items():
+        params = {
+            "latitude": lat,
+            "longitude": lon,
+            "start_date": "2024-01-01",
+            "end_date": "2024-01-31",
+            "daily": "temperature_2m_mean",
+            "timezone": "Europe/Paris",
+        }
+        logger.info("=== Ville : %s ===", ville)
+        try:
+            data = extraire_avec_retry(params)
+            charger_raw(data, ville=ville, mois=mois)
+            reussites += 1
+        except Exception as e:
+            logger.error("Ville %s abandonnée : %s", ville, e)
+            echecs += 1
+
+        time.sleep(1)   # temporisation : on reste poli avec l'API (anti-429)
+
+    logger.info("Bilan : %d villes OK, %d en échec.", reussites, echecs)
+
+
+if __name__ == "__main__":
+    extraire_toutes_les_villes(VILLES)
+```
+
+Points de validation :
+- 6 fichiers `data/raw/meteo_<ville>_2024-01.csv` sont créés (ou 5 + 1 log d'erreur si une ville a échoué).
+- Le log `logs/etl_meteo.log` contient un bloc `=== Ville : ... ===` par ville, avec le bilan final.
+- Relancer le script **n'ajoute aucun doublon** : les fichiers `raw` sont simplement réécrits (idempotence). ✅
+</details>
+
 ---
 
 ## Vidéos d'auto-formation

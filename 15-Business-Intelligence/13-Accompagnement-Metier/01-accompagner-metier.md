@@ -243,6 +243,108 @@ Quelques réflexes :
 
 ---
 
+## Approfondissement — conduite du changement & adoption (niveau 3)
+
+Au niveau 2, tu sais cadrer un besoin et restituer de façon argumentée. Au **niveau 3**, on attend davantage : tu ne livres pas seulement un tableau de bord techniquement correct, tu **fais en sorte qu'il soit réellement utilisé** et tu **pilotes son adoption dans le temps**. Un dashboard livré n'est pas un dashboard adopté. La différence entre les deux, c'est de la **conduite du changement** — un savoir-faire qui distingue le Data Analyst junior (« j'ai fait ce qu'on m'a demandé ») du Data Analyst senior (« j'ai transformé une équipe qui décidait au feeling en une équipe qui pilote avec la donnée »).
+
+### Pourquoi un dashboard n'est (souvent) pas adopté
+
+Tu peux produire le plus beau tableau de bord du monde : s'il reste fermé dans un onglet, il ne vaut rien. Le taux d'échec des projets BI côté **adoption** est massif — non pour des raisons techniques, mais **humaines**. Il faut savoir nommer les résistances pour y répondre.
+
+| Résistance typique | Ce que ça cache vraiment | Comment tu y réponds |
+|---|---|---|
+| **« Mon Excel me suffit. »** | Peur de perdre un outil maîtrisé, où l'utilisateur a ses repères et son autonomie. | Ne dénigre jamais l'Excel. Montre ce que le dashboard fait **en plus** et **plus vite** (rafraîchissement auto, comparaison inter-magasins) ; laisse l'export Excel possible au début. |
+| **« C'est pour nous surveiller / nous fliquer. »** | Peur du contrôle : le dashboard rendra visibles les contre-performances de mon magasin. | Recadre l'usage : outil **d'aide à la décision**, pas de sanction. Associe le métier au choix des KPI ; garantis que l'objectif est d'**aider**, pas de classer pour punir. |
+| **« Je ne fais pas confiance à ces chiffres. »** | Méfiance sur la donnée : un chiffre déjà vu qui ne correspondait pas, une source floue. | Rends la donnée **traçable** : dictionnaire des indicateurs, source, maille, date de rafraîchissement affichée. Fais une **réconciliation** publique avec un chiffre qu'ils connaissent. |
+| **« Je n'ai pas le temps. »** | Coût d'entrée perçu trop élevé face à un bénéfice pas encore prouvé. | Réduis la friction : un écran d'accueil qui répond à **leur** question du lundi matin en 10 secondes. Prouve le gain sur **un** cas concret. |
+| **« On a déjà eu un outil comme ça, ça n'a rien changé. »** | Cynisme lié à un échec passé (outil imposé, jamais accompagné). | Reconnais l'échec passé, explique ce que tu fais **différemment** (co-construction, formation, suivi). La preuve se fera dans le temps. |
+
+> **Le principe de fond.** Une résistance n'est pas de la mauvaise volonté, c'est un **signal**. Derrière chaque « ça ne sert à rien » il y a une peur ou un besoin non traité. Ton job de niveau 3 : décoder le signal et y répondre, pas passer en force.
+
+> ⚠️ **Attention à la « courbe du deuil » du changement.** Face à un nouvel outil, un utilisateur passe souvent par des phases : déni (« on continue comme avant »), résistance active (« ça ne marchera pas »), exploration prudente, puis adhésion. C'est **normal** et transitoire. Une résistance en début de projet n'annonce pas un échec : c'est une étape à accompagner, pas un rejet définitif à combattre. Ne prends pas les critiques initiales pour un verdict.
+
+### Un modèle de conduite du changement appliqué à la data : ADKAR
+
+**ADKAR** est un modèle simple et opérationnel (issu de Prosci) qui décrit les **5 étapes** qu'un individu doit franchir pour changer durablement de comportement. Il est parfait pour un déploiement de dashboard, car il te force à traiter l'humain **avant** l'outil. Tant qu'une étape n'est pas acquise, les suivantes ne prennent pas.
+
+| Étape ADKAR | Question de l'utilisateur | Décliné sur un déploiement de dashboard |
+|---|---|---|
+| **A — Awareness** (prise de conscience) | « Pourquoi change-t-on ? » | Expliquer le **pourquoi** : « nos décisions de réassort se prennent au feeling, on perd des ventes. » Communiquer l'enjeu avant l'outil. |
+| **D — Desire** (envie) | « Qu'est-ce que j'y gagne ? » | Donner **envie** : montrer le bénéfice concret pour *eux* (gagner du temps, défendre son magasin en comité avec des faits). C'est l'étape la plus négligée. |
+| **K — Knowledge** (savoir) | « Comment je fais ? » | **Former** : session par cas d'usage, documentation, guide de lecture, dictionnaire des indicateurs. |
+| **A — Ability** (capacité) | « Est-ce que j'y arrive vraiment ? » | Faire **manipuler** en conditions réelles, accompagner les premières utilisations, débloquer les points de friction (accès, filtres). |
+| **R — Reinforcement** (ancrage) | « Est-ce que ça dure ? » | **Ancrer** : rituels (le dashboard en comité mensuel), reconnaissance des utilisateurs, itérations sur le feedback, mesure de l'adoption. |
+
+> **Astuce — le diagnostic ADKAR.** Quand l'adoption cale, identifie **à quelle lettre ça bloque**. Personne ne l'ouvre alors que la formation a eu lieu ? Le blocage est souvent en **D (Desire)** : ils savent s'en servir mais n'en ont pas *envie*, faute d'avoir vu leur bénéfice. On perd un temps fou à re-former (K) alors que le problème est ailleurs.
+
+> ⚠️ **Piège classique — sauter directement au K.** Le réflexe technique, c'est de foncer sur la formation (Knowledge). Mais former quelqu'un qui n'a pas conscience de l'enjeu (A) ni l'envie (D), c'est arroser une graine sur du béton. **A et D d'abord, toujours.**
+
+### Un plan d'accompagnement opérationnel
+
+Accompagner l'adoption se **planifie** au même titre que le développement du dashboard. Voici les cinq leviers d'un plan solide.
+
+1. **Co-construction** — Le métier n'adopte bien que ce qu'il a **contribué à créer**. Organise 1 à 2 ateliers de co-conception : maquette papier ou capture d'écran commentée, choix des KPI validés ensemble, priorisation des écrans. L'utilisateur qui a choisi ses indicateurs ne dira jamais « ça ne me correspond pas ».
+2. **Formation des utilisateurs** — Sessions courtes, par **cas d'usage réel** (cf. section précédente), avec manipulation active. Prévois un niveau « prise en main » (tous) et éventuellement un niveau « avancé » (les power users).
+3. **Documentation & guide de lecture** — Au-delà de la doc utilisateur : un **guide de lecture** d'une page qui explique, écran par écran, « ce que cet écran te dit et la décision qu'il prépare ». Plus le dictionnaire des indicateurs (la vérité commune).
+4. **Réseau de champions** — Identifie 1 à 2 **relais** motivés parmi les utilisateurs (souvent les plus curieux ou les plus influents). Forme-les un cran au-dessus : ils deviennent le **support de proximité** et l'exemple qui entraîne les autres. Un pair convainc mieux qu'un expert externe. Choisis-les autant pour leur **influence** que pour leur enthousiasme : un directeur écouté de ses collègues qui adopte l'outil vaut dix arguments techniques. Donne-leur un rôle visible (démo en comité, réponses de premier niveau) et remercie-les publiquement — c'est ce qui les fidélise.
+5. **Boucle de feedback & itérations** — Ouvre un canal simple (mail, Teams, 15 min en fin de comité), collecte les retours, **priorise-les visiblement** et livre des améliorations régulières. Voir son retour pris en compte est le plus puissant moteur d'adoption : l'utilisateur devient co-propriétaire de l'outil.
+
+> **Le fil conducteur.** Co-construire (avant) → Former (au lancement) → Documenter (pour l'autonomie) → S'appuyer sur des champions (dans la durée) → Écouter et itérer (en continu). L'accompagnement n'est pas un événement, c'est un **processus**.
+
+### Mesurer l'adoption (sinon, tu pilotes à l'aveugle)
+
+« Est-ce que c'est adopté ? » ne se répond pas au ressenti. On le **mesure**. Un Data Analyst de niveau 3 instrumente l'adoption de son propre dashboard comme il instrumenterait n'importe quel sujet : avec des indicateurs.
+
+| Indicateur d'adoption | Ce qu'il mesure | Comment l'obtenir |
+|---|---|---|
+| **Taux d'usage** | % des utilisateurs cibles qui ont ouvert le dashboard sur la période. | Statistiques d'usage Power BI / Looker Studio (viewers uniques ÷ cibles). |
+| **Fréquence de consultation** | Nombre de consultations par semaine, régularité. | Logs / audit de l'outil BI. Une baisse est un signal d'alerte. |
+| **Profondeur d'usage** | Se limite-t-on à l'écran d'accueil ou explore-t-on filtres et détails ? | Pages/écrans les plus vus dans les stats d'usage. |
+| **Satisfaction** | Perception de l'utilité (« ça m'aide à décider »). | Mini-sondage 3 questions (échelle 1-5) à J+30 et J+90. |
+| **Décisions prises grâce au dashboard** | Le **vrai** indicateur de valeur : des décisions concrètes qu'il a permises. | Recensement qualitatif en comité (« quelles décisions cette vue a-t-elle éclairées ce mois-ci ? »). |
+
+> **Astuce — l'indicateur qui compte vraiment.** Le taux d'usage est facile à mesurer mais superficiel : on peut ouvrir un écran sans rien en faire. Le seul indicateur qui prouve la **valeur**, c'est le **nombre de décisions prises grâce au dashboard**. C'est aussi le plus difficile à mesurer — mais une seule bonne question en comité (« qu'avez-vous décidé grâce à cet écran ? ») suffit souvent à le tracer.
+
+> **Mesure un point de départ (baseline).** Pour montrer une progression, relève l'état **avant** le déploiement : combien de directeurs regardaient des chiffres pour décider ? À quelle fréquence ? Sans baseline, tu ne pourras jamais prouver l'impact de ton accompagnement — « 5/6 utilisateurs actifs » ne veut rien dire si tu ne peux pas le comparer au « 0/6 » du départ.
+
+### Exemple entièrement déroulé — NordRetail : faire adopter le dashboard ventes par 6 directeurs de magasin réticents
+
+**Le contexte.** Chez **NordRetail** (enseigne de prêt-à-porter, Hauts-de-France), tu viens de livrer le tableau de bord de ventes régional. Mais **6 des directeurs de magasin** sont ouvertement réticents : « on a toujours piloté au flair et ça marche », « c'est encore un truc de la direction pour nous surveiller », « moi, mon Excel me suffit ». Sans eux, le dashboard sera mort-né. La direction te confie une mission de **3 mois** : les rendre utilisateurs actifs. Tu construis ton plan sur ADKAR.
+
+**Mois 1 — Awareness & Desire (créer la conscience et l'envie).**
+
+- *Semaine 1 — réunion de lancement (Awareness).* 45 min avec les 6 directeurs. Tu **ne montres pas encore l'outil**. Tu poses le problème : « L'an dernier, 3 réassorts textile décidés trop tard nous ont coûté ~40 k€ de ventes manquées. On veut décider plus tôt. » Tu recadres l'intention : « Ce n'est pas un outil pour vous noter, c'est pour vous **donner des arguments** en comité et défendre votre magasin. »
+- *Semaine 2 — entretiens individuels (Desire).* 20 min avec chacun. Tu écoutes la vraie résistance de chacun (peur du contrôle pour l'un, attachement à Excel pour l'autre). Tu adaptes le discours à ce qui le motive *lui* : au directeur qui râle sur les commandes, tu montres l'écran « ruptures du week-end » ; à celui qui veut briller en comité, l'écran « mon magasin vs moyenne région ».
+- *Semaines 3-4 — ateliers de co-construction (Desire + amorce Knowledge).* 2 ateliers de 1 h 30. Tu projettes la maquette, ils **choisissent et renomment** certains KPI, réordonnent les écrans, ajoutent une vue « top/flop rayons » qu'ils réclament. **Résultat clé :** ils ne parlent plus de « ton dashboard » mais de « **notre** tableau de bord ». Tu repères 2 directeurs enthousiastes → tes futurs **champions**.
+
+**Mois 2 — Knowledge & Ability (former et rendre capable).**
+
+- *Semaine 5 — formation par cas d'usage (Knowledge).* Session de 45 min, en montrant des scénarios réels : « voici comment repérer tes 3 rayons en baisse avant le comité ». Chacun **manipule** sur son propre magasin. Tu distribues le **guide de lecture** (1 page/écran) et le **dictionnaire des indicateurs**.
+- *Semaine 6 — réconciliation des chiffres (traite la méfiance).* Tu prends **le** CA d'un magasin que son directeur connaît par cœur dans son Excel, et tu montres qu'il **correspond** à celui du dashboard (à l'euro près, même maille). Cette preuve publique dissout la résistance « je ne fais pas confiance à ces chiffres ».
+- *Semaines 7-8 — accompagnement des premières utilisations (Ability).* Tes 2 champions, formés un cran au-dessus, deviennent le **support de proximité**. Tu passes toi-même 10 min par magasin en visio pour débloquer les frictions (accès, filtres). Tu lances le **canal de feedback** (Teams) et livres une première mini-itération issue de leurs retours (un filtre « famille de produits » réclamé).
+
+**Mois 3 — Reinforcement (ancrer).**
+
+- *Semaine 9 — le dashboard entre dans le rituel.* La direction décide que **le comité mensuel s'ouvre désormais sur l'écran région du dashboard**. Le rituel force l'usage et légitime l'outil.
+- *Semaines 10-11 — reconnaissance & itération.* En comité, tu valorises publiquement les directeurs qui ont pris une décision grâce au dashboard (« Roubaix a anticipé le réassort enfant, +12 % sur le rayon »). L'exemple entraîne les hésitants. Tu livres une 2ᵉ itération.
+- *Semaine 12 — mesure de l'adoption sur 3 mois.* Tu présentes le bilan :
+
+| Indicateur | Départ | À 3 mois |
+|---|---|---|
+| Taux d'usage (directeurs actifs) | 0 / 6 | **5 / 6** (le 6ᵉ consulte via son adjoint) |
+| Fréquence de consultation | — | ~2 ouvertures/semaine par magasin |
+| Satisfaction (sondage 1-5) | — | **4,1 / 5** |
+| Décisions prises grâce au dashboard | 0 | **7 décisions** de réassort/promo tracées en comité |
+
+**Ce que cet exemple montre.** L'adoption ne s'est pas jouée sur la qualité technique du dashboard (livrée dès le départ), mais sur **le parcours humain** : d'abord le pourquoi et l'envie (A/D), puis le savoir-faire (K/A), enfin l'ancrage par le rituel et la reconnaissance (R). Le directeur récalcitrant qui parlait de « flicage » défend maintenant son magasin en comité avec **ses** chiffres.
+
+> ⚠️ **Les pièges de l'accompagnement (à graver).**
+> - **Livrer et disparaître.** Envoyer le lien du dashboard puis passer au projet suivant, c'est garantir l'oubli. L'accompagnement démarre *à* la livraison, il ne s'y arrête pas.
+> - **Imposer sans co-construire.** Un dashboard « descendu » d'en haut, sans que les utilisateurs aient choisi leurs KPI, sera vécu comme une contrainte — et boudé. Ce que le métier co-construit, il le défend.
+> - **Ignorer le feedback.** Collecter des retours puis n'en faire aucun cas est **pire** que ne rien demander : tu prouves que leur avis ne compte pas. Chaque retour doit être visiblement priorisé, même quand tu réponds « pas maintenant, mais noté ».
+
+---
+
 ## Exercices
 
 > Travaille de préférence sur le contexte fil rouge : une **enseigne de prêt-à-porter de 12 magasins dans les Hauts-de-France** dont les ventes textile stagnent.
@@ -343,6 +445,40 @@ Lors de la restitution, un responsable te demande : *« Pourquoi tu nous montres
 
 ---
 
+### Exercice 4bis — Bâtir un plan d'accompagnement ADKAR
+
+Le service **marketing** de NordRetail est réticent à adopter le nouveau dashboard « performance des campagnes promo » : « nos reportings PowerPoint mensuels nous vont très bien », « on n'a pas le temps d'apprendre un outil de plus ». Bâtis un **plan d'accompagnement structuré selon ADKAR** (une à deux actions concrètes par lettre, adaptées à ce service).
+
+<details>
+<summary>Voir un corrigé possible</summary>
+
+- **A — Awareness.** Réunion de lancement (30 min) : montrer qu'un reporting PowerPoint mensuel arrive **trop tard** pour arbitrer une campagne en cours ; poser l'enjeu (« on découvre les flops le mois d'après, on ne peut plus corriger »).
+- **D — Desire.** Entretiens courts : montrer le bénéfice pour *eux* — suivre une promo **en temps quasi réel** et réallouer le budget avant la fin de l'opération ; supprimer la corvée de fabrication manuelle du PowerPoint.
+- **K — Knowledge.** Formation 45 min par cas d'usage (« comment voir si la promo -30 % tient sa marge à mi-parcours ») + guide de lecture + dictionnaire des indicateurs (ROI campagne, marge, incrémentalité).
+- **A — Ability.** Faire manipuler chacun sur une vraie campagne en cours ; identifier 1 champion dans l'équipe ; débloquer les accès et les premiers filtres ; ouvrir un canal de questions.
+- **R — Reinforcement.** Le dashboard devient le support officiel du **point promo hebdomadaire** (remplace le PPT) ; valoriser une décision de réallocation prise grâce à l'outil ; livrer une itération issue des retours ; mesurer l'usage à J+30.
+
+*Critère de réussite :* traiter **A et D avant K** (ne pas foncer sur la formation) ; adapter chaque action au contexte marketing (remplacer le PPT, notion de temps réel), pas de généralités RH.
+</details>
+
+---
+
+### Exercice 4ter — Définir 3 indicateurs d'adoption
+
+Ta direction te demande : *« Comment saura-t-on, dans 3 mois, si le dashboard ventes est vraiment adopté par les 12 magasins ? »* Propose **3 indicateurs d'adoption** distincts, en précisant pour chacun : ce qu'il mesure, comment tu l'obtiens, et une cible chiffrée réaliste.
+
+<details>
+<summary>Voir un corrigé possible</summary>
+
+1. **Taux d'usage** — % des 12 responsables ayant ouvert le dashboard au moins une fois dans le mois. *Obtention :* statistiques d'usage Power BI (viewers uniques). *Cible :* ≥ 10/12 (≈ 83 %) à 3 mois.
+2. **Fréquence de consultation** — nombre moyen d'ouvertures par magasin et par semaine (mesure la régularité, pas juste l'ouverture initiale). *Obtention :* logs d'audit de l'outil BI. *Cible :* ≥ 1 ouverture/semaine/magasin, sans décrochage sur le 3ᵉ mois.
+3. **Décisions prises grâce au dashboard** — nombre de décisions commerciales (réassort, promo) explicitement fondées sur le dashboard. *Obtention :* recensement qualitatif en comité mensuel (« qu'avez-vous décidé grâce à cet écran ? »). *Cible :* ≥ 3 décisions tracées sur le trimestre.
+
+*Ce qu'on valorise :* au moins un indicateur d'usage **et** l'indicateur de **valeur** (décisions) ; des cibles chiffrées et réalistes ; ne pas confondre « ouvrir » et « utiliser pour décider ».
+</details>
+
+---
+
 ### Exercice 5 — Gérer un désaccord en restitution
 
 En plein comité, le directeur d'un magasin pointé en baisse réagit : *« Tes chiffres sont faux, mon magasin se porte très bien, tu racontes n'importe quoi. »* Rédige ta réponse (posture de conseil) et explique en une phrase ta stratégie.
@@ -371,7 +507,7 @@ En plein comité, le directeur d'un magasin pointé en baisse réagit : *« Tes 
 
 ---
 
-## Quiz (5 QCM)
+## Quiz (7 QCM)
 
 **Q1.** Quel élément est **indispensable** dans un cahier des charges pour se protéger du *scope creep* ?
 - A) Un diagramme de Gantt détaillé
@@ -403,6 +539,18 @@ En plein comité, le directeur d'un magasin pointé en baisse réagit : *« Tes 
 - C) Proposer de vérifier ensemble la source et le calcul, et rappeler l'objectif commun
 - D) Ignorer la remarque et continuer la présentation
 
+**Q6.** Dans le modèle **ADKAR**, personne n'ouvre le dashboard alors que la formation a bien eu lieu et que chacun sait s'en servir. À quelle étape ça bloque le plus probablement ?
+- A) Knowledge (le savoir) — il faut re-former
+- B) Desire (l'envie) — ils n'ont pas vu leur bénéfice à s'en servir
+- C) Ability (la capacité) — ils n'y arrivent pas techniquement
+- D) Reinforcement (l'ancrage) — il manque un rituel
+
+**Q7.** Parmi ces indicateurs d'adoption, lequel prouve le mieux la **valeur réelle** d'un tableau de bord ?
+- A) Le nombre de pages/écrans créés
+- B) Le taux d'usage (nombre de personnes qui l'ont ouvert)
+- C) Le nombre de décisions prises grâce au dashboard
+- D) Le temps passé à le développer
+
 <details>
 <summary>Voir les réponses</summary>
 
@@ -411,6 +559,8 @@ En plein comité, le directeur d'un magasin pointé en baisse réagit : *« Tes 
 3. **C** — En atelier, on parle besoin/décision/indicateur, jamais implémentation technique.
 4. **B** — Le format constat → cause probable → action → impact rend la reco exploitable ; une reco crédible n'offre jamais de garantie à 100 %.
 5. **C** — Posture de conseil : ramener au fait (source/calcul), transformer l'attaque en vérification commune, rappeler l'objectif collectif.
+6. **B** — Ils savent (K) et savent faire (A) mais n'en ont pas *envie* : le blocage est en **Desire**. Re-former (K) ne sert à rien ; il faut leur montrer leur bénéfice concret.
+7. **C** — Le taux d'usage est utile mais superficiel (on peut ouvrir sans agir). Le **nombre de décisions prises grâce au dashboard** est le seul qui prouve la valeur.
 </details>
 
 ---

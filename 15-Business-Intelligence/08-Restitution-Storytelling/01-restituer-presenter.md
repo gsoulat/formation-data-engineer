@@ -186,6 +186,140 @@ La restitution ne s'arrête pas à ton dernier mot. Le moment des questions est 
 
 ---
 
+## Approfondissement — data storytelling (niveau 3)
+
+Jusqu'ici tu sais structurer un message (contexte → analyse → reco), adapter ton discours et rendre tes visuels accessibles. On passe maintenant au **niveau supérieur** : construire une narration qui **accroche dès la première phrase**, tient en tension jusqu'à la recommandation, et résiste aux questions. C'est ce qui sépare un analyste « qui montre des chiffres » d'un analyste « qu'on écoute et qu'on suit ».
+
+### Deux structures narratives à maîtriser
+
+Le schéma contexte → analyse → reco est le squelette. Deux structures éprouvées le musclent : **SCQA** et la **pyramide de Minto**. Elles viennent du conseil en stratégie (McKinsey, BCG) et servent exactement à faire décider des dirigeants pressés.
+
+#### SCQA — Situation, Complication, Question, Réponse
+
+C'est une structure de récit. Elle crée une **tension dramatique** qui rend l'auditoire attentif : on part d'un monde stable, quelque chose se casse, on formule le problème, on apporte la solution.
+
+| Lettre | Rôle | Ce que tu dis | Exemple NordRetail |
+|---|---|---|---|
+| **S — Situation** | Le décor stable, ce que tout le monde admet | Un fait connu, non polémique | « NordRetail réalise 40 % de son CA sur le e-commerce, en croissance continue depuis 3 ans. » |
+| **C — Complication** | Ce qui se casse, le grain de sable | Le fait qui dérange, qui crée l'urgence | « Or au 3ᵉ trimestre, le CA e-commerce a reculé de 12 % — une première depuis le lancement. » |
+| **Q — Question** | La question que tout le monde se pose | Formulée à voix haute, elle focalise | « Pourquoi cette baisse, et comment l'enrayer avant les fêtes ? » |
+| **R — Réponse** | Ton analyse + ta recommandation | Le cœur de ta valeur | « L'analyse pointe le tunnel de paiement mobile ; une correction ciblée peut récupérer 8 % dès novembre. » |
+
+> **Pourquoi ça marche** : le cerveau humain retient des **histoires**, pas des tableaux. La Complication crée une tension ; ton auditoire *veut* la Réponse. Tu n'as plus besoin de « capter l'attention » : elle est captée par la structure elle-même.
+
+#### La pyramide de Minto — le message clé d'abord
+
+Barbara Minto (McKinsey) a formalisé un principe : **commence par la conclusion**, puis descends vers les arguments, puis vers les données de détail. L'inverse de la thèse universitaire (qui garde la conclusion pour la fin).
+
+```
+                    ┌─────────────────────────────┐
+                    │   MESSAGE CLÉ (la reco)      │   ← ce que tu dis en 1re phrase
+                    └─────────────────────────────┘
+                       │            │           │
+              ┌────────┘       ┌────┘      └────────┐
+        Argument 1        Argument 2          Argument 3      ← 3 raisons max
+              │                 │                   │
+        données/faits     données/faits       données/faits   ← le détail, en support
+```
+
+**Le principe opérationnel qui en découle** :
+
+> **Une slide = un message. Et le titre EST la conclusion de la slide.**
+
+Si le titre de ta slide est « Ventes par canal », c'est un *sujet*, pas un message : tu forces l'auditoire à trouver lui-même la conclusion (et il trouvera peut-être la mauvaise). Écris « Le mobile porte 90 % de la baisse e-commerce » : le message est délivré avant même que l'œil ait lu le graphique. La pyramide de Minto appliquée à un deck, c'est simplement : **on doit pouvoir lire uniquement les titres et reconstituer toute la démonstration.**
+
+> **SCQA ou Minto, lequel choisir ?** Les deux se combinent. SCQA structure ton **oral** (l'accroche, la tension, la chute). Minto structure ton **deck** (message d'abord, titres-conclusions). En pratique : ton intro suit SCQA, chacune de tes slides suit Minto.
+
+### Le réflexe « So what ? » poussé à trois niveaux
+
+Tu as vu l'astuce du « So what ? » plus haut. Au niveau 3, tu l'appliques **systématiquement à chaque visuel**, et tu le fais descendre en trois marches. Un chiffre seul ne décide de rien ; c'est l'escalier du chiffre vers l'action qui a de la valeur.
+
+| Marche | Question | Exemple NordRetail |
+|---|---|---|
+| **1. Le chiffre** | Qu'est-ce que je vois ? | « Le taux d'abandon panier mobile est passé de 68 % à 79 %. » |
+| **2. L'insight** | Et alors ? Qu'est-ce que ça veut dire ? | « Un client mobile sur cinq de plus renonce à l'achat au dernier moment. » |
+| **3. La recommandation** | Donc, on fait quoi ? | « Il faut auditer et simplifier le tunnel de paiement mobile avant les fêtes. » |
+
+**La règle** : chaque visuel de ta présentation doit pouvoir monter les trois marches. Si tu montres un graphique et que tu ne sais dire *que* la marche 1 (« voilà le chiffre »), retire-le ou trouve son insight. Un visuel sans « donc » n'a rien à faire dans une restitution de décision.
+
+> **Le test des 3 marches, à voix haute** : pour chaque slide, dis « Je vois… donc… donc on… ». Si tu bloques sur un « donc », ta slide n'est pas mûre.
+
+### Exemple entièrement déroulé — de 3 constats bruts à un pitch de 3 minutes
+
+Voici le cœur du niveau 3 : **transformer des constats bruts en une restitution qui fait décider.** On part de ce que l'analyse t'a livré (le matériau brut), et on construit un pitch SCQA de 3 minutes pour le COMEX de NordRetail, slide par slide.
+
+**Les 3 constats bruts issus de ton analyse (le point de départ, non présentable tel quel) :**
+
+1. Le CA e-commerce a baissé de 12 % au T3 2026 vs T3 2025.
+2. Le magasin de Roubaix sur-performe : +9 % de CA quand la moyenne réseau stagne.
+3. La marge du rayon textile s'érode : elle passe de 34 % à 28 % en un an.
+
+Ces trois faits sont vrais mais **désordonnés** : un COMEX ne saurait pas quoi en faire. On les met en récit.
+
+#### Étape 1 — Trouver le fil et le message clé (Minto)
+
+Le message clé (la pointe de la pyramide) : **« NordRetail a un problème de rentabilité en ligne, mais un modèle qui gagne en magasin — capitalisons sur ce qui marche. »** Les trois constats deviennent trois arguments qui soutiennent ce message. On formule alors chaque titre comme une **conclusion**.
+
+#### Étape 2 — Le pitch SCQA de 3 minutes, slide par slide
+
+> **Slide 1 (titre-conclusion)** — « E-commerce : première baisse de CA en 3 ans (−12 % au T3) »
+> **(Situation, 20 s)** « Depuis trois ans, le e-commerce est notre moteur de croissance : +40 % du chiffre d'affaires, une courbe qui n'avait jamais fléchi. »
+> **(Complication, 25 s)** « Ce trimestre, cette courbe se casse : −12 % sur le e-commerce au T3, la première baisse depuis le lancement. Sur un trimestre, c'est environ 600 000 € de CA en moins. »
+> *Visuel : une courbe unique, la chute du T3 mise en couleur d'accent, le reste en gris.*
+
+> **Slide 2 (titre-conclusion)** — « Pendant ce temps, le magasin physique tient : Roubaix fait +9 % »
+> **(Question, 20 s)** « La vraie question du COMEX est donc double : pourquoi le en-ligne décroche, et où sont nos relais de croissance ? »
+> **(Début de Réponse, 30 s)** « Premier signal positif : le magasin physique ne baisse pas. Roubaix sur-performe de 9 % quand le réseau stagne. Le trafic en boutique est là ; ce qui décroche, c'est spécifiquement le tunnel digital. »
+> *Visuel : barres horizontales des magasins, Roubaix en accent, valeurs en % à droite.*
+
+> **Slide 3 (titre-conclusion)** — « L'alerte de fond : la marge textile s'érode de 6 points (34 % → 28 %) »
+> **(Réponse — approfondissement, 30 s)** « Deuxième signal, plus préoccupant que le CA lui-même : notre marge textile fond, de 34 % à 28 % en un an. On vend, mais on gagne moins sur chaque vente. Combiné à la baisse e-commerce, c'est la rentabilité globale qui est menacée à l'approche des fêtes. »
+> *Visuel : une jauge ou une courbe de marge, la zone sous le seuil de rentabilité cible hachurée.*
+
+> **Slide 4 (titre-conclusion)** — « Recommandation : réparer le tunnel mobile et répliquer le modèle Roubaix »
+> **(Réponse — la reco, 35 s)** « Trois actions, par ordre d'impact et de coût. Un : auditer le tunnel de paiement mobile sous 15 jours — c'est la piste la plus probable de la baisse e-commerce, correction à faible coût. Deux : documenter ce que fait Roubaix et le tester sur deux autres magasins. Trois : ouvrir un chantier marge textile avec les achats. Budget d'amorçage : 12 000 €, décision attendue avant fin octobre pour un effet sur les fêtes. Une réserve d'honnêteté : le lien tunnel mobile / baisse est une hypothèse forte que l'audit doit confirmer. »
+> *Visuel : 3 actions en lignes, chacune avec impact estimé, coût et délai.*
+
+> **Le test « titres seuls »** : lis uniquement les 4 titres.
+> *« E-commerce en baisse → mais le magasin physique tient → alerte de fond sur la marge → voici le plan. »*
+> L'histoire se tient sans un seul mot de commentaire. C'est le signe que ton deck est prêt.
+
+**Ce que cet exemple illustre** : on n'a **rien inventé** — les trois chiffres sont ceux de l'analyse. On a seulement **ordonné** (Minto), **mis en tension** (SCQA), transformé chaque titre en conclusion, et fait monter chaque visuel les 3 marches du « So what ? ». Le COMEX repart avec **une décision**, pas avec trois chiffres.
+
+### Adapter au public — le même pitch, trois versions
+
+Le pitch ci-dessus est calibré COMEX. La même analyse se re-découpe pour d'autres publics. Complète le tableau « Direction / Métier / Technique » vu plus haut par ces réflexes de niveau 3 :
+
+| Critère | **COMEX / Direction** | **Opérationnel** (resp. e-commerce, chef de rayon) | **Technique** (data, DSI) |
+|---|---|---|---|
+| Ce qu'ils veulent entendre | « Qu'est-ce que ça coûte / rapporte, et je décide quoi ? » | « Concrètement, qu'est-ce que je change lundi matin ? » | « Est-ce fiable, reproductible, quelles limites ? » |
+| Niveau de détail | 1 message, 3 chiffres max, la reco en tête | Le « pourquoi » et le « comment » terrain, par périmètre | Sources, méthode, hypothèses, p-values, biais |
+| Vocabulaire | Business : €, %, marge, ROI. Zéro jargon data | Métier : panier, tunnel, rayon, trafic | Data : join, imputation, intervalle de confiance |
+| Durée idéale | 3 à 5 min + questions | 15-20 min, interactif, sur leur périmètre | Aussi long qu'il faut, documenté à l'écrit |
+| Support | 4-5 slides, titres-conclusions | Dashboard filtrable par magasin/rayon | Notebook, doc technique, requêtes versionnées |
+| Piège à éviter | Les noyer sous le détail → ils décrochent | Rester trop macro → « et moi je fais quoi ? » | Sur-simplifier → ils doutent de ta rigueur |
+
+> **La règle de niveau 3** : ce n'est pas *un* pitch qu'on prépare, c'est **une histoire qu'on sait raconter à trois altitudes**. Le COMEX valide l'orientation, l'opérationnel exécute, la technique garantit la solidité. Même vérité, trois zooms.
+
+> **⚠️ Encadré — Les pièges de restitution (et comment s'en sortir)**
+>
+> Les cinq pièges vus dans le Contenu (surcharge, rouge/vert seul, faux expert, jargon, graphique trompeur) restent valables. À l'oral de restitution, quatre pièges de plus te guettent :
+>
+> - **Noyer sous les chiffres.** Balancer 15 KPI « pour être complet ». Résultat : aucun ne reste. → **Choisis 3 chiffres**, un par argument. Le reste va en annexe (back-up).
+> - **Le jargon réflexe.** « J'ai fait un left join après imputation médiane des NaN. » → Traduis : « J'ai croisé les ventes et les paniers, en corrigeant les données manquantes. »
+> - **Pas de recommandation.** Finir sur « voilà, les chiffres sont là ». Le COMEX attend un *donc*. → Termine **toujours** par une action, un coût, un délai.
+> - **Lire ses slides.** Tourner le dos à la salle et réciter la slide mot à mot. → La slide est ton **appui visuel**, pas ton script. Tu regardes la salle, la slide dit une chose, toi tu la développes.
+>
+> **Gérer les questions difficiles et défendre tes choix** :
+> - **« Ton chiffre me paraît faux. »** → Reste factuel : « Voici la source (table `ventes`, hors retours) et la période. Si vous avez un autre chiffre, comparons les périmètres. » Tu ne défends pas ton ego, tu défends une **méthode traçable**.
+> - **« Pourquoi ce graphique / ce découpage et pas un autre ? »** → Assume ton choix par son *objectif* : « J'ai trié les magasins en barres pour rendre l'écart lisible ; un camembert à 9 parts aurait masqué le message. » Un choix justifié par l'intention passe toujours.
+> - **« Es-tu certain que c'est le concurrent / le tunnel mobile ? »** → Distingue **fait** et **hypothèse** : « Le fait, c'est la baisse. L'hypothèse la plus probable, c'est le tunnel — l'audit à 15 jours la confirmera ou l'infirmera. » Ne transforme jamais une corrélation en certitude sous la pression.
+> - **La question piège qui sort du périmètre.** → « Excellente question, elle dépasse le cadre de cette analyse ; je note et je reviens vers vous. » Tu ne te laisses pas entraîner à improviser sur des données que tu n'as pas.
+>
+> **Principe général** : une question n'est pas une attaque, c'est de **l'intérêt**. Reformule, réponds court, appuie-toi sur ta source, et distingue toujours ce que tu sais de ce que tu supposes.
+
+---
+
 ## Exercices
 
 ### Exercice 1 — Transformer une analyse en pitch de 3 minutes
@@ -258,6 +392,69 @@ La restitution ne s'arrête pas à ton dernier mot. Le moment des questions est 
 
 ---
 
+### Exercice 3 — Écrire les titres-conclusions de 4 slides
+
+**Contexte (retail Nord).** Tu prépares un deck pour le COMEX de NordRetail. Ton analyse a produit ces quatre constats bruts. Chaque constat deviendra **une slide**. On te donne les *sujets* ; à toi d'écrire les **titres-conclusions** (message d'abord, façon Minto), de sorte que la lecture des 4 titres seuls raconte une histoire cohérente.
+
+1. Sujet « Évolution du trafic en magasin » — donnée : le trafic piéton est stable (+1 %) sur l'année.
+2. Sujet « Panier moyen en ligne » — donnée : le panier moyen e-commerce baisse de 18 € à 15 € (−17 %).
+3. Sujet « Taux de retour produits » — donnée : le taux de retour du textile femme passe de 8 % à 14 %.
+4. Sujet « Actions proposées » — données des 3 slides précédentes.
+
+**Ta mission.** Réécris chaque sujet en un **titre-conclusion** (une phrase, le message, pas le thème). Puis vérifie le **test des titres seuls** : mis bout à bout, racontent-ils une histoire ?
+
+<details>
+<summary>Voir le corrigé</summary>
+
+**Titres-conclusions possibles :**
+
+1. « Le trafic magasin est solide (+1 %) : le problème n'est pas la fréquentation »
+2. « Mais en ligne, le panier moyen fond de 17 % (18 € → 15 €) »
+3. « Cause probable : 1 achat textile femme sur 7 est retourné (retours +6 pts) »
+4. « Recommandation : fiabiliser les fiches produit textile pour réduire les retours »
+
+**Test des titres seuls :**
+*« Le trafic est bon → mais le panier en ligne baisse → parce que les retours textile explosent → donc fiabilisons les fiches produit. »*
+L'histoire se tient : chaque titre est une **conclusion**, pas un sujet, et l'enchaînement est causal (constat → constat → cause → action).
+
+**Ce qui est évalué :** chaque titre porte un *message* et non un thème ; les chiffres clés sont dans le titre ; le dernier titre est une **recommandation actionnable** ; le fil des 4 titres est cohérent et se lit seul.
+
+</details>
+
+---
+
+### Exercice 4 — Préparer un pitch 3 min structuré en SCQA
+
+**Contexte (retail Nord).** La direction de NordRetail te demande un point de 3 minutes sur la **fidélité client**. Ton analyse a livré :
+
+- La carte de fidélité représente 60 % du CA, chiffre stable depuis 2 ans.
+- Le taux de ré-achat des porteurs de carte a chuté de 45 % à 33 % en 12 mois.
+- Les clients qui utilisent l'appli mobile ré-achètent 2× plus que les autres.
+- Seuls 20 % des porteurs de carte ont installé l'appli.
+
+**Ta mission.** Rédige le **script d'un pitch de 3 minutes structuré en SCQA** (Situation, Complication, Question, Réponse). Termine par une recommandation chiffrée et actionnable, et signale une limite s'il y en a une.
+
+<details>
+<summary>Voir le corrigé</summary>
+
+**Script SCQA (≈ 3 min, ton direction) :**
+
+> **(Situation — 25 s)** « La fidélité est le socle de NordRetail : la carte pèse 60 % de notre chiffre d'affaires, un niveau stable depuis deux ans. Nos meilleurs clients sont fidèles, et c'est notre force. »
+>
+> **(Complication — 30 s)** « Mais un signal faible devient un signal fort : le taux de ré-achat des porteurs de carte a chuté de 45 % à 33 % en un an. Autrement dit, nos clients fidèles reviennent de moins en moins. Sur la durée, c'est le socle lui-même qui s'effrite. »
+>
+> **(Question — 15 s)** « La question est donc : qu'est-ce qui retient un porteur de carte, et comment le réactiver avant qu'il ne parte chez un concurrent ? »
+>
+> **(Réponse — 1 min 30)** « L'analyse donne un levier net : les clients qui utilisent notre appli mobile ré-achètent deux fois plus que les autres. Or seulement 20 % des porteurs de carte l'ont installée. Il y a donc un réservoir de fidélité inexploité chez les 80 % restants. Je recommande une campagne d'incitation à installer l'appli — un avantage fidélité réservé à l'appli — ciblée sur les porteurs de carte inactifs. Budget estimé : 8 000 €, sur un test de 8 semaines, avec mesure du ré-achat avant/après sur le groupe ciblé. Une réserve d'honnêteté : le lien appli / ré-achat est une corrélation forte, pas une preuve de causalité — le test le confirmera. »
+
+**Vérification SCQA :** on part d'un acquis rassurant (S), on montre ce qui se casse (C), on formule le problème à voix haute (Q), on répond par analyse + reco chiffrée (R). La tension Complication → Réponse maintient l'attention.
+
+**Ce qui est évalué :** structure SCQA respectée et identifiable ; Complication réellement « qui dérange » ; recommandation actionnable, chiffrée et mesurable ; distinction corrélation/causalité ; zéro jargon, durée réaliste.
+
+</details>
+
+---
+
 ## Vidéos d'auto-formation
 
 > Les liens directs ci-dessous ont été vérifiés. Pour les sujets sans vidéo unique de référence, un **lien de recherche YouTube** est fourni : choisis la vidéo récente la mieux notée.
@@ -272,7 +469,7 @@ La restitution ne s'arrête pas à ton dernier mot. Le moment des questions est 
 
 ---
 
-## Quiz — 5 QCM
+## Quiz — 7 QCM
 
 **Q1.** Dans quel ordre structure-t-on un message data ?
 - A) Recommandation → contexte → analyse
@@ -304,6 +501,18 @@ La restitution ne s'arrête pas à ton dernier mot. Le moment des questions est 
 - C) Tu dis que tu ne sais pas et que tu reviendras avec l'information
 - D) Tu renvoies la question à quelqu'un d'autre dans la salle
 
+**Q6.** Dans la structure narrative **SCQA**, à quoi sert la « **C** » (Complication) ?
+- A) À conclure la présentation par une recommandation
+- B) À rappeler la méthode et les sources de données
+- C) À introduire le fait qui dérange et crée la tension / l'urgence
+- D) À poser le décor stable que tout le monde admet
+
+**Q7.** Selon la **pyramide de Minto**, comment doit être écrit le **titre** d'une slide ?
+- A) Comme un sujet neutre (ex. « Ventes par canal »)
+- B) Comme la conclusion / le message de la slide (ex. « Le mobile porte 90 % de la baisse »)
+- C) Comme une question ouverte laissée à l'auditoire
+- D) Comme la description de la méthode utilisée pour produire le graphique
+
 <details>
 <summary>Voir les réponses</summary>
 
@@ -312,6 +521,8 @@ La restitution ne s'arrête pas à ton dernier mot. Le moment des questions est 
 - **Q3 : C.** 4,5:1 pour le texte normal (3:1 pour le gros texte et les éléments graphiques).
 - **Q4 : B.** La deutéranopie (rouge/vert) est la forme la plus courante de daltonisme. Toujours ajouter un second signal (texte, forme, icône).
 - **Q5 : C.** L'honnêteté préserve ta crédibilité. « Je ne sais pas, je vérifie » est une réponse professionnelle.
+- **Q6 : C.** La Complication est le grain de sable : le fait qui se casse par rapport à la Situation. C'est elle qui crée la tension et rend l'auditoire attentif à ta Réponse. (D décrit la Situation, A décrit la Réponse.)
+- **Q7 : B.** Le titre porte le message, pas le thème. On doit pouvoir lire uniquement les titres et reconstituer toute la démonstration : le titre EST la conclusion de la slide.
 
 </details>
 
