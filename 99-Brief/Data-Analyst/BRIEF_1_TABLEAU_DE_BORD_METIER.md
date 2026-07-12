@@ -30,7 +30,7 @@ En binôme, vous incarnez une cellule data missionnée par une enseigne de vente
 
 **L'entreprise et son problème**
 
-« NordGift » est une enseigne de vente en ligne basée à Roubaix (Hauts-de-France), spécialisée dans les objets cadeaux et la décoration, qui vend à la fois à des particuliers et à des revendeurs (clientèle grossiste). L'activité a fortement grandi mais le pilotage commercial est resté artisanal : chaque chargé de comptes tient son propre fichier Excel, les chiffres ne sont jamais consolidés de la même façon, et la direction attend chaque mois un reporting qui prend deux jours à fabriquer à la main. Résultat : personne ne sait dire en réunion quels produits tirent réellement le chiffre d'affaires, quels mois décrochent, ni quel poids prennent les retours et les annulations. Les décisions se prennent « au feeling ».
+« NordRetail » est une enseigne de distribution des Hauts-de-France : six magasins (Lille, Roubaix, Tourcoing, Dunkerque, Valenciennes, Amiens) et un canal e-commerce, sur plusieurs catégories de produits. L'activité a fortement grandi mais le pilotage commercial est resté artisanal : chaque responsable tient son propre fichier Excel, les chiffres ne sont jamais consolidés de la même façon, et la direction attend chaque mois un reporting qui prend deux jours à fabriquer à la main. Résultat : personne ne sait dire en réunion quels produits tirent réellement le chiffre d'affaires, quels magasins ou canaux décrochent, ni quel poids prennent les retours. Les décisions se prennent « au feeling ».
 
 La direction commerciale vous mandate, en binôme, comme cellule data. Votre mission : remplacer ce suivi manuel par un monitorage fiable, visuel et reproductible de l'activité commerciale, restitué dans un tableau de bord BI lisible « en 30 secondes » par un décideur non technique.
 
@@ -41,16 +41,15 @@ Une seule question doit guider tout votre travail, de l'extraction à la restitu
 
 À chaque étape, demandez-vous si ce que vous produisez aide à répondre à cette question. Tout ce qui n'y répond pas est hors périmètre pour cette phase.
 
-**La source de données (réelle)**
+**La source de données (fournie)**
 
-Vous travaillez sur le jeu de données public « Online Retail » de l'UCI Machine Learning Repository : les transactions réelles d'un détaillant en ligne britannique entre le 01/12/2010 et le 09/12/2011.
-- URL : https://archive.ics.uci.edu/dataset/352/online+retail
-- Format : un fichier Excel (Online Retail.xlsx), environ 22 Mo.
-- Volume : environ 541 909 lignes de transactions.
-- Licence : Creative Commons Attribution 4.0.
-- Colonnes : InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country.
+Vous travaillez sur le jeu de données **NordRetail** fourni dans le dossier [`data/`](data/) de ce brief (univers fictif mais réaliste, 100 % reproductible, aucune donnée personnelle réelle). Vous partez de la version **brute** des ventes :
+- Fichier : `data/ventes_sales.csv` (version « sale » des ventes ; la version propre `data/ventes_magasins.csv` peut servir de contrôle).
+- Volume : ~12 000 ventes sur 2023-2024, chiffre d'affaires ~14,4 M€.
+- Colonnes : `date, ville, type, categorie, produit, quantite, prix_unitaire, remise, montant, marge, client_id`.
+- **Aucun téléchargement** : les fichiers sont déjà dans `data/` (voir `data/README.md`).
 
-Ce jeu contient quelques imperfections simples qu'il faudra repérer puis traiter avec un nettoyage léger : factures d'annulation (InvoiceNo commençant par « C ») et quantités négatives correspondant à des retours (à filtrer pour le calcul du CA), lignes sans CustomerID, prix unitaires nuls ou négatifs, descriptions manquantes, et éventuels doublons de lignes. Le traitement attendu se limite à du filtrage, à la suppression de doublons, à la gestion basique des valeurs manquantes et à des conversions de types/formats simples avec pandas (ou en SQL). Le montant d'une ligne se calcule par Quantity multiplié par UnitPrice.
+Ce fichier contient quelques imperfections simples qu'il faudra repérer puis traiter avec un nettoyage léger : **retours** (montants ou quantités négatifs, à filtrer pour le calcul du CA), lignes sans `client_id`, casse incohérente des villes (`LILLE` / `roubaix` / `Valencienne`), formats de date mélangés, décimales à virgule, prix ou remises aberrants, et doublons de lignes. Le traitement attendu se limite à du filtrage, à la suppression de doublons, à la gestion basique des valeurs manquantes et à des conversions de types/formats simples avec pandas (ou en SQL). Le montant d'une ligne est fourni (`montant`) ; vous pouvez le recontrôler à partir de `quantite`, `prix_unitaire` et `remise`.
 
 Le nettoyage attendu reste léger (valeurs manquantes, doublons, types/formats simples) ; le nettoyage avancé (imputation sophistiquée, détection statistique d'anomalies, stratégies de traitement complexes) sera vu en Phase 3.
 
@@ -64,21 +63,21 @@ Projet en BINÔME, sur environ une semaine (cinq jours). Le travail se fait sur 
 
 ### Phase 1 — Cadrage et exploration, SANS CODE (J1)
 
-On ne produit aucune ligne de code ce jour-là. Vous commencez par reformuler le besoin de la direction et la question centrale avec vos propres mots, comme si vous restituiez un entretien de recueil de besoin : qui consulte le tableau de bord, pour décider de quoi, à quelle fréquence ? Téléchargez le fichier et explorez-le « à la main » (Excel ou un aperçu rapide) pour comprendre ce que représente une ligne. Que signifie une facture qui commence par « C » ? Pourquoi certaines quantités sont-elles négatives ? Que faire des lignes sans CustomerID ? Documentez chaque colonne, son type, et les anomalies repérées dans une fiche source.
+On ne produit aucune ligne de code ce jour-là. Vous commencez par reformuler le besoin de la direction et la question centrale avec vos propres mots, comme si vous restituiez un entretien de recueil de besoin : qui consulte le tableau de bord, pour décider de quoi, à quelle fréquence ? Ouvrez le fichier fourni `data/ventes_sales.csv` et explorez-le « à la main » (tableur ou aperçu pandas) pour comprendre ce que représente une ligne. Que signifient les montants ou quantités négatifs (des retours) ? Pourquoi une même ville est-elle parfois écrite `LILLE`, `roubaix`, `Valencienne` ? Que faire des lignes sans `client_id` ? Documentez chaque colonne, son type, et les anomalies repérées dans une fiche source.
 
-C'est aussi le moment de choisir vos indicateurs clés AVANT de coder. Quels trois à six KPI répondent réellement à la question centrale (par exemple chiffre d'affaires total, panier moyen, nombre de commandes, taux de retour, top produits, répartition par pays) ? Pour chaque KPI, écrivez sa définition : sa formule exacte, sa granularité, son éventuelle cible. Maquettez enfin votre tableau de bord sur papier ou sur un outil de croquis : quelle information en haut pour le décideur, quel détail en dessous ? Quel graphique pour quelle intention ? Finalisez la phase par un petit plan de travail (qui fait quoi, dans quel ordre).
+C'est aussi le moment de choisir vos indicateurs clés AVANT de coder. Quels trois à six KPI répondent réellement à la question centrale (par exemple chiffre d'affaires total, panier moyen, nombre de commandes, taux de retour, top produits, répartition par ville ou par canal) ? Pour chaque KPI, écrivez sa définition : sa formule exacte, sa granularité, son éventuelle cible. Maquettez enfin votre tableau de bord sur papier ou sur un outil de croquis : quelle information en haut pour le décideur, quel détail en dessous ? Quel graphique pour quelle intention ? Finalisez la phase par un petit plan de travail (qui fait quoi, dans quel ordre).
 
 ### Phase 2 — Extraction et nettoyage des données (J2)
 
-Vous passez au code. Chargez le fichier dans une base SQL (SQLite suffit) et/ou dans un DataFrame pandas. En vous appuyant sur les exemples fournis, écrivez des requêtes d'extraction ciblées : agrégations par mois, par produit, par pays. Le nettoyage reste léger et se fait avec les outils déjà vus (pandas / SQL de base) : filtrer les annulations et les retours du calcul du chiffre d'affaires, écarter les lignes manifestement invalides (prix nul ou négatif), supprimer les doublons, gérer simplement les valeurs manquantes (suppression ou marquage, sans imputation sophistiquée) et corriger les types/formats simples (dates, montants). Comment vérifiez-vous que vos totaux sont justes (contrôle de cohérence, comptage des lignes écartées) ? Documentez les règles de nettoyage que vous appliquez et le volume de données concerné. À la fin de la phase, vous disposez d'un jeu de données propre, exportable en CSV, et de vos scripts versionnés. (Le nettoyage avancé sera abordé en Phase 3.)
+Vous passez au code. Chargez le fichier dans une base SQL (SQLite suffit) et/ou dans un DataFrame pandas. En vous appuyant sur les exemples fournis, écrivez des requêtes d'extraction ciblées : agrégations par mois, par produit ou catégorie, par ville et par canal (`type`). Le nettoyage reste léger et se fait avec les outils déjà vus (pandas / SQL de base) : filtrer les retours (montants ou quantités négatifs) du calcul du chiffre d'affaires, écarter les lignes manifestement invalides (prix nul ou négatif), supprimer les doublons, gérer simplement les valeurs manquantes (suppression ou marquage, sans imputation sophistiquée) et corriger les types/formats simples (dates, montants). Comment vérifiez-vous que vos totaux sont justes (contrôle de cohérence, comptage des lignes écartées) ? Documentez les règles de nettoyage que vous appliquez et le volume de données concerné. À la fin de la phase, vous disposez d'un jeu de données propre, exportable en CSV, et de vos scripts versionnés. (Le nettoyage avancé sera abordé en Phase 3.)
 
 ### Phase 3 — Analyse exploratoire et tendances (J3)
 
-Menez l'EDA sur les données nettoyées. Calculez les statistiques descriptives pertinentes : tendance centrale (moyenne, médiane du panier), dispersion (écart-type, IQR), distribution des montants. La moyenne ou la médiane décrit-elle mieux le panier typique, et pourquoi ? Visualisez l'évolution mensuelle du chiffre d'affaires : voyez-vous une saisonnalité, un pic de fin d'année, une rupture ? Comparez les pays, identifiez les produits qui concentrent les ventes. Attention à ne pas confondre corrélation et causalité dans vos interprétations. Notez au fil de l'eau les constats qui parlent au métier : ce sont eux qui nourriront la note d'analyse.
+Menez l'EDA sur les données nettoyées. Calculez les statistiques descriptives pertinentes : tendance centrale (moyenne, médiane du panier), dispersion (écart-type, IQR), distribution des montants. La moyenne ou la médiane décrit-elle mieux le panier typique, et pourquoi ? Visualisez l'évolution mensuelle du chiffre d'affaires : voyez-vous une saisonnalité, un pic de fin d'année, une rupture ? Comparez les villes et les canaux (magasin vs e-commerce), identifiez les produits et catégories qui concentrent les ventes. Attention à ne pas confondre corrélation et causalité dans vos interprétations. Notez au fil de l'eau les constats qui parlent au métier : ce sont eux qui nourriront la note d'analyse.
 
 ### Phase 4 — Construction du tableau de bord BI (J4)
 
-Construisez le tableau de bord dans Power BI ou Looker Studio, en partant de votre maquette du J1 et en adaptant le modèle de données et les indicateurs au contexte. Le décideur doit comprendre la situation en quelques secondes : KPI principaux en évidence (cartes), puis évolution dans le temps (courbe), comparaisons (barres), répartition géographique. Chaque graphique sert-il l'intention de lecture ? Vos titres sont-ils explicites, vos couleurs accessibles, vos axes honnêtes (pas tronqués) ? Ajoutez au moins un élément d'interactivité (filtre par période ou par pays). Reliez chaque visuel à un KPI défini en phase 1.
+Construisez le tableau de bord dans Power BI ou Looker Studio, en partant de votre maquette du J1 et en adaptant le modèle de données et les indicateurs au contexte. Le décideur doit comprendre la situation en quelques secondes : KPI principaux en évidence (cartes), puis évolution dans le temps (courbe), comparaisons (barres), répartition géographique par ville. Chaque graphique sert-il l'intention de lecture ? Vos titres sont-ils explicites, vos couleurs accessibles, vos axes honnêtes (pas tronqués) ? Ajoutez au moins un élément d'interactivité (filtre par période, par ville ou par canal). Reliez chaque visuel à un KPI défini en phase 1.
 
 ### Phase 5 — Analyse, restitution et présentation (J5)
 
@@ -94,13 +93,13 @@ L'évaluation se fait en binôme, sous deux formes complémentaires et pondéré
 
 Les deux membres du binôme doivent pouvoir expliquer n'importe quelle partie du travail ; une question peut être adressée individuellement.
 
-**Clause de validation partielle** : un binôme dont le tableau de bord n'est pas totalement abouti en démonstration, mais dont les scripts d'extraction et d'analyse sont structurés, justes et documentés, peut valider partiellement les compétences C4, C5 et C6. À l'inverse, un tableau de bord soigné mais bâti sur des chiffres faux (annulations non exclues, retours comptés en CA) ne valide pas C16 et C18. Les compétences sont évaluées indépendamment les unes des autres.
+**Clause de validation partielle** : un binôme dont le tableau de bord n'est pas totalement abouti en démonstration, mais dont les scripts d'extraction et d'analyse sont structurés, justes et documentés, peut valider partiellement les compétences C4, C5 et C6. À l'inverse, un tableau de bord soigné mais bâti sur des chiffres faux (retours comptés dans le CA, doublons non traités) ne valide pas C16 et C18. Les compétences sont évaluées indépendamment les unes des autres.
 
 ## Livrables attendus
 
 Un repository GitHub public, partagé par le binôme, contenant l'ensemble du travail. Il doit inclure :
 
-- Un README.md complet : description du projet et de la question centrale, technologies utilisées, instructions pour reproduire l'analyse (téléchargement du dataset, lancement des scripts), aperçu du tableau de bord (capture d'écran ou lien), et les deux auteurs.
+- Un README.md complet : description du projet et de la question centrale, technologies utilisées, instructions pour reproduire l'analyse (les données sont fournies dans `data/`, lancement des scripts), aperçu du tableau de bord (capture d'écran ou lien), et les deux auteurs.
 - Les scripts SQL d'extraction et d'agrégation (fichiers .sql) et/ou le notebook Python (pandas) d'extraction et de nettoyage, exécutables et commentés.
 - Le notebook ou script d'analyse exploratoire (statistiques descriptives, graphiques, interprétations).
 - Le jeu de données nettoyé exporté en CSV (ou le script qui le régénère).
@@ -109,14 +108,14 @@ Un repository GitHub public, partagé par le binôme, contenant l'ensemble du tr
 - La note d'analyse (1 à 2 pages, Markdown ou PDF) : réponse argumentée à la question centrale, tendances et anomalies, et deux à trois recommandations pour la direction.
 - Le support de présentation orale (PDF ou lien).
 
-Pas de données personnelles sensibles : le dataset est public et anonymisé (CustomerID numérique).
+Pas de données personnelles réelles : le jeu NordRetail est 100 % synthétique (`client_id` numérique fictif).
 
 ## Critères de performance
 
 **C4. Extraire des données via des scripts (Niveau 1)**
 - Le dataset est chargé dans une base SQL et/ou un DataFrame pandas de façon reproductible : OUI / NON
-- Des requêtes d'extraction et d'agrégation (par mois, produit, pays) sont écrites et fonctionnent : OUI / NON
-- Les annulations et retours sont correctement exclus du calcul du chiffre d'affaires : OUI / NON
+- Des requêtes d'extraction et d'agrégation (par mois, produit, ville, canal) sont écrites et fonctionnent : OUI / NON
+- Les retours (montants ou quantités négatifs) sont correctement exclus du calcul du chiffre d'affaires : OUI / NON
 - L'exactitude des données extraites est vérifiée (comptages, contrôles de cohérence) : OUI / NON
 
 **C5. Mener des analyses exploratoires (Niveau 1)**
@@ -127,7 +126,7 @@ Pas de données personnelles sensibles : le dataset est public et anonymisé (Cu
 
 **C6. Identifier et interpréter des tendances (Niveau 1)**
 - L'évolution temporelle du chiffre d'affaires est analysée (saisonnalité, pics) : OUI / NON
-- Des comparaisons entre groupes (pays, produits) sont menées : OUI / NON
+- Des comparaisons entre groupes (villes, canaux, produits) sont menées : OUI / NON
 - Les interprétations sont contextualisées pour le métier sans confondre corrélation et causalité : OUI / NON
 
 **C11. Élaborer la problématique métier (Niveau 1)**
@@ -158,8 +157,7 @@ Pas de données personnelles sensibles : le dataset est public et anonymisé (Cu
 
 ## Ressources
 
-- Jeu de données Online Retail (UCI) : https://archive.ics.uci.edu/dataset/352/online+retail
-- Alternative — Brazilian E-Commerce Olist (Kaggle) : https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+- Jeux de données **NordRetail** fournis : [`data/`](data/) (voir `data/README.md` pour le dictionnaire des colonnes)
 - Documentation pandas : https://pandas.pydata.org/docs/
 - Power BI — Apprentissage Microsoft Learn : https://learn.microsoft.com/fr-fr/power-bi/
 - Looker Studio — Aide officielle : https://support.google.com/looker-studio

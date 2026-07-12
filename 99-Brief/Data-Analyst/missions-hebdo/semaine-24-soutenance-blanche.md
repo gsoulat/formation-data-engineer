@@ -38,5 +38,5 @@ Le support de présentation (PDF/PPTX), l'enregistrement ou la fiche de passage,
 ## Ressources (renvoi au cours)
 
 - Cours : `cours/03-flux-bi/3.6-prepa-certif/` (oral & soutenance).
-- Aboutissement visé : le **projet certificatif BC06** (S26-28) — `briefs/brief-3-projet-certificatif-bc06.md`.
+- Aboutissement visé : le **projet certificatif BC06** (S26-28) — `briefs/BRIEF_3_CERTIFICATIF_BC06.md`.
 - Référentiel BC06 — compétence C15 (niv.3).

@@ -6,7 +6,7 @@
 
 NordRetail, enseigne de distribution des Hauts-de-France (Lille, Roubaix, Tourcoing, Dunkerque, Valenciennes, Amiens + un site e-commerce), veut moderniser son pilotage. Aujourd'hui, la direction commerciale réclame des chiffres à des fichiers Excel éparpillés. Première étape avant tout tableau de bord : savoir aller chercher les bons chiffres directement dans la base de données, avec des requêtes propres et reproductibles.
 
-Cette mission t'entraîne sur la compétence d'extraction SQL en vue du projet de fin de phase (`brief-1-tableau-de-bord-metier.md`). Attention : le projet s'appuie sur un autre jeu de données (Online Retail / UCI) ; tu n'y réutiliseras donc pas directement tes requêtes NordRetail, mais tu **transposeras** sur cette nouvelle source la démarche d'extraction acquise ici. Cette transposition est volontaire et attendue au niveau RNCP.
+Cette mission t'entraîne sur la compétence d'extraction SQL en vue du projet de fin de phase (`BRIEF_1_TABLEAU_DE_BORD_METIER.md`). Le projet se déroule sur le **même univers NordRetail** (dossier `data/`) en scénario complet de bout en bout : tu y **réinvestiras et approfondiras** la démarche d'extraction acquise ici. Cette montée en autonomie est attendue au niveau RNCP.
 
 ## Objectif de la mission
 
@@ -46,4 +46,4 @@ Un fichier `extraction.sql` (8 à 12 requêtes commentées) + un court `resultat
 - Cours module 1.1 — Extraction de données / SQL.
 - Documentation SQLite : https://www.sqlite.org/docs.html
 - Aide-mémoire SQL : `SELECT … FROM … JOIN … ON … GROUP BY … ORDER BY … LIMIT`.
-- Projet de fin de phase associé : `brief-1-tableau-de-bord-metier.md`.
+- Projet de fin de phase associé : `BRIEF_1_TABLEAU_DE_BORD_METIER.md`.

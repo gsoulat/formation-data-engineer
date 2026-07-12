@@ -123,7 +123,7 @@ magasins = ["Lille", "Roubaix", "Dunkerque"]
 print(magasins[0])      # le premier élément (l'index commence à 0 !)
 
 # Un dictionnaire : des paires clé → valeur
-vente = {"magasin": "Roubaix", "montant": 58.9, "paiement": "CB"}
+vente = {"ville": "Roubaix", "montant": 58.9, "categorie": "Textile"}
 print(vente["montant"])
 ```
 
@@ -141,8 +141,8 @@ Le dictionnaire est important : un DataFrame se construit naturellement à parti
 import pandas as pd
 
 donnees = {
-    "magasin": ["Lille", "Roubaix", "Dunkerque"],
-    "ventes":  [1240, 980, 760],
+    "ville":  ["Lille", "Roubaix", "Dunkerque"],
+    "ventes": [1240, 980, 760],
 }
 df = pd.DataFrame(donnees)
 print(df)
@@ -150,7 +150,7 @@ print(df)
 
 **Sortie :**
 ```
-     magasin  ventes
+       ville  ventes
 0      Lille    1240
 1    Roubaix     980
 2  Dunkerque     760
@@ -166,6 +166,8 @@ print(df)
 
 Le CSV (*Comma-Separated Values*) est le format d'échange le plus courant.
 
+> 📁 **Le fichier de travail.** On utilise `ventes_magasins.csv`, le jeu de données de l'univers **NordRetail** (dossier `data/` du brief). Ses colonnes : `date`, `ville`, `type` (magasin ou e-commerce), `categorie`, `produit`, `quantite`, `prix_unitaire`, `remise`, `montant`, `marge`, `client_id`. Un fichier riche : on pourra donc croiser le CA par `categorie`, la `marge` par `ville`, etc.
+
 ```python
 import pandas as pd
 
@@ -175,10 +177,10 @@ ventes.head()
 
 **Sortie (extrait) :**
 ```
-   id_vente      date    magasin  categorie  montant  quantite paiement
-0         1  2024-01-02   Lille  Alimentaire    23.40        3       CB
-1         2  2024-01-02 Roubaix    Textile     58.90        1   especes
-2         3  2024-01-03 Dunkerque  Maison      12.00        2       CB
+         date      ville      type      categorie        produit  quantite  prix_unitaire  remise   montant  marge  client_id
+0  2023-01-01  Dunkerque   Magasin  Électroménager  Réfrigérateur         4         387.37     0.0   1549.48 451.12        252
+1  2023-01-01     Lille    Magasin        Textile           Pull         1          58.90     0.1     53.01  15.90        118
+2  2023-01-02   Roubaix E-commerce         Maison         Lampe         2          12.00     0.0     24.00   7.20        341
 ```
 
 **Paramètres que tu rencontreras souvent :**
@@ -216,7 +218,7 @@ ventes = pd.read_excel("ventes_2024.xlsx", sheet_name="Ventes")
 ```
               colonnes (axis=1)
         ┌──────────┬─────────┬──────────┐
- index  │ magasin  │ ventes  │ montant  │
+ index  │  ville   │ ventes  │ montant  │
  ───────┼──────────┼─────────┼──────────┤
    0    │  Lille   │  1240   │  23.40   │  ← une LIGNE = une observation (une vente)
    1    │ Roubaix  │   980   │  58.90   │
@@ -246,24 +248,28 @@ ventes.describe()  # stats descriptives des colonnes numériques
 
 **`ventes.shape` → sortie :**
 ```
-(250000, 7)
+(250000, 11)
 ```
-*250 000 lignes, 7 colonnes. (Inutile d'ouvrir ça dans Excel !)*
+*250 000 lignes, 11 colonnes. (Inutile d'ouvrir ça dans Excel !)*
 
 **`ventes.info()` → sortie :**
 ```
 RangeIndex: 250000 entries, 0 to 249999
-Data columns (total 7 columns):
- #   Column     Non-Null Count   Dtype
----  ------     --------------   -----
- 0   id_vente   250000 non-null  int64
- 1   date       250000 non-null  object      ← ⚠️ date stockée en texte, pas en date !
- 2   magasin    250000 non-null  object
- 3   categorie  248120 non-null  object      ← ⚠️ 1 880 valeurs manquantes
- 4   montant    249500 non-null  float64
- 5   quantite   250000 non-null  int64
- 6   paiement   250000 non-null  object
-dtypes: float64(1), int64(2), object(4)
+Data columns (total 11 columns):
+ #   Column         Non-Null Count   Dtype
+---  ------         --------------   -----
+ 0   date           250000 non-null  object      ← ⚠️ date stockée en texte, pas en date !
+ 1   ville          250000 non-null  object
+ 2   type           250000 non-null  object
+ 3   categorie      248120 non-null  object      ← ⚠️ 1 880 valeurs manquantes
+ 4   produit        250000 non-null  object
+ 5   quantite       250000 non-null  int64
+ 6   prix_unitaire  250000 non-null  float64
+ 7   remise         250000 non-null  float64
+ 8   montant        249500 non-null  float64
+ 9   marge          249500 non-null  float64
+ 10  client_id      250000 non-null  int64
+dtypes: float64(4), int64(2), object(5)
 ```
 
 > 🔎 **Lecture d'`info()`.** Compare le `Non-Null Count` au nombre total de lignes : si c'est inférieur, il y a des **valeurs manquantes**. Et `Dtype = object` = pandas voit du texte. Une date ou un montant en `object`, c'est un signal de nettoyage à venir.
@@ -310,17 +316,17 @@ max       890.000000      40.000000   ← max suspect → outlier ?
 
 ```python
 ventes["montant"]                 # une colonne → une Series
-ventes[["magasin", "montant"]]    # plusieurs colonnes → un DataFrame (double crochet !)
+ventes[["ville", "montant"]]      # plusieurs colonnes → un DataFrame (double crochet !)
 ```
 
-> ⚠️ **Erreur courante.** `ventes["magasin", "montant"]` (crochets simples) plante. Pour plusieurs colonnes, il faut **une liste** → **doubles crochets** `[[...]]`.
+> ⚠️ **Erreur courante.** `ventes["ville", "montant"]` (crochets simples) plante. Pour plusieurs colonnes, il faut **une liste** → **doubles crochets** `[[...]]`.
 
 ### `loc` et `iloc` : par étiquette ou par position
 
 ```python
 ventes.loc[0]                       # la ligne d'index 0 (par ÉTIQUETTE)
 ventes.loc[0, "montant"]            # case précise : ligne 0, colonne "montant"
-ventes.loc[0:4, ["magasin", "montant"]]  # lignes 0 à 4 (INCLUS), 2 colonnes
+ventes.loc[0:4, ["ville", "montant"]]  # lignes 0 à 4 (INCLUS), 2 colonnes
 
 ventes.iloc[0]                      # la 1re ligne (par POSITION)
 ventes.iloc[0:5, 0:3]              # 5 premières lignes, 3 premières colonnes (5 et 3 EXCLUS)
@@ -334,16 +340,16 @@ C'est ici que pandas devient magique. On écrit une **condition**, pandas renvoi
 
 ```python
 # Toutes les ventes de Lille
-ventes[ventes["magasin"] == "Lille"]
+ventes[ventes["ville"] == "Lille"]
 
 # Les gros paniers (> 100 €)
 ventes[ventes["montant"] > 100]
 
 # Combiner : Lille ET montant > 50  → & (ET), | (OU), ~ (NON)
-ventes[(ventes["magasin"] == "Lille") & (ventes["montant"] > 50)]
+ventes[(ventes["ville"] == "Lille") & (ventes["montant"] > 50)]
 
 # Appartenance à une liste
-ventes[ventes["magasin"].isin(["Lille", "Roubaix"])]
+ventes[ventes["ville"].isin(["Lille", "Roubaix"])]
 ```
 
 **Comment ça marche, étape par étape :**
@@ -367,15 +373,15 @@ Name: montant, dtype: bool
 > - Utiliser `and`/`or` (Python pur) au lieu de **`&`/`|`** (pandas). → `ValueError`.
 > - Oublier les **parenthèses** autour de chaque condition : `ventes["a"]>1 & ventes["b"]<2` est mal interprété. Toujours `(...) & (...)`.
 
-**Exemple métier.** « Combien de ventes en espèces dépassent 200 € à Dunkerque ? » (utile pour un contrôle anti-fraude) :
+**Exemple métier.** « Combien de lignes de vente sont incohérentes ? » (utile pour un contrôle qualité / anti-fraude). On chasse trois signaux : un `montant` négatif (impossible), une `remise` aberrante (> 0,8, soit plus de 80 % de rabais) ou une `marge` négative (on vendrait à perte) :
 ```python
-suspectes = ventes[(ventes["magasin"] == "Dunkerque")
-                   & (ventes["paiement"] == "especes")
-                   & (ventes["montant"] > 200)]
+suspectes = ventes[(ventes["montant"] < 0)
+                   | (ventes["remise"] > 0.8)
+                   | (ventes["marge"] < 0)]
 print(len(suspectes))
 ```
 
-> 🎯 **Ça te servira pour…** isoler les cas bizarres à montrer au gérant de la Ch'ti Boutique (« voici les 12 ventes en espèces > 200 € à Dunkerque, jette un œil »). Le masque booléen, c'est ta pince à épiler : tu attrapes précisément les lignes qui t'intéressent dans un fichier de 250 000.
+> 🎯 **Ça te servira pour…** isoler les cas bizarres à montrer au gérant de la Ch'ti Boutique (« voici les 12 ventes vendues à perte ou avec une remise de 90 %, jette un œil »). Le masque booléen, c'est ta pince à épiler : tu attrapes précisément les lignes qui t'intéressent dans un fichier de 250 000.
 
 ---
 
@@ -390,13 +396,17 @@ ventes.isna().sum()        # nombre de NaN par colonne
 ```
 **Sortie :**
 ```
-id_vente        0
-date            0
-magasin         0
-categorie    1880
-montant       500
-quantite        0
-paiement        0
+date               0
+ville              0
+type               0
+categorie       1880
+produit            0
+quantite           0
+prix_unitaire      0
+remise             0
+montant          500
+marge            500
+client_id          0
 dtype: int64
 ```
 
@@ -431,7 +441,7 @@ ventes["categorie"] = ventes["categorie"].fillna("Inconnu")  # catégorie : on �
 ### Renommer des colonnes
 
 ```python
-ventes = ventes.rename(columns={"montant": "montant_eur", "quantite": "nb_articles"})
+ventes = ventes.rename(columns={"montant": "montant_ttc", "quantite": "nb_articles"})
 ```
 
 ### Corriger les types
@@ -450,12 +460,12 @@ ventes["nb_articles"] = ventes["nb_articles"].astype(int)
 
 ```python
 # Homogénéiser : "lille", "Lille ", "LILLE" → "Lille"
-ventes["magasin"] = ventes["magasin"].str.strip().str.capitalize()
-print(ventes["magasin"].unique())
+ventes["ville"] = ventes["ville"].str.strip().str.capitalize()
+print(ventes["ville"].unique())
 ```
 **Sortie :**
 ```
-['Lille' 'Roubaix' 'Dunkerque']
+['Lille' 'Roubaix' 'Tourcoing' 'Dunkerque' 'Valenciennes' 'Amiens']
 ```
 
 ### Doublons
@@ -465,7 +475,7 @@ ventes.duplicated().sum()          # combien de lignes en double ?
 ventes = ventes.drop_duplicates()  # on les supprime
 ```
 
-> ⚠️ Attention : `duplicated()` cherche des lignes **entièrement** identiques. Pour des doublons « métier » (même `id_vente`), précise : `drop_duplicates(subset=["id_vente"])`.
+> ⚠️ Attention : `duplicated()` cherche des lignes **entièrement** identiques. Pour des doublons « métier » (par exemple deux fois la même vente d'un client le même jour), précise un sous-ensemble de colonnes : `drop_duplicates(subset=["date", "client_id", "produit"])`.
 
 ---
 
@@ -473,39 +483,48 @@ ventes = ventes.drop_duplicates()  # on les supprime
 
 C'est **le cœur de l'analyse** : « par magasin / par catégorie / par mois… combien ? quelle moyenne ? ». Le schéma est toujours **découper → calculer → recombiner** (*split-apply-combine*).
 
-> ✂️ **`groupby` en image.** Imagine que tu vides un grand sac de tickets de caisse sur une table, puis que tu fais **trois tas** : un tas Lille, un tas Roubaix, un tas Dunkerque. Ensuite tu additionnes chaque tas séparément. Voilà, c'est tout ce que fait `groupby("magasin")["montant"].sum()` : il **range par paquets** puis **calcule sur chaque paquet**.
+> ✂️ **`groupby` en image.** Imagine que tu vides un grand sac de tickets de caisse sur une table, puis que tu fais **trois tas** : un tas Lille, un tas Roubaix, un tas Dunkerque. Ensuite tu additionnes chaque tas séparément. Voilà, c'est tout ce que fait `groupby("ville")["montant"].sum()` : il **range par paquets** puis **calcule sur chaque paquet**.
 
 > 🎲 **Devine avant de regarder.** Lequel des trois magasins de la Ch'ti Boutique va faire le plus gros chiffre d'affaires, à ton avis ? Et le plus petit ? Note ton pari, puis regarde la sortie.
 
 ```python
-# Chiffre d'affaires total par magasin
-ventes.groupby("magasin")["montant_eur"].sum()
+# Chiffre d'affaires total par ville
+ventes.groupby("ville")["montant"].sum()
 ```
 **Sortie :**
 ```
-magasin
+ville
+Amiens        201380.10
 Dunkerque     289450.30
 Lille         512340.80
 Roubaix       398120.50
-Name: montant_eur, dtype: float64
+Tourcoing     245900.60
+Valenciennes  178220.40
+Name: montant, dtype: float64
 ```
 
 ```python
 # Plusieurs stats d'un coup
-ventes.groupby("magasin")["montant_eur"].agg(["count", "sum", "mean", "median"])
+ventes.groupby("ville")["montant"].agg(["count", "sum", "mean", "median"])
 ```
 **Sortie :**
 ```
               count        sum       mean  median
-magasin
+ville
+Amiens        52000  201380.10      38.73    32.0
 Dunkerque     76000  289450.30      38.08    31.0
 Lille        102000  512340.80      50.23    41.5
 Roubaix       71500  398120.50      55.68    46.0
+Tourcoing     61000  245900.60      40.31    33.0
+Valenciennes  47000  178220.40      37.92    31.0
 ```
 
 ```python
-# Croiser deux dimensions : CA par magasin ET par catégorie
-ventes.groupby(["magasin", "categorie"])["montant_eur"].sum()
+# Croiser deux dimensions : CA par ville ET par catégorie
+ventes.groupby(["ville", "categorie"])["montant"].sum()
+
+# La marge moyenne par ville (on exploite la colonne 'marge' du fichier)
+ventes.groupby("ville")["marge"].mean()
 ```
 
 > 🔗 **C'est de la statistique descriptive « par groupe ».** Le Chapitre 3 t'a appris à calculer une moyenne ; `groupby` la calcule pour **chaque sous-population** d'un coup. C'est ce qui transforme « le panier moyen est de 42 € » en « le panier moyen est de 50 € à Lille mais 38 € à Dunkerque » — un constat **actionnable**.
@@ -514,8 +533,8 @@ ventes.groupby(["magasin", "categorie"])["montant_eur"].sum()
 
 > 💡 **`pivot_table`** fait la même chose façon tableau croisé Excel :
 > ```python
-> ventes.pivot_table(index="magasin", columns="categorie",
->                    values="montant_eur", aggfunc="sum")
+> ventes.pivot_table(index="ville", columns="categorie",
+>                    values="montant", aggfunc="sum")
 > ```
 
 ---
@@ -523,18 +542,18 @@ ventes.groupby(["magasin", "categorie"])["montant_eur"].sum()
 ## Tri
 
 ```python
-# Les magasins du plus gros CA au plus petit
-ca = ventes.groupby("magasin")["montant_eur"].sum()
+# Les villes du plus gros CA au plus petit
+ca = ventes.groupby("ville")["montant"].sum()
 ca.sort_values(ascending=False)
 
 # Trier un DataFrame sur une colonne
-ventes.sort_values("montant_eur", ascending=False).head(10)  # top 10 des plus gros paniers
+ventes.sort_values("montant", ascending=False).head(10)  # top 10 des plus gros paniers
 
 # Trier sur plusieurs colonnes
-ventes.sort_values(["magasin", "montant_eur"], ascending=[True, False])
+ventes.sort_values(["ville", "montant"], ascending=[True, False])
 ```
 
-> 💡 Pour un classement, `nlargest` / `nsmallest` sont plus directs : `ventes.nlargest(10, "montant_eur")`.
+> 💡 Pour un classement, `nlargest` / `nsmallest` sont plus directs : `ventes.nlargest(10, "montant")`.
 
 ---
 
@@ -550,7 +569,7 @@ import seaborn as sns
 ### Histogramme — la forme d'une distribution
 
 ```python
-sns.histplot(data=ventes, x="montant_eur", bins=50)
+sns.histplot(data=ventes, x="montant", bins=50)
 plt.title("Distribution des montants de panier")
 plt.xlabel("Montant (€)")
 plt.show()
@@ -560,7 +579,7 @@ plt.show()
 ### Diagramme en barres — comparer des catégories
 
 ```python
-ca = ventes.groupby("magasin")["montant_eur"].sum().sort_values()
+ca = ventes.groupby("ville")["montant"].sum().sort_values()
 sns.barplot(x=ca.values, y=ca.index)
 plt.title("Chiffre d'affaires par magasin")
 plt.xlabel("CA (€)")
@@ -572,7 +591,7 @@ plt.show()
 > 🎲 **Devine avant de regarder.** Avant de tracer ce boxplot, parie : vas-tu voir des **points isolés tout en haut** (= des paniers anormalement gros) ? Le gérant t'a dit qu'il y avait « un truc qui cloche »… le boxplot est l'outil qui le révèle d'un coup d'œil.
 
 ```python
-sns.boxplot(data=ventes, x="magasin", y="montant_eur")
+sns.boxplot(data=ventes, x="ville", y="montant")
 plt.title("Dispersion des paniers par magasin")
 plt.show()
 ```
@@ -612,7 +631,7 @@ Le gérant avait raison : il y a **3 trucs qui clochent** dans son fichier `vent
 
 1. **Anomalie de TYPE** — une colonne contient une information de date… mais pandas ne la voit pas comme une date. *(Indice : regarde `info()` et la colonne `Dtype`.)*
 2. **Anomalie de TROUS** — deux colonnes ont des cases vides (`NaN`). Lesquelles, et combien ? *(Indice : `isna().sum()`.)*
-3. **Anomalie de MONSTRE** — il existe des paniers au montant délirant (outliers) par rapport au panier typique. Où se cachent-ils, et avec quel mode de paiement ? *(Indice : `describe()` + un boxplot + un masque booléen.)*
+3. **Anomalie de MONSTRE** — il existe des paniers au montant délirant (outliers) par rapport au panier typique. Où se cachent-ils, et dans quelle catégorie ? *(Indice : `describe()` + un boxplot + un masque booléen.)*
 
 Tu as 4 commandes pour gagner : `info()`, `isna().sum()`, `describe()`, et un `boxplot`. À toi de jouer ! 🔍
 
@@ -632,13 +651,13 @@ print(ventes.isna().sum())
 # Anomalie 3 — MONSTRE : des montants très au-dessus du panier médian
 print(ventes["montant"].describe())          # max énorme vs médiane
 gros = ventes[ventes["montant"] > 150]
-print(gros["paiement"].value_counts())       # souvent en espèces → à investiguer
+print(gros["categorie"].value_counts())      # concentrés sur une catégorie → à investiguer
 ```
 
 **Verdict de l'enquête :**
 1. ✅ `date` est stockée en **texte** (`object`) → impossible de trier par mois tant qu'on ne convertit pas.
 2. ✅ `categorie` (~5 % de vides) et `montant` (quelques centaines de vides) ont des **NaN**.
-3. ✅ Des **paniers aberrants** (> 150 €, voire un max ~890 €) ressortent comme points isolés sur le boxplot, souvent en espèces → contrôle anti-fraude recommandé.
+3. ✅ Des **paniers aberrants** (> 150 €, voire un max ~890 €) ressortent comme points isolés sur le boxplot, souvent sur une même catégorie → contrôle anti-fraude recommandé.
 
 Tu viens de mener ta première mini-EDA en autonomie. C'est *littéralement* le métier. 🎉
 </details>
@@ -647,9 +666,9 @@ Tu viens de mener ta première mini-EDA en autonomie. C'est *littéralement* le 
 
 ## Travaux pratiques — mener une EDA sur le retail Nord
 
-> **Dataset :** `ventes_magasins.csv` (ventes des magasins du Nord : Lille, Roubaix, Dunkerque).
-> Colonnes : `id_vente`, `date`, `magasin`, `categorie`, `montant`, `quantite`, `paiement`.
-> Pas le fichier sous la main ? Le formateur te le fournit, ou utilise le générateur du corrigé du TP1.
+> **Dataset :** `ventes_magasins.csv` de l'univers **NordRetail** (ventes des magasins du Nord : Lille, Roubaix, Tourcoing, Dunkerque, Valenciennes, Amiens + e-commerce).
+> Colonnes : `date`, `ville`, `type`, `categorie`, `produit`, `quantite`, `prix_unitaire`, `remise`, `montant`, `marge`, `client_id`.
+> Pas le fichier sous la main ? Le formateur te le fournit (dossier `data/` du brief), ou utilise le générateur du corrigé du TP1.
 
 ### TP1 — Charger et découvrir
 
@@ -662,19 +681,29 @@ Charge le fichier, affiche sa forme, ses 5 premières lignes, ses types, et iden
 import pandas as pd
 import numpy as np
 
-# --- Si tu n'as pas le fichier, génère un dataset réaliste : ---
+# --- Si tu n'as pas le fichier, génère un dataset réaliste (schéma NordRetail) : ---
 rng = np.random.default_rng(42)
 n = 20000
+prix = np.round(rng.gamma(2.2, 18, n), 2)
+qte = rng.integers(1, 6, n)
+remise = rng.choice([0.0, 0.1, 0.2, 0.3], n, p=[.6, .2, .15, .05])
+montant = np.round(prix * qte * (1 - remise), 2)
 df = pd.DataFrame({
-    "id_vente": range(1, n + 1),
-    "date": pd.to_datetime("2024-01-01") + pd.to_timedelta(rng.integers(0, 365, n), "D"),
-    "magasin": rng.choice(["Lille", "Roubaix", "Dunkerque"], n, p=[.45, .3, .25]),
-    "categorie": rng.choice(["Alimentaire", "Textile", "Maison", None], n, p=[.5, .25, .2, .05]),
-    "montant": np.round(rng.gamma(2.2, 18, n), 2),
-    "quantite": rng.integers(1, 6, n),
-    "paiement": rng.choice(["CB", "especes", "cheque"], n, p=[.7, .25, .05]),
+    "date": pd.to_datetime("2023-01-01") + pd.to_timedelta(rng.integers(0, 365, n), "D"),
+    "ville": rng.choice(["Lille", "Roubaix", "Tourcoing", "Dunkerque", "Valenciennes", "Amiens"],
+                        n, p=[.28, .2, .15, .15, .12, .10]),
+    "type": rng.choice(["Magasin", "E-commerce"], n, p=[.7, .3]),
+    "categorie": rng.choice(["Alimentaire", "Textile", "Maison", "Électroménager", None],
+                           n, p=[.4, .25, .2, .1, .05]),
+    "produit": rng.choice(["Pull", "Lampe", "Réfrigérateur", "Café", "Chaise"], n),
+    "quantite": qte,
+    "prix_unitaire": prix,
+    "remise": remise,
+    "montant": montant,
+    "marge": np.round(montant * rng.uniform(0.2, 0.4, n), 2),
+    "client_id": rng.integers(1, 5000, n),
 })
-df.loc[rng.choice(n, 100, replace=False), "montant"] = np.nan  # injecte des NaN
+df.loc[rng.choice(n, 100, replace=False), ["montant", "marge"]] = np.nan  # injecte des NaN
 df["date"] = df["date"].dt.strftime("%Y-%m-%d")                # date en TEXTE (volontaire)
 df.to_csv("ventes_magasins.csv", index=False)
 # -----------------------------------------------------------------
@@ -683,15 +712,15 @@ ventes = pd.read_csv("ventes_magasins.csv")
 
 print("Forme :", ventes.shape)        # (a)
 ventes.head()
-ventes.info()                          # (b) categorie + montant ont des NaN
+ventes.info()                          # (b) categorie + montant + marge ont des NaN
 ventes.dtypes                          # (c) 'date' est en object → à convertir
 ```
-**Constats :** 20 000 lignes × 7 colonnes ; `categorie` et `montant` ont des manquants ; `date` est stockée en texte (`object`).
+**Constats :** 20 000 lignes × 11 colonnes ; `categorie`, `montant` et `marge` ont des manquants ; `date` est stockée en texte (`object`).
 </details>
 
 ### TP2 — Nettoyer
 
-Convertis `date` en vraie date, remplis les `categorie` manquantes par « Inconnu », supprime les lignes sans `montant`, homogénéise la casse de `magasin`, et vérifie qu'il ne reste plus de doublon.
+Convertis `date` en vraie date, remplis les `categorie` manquantes par « Inconnu », supprime les lignes sans `montant`, homogénéise la casse de `ville`, et vérifie qu'il ne reste plus de doublon.
 
 <details>
 <summary>✅ Corrigé</summary>
@@ -700,7 +729,7 @@ Convertis `date` en vraie date, remplis les `categorie` manquantes par « Inconn
 ventes["date"] = pd.to_datetime(ventes["date"], format="%Y-%m-%d")
 ventes["categorie"] = ventes["categorie"].fillna("Inconnu")
 ventes = ventes.dropna(subset=["montant"])
-ventes["magasin"] = ventes["magasin"].str.strip().str.capitalize()
+ventes["ville"] = ventes["ville"].str.strip().str.capitalize()
 ventes = ventes.drop_duplicates()
 
 print(ventes.isna().sum())   # plus aucun NaN sur montant
@@ -711,7 +740,7 @@ print(ventes.dtypes)         # date est maintenant datetime64
 
 ### TP3 — Décrire et filtrer
 
-(a) Affiche `describe()` sur `montant`. La moyenne et la médiane sont-elles proches ? Que conclure ? (b) Combien de ventes dépassent 150 € ? (c) Quel est le panier moyen **uniquement** pour les paiements en espèces ?
+(a) Affiche `describe()` sur `montant`. La moyenne et la médiane sont-elles proches ? Que conclure ? (b) Combien de ventes dépassent 150 € ? (c) Quel est le panier moyen **uniquement** pour les ventes en e-commerce (`type == "E-commerce"`) ?
 
 <details>
 <summary>✅ Corrigé</summary>
@@ -723,26 +752,26 @@ print(ventes["montant"].describe())
 gros = ventes[ventes["montant"] > 150]
 print("Ventes > 150 € :", len(gros))
 
-especes = ventes[ventes["paiement"] == "especes"]
-print("Panier moyen en espèces :", round(especes["montant"].mean(), 2), "€")
+ecommerce = ventes[ventes["type"] == "E-commerce"]
+print("Panier moyen en e-commerce :", round(ecommerce["montant"].mean(), 2), "€")
 ```
 **Constat :** moyenne > médiane ⇒ on privilégiera la **médiane** pour parler du panier « typique » au directeur (ch.3).
 </details>
 
 ### TP4 — Agréger et trier
 
-Calcule le chiffre d'affaires (`sum`), le nombre de ventes (`count`) et le panier médian par magasin, trie par CA décroissant. Puis fais un tableau croisé CA par magasin × catégorie.
+Calcule le chiffre d'affaires (`sum`), le nombre de ventes (`count`) et le panier médian par ville, trie par CA décroissant. Puis fais un tableau croisé CA par ville × catégorie.
 
 <details>
 <summary>✅ Corrigé</summary>
 
 ```python
-synthese = (ventes.groupby("magasin")["montant"]
+synthese = (ventes.groupby("ville")["montant"]
             .agg(CA="sum", nb_ventes="count", panier_median="median")
             .sort_values("CA", ascending=False))
 print(synthese)
 
-croise = ventes.pivot_table(index="magasin", columns="categorie",
+croise = ventes.pivot_table(index="ville", columns="categorie",
                             values="montant", aggfunc="sum").round(0)
 print(croise)
 ```
@@ -765,11 +794,11 @@ fig, axes = plt.subplots(1, 3, figsize=(18, 5))
 sns.histplot(data=ventes, x="montant", bins=50, ax=axes[0])
 axes[0].set_title("Distribution des montants")
 
-ca = ventes.groupby("magasin")["montant"].sum().sort_values()
+ca = ventes.groupby("ville")["montant"].sum().sort_values()
 sns.barplot(x=ca.values, y=ca.index, ax=axes[1])
 axes[1].set_title("CA par magasin")
 
-sns.boxplot(data=ventes, x="magasin", y="montant", ax=axes[2])
+sns.boxplot(data=ventes, x="ville", y="montant", ax=axes[2])
 axes[2].set_title("Dispersion par magasin")
 
 plt.tight_layout()
@@ -789,8 +818,8 @@ Rédige (en français, en dehors du code) **5 constats** destinés au responsabl
 > 1. **Lille concentre ~45 % du chiffre d'affaires régional** (≈512 k€), devant Roubaix puis Dunkerque.
 > 2. **Le panier médian est de ~33 €**, mais la moyenne (~40 €) est tirée par une minorité de gros paniers : communiquer sur la **médiane** auprès des équipes.
 > 3. **L'Alimentaire est la 1re catégorie partout**, mais le Textile pèse plus à Roubaix → opportunité d'assortiment local.
-> 4. **70 % des paiements se font en CB** ; les espèces restent notables à Dunkerque.
-> 5. **Des paniers > 150 € apparaissent comme outliers** sur le boxplot, surtout en espèces → contrôle recommandé.
+> 4. **~30 % des ventes passent par le e-commerce** (`type`) ; le canal magasin reste majoritaire, surtout à Dunkerque.
+> 5. **Des paniers > 150 € apparaissent comme outliers** sur le boxplot, souvent sur l'Électroménager → contrôle recommandé.
 >
 > **Recommandation :** concentrer les opérations promotionnelles sur l'Alimentaire à Lille (effet volume).
 > **Vigilance qualité :** 5 % des catégories étaient manquantes (recodées « Inconnu ») et la colonne date arrivait en texte → fiabiliser la saisie en caisse.
@@ -822,9 +851,9 @@ Rédige (en français, en dehors du code) **5 constats** destinés au responsabl
 - A) `df.size`  B) `df.shape`  C) `df.count()`  D) `df.len()`
 
 **Q2.** Pour filtrer les ventes de Lille **dont le montant dépasse 50 €**, quelle écriture est correcte ?
-- A) `df[df.magasin=="Lille" and df.montant>50]`
-- B) `df[(df.magasin=="Lille") & (df.montant>50)]`
-- C) `df[df.magasin=="Lille" & df.montant>50]`
+- A) `df[df.ville=="Lille" and df.montant>50]`
+- B) `df[(df.ville=="Lille") & (df.montant>50)]`
+- C) `df[df.ville=="Lille" & df.montant>50]`
 - D) `df.loc["Lille", 50]`
 
 **Q3.** Une colonne `date` apparaît en `object` dans `info()`. Que faut-il faire avant de la trier chronologiquement ?
@@ -833,9 +862,9 @@ Rédige (en français, en dehors du code) **5 constats** destinés au responsabl
 
 **Q4.** Pour calculer le chiffre d'affaires total **par magasin**, on écrit :
 - A) `df["montant"].sum()`
-- B) `df.groupby("magasin")["montant"].sum()`
-- C) `df.sort_values("magasin").sum()`
-- D) `df["magasin"].value_counts()`
+- B) `df.groupby("ville")["montant"].sum()`
+- C) `df.sort_values("ville").sum()`
+- D) `df["ville"].value_counts()`
 
 **Q5.** La moyenne d'une colonne de montants est **nettement supérieure** à sa médiane. Que peux-tu en déduire (cf. Maths ch.3) ?
 - A) Il y a des valeurs manquantes  B) La distribution est étirée vers la droite par de grandes valeurs

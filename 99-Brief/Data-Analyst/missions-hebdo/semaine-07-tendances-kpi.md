@@ -6,7 +6,7 @@
 
 Le retail des Hauts-de-France vit au rythme des saisons : les soldes d'hiver, le pic de Noël, le creux de la rentrée. La direction de NordRetail veut comprendre **quand** l'activité monte et descend, et surtout disposer d'une poignée d'indicateurs fiables pour piloter mois après mois. Cette mission transforme l'EDA de la semaine 6 en lecture temporelle + en KPI prêts à afficher.
 
-C'est l'avant-dernière brique avant le projet de fin de phase (`brief-1-tableau-de-bord-metier.md`). Ce projet s'appuie sur un autre jeu de données (Online Retail / UCI) : tu n'y reporteras pas tes KPI NordRetail tels quels, mais tu **transposeras** la démarche de définition de tendances et d'indicateurs travaillée ici. Cette transposition est volontaire et attendue au niveau RNCP.
+C'est l'avant-dernière brique avant le projet de fin de phase (`BRIEF_1_TABLEAU_DE_BORD_METIER.md`). Ce projet se déroule sur le **même univers NordRetail** (dossier `data/`) en scénario complet de bout en bout : la démarche de définition de tendances et d'indicateurs travaillée ici y sera **réinvestie et approfondie**. Cette montée en autonomie est attendue au niveau RNCP.
 
 ## Objectif de la mission
 
@@ -45,4 +45,4 @@ C'est l'avant-dernière brique avant le projet de fin de phase (`brief-1-tableau
 - Cours modules 1.3 (tendances) + 1.4 (indicateurs clés / KPI).
 - Méthode SMART pour objectifs et indicateurs.
 - Documentation pandas séries temporelles : https://pandas.pydata.org/docs/user_guide/timeseries.html
-- Projet de fin de phase associé : `brief-1-tableau-de-bord-metier.md`.
+- Projet de fin de phase associé : `BRIEF_1_TABLEAU_DE_BORD_METIER.md`.

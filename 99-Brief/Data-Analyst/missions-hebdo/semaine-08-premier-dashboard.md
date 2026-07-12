@@ -6,7 +6,7 @@
 
 Tu as extrait (S5), exploré (S6) puis dégagé tendances et KPI (S7) des ventes de NordRetail. Il est temps de tout réunir dans un **tableau de bord** que la direction commerciale pourra lire « en 30 secondes ». Fini les exports Excel : un décideur ouvre le dashboard et comprend où en est l'activité.
 
-Cette mission est la **répétition générale** du projet de fin de phase (`brief-1-tableau-de-bord-metier.md`, semaine 9) : tu y construiras un tableau de bord plus complet, accompagné d'une note d'analyse et d'une soutenance. Attention : le projet repose sur un autre jeu de données (Online Retail / UCI). Tu ne reprendras donc pas directement ce dashboard NordRetail ; tu **transposeras** sur la nouvelle source la démarche de construction travaillée ici. Cette transposition est volontaire et attendue au niveau RNCP.
+Cette mission est la **répétition générale** du projet de fin de phase (`BRIEF_1_TABLEAU_DE_BORD_METIER.md`, semaine 9) : tu y construiras un tableau de bord plus complet, accompagné d'une note d'analyse et d'une soutenance. Le projet se déroule sur le **même univers NordRetail** (dossier `data/`) : tu y **réinvestiras et approfondiras** la démarche de construction travaillée ici, en scénario complet. Cette montée en autonomie est attendue au niveau RNCP.
 
 ## Objectif de la mission
 
@@ -49,4 +49,4 @@ Le tableau de bord (lien public Looker Studio **ou** fichier `.pbix`) + une capt
 - Looker Studio (aide) : https://support.google.com/looker-studio
 - Power BI (Microsoft Learn) : https://learn.microsoft.com/fr-fr/power-bi/
 - Choisir le bon graphique : https://www.data-to-viz.com/
-- **Aboutissement** : projet de fin de phase `brief-1-tableau-de-bord-metier.md` (semaine 9) — tableau de bord complet + note d'analyse + soutenance.
+- **Aboutissement** : projet de fin de phase `BRIEF_1_TABLEAU_DE_BORD_METIER.md` (semaine 9) — tableau de bord complet + note d'analyse + soutenance.

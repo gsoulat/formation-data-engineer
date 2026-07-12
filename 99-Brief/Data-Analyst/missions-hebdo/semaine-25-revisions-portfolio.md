@@ -38,5 +38,5 @@ Le portfolio/dossier finalisé (PDF ou lien), la trace des révisions ciblées (
 ## Ressources (renvoi au cours)
 
 - Cours : `cours/03-flux-bi/3.6-prepa-certif/` (portfolio & dossier).
-- Aboutissement : le **projet certificatif BC06** (S26-28) — `briefs/brief-3-projet-certificatif-bc06.md` : ce portfolio et ces révisions en sont la rampe de lancement.
+- Aboutissement : le **projet certificatif BC06** (S26-28) — `briefs/BRIEF_3_CERTIFICATIF_BC06.md` : ce portfolio et ces révisions en sont la rampe de lancement.
 - Référentiel RNCP-38616 — grille de compétences BC06.

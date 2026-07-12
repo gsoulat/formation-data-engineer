@@ -17,7 +17,7 @@ Rédiger un cahier des charges du tableau de bord NordRetail, puis préparer et 
 3. **Jeu de rôle** : organisez l'atelier (30-45 min) avec un autre binôme jouant l'équipe métier (un responsable magasin, un marketing, un membre de la direction). Recueillez et reformulez les besoins.
 4. **Priorisation** : classez les besoins exprimés (ex. méthode MoSCoW : indispensable / souhaitable / optionnel) et reliez-les aux KPI et visuels existants.
 5. **Recommandations** : formulez 3 à 5 recommandations d'évolution du tableau de bord, justifiées par les besoins recueillis et par la question centrale du projet.
-6. **Lien phase** : cette mission t'entraîne au cadrage métier en vue du projet de fin de phase **`brief-2-solution-bi-avancee.md`** (semaine 16). Ce projet s'appuie sur un autre jeu de données (Brazilian E-Commerce / Olist) : tu ne réutiliseras pas tels quels ce cahier des charges et ces recommandations NordRetail, mais tu **transposeras** la démarche de cadrage et d'animation d'atelier travaillée ici. Cette transposition est volontaire et attendue au niveau RNCP.
+6. **Lien phase** : cette mission t'entraîne au cadrage métier en vue du projet de fin de phase **`BRIEF_2_SOLUTION_BI_AVANCEE.md`** (semaine 16). Ce projet s'appuie sur un autre jeu de données (Brazilian E-Commerce / Olist) : tu ne réutiliseras pas tels quels ce cahier des charges et ces recommandations NordRetail, mais tu **transposeras** la démarche de cadrage et d'animation d'atelier travaillée ici. Cette transposition est volontaire et attendue au niveau RNCP.
 
 ## Données (../data/)
 
@@ -38,4 +38,4 @@ Un cahier des charges (2-3 pages), la trame d'animation de l'atelier, un compte 
 
 ## Ressources (renvoi au cours)
 
-Module 2.6 — Cadrage métier (problématique, cahier des charges, animation d'atelier, MoSCoW) et restitution. Voir le projet de fin de phase `brief-2-solution-bi-avancee.md` (semaine 16), qui mobilisera cette même démarche de cadrage sur un autre jeu de données (Olist).
+Module 2.6 — Cadrage métier (problématique, cahier des charges, animation d'atelier, MoSCoW) et restitution. Voir le projet de fin de phase `BRIEF_2_SOLUTION_BI_AVANCEE.md` (semaine 16), qui mobilisera cette même démarche de cadrage sur un autre jeu de données (Olist).

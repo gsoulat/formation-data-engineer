@@ -9,3 +9,4 @@
 - [02 — Granularité, clés et flocon](02-granularite-cles-flocon.md)
 - [03 — Table de dates et relations dans Power BI](03-table-de-dates-relations-power-bi.md)
 - [04 — Travaux pratiques](04-travaux-pratiques.md)
+- [05 — Quiz & ressources](05-quiz-et-ressources.md)

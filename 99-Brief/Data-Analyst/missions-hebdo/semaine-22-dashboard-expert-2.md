@@ -31,7 +31,7 @@ Mêmes sources qu'en S21 : `Dim_*.csv` + `Faits_Ventes.csv` + `objectifs_2024.xl
 
 ## Livrable attendu
 
-Le fichier `.pbix` final (ou lien Looker partagé), la fiche utilisateur, et une note d'optimisation/accessibilité. Déposé sur la plateforme. **Ce dashboard t'entraîne aux compétences mobilisées dans le projet certificatif BC06 (S26-28, voir `briefs/brief-3-projet-certificatif-bc06.md`). Ce projet repose sur d'autres sources (Kaggle + API + référentiel data.gouv) : tu ne réutiliseras pas ce livrable NordRetail tel quel, mais tu transposeras sur ces nouvelles données la démarche de dashboard expert travaillée ici — transposition volontaire et attendue au niveau RNCP.**
+Le fichier `.pbix` final (ou lien Looker partagé), la fiche utilisateur, et une note d'optimisation/accessibilité. Déposé sur la plateforme. **Ce dashboard t'entraîne aux compétences mobilisées dans le projet certificatif BC06 (S26-28, voir `briefs/BRIEF_3_CERTIFICATIF_BC06.md`). Ce projet repose sur d'autres sources (Kaggle + API + référentiel data.gouv) : tu ne réutiliseras pas ce livrable NordRetail tel quel, mais tu transposeras sur ces nouvelles données la démarche de dashboard expert travaillée ici — transposition volontaire et attendue au niveau RNCP.**
 
 ## Critères de réussite (OUI/NON)
 

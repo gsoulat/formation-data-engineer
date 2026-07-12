@@ -6,7 +6,7 @@
 
 NordRetail t'a confié l'export brut de ses ventes magasins (`ventes_magasins.csv`). Avant de calculer des KPI ou de construire un tableau de bord, la direction veut être sûre que les données sont saines : pas de trous, pas de valeurs aberrantes, des montants cohérents. C'est le rôle de l'analyse exploratoire (EDA) : prendre la température du jeu de données avant de l'exploiter.
 
-Cette mission t'entraîne à l'analyse exploratoire en vue du projet de fin de phase (`brief-1-tableau-de-bord-metier.md`). Ce dernier porte sur un autre jeu de données (Online Retail / UCI) : tu ne réutiliseras pas directement ton EDA NordRetail, mais tu **transposeras** la démarche acquise ici sur cette nouvelle source. Cette transposition est volontaire et attendue au niveau RNCP.
+Cette mission t'entraîne à l'analyse exploratoire en vue du projet de fin de phase (`BRIEF_1_TABLEAU_DE_BORD_METIER.md`). Ce dernier se déroule sur le **même univers NordRetail** (dossier `data/`) mais en scénario complet de bout en bout : la démarche d'EDA travaillée ici y sera **assemblée et approfondie**. Cette montée en autonomie est attendue au niveau RNCP.
 
 ## Objectif de la mission
 
@@ -48,4 +48,4 @@ Un notebook `eda_ventes.ipynb` (ou script `.py`) exécuté de bout en bout, cont
 - Cours module 1.2 — Analyse exploratoire / statistiques descriptives.
 - Documentation pandas : https://pandas.pydata.org/docs/
 - Rappels stats descriptives : https://fr.wikipedia.org/wiki/Statistique_descriptive
-- Projet de fin de phase associé : `brief-1-tableau-de-bord-metier.md`.
+- Projet de fin de phase associé : `BRIEF_1_TABLEAU_DE_BORD_METIER.md`.

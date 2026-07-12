@@ -397,7 +397,7 @@ Voici quoi faire selon ton OS :
 | **🍎 Mac** | Pas de Desktop. Utilise **Power BI Service** dans le navigateur : **[app.powerbi.com](https://app.powerbi.com)** (version web). Ou plus tard, une **VM Parallels + Windows**. |
 | **🐧 Linux** | Idem Mac : **Power BI Service web** uniquement. |
 
-> 📌 **Pour tout comprendre sur la contrainte Power BI** (pourquoi le Nord de la France le demande malgré tout, les contournements détaillés, le marché de l'emploi local) → **lis l'étude dédiée : [`etudes/etude-dataviz-nord-france.md`](../../../etudes/etude-dataviz-nord-france.md)** et le **module 0.2**.
+> 📌 **Pour tout comprendre sur la contrainte Power BI** (pourquoi le Nord de la France le demande malgré tout, les contournements détaillés, le marché de l'emploi local) → **lis l'étude dédiée : [l'étude de marché dédiée](etude-dataviz-nord-france.md)** et le **module 0.2**.
 
 > 🎯 **À retenir.** En Phase 0, **personne n'installe Power BI Desktop.** On apprend les concepts BI sur **Looker Studio** (qui marche pour tout le monde). Power BI viendra dans les phases avancées.
 
