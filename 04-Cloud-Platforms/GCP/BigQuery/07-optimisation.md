@@ -360,6 +360,6 @@ ORDER BY creation_time DESC;
 
 ## Pour aller plus loin
 
-- [Brief pratique : BigQuery Medallion](../../../99-Brief/BigQuery-Medallion/)
+- [Brief pratique : BigQuery Medallion](../../../99-Brief/Data-Engineer/BigQuery-Medallion/)
 - [Documentation officielle BigQuery](https://cloud.google.com/bigquery/docs)
 - [Bonnes pratiques BigQuery](https://cloud.google.com/bigquery/docs/best-practices-performance)

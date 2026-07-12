@@ -8,7 +8,7 @@
 | **Niveau** | Intermédiaire-Avancé |
 | **Modalité** | Individuel |
 | **Technologies** | PostgreSQL, Python, SQL, Schéma en étoile, SCD Type 2, ETL, Docker, cron, SMTP (Mailtrap/MailHog), Git |
-| **Prérequis** | [Cours SQL](../../01-Fondamentaux/SQL/) + [Cours Python](../../01-Fondamentaux/Python/) + [Cours Docker](../../02-Containerisation/Docker/) + [Data Warehouse](../../05-Databases/DataWarehouse/) |
+| **Prérequis** | [Cours SQL](../../../01-Fondamentaux/SQL/) + [Cours Python](../../../01-Fondamentaux/Python/) + [Cours Docker](../../../02-Containerisation/Docker/) + [Data Warehouse](../../../05-Databases/DataWarehouse/) |
 
 ## Contexte
 
@@ -281,10 +281,10 @@ Réalisée sur le repo GitHub public après la démonstration : structure et lis
 
 ## Ressources
 
-- [Cours SQL](../../01-Fondamentaux/SQL/)
-- [Cours Python](../../01-Fondamentaux/Python/)
-- [Cours Docker](../../02-Containerisation/Docker/)
-- [Data Warehouse](../../05-Databases/DataWarehouse/)
+- [Cours SQL](../../../01-Fondamentaux/SQL/)
+- [Cours Python](../../../01-Fondamentaux/Python/)
+- [Cours Docker](../../../02-Containerisation/Docker/)
+- [Data Warehouse](../../../05-Databases/DataWarehouse/)
 - Documentation PostgreSQL — sauvegarde et restauration : https://www.postgresql.org/docs/current/backup.html
 - Documentation PostgreSQL — `pg_dump` : https://www.postgresql.org/docs/current/app-pgdump.html
 - Kimball Group — Slowly Changing Dimension Type 2 : https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-2/

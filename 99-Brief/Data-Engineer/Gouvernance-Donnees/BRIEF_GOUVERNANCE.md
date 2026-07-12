@@ -8,7 +8,7 @@
 | **Niveau** | Intermédiaire |
 | **Modalité** | Individuel |
 | **Technologies** | OpenMetadata, PostgreSQL, Docker, Docker Compose, SQL, RGPD, RBAC, Git |
-| **Prérequis** | [Cours SQL](../../01-Fondamentaux/SQL/) + [Cours Docker](../../02-Containerisation/Docker/) + [RGPD & Gouvernance](../../01-Fondamentaux/RGPD-Gouvernance/) + [Data Warehouse](../../05-Databases/DataWarehouse/) |
+| **Prérequis** | [Cours SQL](../../../01-Fondamentaux/SQL/) + [Cours Docker](../../../02-Containerisation/Docker/) + [RGPD & Gouvernance](../../../01-Fondamentaux/RGPD-Gouvernance/) + [Data Warehouse](../../../05-Databases/DataWarehouse/) |
 
 ## Contexte
 
@@ -269,10 +269,10 @@ Les questions porteront sur vos choix : pourquoi ce seuil de complétude ? pourq
 
 ## Ressources
 
-- [Cours SQL](../../01-Fondamentaux/SQL/)
-- [Cours Docker](../../02-Containerisation/Docker/)
-- [RGPD & Gouvernance](../../01-Fondamentaux/RGPD-Gouvernance/)
-- [Data Warehouse](../../05-Databases/DataWarehouse/)
+- [Cours SQL](../../../01-Fondamentaux/SQL/)
+- [Cours Docker](../../../02-Containerisation/Docker/)
+- [RGPD & Gouvernance](../../../01-Fondamentaux/RGPD-Gouvernance/)
+- [Data Warehouse](../../../05-Databases/DataWarehouse/)
 - Déploiement local d'OpenMetadata avec Docker (documentation officielle) : https://docs.open-metadata.org/latest/quick-start/local-docker-deployment
 - Connecteur PostgreSQL d'OpenMetadata (documentation officielle) : https://docs.open-metadata.org/latest/connectors/database/postgres
 - Sandbox OpenMetadata en ligne (alternative si machine < 6 Go de RAM) : https://sandbox.open-metadata.org

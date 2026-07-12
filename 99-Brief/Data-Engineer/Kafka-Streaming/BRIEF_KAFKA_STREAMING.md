@@ -8,7 +8,7 @@
 | **Niveau** | Intermédiaire |
 | **Modalité** | Individuel |
 | **Technologies** | Apache Kafka (mode KRaft), Python (confluent-kafka), Docker & Docker Compose, PostgreSQL, SQL, Git |
-| **Prérequis** | [Cours Python](../../01-Fondamentaux/Python/) + [Cours SQL](../../01-Fondamentaux/SQL/) + [Cours Docker](../../02-Containerisation/Docker/) + [Cours Kafka](../../06-Data-Engineering/Kafka/) |
+| **Prérequis** | [Cours Python](../../../01-Fondamentaux/Python/) + [Cours SQL](../../../01-Fondamentaux/SQL/) + [Cours Docker](../../../02-Containerisation/Docker/) + [Cours Kafka](../../../06-Data-Engineering/Kafka/) |
 
 ## Contexte
 
@@ -254,10 +254,10 @@ Sans repo GitHub public accessible et sans code versionné, le travail ne peut p
 
 ## Ressources
 
-- [Cours Python](../../01-Fondamentaux/Python/)
-- [Cours SQL](../../01-Fondamentaux/SQL/)
-- [Cours Docker](../../02-Containerisation/Docker/)
-- [Cours Kafka](../../06-Data-Engineering/Kafka/)
+- [Cours Python](../../../01-Fondamentaux/Python/)
+- [Cours SQL](../../../01-Fondamentaux/SQL/)
+- [Cours Docker](../../../02-Containerisation/Docker/)
+- [Cours Kafka](../../../06-Data-Engineering/Kafka/)
 - Documentation officielle Apache Kafka (concepts, configuration, KRaft) : https://kafka.apache.org/documentation/
 - Quickstart Apache Kafka (dont lancement via Docker) : https://kafka.apache.org/quickstart
 - Client Python confluent-kafka (producer, consumer, offsets) : https://docs.confluent.io/kafka-clients/python/current/overview.html

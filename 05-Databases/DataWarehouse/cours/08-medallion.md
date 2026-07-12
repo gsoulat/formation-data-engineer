@@ -598,5 +598,5 @@ SELECT ABS(
 
 ## Pour aller plus loin
 
-- [Brief pratique : BigQuery Medallion](../../../99-Brief/BigQuery-Medallion/)
+- [Brief pratique : BigQuery Medallion](../../../99-Brief/Data-Engineer/BigQuery-Medallion/)
 - [Cours GCP BigQuery](../../../04-Cloud-Platforms/GCP/BigQuery/)

@@ -45,7 +45,7 @@ BigQuery offre un niveau gratuit généreux :
 ## Brief pratique
 
 Après ce cours, mettez en pratique vos connaissances avec le brief :
-- [Brief BigQuery Medallion - Pipeline E-commerce](../../../99-Brief/BigQuery-Medallion/)
+- [Brief BigQuery Medallion - Pipeline E-commerce](../../../99-Brief/Data-Engineer/BigQuery-Medallion/)
 
 ## Architecture cible
 

@@ -134,7 +134,7 @@ Jours 4-5 : Brief pratique
 
 ## Ressources complémentaires
 
-- [Brief pratique BigQuery Medallion](../../../99-Brief/BigQuery-Medallion/)
+- [Brief pratique BigQuery Medallion](../../../99-Brief/Data-Engineer/BigQuery-Medallion/)
 - [Cours BigQuery](../../../04-Cloud-Platforms/GCP/BigQuery/cours/)
 - [Cours Snowflake](../../../04-Cloud-Platforms/snowflake/)
 - [Cours Microsoft Fabric](../../../06-Data-Engineering/Fabric/)

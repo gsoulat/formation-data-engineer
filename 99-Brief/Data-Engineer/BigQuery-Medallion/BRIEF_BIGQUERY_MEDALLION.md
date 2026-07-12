@@ -8,7 +8,7 @@
 | **Niveau** | Intermédiaire |
 | **Modalité** | Individuel |
 | **Technologies** | GCP, BigQuery, Cloud Storage, SQL |
-| **Prérequis** | [Cours Data Warehouse](../../05-Databases/DataWarehouse/cours/) + [Cours BigQuery](../../04-Cloud-Platforms/GCP/BigQuery/cours/) |
+| **Prérequis** | [Cours Data Warehouse](../../../05-Databases/DataWarehouse/cours/) + [Cours BigQuery](../../../04-Cloud-Platforms/GCP/BigQuery/) |
 
 ## Contexte
 
@@ -385,8 +385,8 @@ Créer un fichier `README.md` documentant :
 
 ## Ressources
 
-- [Cours Data Warehouse](../../05-Databases/DataWarehouse/cours/)
-- [Cours BigQuery](../../04-Cloud-Platforms/GCP/BigQuery/cours/)
+- [Cours Data Warehouse](../../../05-Databases/DataWarehouse/cours/)
+- [Cours BigQuery](../../../04-Cloud-Platforms/GCP/BigQuery/)
 - [Documentation BigQuery](https://cloud.google.com/bigquery/docs)
 - [BigQuery SQL Reference](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax)
 

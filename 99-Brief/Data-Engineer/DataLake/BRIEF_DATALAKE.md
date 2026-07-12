@@ -8,7 +8,7 @@
 | **Niveau** | Intermediaire |
 | **Modalite** | Individuel |
 | **Technologies** | Docker, MinIO (S3), PySpark, Delta Lake, Great Expectations, Python |
-| **Prerequis** | [Cours Data Lake](../../05-Databases/DataLake/cours/) + [Cours Spark](../../06-Data-Engineering/Spark/) + Notions Docker |
+| **Prerequis** | [Cours Data Lake](../../../05-Databases/DataLake/cours/) + [Cours Spark](../../../06-Data-Engineering/Spark/) + Notions Docker |
 
 ## Contexte
 
@@ -771,9 +771,9 @@ streamcart-datalake/
 
 ## Ressources
 
-- [Cours Data Lake](../../05-Databases/DataLake/cours/)
-- [Cours Spark](../../06-Data-Engineering/Spark/)
-- [Cours Data Warehouse](../../05-Databases/DataWarehouse/cours/)
+- [Cours Data Lake](../../../05-Databases/DataLake/cours/)
+- [Cours Spark](../../../06-Data-Engineering/Spark/)
+- [Cours Data Warehouse](../../../05-Databases/DataWarehouse/cours/)
 - [Documentation Delta Lake](https://docs.delta.io/)
 - [Documentation MinIO](https://min.io/docs/minio/container/index.html)
 - [Documentation PySpark](https://spark.apache.org/docs/latest/api/python/)

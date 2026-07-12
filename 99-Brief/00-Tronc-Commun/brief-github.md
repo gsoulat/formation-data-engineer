@@ -1438,7 +1438,7 @@ Merci de votre intérêt pour contribuer à ce projet ! 🎉
 
 ### Signaler un bug
 
-1. Vérifiez que le bug n'a pas déjà été signalé dans les [Issues](../../issues)
+1. Vérifiez que le bug n'a pas déjà été signalé dans les [Issues](../../../issues)
 2. Créez une nouvelle issue avec le template "Bug Report"
 3. Décrivez le bug de manière détaillée
 4. Incluez les steps to reproduce

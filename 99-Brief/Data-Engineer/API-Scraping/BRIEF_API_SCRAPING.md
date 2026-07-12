@@ -8,7 +8,7 @@
 | **Niveau** | Débutant-Intermédiaire |
 | **Modalité** | Individuel |
 | **Technologies** | Python (Requests, BeautifulSoup), API REST, Web Scraping, PostgreSQL, Docker, SQL, Merise, Git |
-| **Prérequis** | [Cours Python](../../01-Fondamentaux/Python/) + [Cours SQL](../../01-Fondamentaux/SQL/) + [Cours Docker](../../02-Containerisation/Docker/) |
+| **Prérequis** | [Cours Python](../../../01-Fondamentaux/Python/) + [Cours SQL](../../../01-Fondamentaux/SQL/) + [Cours Docker](../../../02-Containerisation/Docker/) |
 
 ## Contexte
 
@@ -242,9 +242,9 @@ Sans repo GitHub public accessible et sans code versionné, le travail ne peut p
 
 ## Ressources
 
-- [Cours Python](../../01-Fondamentaux/Python/)
-- [Cours SQL](../../01-Fondamentaux/SQL/)
-- [Cours Docker](../../02-Containerisation/Docker/)
+- [Cours Python](../../../01-Fondamentaux/Python/)
+- [Cours SQL](../../../01-Fondamentaux/SQL/)
+- [Cours Docker](../../../02-Containerisation/Docker/)
 - Books to Scrape — le « concurrent » à scraper : https://books.toscrape.com
 - Open Library — portail développeurs de l'API (documentation officielle) : https://openlibrary.org/developers/api
 - Requests (page officielle PyPI, avec lien vers la documentation) : https://pypi.org/project/requests/

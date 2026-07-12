@@ -22,8 +22,8 @@ BigQuery-Medallion/
 Avant de commencer ce brief, assurez-vous d'avoir :
 
 1. **Suivi les cours préalables :**
-   - [Cours Data Warehouse](../../05-Databases/DataWarehouse/cours/)
-   - [Cours GCP BigQuery](../../04-Cloud-Platforms/GCP/BigQuery/cours/)
+   - [Cours Data Warehouse](../../../05-Databases/DataWarehouse/cours/)
+   - [Cours GCP BigQuery](../../../04-Cloud-Platforms/GCP/BigQuery/)
 
 2. **Un compte Google Cloud Platform** avec Free Tier
 

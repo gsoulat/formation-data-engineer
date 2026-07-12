@@ -24,7 +24,7 @@ Ce parcours est conçu pour vous emmener de la maîtrise du terminal à la mise 
 - [ ] [Data Lake](05-Databases/DataLake/) : Architecture multi-zones, formats (Parquet, Delta), gouvernance.
 - [ ] [Spark](06-Data-Engineering/Spark/) : Traitement distribué.
 - [ ] [Cloud Platforms (Azure/GCP)](04-Cloud-Platforms/) : Stockage et calcul managé.
-- [ ] [Brief Data Lake](99-Brief/DataLake/BRIEF_DATALAKE.md) : Mini-projet Data Lake avec MinIO, Spark et Delta Lake.
+- [ ] [Brief Data Lake](99-Brief/Data-Engineer/DataLake/BRIEF_DATALAKE.md) : Mini-projet Data Lake avec MinIO, Spark et Delta Lake.
 
 ### 🚀 Phase 4 : Mise en Production (Mois 6)
 - [ ] [Terraform](03-Infrastructure-as-Code/Terraform/) : Infrastructure as Code.
