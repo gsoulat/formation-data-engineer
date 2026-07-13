@@ -1,3 +1,23 @@
+# [2.13.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.12.0...v2.13.0) (2026-07-13)
+
+
+### Bug Fixes
+
+* **brief:** corriger les liens internes du brief Eolienne ([82afd3f](https://github.com/gsoulat/formation-data-engineer/commit/82afd3fcfc8325613032aeafcf20cfcd7870c9b0))
+
+
+### Features
+
+* **brief:** 4 briefs Data Engineer (API+Scraping, Kafka, Gouvernance, Maintenance DWH) ([5645177](https://github.com/gsoulat/formation-data-engineer/commit/5645177bb883bcb382a75130531714f3f8768343))
+* **data-analyst:** 1 brief/semaine, neutralisation RNCP/Simplon, PATH recâblés ([18a5576](https://github.com/gsoulat/formation-data-engineer/commit/18a5576295a76092bd9a277b0c1fc0ca68f6a936))
+* **data-analyst:** cours BI (18 sous-modules) + mathématiques + conformité RNCP-38616 ([20e3fde](https://github.com/gsoulat/formation-data-engineer/commit/20e3fdee8658b5c277531aa158cb44be97c98e51))
+* **data-analyst:** enrichir soft skills, homogénéiser RNCP, TP API ETL ([afe1023](https://github.com/gsoulat/formation-data-engineer/commit/afe10235fbf585d509c57c8ee0098118c10ecfa8))
+* **data-analyst:** parcours (PATH), briefs 0-3, 22 missions hebdo, datasets ([bd26b12](https://github.com/gsoulat/formation-data-engineer/commit/bd26b1205f960deb1926c6847d6d3927688f85f4))
+* **data:** AI Services, ORM, VectorDB, Airflow et Kafka ([717c185](https://github.com/gsoulat/formation-data-engineer/commit/717c185b2c5f00aca6a8387bf3d404e3993e5410))
+* **fondamentaux:** ajout Java, Rust, FastAPI, Django, Jupyter et veille technologique ([7299374](https://github.com/gsoulat/formation-data-engineer/commit/7299374995f69094eda83c1cd5f0baa8d4b39414))
+* **ml/llm:** MLOps, data drift, Agents, HuggingFace, LangChain, RAG et pre-commit ([9639edb](https://github.com/gsoulat/formation-data-engineer/commit/9639edb5a2a69342cd4fae9f281d9160943bdc26))
+* **projet/web:** Agile-Scrum, ADR, C4, Frontend IA, Dev Web et Mobile ([4133eb3](https://github.com/gsoulat/formation-data-engineer/commit/4133eb39d94d20fd00ad0bf6f6beefbd6c24b362))
+
 # [2.12.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.11.0...v2.12.0) (2026-02-17)
 
 
