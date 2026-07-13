@@ -7,7 +7,7 @@
 | | |
 |---|---|
 | **Durée indicative** | ~14 heures (pratique incluse) |
-| **Compétence visée** | **C4 (niveau 2)** — Extraire des données de sources variées |
+| **Objectif** | Extraire des données de sources variées |
 | **Prérequis** | [01 - Extraction ciblée](01-extraction-ciblee.md), [02 - SQL avancé pour l'analyse](02-sql-avance-analyse.md), bases de Python et de pandas (DataFrame, lecture de fichiers) |
 | **Outils** | Python 3 (`requests`, `pandas`, `openpyxl`), l'API [Open-Meteo](https://open-meteo.com/) (gratuite, sans clé), SQLite |
 
@@ -31,7 +31,7 @@ Dans la vraie vie, les données ne sont **jamais** déjà rangées dans un seul 
 - récupérer la **météo** de Lille pour expliquer les pics de fréquentation (API publique),
 - croiser avec les **objectifs commerciaux** que le directeur t'a envoyés dans un Excel.
 
-Ces trois sources n'ont ni le même format, ni la même granularité. Ton métier, c'est de les **extraire**, les **réconcilier** et de **garantir** que le résultat est juste avant de produire le moindre graphique. Une erreur d'extraction (un doublon de ligne, une jointure mal faite, une page d'API oubliée) fausse toute l'analyse en aval. C'est exactement la compétence C4 : savoir extraire de **sources variées** de façon **fiable**.
+Ces trois sources n'ont ni le même format, ni la même granularité. Ton métier, c'est de les **extraire**, les **réconcilier** et de **garantir** que le résultat est juste avant de produire le moindre graphique. Une erreur d'extraction (un doublon de ligne, une jointure mal faite, une page d'API oubliée) fausse toute l'analyse en aval. Tout l'enjeu : savoir extraire de **sources variées** de façon **fiable**.
 
 > On réutilise la table `ventes` du chapitre [02 - SQL avancé pour l'analyse](02-sql-avance-analyse.md) (colonnes : `vente_id`, `date_vente`, `magasin`, `vendeur`, `categorie`, `produit`, `quantite`, `montant`).
 

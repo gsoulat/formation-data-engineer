@@ -5,28 +5,25 @@
 | Critère | Valeur |
 |---------|--------|
 | **Durée** | Environ 2 semaines (J1 à J10) |
-| **Niveau** | Niveau 2 — ADAPTER (Phase 2) |
+| **Niveau** | Intermédiaire à avancé |
 | **Modalité** | Binôme ou petit groupe (2 à 3 personnes) |
 | **Outils** | Power BI : Power Query + DAX ; modèle en étoile (alternative : Looker Studio) ; Python (pandas) pour l'analyse exploratoire |
-| **Certification** | RNCP-38616 — Concepteur développeur en IA et analyse big data, option Data Analyse, bloc BC06 |
 | **Prérequis** | [Cours Business Intelligence](../../15-Business-Intelligence/), [SQL](../../01-Fondamentaux/SQL/), [Python](../../01-Fondamentaux/Python/) |
 
 ## Description rapide
 
 Vous intégrez la cellule data d'un acteur e-commerce des Hauts-de-France. Votre mission, en binôme ou petit groupe sur deux semaines : transformer un jeu de données multi-tables en une véritable solution de Business Intelligence. Vous modéliserez les données en étoile, construirez des mesures avancées (DAX ou équivalent), concevrez un tableau de bord interactif répondant à une question de décision, et accompagnerez une équipe métier dans sa prise en main. Vous traiterez aussi les enjeux de conformité RGPD et de biais. À la clé : passer d'un tableur figé à un outil d'aide à la décision fiable, lisible et partageable.
 
-## Compétences visées et niveaux
+## Objectifs pédagogiques
 
-- C5. Réaliser des analyses exploratoires → Niveau 2 (ADAPTER)
-- C6. Identifier et interpréter des tendances → Niveau 2 (ADAPTER)
-- C11. Élaborer la problématique métier → Niveau 2 (ADAPTER)
-- C12. Évaluer les risques (RGPD, éthique, biais) → Niveau 1 (IMITER)
-- C16. Identifier les indicateurs clés (KPI) → Niveau 2 (ADAPTER)
-- C17. Choisir des visualisations pertinentes → Niveau 2 (ADAPTER)
-- C18. Créer un tableau de bord BI → Niveau 2 (ADAPTER)
-- C15. Présenter les résultats → Niveau 2 (ADAPTER)
+À l'issue de ce brief, vous serez capable de :
 
-Rappel des niveaux : Niveau 1 (IMITER) = vous reproduisez à partir d'un exemple fourni ; Niveau 2 (ADAPTER) = vous adaptez à ce nouveau contexte avec les ressources fournies.
+- **Réaliser une analyse exploratoire** sur un jeu de données multi-tables : statistiques descriptives, distributions, détection et traitement justifié des valeurs aberrantes.
+- **Identifier et interpréter des tendances** : analyse temporelle, saisonnalité, comparaisons de groupes et corrélations, en distinguant corrélation et causalité.
+- **Élaborer une problématique métier** à partir d'un entretien de recueil du besoin et la formaliser dans un cahier des charges.
+- **Évaluer les risques liés aux données** : identifier les données personnelles, la base légale et la durée de conservation (RGPD), et repérer les biais du jeu de données.
+- **Concevoir une solution BI complète** : modéliser les données en étoile, développer des mesures avancées (DAX ou équivalent) et construire un tableau de bord interactif et accessible.
+- **Restituer et accompagner** : présenter les résultats à un public de direction (storytelling data) et animer un atelier de prise en main auprès d'une équipe métier.
 
 ## Contexte
 
@@ -103,43 +100,43 @@ Le dépôt et les livrables associés doivent inclure :
 
 ## Critères de performance
 
-C5. Réaliser des analyses exploratoires (Niveau 2)
+**Réaliser des analyses exploratoires**
 - Les statistiques descriptives (tendance centrale et dispersion) sont calculées sur les variables clés. OUI / NON
 - Les distributions sont visualisées (histogramme, boxplot). OUI / NON
 - Les valeurs aberrantes sont détectées et le traitement choisi est justifié. OUI / NON
 
-C6. Identifier et interpréter des tendances (Niveau 2)
+**Identifier et interpréter des tendances**
 - Une analyse temporelle (évolution, saisonnalité) est réalisée et interprétée. OUI / NON
 - Au moins une comparaison de groupes ou une corrélation est produite. OUI / NON
 - Les résultats sont reliés à la question centrale sans confondre corrélation et causalité. OUI / NON
 
-C11. Élaborer la problématique métier (Niveau 2)
+**Élaborer la problématique métier**
 - Un entretien de recueil du besoin a été conduit. OUI / NON
 - Un cahier des charges formalise objectifs, périmètre, public et livrables. OUI / NON
 - Le besoin est traduit en questions analytiques mesurables. OUI / NON
 
-C12. Évaluer les risques RGPD, éthique et biais (Niveau 1)
+**Évaluer les risques RGPD, éthique et biais**
 - Les données à caractère personnel sont identifiées. OUI / NON
 - Base légale et durée de conservation sont mentionnées. OUI / NON
 - Au moins un biais du jeu de données est identifié avec son impact. OUI / NON
 
-C16. Identifier les indicateurs clés (Niveau 2)
+**Identifier les indicateurs clés (KPI)**
 - Les KPI sont définis (formule, granularité, fréquence, cible). OUI / NON
 - Les KPI répondent directement à la question centrale. OUI / NON
 - Une arborescence vue direction puis détail est proposée. OUI / NON
 
-C17. Choisir des visualisations pertinentes (Niveau 2)
+**Choisir des visualisations pertinentes**
 - Chaque visualisation est adaptée à l'intention et à la nature de la donnée. OUI / NON
 - Les pièges courants sont évités (camembert surchargé, axe tronqué, 3D). OUI / NON
 - L'accessibilité est prise en compte (contraste, palette, titres explicites). OUI / NON
 
-C18. Créer un tableau de bord BI (Niveau 2)
+**Créer un tableau de bord BI**
 - Un modèle en étoile (faits + dimensions + relations) est implémenté. OUI / NON
 - Des mesures avancées (DAX ou équivalent) sont créées et documentées. OUI / NON
 - Le tableau de bord est interactif (filtres, segments, drill-down). OUI / NON
 - Les totaux du tableau de bord concordent avec l'analyse Python. OUI / NON
 
-C15. Présenter les résultats (Niveau 2)
+**Présenter les résultats**
 - Le discours est adapté à un public de direction non technique. OUI / NON
 - Un fil narratif (storytelling data) structure la présentation. OUI / NON
 - Un atelier d'accompagnement de l'équipe métier a été mené. OUI / NON

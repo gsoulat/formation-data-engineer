@@ -6,7 +6,7 @@
 |---|---|
 | **Phase** | 0 — La Prairie · **Semaine 1** (tout premier module de la formation) |
 | **Durée** | ≈ 7 h |
-| **Compétences visées** | Transversale — mise en place de l'environnement de travail du Data Analyst (pré-requis de tous les modules techniques C11–C18) |
+| **Objectif** | Transversale — mise en place de l'environnement de travail du Data Analyst (pré-requis de tous les modules techniques) |
 | **Pré-requis** | **Aucun.** Savoir allumer son ordinateur, cliquer, télécharger un fichier, créer une adresse e-mail. |
 | **Ce qu'il te faut** | Un ordinateur (Mac, Windows ou Linux) · une connexion internet · ~10 Go d'espace disque libre · les **droits administrateur** (ton mot de passe de session) · une adresse e-mail |
 | **Outils installés à la fin** | Anaconda (Python) · Jupyter · VS Code · DB Browser for SQLite · comptes Looker Studio / Power BI |

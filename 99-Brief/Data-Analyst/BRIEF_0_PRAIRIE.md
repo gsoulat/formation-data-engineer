@@ -5,23 +5,24 @@
 | Critère | Valeur |
 |---------|--------|
 | **Durée** | 2 à 3 jours |
-| **Niveau** | Niveau 1 — IMITER (mission de découverte) |
+| **Niveau** | Débutant — mission de découverte |
 | **Modalité** | Individuel |
 | **Outils** | Looker Studio (alternative : Power BI), tableur |
-| **Certification** | RNCP-38616 — Concepteur développeur en IA et analyse big data, option Data Analyse, bloc BC06 |
 | **Prérequis** | [Cours Business Intelligence](../../15-Business-Intelligence/) — aucun prérequis technique (pas de code) |
 
 ## Description rapide
 
 Vous rejoignez une PME e-commerce des Hauts-de-France. Votre première mission : reproduire fidèlement un tableau de bord modèle fourni par votre tuteur, à partir d'un jeu de ventes réel. Objectif : vous familiariser avec un outil de BI (Looker Studio), comprendre ce qu'est un indicateur clé (KPI) et choisir des visualisations lisibles et accessibles. Vous travaillez seul, sans installer de logiciel. Vous livrez le lien partagé de votre tableau de bord, une courte note décrivant vos KPI, et un dossier de rendu documenté. Pas de code, pas d'analyse libre : ici, on apprend en imitant un exemple de qualité.
 
-## Compétences visées et niveaux
+## Objectifs pédagogiques
 
-- **C16.** Identifier les indicateurs clés à calculer → Niveau 1 (IMITER)
-- **C17.** Choisir des visualisations pertinentes (accessibilité WCAG) → Niveau 1 (IMITER)
-- **C18.** Créer des tableaux de bord avec un outil de BI → Niveau 1 (IMITER)
-- **CT3.** Définir le périmètre d'un problème → Niveau 1
-- **CT4.** Rechercher méthodiquement des pistes de résolution → Niveau 1
+À l'issue de ce brief, vous serez capable de :
+
+- **Identifier les indicateurs clés (KPI)** attendus par une direction et expliquer, pour chacun, sa définition et son mode de calcul à partir des colonnes d'un jeu de données.
+- **Choisir des visualisations pertinentes et accessibles** : associer chaque type de graphique à l'intention de lecture (évolution, comparaison, répartition) et respecter des bases d'accessibilité (contrastes, titres explicites).
+- **Construire un tableau de bord avec un outil de BI** (Looker Studio) : connecter une source, produire des cartes de chiffres clés et des graphiques, ajouter un filtre interactif.
+- **Cadrer une mission** : reformuler un besoin métier, préciser ce qui est dans le périmètre et dresser un inventaire de ce qui est à reproduire.
+- **Rechercher méthodiquement une solution** : retrouver l'origine d'un écart de chiffre et mobiliser la documentation ou des tutoriels face à un blocage.
 
 ## Contexte
 
@@ -44,7 +45,7 @@ On attend de vous une réplique fidèle, pas une création originale : mêmes in
 
 ## Modalités pédagogiques
 
-Projet individuel, 2 à 3 jours, organisé en trois phases. Vous suivez un tableau de bord modèle : votre liberté est volontairement réduite, car l'objectif de la Prairie est d'imiter un exemple de qualité pour acquérir les bons réflexes. Chaque phase produit un résultat visible.
+Projet individuel, 2 à 3 jours, organisé en trois phases. Vous suivez un tableau de bord modèle : votre liberté est volontairement réduite, car l'objectif de cette mission de découverte est de reproduire un exemple de qualité pour acquérir les bons réflexes. Chaque phase produit un résultat visible.
 
 ### Phase 1 — Cadrage et lecture du modèle, SANS outil (J1, matin)
 
@@ -68,7 +69,7 @@ L'évaluation se fait en fin de Phase 0, en deux volets, sur la base de votre re
 
 Durées indicatives : 10 min de démonstration + 5 à 10 min de questions, soit environ 20 minutes par apprenant.
 
-**Clause de validation partielle.** Un apprenant dont le tableau de bord est incomplet (par exemple certains graphiques manquants) mais qui démontre, à l'oral, une compréhension juste des KPI, du choix des visualisations et de l'usage de l'outil, peut valider partiellement les compétences C16, C17 et C18 au niveau 1. À l'inverse, un tableau de bord visuellement complet mais que l'apprenant ne sait pas expliquer ne suffit pas à valider la compréhension attendue. Les compétences transversales CT3 et CT4 sont évaluées via l'inventaire de cadrage (Phase 1) et la méthode décrite pour retrouver les écarts.
+**Clause de validation partielle.** Un apprenant dont le tableau de bord est incomplet (par exemple certains graphiques manquants) mais qui démontre, à l'oral, une compréhension juste des KPI, du choix des visualisations et de l'usage de l'outil, peut valider partiellement les acquis de la mission. À l'inverse, un tableau de bord visuellement complet mais que l'apprenant ne sait pas expliquer ne suffit pas à valider la compréhension attendue. Les capacités de cadrage et de recherche méthodique sont évaluées via l'inventaire de cadrage (Phase 1) et la méthode décrite pour retrouver les écarts.
 
 ## Livrables attendus
 
@@ -89,26 +90,26 @@ Le dépôt contient au minimum le README et la note de rendu (avec ses captures)
 
 ## Critères de performance
 
-**C16. Identifier les indicateurs clés à calculer — Niveau 1**
+**Identifier les indicateurs clés à calculer**
 - Les KPI reproduits correspondent à ceux du tableau de bord modèle (CA total, profit, nombre de commandes, panier moyen). OUI / NON
 - Pour chaque KPI, l'apprenant donne une définition correcte et son mode de calcul (champ source + agrégation). OUI / NON
 - Les valeurs des KPI affichées correspondent aux valeurs attendues du jeu de données. OUI / NON
 
-**C17. Choisir des visualisations pertinentes (accessibilité WCAG) — Niveau 1**
+**Choisir des visualisations pertinentes et accessibles**
 - Les types de graphiques reproduits correspondent à ceux du modèle (courbe pour le temps, barres pour les comparaisons, etc.). OUI / NON
 - Chaque graphique porte un titre explicite et représente la donnée attendue. OUI / NON
 - Les visualisations respectent des bases d'accessibilité : contrastes suffisants, information non portée uniquement par la couleur. OUI / NON
 
-**C18. Créer des tableaux de bord avec un outil de BI — Niveau 1**
+**Créer des tableaux de bord avec un outil de BI**
 - Le jeu de données est correctement connecté à Looker Studio et le tableau de bord s'affiche. OUI / NON
 - Le ou les filtres interactifs fonctionnent et mettent à jour les graphiques. OUI / NON
 - Le lien partagé est accessible en lecture par une personne externe (testé en navigation privée). OUI / NON
 
-**CT3. Définir le périmètre d'un problème — Niveau 1**
+**Définir le périmètre de la mission**
 - L'apprenant reformule la question centrale et liste ce qui est dans / hors du périmètre de la mission. OUI / NON
 - L'inventaire de cadrage (KPI + graphiques à reproduire) est présent et cohérent. OUI / NON
 
-**CT4. Rechercher méthodiquement des pistes de résolution — Niveau 1**
+**Rechercher méthodiquement des pistes de résolution**
 - L'apprenant décrit une démarche pour retrouver l'origine d'un écart de chiffre (champ, agrégation, filtre). OUI / NON
 - L'apprenant mobilise la documentation ou les tutoriels pour résoudre un blocage. OUI / NON
 

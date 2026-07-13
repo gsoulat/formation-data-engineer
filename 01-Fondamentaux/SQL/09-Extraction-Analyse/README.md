@@ -13,9 +13,9 @@ Ce module aborde le SQL sous l'angle du **Data Analyst** : extraire la bonne don
 
 ## 📚 Contenu
 
-- [01 - Extraction ciblée pour l'analyse](01-extraction-ciblee.md) — requêtes orientées métier, pièges classiques, TP sur un jeu de données retail *(compétence RNCP C4, niveau 1)*.
-- [02 - SQL avancé pour l'analyse](02-sql-avance-analyse.md) — sous-requêtes, CTE, window functions, `CASE WHEN`, `UNION` appliqués à l'analyse *(compétence RNCP C4, niveau 2)*.
-- [03 - Extraction multi-sources](03-extraction-multi-sources.md) — API REST en Python, combinaison SQL + API + Excel avec pandas, validation des données *(compétence RNCP C4, niveau 2)*.
+- [01 - Extraction ciblée pour l'analyse](01-extraction-ciblee.md) — requêtes orientées métier, pièges classiques, TP sur un jeu de données retail.
+- [02 - SQL avancé pour l'analyse](02-sql-avance-analyse.md) — sous-requêtes, CTE, window functions, `CASE WHEN`, `UNION` appliqués à l'analyse.
+- [03 - Extraction multi-sources](03-extraction-multi-sources.md) — API REST en Python, combinaison SQL + API + Excel avec pandas, validation des données.
 
 ## ✅ Prérequis
 
@@ -30,7 +30,7 @@ Pour la partie multi-sources : des bases de Python et de pandas (DataFrame, lect
 
 ## 👥 Public visé
 
-Conçu en priorité pour le **parcours Data Analyst** (certification RNCP, compétence **C4 — Requêter une base de données et extraire des données de sources variées**), ce module est aussi utile à tout Data Engineer qui veut comprendre les besoins d'extraction de ses utilisateurs.
+Conçu en priorité pour le **parcours Data Analyst** (objectif : **requêter une base de données et extraire des données de sources variées**), ce module est aussi utile à tout Data Engineer qui veut comprendre les besoins d'extraction de ses utilisateurs.
 
 ---
 **Academy** - Formation Data Engineer / Data Analyst

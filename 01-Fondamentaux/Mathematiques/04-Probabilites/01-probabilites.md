@@ -1,9 +1,9 @@
 # 04 — Probabilités
 
-> **Formation** : Data Analyst — RNCP-38616 (Simplon)
+> **Formation** : Data Analyst
 > **Module** : 00 — Mathématiques pour la donnée
 > **Public** : adultes en reconversion, remise à niveau
-> **Compétences visées** : C5 (comprendre et décrire une distribution de données) — socle pour C7 (modélisation / machine learning)
+> **Objectif** : comprendre et décrire une distribution de données — socle pour la modélisation / machine learning
 > **Prérequis** : chapitre 3 (statistiques descriptives : moyenne, écart-type, histogramme)
 > **Durée estimée** : 7 h — ✅ **Noyau essentiel ~4 h** (l'indispensable) + 🚀 **optionnel ~3 h** (Bayes, binomiale, théorème central limite). Tu peux valider le chapitre avec le noyau seul.
 
@@ -74,7 +74,7 @@ Ce chapitre te donne le langage et les outils pour **raisonner sous incertitude*
 | Loi binomiale | Nombre de conversions sur N visiteurs, contrôle qualité (nb de défauts sur un lot) |
 | **Loi normale** | Distribution des tailles, des temps de réponse, des montants ; base des intervalles de confiance et des z-scores (détection d'anomalies) |
 
-> **À garder en tête** : en machine learning (C7), beaucoup de modèles produisent une **probabilité** (« 0,87 de chance que ce soit une fraude »). Comprendre ce chapitre, c'est comprendre la sortie de la moitié des modèles que tu rencontreras.
+> **À garder en tête** : en machine learning, beaucoup de modèles produisent une **probabilité** (« 0,87 de chance que ce soit une fraude »). Comprendre ce chapitre, c'est comprendre la sortie de la moitié des modèles que tu rencontreras.
 
 > 🎯 **Ça te servira pour…**
 > - **Loi normale** → décrire la distribution des temps de réponse d'une API, des tailles, des montants ; repérer les **anomalies** (z-score) que ton patron veut traquer.
@@ -804,7 +804,7 @@ print((200-mu)/s)                     # 3.75
 - **Union** : $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ (ne pas double-compter le valet de cœur 🎲).
 - **Indépendance** : $P(A \cap B) = P(A)P(B)$ ; supposer l'indépendance à tort est une erreur d'analyse classique (pluie ↔ parapluies).
 - **Espérance** : $E[X] = \sum x_i P(X=x_i)$ = la valeur moyenne attendue (panier, campagne, ticket de grattage…).
-- **Loi normale ⭐** : décrite par μ (centre) et σ (largeur). 🧠 *« La plupart au centre, peu aux extrêmes. »* **Règle 68-95-99,7** : « presque tout le monde tient en 3 pas de chaque côté. » Base des z-scores et de la détection d'anomalies — socle de l'inférence (chapitre 5) et du ML (C7).
+- **Loi normale ⭐** : décrite par μ (centre) et σ (largeur). 🧠 *« La plupart au centre, peu aux extrêmes. »* **Règle 68-95-99,7** : « presque tout le monde tient en 3 pas de chaque côté. » Base des z-scores et de la détection d'anomalies — socle de l'inférence (chapitre 5) et du ML.
 - **Réflexe data** : toujours **tracer l'histogramme** avant de supposer une loi normale.
 
 **🚀 Pour aller plus loin (optionnel)**

@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Durée du module** | ~30 h |
-| **Compétences RNCP visées** | **C18** — Modéliser des données structurées (modèle dimensionnel, schéma en étoile) pour alimenter un outil de BI (bloc **BC06** — Analyser des données et concevoir des tableaux de bord) |
+| **Objectif** | Modéliser des données structurées (modèle dimensionnel, schéma en étoile) pour alimenter un outil de BI |
 | **Prérequis** | Manipulation de tables (Power Query / nettoyage), notions de SQL (jointures, clés) — voir [01-Fondamentaux/SQL](../../01-Fondamentaux/SQL/) —, bases de Power BI (importer des données, vue Rapport) |
 
 ## Objectifs pédagogiques

@@ -4,9 +4,8 @@
 |---|---|
 | **Phase** | Phase 3 — Flux & BI avancée |
 | **Durée indicative** | ~30 h |
-| **Compétence visée** | **C2 — Automatiser l'extraction et la préparation des données** (niveau 1) |
+| **Objectif** | Automatiser l'extraction et la préparation des données |
 | **Pré-requis** | Module **1.2** (Python & pandas / EDA) · Module **3.1** (Processus de collecte) |
-| **Certification** | RNCP-38616 — Concepteur développeur en IA et analyse big data (option Data Analyse) |
 
 ---
 
@@ -632,7 +631,7 @@ Sortie attendue (exemple) :
 2024-... [INFO] Extraction météo terminée avec succès.
 ```
 
-> 🔗 **Vers le projet :** ce TP prépare directement la **collecte API du projet certificatif (BRIEF_3, compétence C2)** : mêmes réflexes de robustesse — paramétrage propre, `try/except` ciblés, retry avec backoff, journalisation et sauvegarde datée en couche `raw`. Tu réutiliseras cette structure quasi telle quelle.
+> 🔗 **Vers le projet :** ce TP prépare directement la **collecte API du projet certificatif (BRIEF_3)** : mêmes réflexes de robustesse — paramétrage propre, `try/except` ciblés, retry avec backoff, journalisation et sauvegarde datée en couche `raw`. Tu réutiliseras cette structure quasi telle quelle.
 
 #### Exercice
 

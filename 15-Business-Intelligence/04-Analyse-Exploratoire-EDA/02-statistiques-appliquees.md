@@ -9,7 +9,7 @@
 |---|---|
 | **Phase** | Phase 2 — Mettre en place une solution de BI pour un traitement analytique avancé |
 | **Durée** | ≈ 30 h |
-| **Compétences visées** | **C5 — Mener des analyses exploratoires (EDA)** · **C6 — Analyser les tendances** — **niveau 2** (RNCP-38616) |
+| **Objectifs** | Mener des analyses exploratoires (EDA) · Analyser les tendances |
 | **Pré-requis** | Module **Maths — Chapitre 3 « Statistiques descriptives »** (moyenne/médiane, dispersion, quantiles, outliers) · **Chapitre 5 « Probabilités & lois »** (loi normale, notion de variable aléatoire) · Module **1.2 Python & pandas pour l'EDA** (DataFrame, `groupby`, `describe`, seaborn) |
 | **Outils** | Python 3.11+, Jupyter / Anaconda, `pandas`, `numpy`, `scipy`, `matplotlib`, `seaborn` |
 

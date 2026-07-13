@@ -5,35 +5,33 @@
 | Critère | Valeur |
 |---------|--------|
 | **Durée** | 15 jours ouvrés (~3 semaines) |
-| **Niveau** | Niveau 3 — projet certificatif de bout en bout |
+| **Niveau** | Avancé — projet de synthèse de bout en bout |
 | **Modalité** | Individuel |
 | **Outils** | Power BI (prioritaire) ou Looker Studio (si contrainte macOS), Python/SQL, tableur, Kanban |
-| **Certification** | RNCP-38616 — Concepteur développeur en IA et analyse big data, option Data Analyse, bloc BC06 — projet certificatif |
 | **Prérequis** | [Cours Business Intelligence](../../15-Business-Intelligence/), [SQL](../../01-Fondamentaux/SQL/), [Python](../../01-Fondamentaux/Python/) |
 
 ## Description rapide
 
-À partir d'un simple besoin métier exprimé par une direction commerciale, vous concevez en autonomie complète une solution data de bout en bout : collecte multi-sources (Kaggle + API publique + fichier Excel), nettoyage, modélisation en étoile, puis tableau de bord BI de niveau expert, accessible (WCAG) et actionnable. Vous formalisez un dossier projet et défendez vos choix devant un jury. Projet certificatif individuel du bloc BC06.
+À partir d'un simple besoin métier exprimé par une direction commerciale, vous concevez en autonomie complète une solution data de bout en bout : collecte multi-sources (Kaggle + API publique + fichier Excel), nettoyage, modélisation en étoile, puis tableau de bord BI de niveau expert, accessible (WCAG) et actionnable. Vous formalisez un dossier projet et défendez vos choix devant un jury. Projet de synthèse individuel de fin de parcours.
 
-## Compétences visées et niveaux
+## Objectifs pédagogiques
 
-- **C1.** Concevoir un processus de collecte de données dans le respect du RGPD → Niveau 1 (IMITER)
-- **C2.** Créer un système automatisé de collecte de données (ETL) → Niveau 1 (IMITER)
-- **C3.** Mettre en œuvre des stratégies de nettoyage de données → Niveau 1 (IMITER)
-- **C4.** Extraire des données depuis plusieurs sources → Niveau 2 (ADAPTER)
-- **C11.** Élaborer la problématique métier → Niveau 3 (TRANSPOSER)
-- **C16.** Identifier les indicateurs clés (KPI) → Niveau 3 (TRANSPOSER)
-- **C17.** Choisir des visualisations pertinentes (WCAG) → Niveau 3 (TRANSPOSER)
-- **C18.** Créer un tableau de bord BI → Niveau 3 (TRANSPOSER)
-- **C15.** Présenter les résultats → Niveau 3 (TRANSPOSER)
+À l'issue de ce brief, vous serez capable de :
 
-Lecture des niveaux : Niveau 1 = vous reproduisez un procédé maîtrisé ; Niveau 2 = vous adaptez un procédé à un nouveau contexte ; Niveau 3 = vous êtes pleinement autonome, sans modèle fourni, à partir du seul besoin métier. Le cœur certifiant du BC06 (C11, C16, C17, C18, C15) est en TRANSPOSER : c'est là que se joue la validation.
+- **Concevoir un processus de collecte de données** conforme au RGPD : cartographier les sources et documenter la base légale et la conservation.
+- **Automatiser la collecte multi-sources (ETL)** : script d'extraction reproductible, appel d'API paramétré, import de fichier, avec gestion des erreurs et journalisation.
+- **Mettre en œuvre des stratégies de nettoyage** : détecter et traiter doublons, valeurs manquantes et aberrantes, homogénéiser dates, casse, unités et clés de jointure.
+- **Extraire et combiner des données de plusieurs sources hétérogènes** en contrôlant l'exactitude des résultats.
+- **Transformer un besoin métier flou en problématique** et en KPI en toute autonomie, sans modèle fourni.
+- **Concevoir un tableau de bord BI de niveau expert et accessible (WCAG)**, puis restituer et défendre vos choix devant un jury mêlant profils techniques et décideurs.
+
+Ce brief est un projet de synthèse : vous êtes pleinement autonome, sans modèle fourni, à partir du seul besoin métier. C'est là que se joue la validation de fin de parcours.
 
 ## Contexte
 
 **L'entreprise.** « NordRetail », enseigne de distribution omnicanale implantée dans les Hauts-de-France (magasins physiques + site e-commerce), réalise environ 180 M€ de chiffre d'affaires annuel. La direction commerciale pilote aujourd'hui son activité avec une mosaïque de fichiers Excel : chaque responsable de catégorie tient son propre tableau, les périmètres ne se recoupent pas, les chiffres divergent d'une réunion à l'autre, et le reporting mensuel mobilise deux jours de travail manuel. Personne ne sait dire, sur un même écran, quels produits tirent la marge, comment les ventes varient selon les régions et les saisons, ni quel est l'effet de la météo sur la fréquentation. La direction ne veut pas d'un énième fichier : elle veut **un tableau de bord BI unique, fiable, lisible en 30 secondes, et exploitable par des décideurs non techniciens**.
 
-**Le commanditaire vous remet uniquement un besoin métier**, formulé en une phrase lors d'un échange de cadrage : « Je veux comprendre ce qui fait notre performance commerciale, par produit, par territoire et dans le temps, pour décider où concentrer nos efforts. » Tout le reste — problématique précise, indicateurs, visualisations, modèle de données, architecture — est à votre charge. C'est l'enjeu du niveau TRANSPOSER : vous transformez un besoin flou en une solution complète et défendable.
+**Le commanditaire vous remet uniquement un besoin métier**, formulé en une phrase lors d'un échange de cadrage : « Je veux comprendre ce qui fait notre performance commerciale, par produit, par territoire et dans le temps, pour décider où concentrer nos efforts. » Tout le reste — problématique précise, indicateurs, visualisations, modèle de données, architecture — est à votre charge. C'est tout l'enjeu du projet : vous transformez, en pleine autonomie, un besoin flou en une solution complète et défendable.
 
 **Question centrale (à affiner et à porter tout au long du projet).** « Qu'est-ce qui explique la performance commerciale de NordRetail, et où concentrer les efforts pour la faire progresser ? » Vous déclinerez cette question en sous-questions analytiques mesurables (par exemple : quels produits/catégories concentrent le chiffre d'affaires et la marge ? comment les ventes évoluent-elles dans le temps et selon la saisonnalité ? existe-t-il des écarts territoriaux ? la météo influence-t-elle les ventes ?). Chaque KPI et chaque visualisation devront répondre à l'une de ces sous-questions.
 
@@ -63,17 +61,15 @@ Projet **individuel** mené sur **15 jours ouvrés** (~3 semaines), en autonomie
 
 ## Modalités d'évaluation
 
-L'évaluation combine trois volets, alignés sur les attendus de la certification partielle BC06.
+L'évaluation combine trois volets, alignés sur les attendus du projet de fin de parcours.
 
-- Dossier projet écrit — 35 %. Évalue la démarche, la justification des choix (problématique, KPI, visualisations, modèle, architecture), la conformité RGPD et la qualité de la documentation. C'est la trace écrite de votre raisonnement de niveau TRANSPOSER.
+- Dossier projet écrit — 35 %. Évalue la démarche, la justification des choix (problématique, KPI, visualisations, modèle, architecture), la conformité RGPD et la qualité de la documentation. C'est la trace écrite de votre raisonnement mené en pleine autonomie.
 - Tableau de bord BI livré — 35 %. Évalue la pertinence des indicateurs, le choix des visualisations, l'accessibilité WCAG, l'interactivité, la justesse des chiffres et la lisibilité « 30 secondes ».
 - Soutenance orale devant jury — 30 %. Durée : 20 minutes de présentation et démonstration live du tableau de bord, suivies de 15 minutes de questions du jury. Évalue la clarté du storytelling, l'adaptation au public, la défense des choix et la formulation de recommandations métier.
 
-Chaque compétence est validée si ses critères de performance (section « Critères de performance ») sont majoritairement remplis. Les compétences en Niveau 3 (C11, C16, C17, C18, C15) sont déterminantes pour la validation du bloc.
+Chaque acquis est validé si ses critères de performance (section « Critères de performance ») sont majoritairement remplis. Les capacités de cadrage, de définition des KPI, de choix des visualisations, de construction du tableau de bord et de restitution sont déterminantes pour la réussite du projet.
 
-**Clause de validation partielle.** Un apprenant dont le tableau de bord présente des imperfections techniques, mais dont la démarche est rigoureuse, documentée et justifiée (problématique solide, KPI pertinents, modèle correct, choix de visualisations argumentés), peut valider partiellement les compétences concernées. À l'inverse, un tableau de bord visuellement abouti mais sans démarche ni justification ne suffit pas à valider les compétences de niveau TRANSPOSER.
-
-**Lien certification.** Ce projet est le support d'évaluation du bloc BC06. La validation des compétences C11, C16, C17, C18 et C15 conditionne l'obtention de la certification partielle correspondante.
+**Clause de validation partielle.** Un apprenant dont le tableau de bord présente des imperfections techniques, mais dont la démarche est rigoureuse, documentée et justifiée (problématique solide, KPI pertinents, modèle correct, choix de visualisations argumentés), peut valider partiellement les acquis concernés. À l'inverse, un tableau de bord visuellement abouti mais sans démarche ni justification ne suffit pas à valider une autonomie complète.
 
 ## Livrables attendus
 
@@ -91,47 +87,47 @@ Note RGPD : aucune donnée personnelle identifiante ne doit figurer dans le dép
 
 ## Critères de performance
 
-**C1. Concevoir un processus de collecte (RGPD) — Niveau 1**
+**Concevoir un processus de collecte (RGPD)**
 - Les sources sont cartographiées (format, volume, accès, fraîcheur) : OUI / NON
 - La conformité RGPD est documentée (absence/pseudonymisation des données personnelles, base légale, conservation) : OUI / NON
 - Les outils de centralisation choisis sont cohérents avec le besoin : OUI / NON
 
-**C2. Créer un système automatisé de collecte (ETL) — Niveau 1**
+**Créer un système automatisé de collecte (ETL)**
 - L'extraction est scriptée et reproductible (pas de copier-coller manuel) : OUI / NON
 - L'appel API est paramétré et fonctionnel : OUI / NON
 - La gestion des erreurs et la journalisation sont présentes : OUI / NON
 
-**C3. Stratégies de nettoyage — Niveau 1**
+**Mettre en œuvre des stratégies de nettoyage**
 - Doublons, valeurs manquantes et aberrantes sont identifiés et traités : OUI / NON
 - La stratégie (imputation/suppression/substitution) est justifiée par le contexte : OUI / NON
 - Les règles de nettoyage sont documentées : OUI / NON
 
-**C4. Extraire des données multi-sources — Niveau 2**
+**Extraire des données multi-sources**
 - Les trois sources sont effectivement extraites et combinées : OUI / NON
 - Les clés de jointure sont cohérentes et les formats homogénéisés : OUI / NON
 - L'exactitude des données extraites est contrôlée (totaux, doublons) : OUI / NON
 
-**C11. Élaborer la problématique métier — Niveau 3**
+**Élaborer la problématique métier**
 - Le besoin métier est transformé en problématique et sous-questions mesurables : OUI / NON
 - Un cahier des charges (objectifs, périmètre, livrables) est formalisé : OUI / NON
 - La problématique pilote effectivement les choix du projet : OUI / NON
 
-**C16. Identifier les KPI — Niveau 3**
+**Identifier les KPI**
 - Les KPI sont définis (formule, granularité, fréquence, cible) : OUI / NON
 - Indicateurs de résultat et d'activité sont distingués : OUI / NON
 - L'arborescence du tableau de bord (direction → détail) est structurée : OUI / NON
 
-**C17. Choisir des visualisations pertinentes (WCAG) — Niveau 3**
+**Choisir des visualisations pertinentes (WCAG)**
 - Chaque graphique est adapté à l'intention et à la nature de la donnée : OUI / NON
 - L'accessibilité WCAG est respectée (contraste, daltonisme, titres, alternatives) : OUI / NON
 - Les pièges visuels (camembert surchargé, axe tronqué, 3D) sont évités : OUI / NON
 
-**C18. Créer un tableau de bord BI — Niveau 3**
+**Créer un tableau de bord BI**
 - Le modèle en étoile est correct et les agrégations sont justes : OUI / NON
 - L'interactivité (filtres, segments, drill-down, info-bulles) fonctionne : OUI / NON
 - Le tableau de bord est lisible « en 30 secondes » et publiable : OUI / NON
 
-**C15. Présenter les résultats — Niveau 3**
+**Présenter les résultats**
 - Le discours est adapté au public (technique et décideurs) : OUI / NON
 - Le storytelling mène à des recommandations métier concrètes : OUI / NON
 - L'accessibilité de la restitution est prise en compte : OUI / NON

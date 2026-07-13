@@ -4,7 +4,7 @@
 |---|---|
 | **Phase** | Phase 2 — BI avancée |
 | **Durée estimée** | ~25 h |
-| **Compétence visée** | **C17 — Réaliser des représentations visuelles de données** (niveau 2) |
+| **Objectif** | Réaliser des représentations visuelles de données |
 | **Pré-requis** | Module 1.5 (Initiation à la dataviz : choisir le bon graphique, premiers visuels Power BI / Looker Studio) ; notions de modélisation (2.2) et de mesures DAX (2.3) recommandées |
 | **Outils** | Power BI Desktop + Looker Studio (les deux sont décrits) |
 
@@ -34,7 +34,7 @@ Un tableau de bord, ce n'est pas une galerie de graphiques : c'est un **outil de
 - **La performance** : un rapport qui met 30 secondes à charger ne sera pas consulté. Savoir l'alléger fait partie du métier.
 - **Éviter les visuels trompeurs** : la crédibilité du DA repose sur l'honnêteté de ses représentations. Un axe tronqué qui exagère une hausse, c'est ta réputation qui est en jeu.
 
-C17 niveau 2 attend justement que tu ailles **au-delà du graphique simple** : interactivité, accessibilité et esprit critique sur la représentation.
+Le niveau 2 attend justement que tu ailles **au-delà du graphique simple** : interactivité, accessibilité et esprit critique sur la représentation.
 
 ---
 

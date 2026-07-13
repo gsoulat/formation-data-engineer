@@ -7,7 +7,7 @@
 | | |
 |---|---|
 | **Durée indicative** | ~14 heures (pratique incluse) |
-| **Compétence visée** | **C4 (niveau 2)** — Requêter une base de données et extraire des données de sources variées |
+| **Objectif** | Requêter une base de données et extraire des données de sources variées |
 | **Prérequis** | [01 - Extraction ciblée](01-extraction-ciblee.md), [Module 05 (CTE, Window Functions)](../05-Fonctions-Avancees/README.md) |
 | **Outils** | SQLite (DB Browser for SQLite ou la librairie `sqlite3` de Python) + une base de ventes retail |
 

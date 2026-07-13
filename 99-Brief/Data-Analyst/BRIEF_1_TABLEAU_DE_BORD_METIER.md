@@ -5,26 +5,25 @@
 | Critère | Valeur |
 |---------|--------|
 | **Durée** | Environ une semaine (5 jours) |
-| **Niveau** | Niveau 1 — IMITER / Niveau 2 — ADAPTER (selon les compétences) |
+| **Niveau** | Intermédiaire |
 | **Modalité** | Binôme |
 | **Outils** | SQL (SQLite ou PostgreSQL), Python (pandas), Power BI ou Looker Studio |
-| **Certification** | RNCP-38616 — Concepteur développeur en IA et analyse big data, option Data Analyse, bloc BC06 |
 | **Prérequis** | [Cours Business Intelligence](../../15-Business-Intelligence/), [SQL](../../01-Fondamentaux/SQL/), [Python](../../01-Fondamentaux/Python/) |
 
 ## Description rapide
 
 En binôme, vous incarnez une cellule data missionnée par une enseigne de vente en ligne des Hauts-de-France. À partir d'un besoin métier de monitorage, vous extrayez les données de ventes (SQL + Python), menez une analyse exploratoire, identifiez les indicateurs clés, puis construisez un tableau de bord BI lisible (Power BI ou Looker Studio) que vous analysez et présentez. Objectif : passer d'un suivi manuel sur Excel à un monitorage fiable, visuel et reproductible de l'activité commerciale. Projet d'environ une semaine.
 
-## Compétences visées et niveaux
+## Objectifs pédagogiques
 
-- **C4.** Extraire des données via des scripts (SQL / Python) → Niveau 1 (IMITER)
-- **C5.** Mener des analyses exploratoires (statistiques descriptives) → Niveau 1 (IMITER)
-- **C6.** Identifier et interpréter des tendances → Niveau 1 (IMITER)
-- **C11.** Élaborer la problématique métier → Niveau 1 (IMITER)
-- **C16.** Identifier les indicateurs clés (KPI) → Niveau 2 (ADAPTER)
-- **C17.** Choisir des visualisations pertinentes → Niveau 2 (ADAPTER)
-- **C18.** Créer un tableau de bord BI → Niveau 2 (ADAPTER)
-- **C15.** Présenter les résultats → Niveau 1 (IMITER)
+À l'issue de ce brief, vous serez capable de :
+
+- **Extraire des données via des scripts** SQL (SQLite ou PostgreSQL) et/ou Python (pandas), de façon reproductible et vérifiable.
+- **Mener une analyse exploratoire** : produire et interpréter des statistiques descriptives (tendance centrale, dispersion, distribution des montants).
+- **Identifier et interpréter des tendances** : évolution temporelle, saisonnalité, comparaisons entre villes, canaux et produits, sans confondre corrélation et causalité.
+- **Élaborer une problématique métier** : reformuler un besoin flou en question centrale et en questions analytiques mesurables.
+- **Définir des indicateurs clés (KPI)** adaptés au besoin, avec pour chacun une formule, une granularité et une cible éventuelle.
+- **Concevoir un tableau de bord BI lisible et accessible** (Power BI ou Looker Studio), puis restituer les résultats à un public métier sans jargon.
 
 ## Contexte
 
@@ -93,7 +92,7 @@ L'évaluation se fait en binôme, sous deux formes complémentaires et pondéré
 
 Les deux membres du binôme doivent pouvoir expliquer n'importe quelle partie du travail ; une question peut être adressée individuellement.
 
-**Clause de validation partielle** : un binôme dont le tableau de bord n'est pas totalement abouti en démonstration, mais dont les scripts d'extraction et d'analyse sont structurés, justes et documentés, peut valider partiellement les compétences C4, C5 et C6. À l'inverse, un tableau de bord soigné mais bâti sur des chiffres faux (retours comptés dans le CA, doublons non traités) ne valide pas C16 et C18. Les compétences sont évaluées indépendamment les unes des autres.
+**Clause de validation partielle** : un binôme dont le tableau de bord n'est pas totalement abouti en démonstration, mais dont les scripts d'extraction et d'analyse sont structurés, justes et documentés, peut valider partiellement les acquis liés à l'extraction et à l'analyse exploratoire. À l'inverse, un tableau de bord soigné mais bâti sur des chiffres faux (retours comptés dans le CA, doublons non traités) ne valide pas la définition des KPI ni la construction du tableau de bord. Chaque acquis est évalué indépendamment des autres.
 
 ## Livrables attendus
 
@@ -112,45 +111,45 @@ Pas de données personnelles réelles : le jeu NordRetail est 100 % synthétique
 
 ## Critères de performance
 
-**C4. Extraire des données via des scripts (Niveau 1)**
+**Extraire des données via des scripts**
 - Le dataset est chargé dans une base SQL et/ou un DataFrame pandas de façon reproductible : OUI / NON
 - Des requêtes d'extraction et d'agrégation (par mois, produit, ville, canal) sont écrites et fonctionnent : OUI / NON
 - Les retours (montants ou quantités négatifs) sont correctement exclus du calcul du chiffre d'affaires : OUI / NON
 - L'exactitude des données extraites est vérifiée (comptages, contrôles de cohérence) : OUI / NON
 
-**C5. Mener des analyses exploratoires (Niveau 1)**
+**Mener une analyse exploratoire**
 - Les statistiques de tendance centrale (moyenne, médiane) sont calculées et correctes : OUI / NON
 - La dispersion est mesurée (écart-type et/ou IQR) : OUI / NON
 - La distribution des montants est explorée (histogramme, quantiles) : OUI / NON
 - Les valeurs manifestement aberrantes sont repérées et signalées (sans traitement statistique avancé, réservé à la Phase 3) : OUI / NON
 
-**C6. Identifier et interpréter des tendances (Niveau 1)**
+**Identifier et interpréter des tendances**
 - L'évolution temporelle du chiffre d'affaires est analysée (saisonnalité, pics) : OUI / NON
 - Des comparaisons entre groupes (villes, canaux, produits) sont menées : OUI / NON
 - Les interprétations sont contextualisées pour le métier sans confondre corrélation et causalité : OUI / NON
 
-**C11. Élaborer la problématique métier (Niveau 1)**
+**Élaborer la problématique métier**
 - Le besoin de la direction est reformulé et la question centrale est explicitée : OUI / NON
 - Le périmètre, les utilisateurs et la fréquence de consultation sont précisés : OUI / NON
 - Le besoin flou est traduit en questions analytiques mesurables : OUI / NON
 
-**C16. Identifier les indicateurs clés (Niveau 2)**
+**Identifier les indicateurs clés (KPI)**
 - Trois à six KPI pertinents répondant à la question centrale sont définis : OUI / NON
 - Chaque KPI dispose d'une formule, d'une granularité et d'une cible éventuelle : OUI / NON
 - Les KPI sont choisis et structurés avant la construction du tableau de bord : OUI / NON
 
-**C17. Choisir des visualisations pertinentes (Niveau 2)**
+**Choisir des visualisations pertinentes**
 - Chaque graphique est adapté à la nature de la donnée et à l'intention : OUI / NON
 - Les pièges visuels sont évités (camembert surchargé, axe tronqué, 3D inutile) : OUI / NON
 - Les choix d'accessibilité sont respectés (titres explicites, contrastes, palette) : OUI / NON
 
-**C18. Créer un tableau de bord BI (Niveau 2)**
+**Créer un tableau de bord BI**
 - Le tableau de bord est construit dans Power BI ou Looker Studio à partir de données propres : OUI / NON
 - Les KPI principaux sont mis en évidence et lisibles « en 30 secondes » : OUI / NON
 - Au moins un élément d'interactivité fonctionne (filtre, segment) : OUI / NON
 - Les chiffres affichés sont exacts et cohérents avec l'analyse : OUI / NON
 
-**C15. Présenter les résultats (Niveau 1)**
+**Présenter les résultats**
 - La présentation répond explicitement à la question centrale : OUI / NON
 - Le discours est adapté à un public métier (storytelling, pas de jargon) : OUI / NON
 - Deux à trois recommandations concrètes sont formulées : OUI / NON

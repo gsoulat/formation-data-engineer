@@ -17,7 +17,7 @@
 | | |
 |---|---|
 | **Durée** | 2 jours (≈ 14 h) |
-| **Compétence visée** | **C5 — Mener des analyses exploratoires** (RNCP-38616) |
+| **Objectif** | Mener des analyses exploratoires |
 | **Pré-requis** | Chapitre 1 (calcul, pourcentages, sommes Σ) · Chapitre 2 (lecture de graphiques) · bases Python/pandas |
 | **Outils** | Papier + calculatrice, puis Python (`pandas`, `numpy`, `scipy.stats`, `matplotlib`, `seaborn`) |
 
@@ -53,7 +53,7 @@ Ce chapitre est riche. Pour ne pas te noyer, il est rangé en **deux niveaux** :
 
 ## Pourquoi c'est LE cœur du métier de Data Analyst
 
-Un Data Analyst ne passe pas ses journées à construire des modèles d'IA. Il passe l'essentiel de son temps à **comprendre des données qu'il découvre**. Cette étape s'appelle l'**analyse exploratoire** (EDA, *Exploratory Data Analysis*) et c'est exactement la compétence **C5**.
+Un Data Analyst ne passe pas ses journées à construire des modèles d'IA. Il passe l'essentiel de son temps à **comprendre des données qu'il découvre**. Cette étape s'appelle l'**analyse exploratoire** (EDA, *Exploratory Data Analysis*).
 
 Concrètement, dès qu'un fichier arrive sur ton bureau, tu te poses **toujours** les mêmes questions :
 
@@ -516,11 +516,11 @@ print("Moyenne :", ventes["panier"].mean(),
 
 > 🧠 **Analogie : le client qui détonne.** Dans la file de clients de la Ch'ti Boutique, l'outlier c'est **celui qui pousse un caddie de 200 € au milieu de gens qui prennent un sandwich**. Soit il existe vraiment (achat pro), soit c'est une erreur de caisse. Ton job : enquêter, pas supprimer en douce.
 
-> 🎯 **Ça te servira pour…** **repérer une saisie erronée** (virgule oubliée : 2 000 € au lieu de 20,00 €) avant qu'elle ne pollue toutes tes moyennes. C'est le pont direct vers le **nettoyage des données (C3)**.
+> 🎯 **Ça te servira pour…** **repérer une saisie erronée** (virgule oubliée : 2 000 € au lieu de 20,00 €) avant qu'elle ne pollue toutes tes moyennes. C'est le pont direct vers le **nettoyage des données**.
 
 Une **valeur aberrante** est une observation anormalement éloignée des autres. Pour un Data Analyst c'est **double enjeu** :
 
-1. **Une erreur de saisie** à corriger (un panier à 2 000 € au lieu de 20,00 € — virgule oubliée), un âge de 200 ans, une vente négative. → lien direct avec le **nettoyage des données (compétence C3)**.
+1. **Une erreur de saisie** à corriger (un panier à 2 000 € au lieu de 20,00 € — virgule oubliée), un âge de 200 ans, une vente négative. → lien direct avec le **nettoyage des données**.
 2. **Un vrai phénomène à comprendre** (un achat professionnel en gros, une fraude, un client exceptionnel). → à **analyser**, pas à jeter aveuglément.
 
 ### Méthode 1 — La règle de l'IQR (1,5 × IQR)
@@ -558,7 +558,7 @@ $$z = \frac{200 - 45}{18} = \frac{155}{18} \approx 8{,}6$$
 
 | Situation | Décision |
 |---|---|
-| Erreur évidente (panier 2 000 € = virgule oubliée, âge 200 ans) | **Corriger** si possible, sinon supprimer/mettre en `NaN` (→ C3 nettoyage) |
+| Erreur évidente (panier 2 000 € = virgule oubliée, âge 200 ans) | **Corriger** si possible, sinon supprimer/mettre en `NaN` (→ nettoyage) |
 | Valeur réelle mais extrême (gros achat pro, client VIP) | **Conserver**, et **documenter**. Éventuellement analyser à part |
 | Doute | Garder, **signaler dans le rapport**, calculer les stats **avec et sans** pour mesurer l'impact |
 
@@ -982,6 +982,6 @@ Interprétation type : « Dunkerque a la **boîte la plus courte** (écart-type 
 
 1. **`df.info()` + `df.dtypes`** → quels types de variables ?
 2. **`df.describe()`** → tendance centrale + dispersion + quantiles d'un coup. **Compare toujours moyenne et médiane.**
-3. **Histogramme + boxplot** → forme, asymétrie, outliers → décision de nettoyage (C3).
+3. **Histogramme + boxplot** → forme, asymétrie, outliers → décision de nettoyage.
 
 > 🚀 **Prochaine étape :** au **chapitre 4** tu verras les probabilités et la loi normale, et au **chapitre 5** la **corrélation** (la force du lien entre deux variables, dont on a posé la première pierre ici avec la covariance).

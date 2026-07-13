@@ -2,7 +2,7 @@
 
 > **Phase 1** — Construire un tableau de bord
 > **Durée** : ~20 heures
-> **Compétence visée** : C6 (niveau 1) — *Identifier les corrélations et analyser les tendances afin de produire des recommandations*
+> **Objectif** : *Identifier les corrélations et analyser les tendances afin de produire des recommandations*
 > **Pré-requis** :
 > - Module **1.2** (Python / pandas / EDA) — tu sais charger un CSV, manipuler un `DataFrame`, faire un `groupby`, tracer un graphique avec matplotlib.
 > - Module **Maths chapitre 6** (moyenne mobile, indices) et **chapitre 5** (corrélation).
@@ -64,7 +64,7 @@ Dans la vraie vie, on te posera rarement la question « quelle est la moyenne ? 
 
 Ce sont des questions de **tendance**. Elles sont au cœur de tout tableau de bord de pilotage : un dirigeant ne regarde pas un chiffre isolé, il regarde une **courbe dans le temps** et il veut savoir si la flèche pointe vers le haut.
 
-Savoir répondre proprement — avec les bons calculs (YoY, moyenne mobile) et la bonne prudence (ne pas confondre un pic de Noël avec une croissance durable) — c'est exactement ce qui sépare un Data Analyst d'une personne qui « sait faire un graphique ». C'est la compétence **C6**.
+Savoir répondre proprement — avec les bons calculs (YoY, moyenne mobile) et la bonne prudence (ne pas confondre un pic de Noël avec une croissance durable) — c'est exactement ce qui sépare un Data Analyst d'une personne qui « sait faire un graphique ».
 
 Fil rouge du module : le **chiffre d'affaires mensuel d'enseignes retail dans les Hauts-de-France** (Nord). On y verra des soldes (janvier, juin/juillet) et un pic de Noël (décembre) : un terrain parfait pour parler saisonnalité.
 
@@ -675,4 +675,4 @@ Critères : mentionne la saison, utilise le YoY pour trancher, refuse la sur-int
 - **`rolling(n).mean()`** lisse le bruit et révèle la **tendance**. Fenêtre 12 = annule la saison annuelle. Ne lisse pas au point d'effacer les vraies anomalies.
 - Toute série = **tendance + saisonnalité + bruit**. Un pic récurrent (Noël) est **saisonnier**, pas une tendance.
 - Comparer des groupes : **base 100** pour comparer des **rythmes**, pas des montants.
-- **Honnêteté analytique** : corrélation ≠ causalité, axe Y à 0, on cherche l'explication métier et on assume ce qu'on ne sait pas. C'est ça, le niveau 1 de **C6**.
+- **Honnêteté analytique** : corrélation ≠ causalité, axe Y à 0, on cherche l'explication métier et on assume ce qu'on ne sait pas. C'est ça, l'analyse des tendances au niveau 1.

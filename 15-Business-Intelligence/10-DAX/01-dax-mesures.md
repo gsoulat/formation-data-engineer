@@ -5,7 +5,7 @@
 | **Titre** | DAX & mesures avancées (Power BI) |
 | **Phase** | Phase 2 — BI avancée |
 | **Durée** | ~35 h |
-| **Compétence visée** | **C18** — Concevoir des indicateurs et mesures de performance à l'aide d'un langage d'expression analytique (DAX) afin de répondre à un besoin métier |
+| **Objectif** | Concevoir des indicateurs et mesures de performance à l'aide d'un langage d'expression analytique (DAX) afin de répondre à un besoin métier |
 | **Pré-requis** | Module 2.2 — Modélisation BI (modèle en étoile, relations, table de dates / table de faits / tables de dimensions) |
 
 ---

@@ -4,7 +4,7 @@
 |---|---|
 | **Phase** | 0 — La Prairie (mise à niveau / découverte) |
 | **Durée** | ~20 heures |
-| **Compétences visées** | **C16** *Identifier les indicateurs clés (KPI)* — niveau 1 · **C17** *Choisir des visualisations pertinentes* — niveau 1 · **C11** *Élaborer la problématique métier* — introduction |
+| **Objectifs** | *Identifier les indicateurs clés (KPI)* · *Choisir des visualisations pertinentes* · *Élaborer la problématique métier* |
 | **Pré-requis** | Module 0.1 (découverte du métier de Data Analyst), Module 0.2 (vocabulaire de la donnée). Savoir lire un tableau de chiffres simple. Aucun outil technique requis. |
 | **Type** | **Initiation.** Le niveau 2 (adapter / transposer) sera travaillé en Phase 1. Ici, on découvre et on imite. |
 
@@ -35,7 +35,7 @@ Trois raisons très concrètes :
 
 - **80 % des dashboards inutiles le sont parce que le besoin a été mal compris**, pas parce que la technique était mauvaise. Un graphique techniquement parfait qui répond à la mauvaise question ne sert à rien.
 - **Le commanditaire ne sait presque jamais formuler son besoin en termes de données.** Il te dira « je veux savoir si ça va bien ». À toi de transformer ça en KPI mesurables. C'est ton expertise.
-- **C'est le cœur du référentiel RNCP-38616** : les compétences C11 (problématique), C16 (KPI) et C17 (visualisation) sont au centre du bloc BC06. Tu les retrouveras dans **tous** tes projets et à la certification.
+- **C'est le cœur du métier** : formaliser la problématique, définir les KPI et choisir les visualisations sont des gestes centraux. Tu les retrouveras dans **tous** tes projets et à la certification.
 
 Dans la vraie vie d'un analyste chez Auchan, Decathlon ou La Redoute, **la moitié de la valeur que tu apportes se joue dans la première réunion** avec le métier.
 
@@ -230,7 +230,7 @@ Une fois le KPI défini, il faut le **montrer**. Le bon graphique dépend de **c
 
 ## Approfondissement — cadrer un besoin en autonomie (niveau 3)
 
-Jusqu'ici, tu as appris à **imiter** (suivre une grille) et à **adapter** (ajuster les questions à un cas). Ici, on monte d'un cran : **transposer**. Tu dois être capable, **seul(e) et face à un commanditaire pressé et flou**, de repartir avec une **note de cadrage** propre — le document qui protège ton travail et celui du métier. C'est ce niveau qu'on attend d'un Data Analyst en poste et à la certification (compétence **C11**, niveau *transposer*).
+Jusqu'ici, tu as appris à **imiter** (suivre une grille) et à **adapter** (ajuster les questions à un cas). Ici, on monte d'un cran : **transposer**. Tu dois être capable, **seul(e) et face à un commanditaire pressé et flou**, de repartir avec une **note de cadrage** propre — le document qui protège ton travail et celui du métier. C'est ce niveau qu'on attend d'un Data Analyst en poste et à la certification (niveau *transposer*).
 
 > 🧭 **Notre fil rouge : NordRetail.** *NordRetail* est une enseigne de distribution fictive des Hauts-de-France : 42 magasins (Lille, Roubaix, Amiens, Dunkerque, Valenciennes…), un site e-commerce, un programme de fidélité et un rayon « produits régionaux ». On va s'en servir dans tout cet approfondissement, puis dans les exercices. Retiens-la : elle revient dans les modules suivants.
 

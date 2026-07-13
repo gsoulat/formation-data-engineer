@@ -4,7 +4,7 @@
 |---|---|
 | **Phase** | Phase 1 — Le tableau de bord |
 | **Durée** | ~15 heures |
-| **Compétence** | C15 (niveau 1) — Restituer les résultats d'une analyse de données à un public donné, en adaptant le discours, les supports et la forme de visualisation au commanditaire |
+| **Objectif** | Restituer les résultats d'une analyse de données à un public donné, en adaptant le discours, les supports et la forme de visualisation au commanditaire |
 | **Pré-requis** | Modules 1.1 à 1.5 (cadrage du besoin, collecte, nettoyage, analyse exploratoire, premier tableau de bord). Savoir lire un graphique simple et avoir produit au moins une analyse chiffrée. |
 
 > Tu as collecté, nettoyé, analysé. Tu as un tableau de bord qui marche. Et maintenant ? Si personne ne comprend ton travail, ou pire, si tout le monde l'a compris de travers, alors tout le reste n'a servi à rien. Ce module, c'est le « dernier kilomètre » du métier : transformer des chiffres en décision.
@@ -36,7 +36,7 @@ Concrètement, savoir restituer te sert à :
 - **Gagner en crédibilité.** Une présentation nette inspire confiance dans tes chiffres (même imparfaits).
 - **Éviter les contresens coûteux.** Un graphique trompeur peut pousser à fermer le bon magasin.
 - **Respecter la loi et l'éthique.** L'accessibilité n'est pas optionnelle : un dashboard public d'une collectivité ou d'une grande enseigne doit être lisible par tous, y compris les personnes daltoniennes ou malvoyantes (RGAA en France, dérivé des WCAG).
-- **Valider ta certification.** La compétence C15 est évaluée à la **soutenance** du brief de phase. Ce module te prépare directement à ce passage.
+- **Valider ta certification.** La restitution des résultats est évaluée à la **soutenance** du brief de phase. Ce module te prépare directement à ce passage.
 
 ---
 

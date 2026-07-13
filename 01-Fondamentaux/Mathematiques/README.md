@@ -2,7 +2,7 @@
 
 Module de **remise à niveau mathématique** au service de l'analyse de données. Il pose le
 socle statistique et algébrique mobilisé tout au long du parcours
-[Data Analyst](../../PATH_DATA_ANALYST.md) (compétences **C5 / C6** — analyse exploratoire et
+[Data Analyst](../../PATH_DATA_ANALYST.md) (analyse exploratoire et
 interprétation des tendances) et sert de référence aux autres parcours data.
 
 Chaque chapitre est **autoportant** : accroche métier (univers retail « Ch'ti Boutique » /

@@ -1,7 +1,7 @@
 # 05 — Statistique inférentielle
 
-> **Formation Data Analyst — RNCP-38616 (Simplon)**
-> **Compétence visée : C6 — « Identifier et interpréter des tendances »**
+> **Formation Data Analyst**
+> **Objectif : Identifier et interpréter des tendances**
 > Module : Mathématiques pour la donnée · Niveau : remise à niveau, accessible
 
 ---

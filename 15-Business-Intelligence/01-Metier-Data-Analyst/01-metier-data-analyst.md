@@ -5,7 +5,7 @@
 | **Phase** | Phase 0 — La Prairie |
 | **Durée** | ~14 heures |
 | **Type de module** | Découverte (peu technique) |
-| **Compétences visées** | Aucune compétence certifiante validée ici. Sensibilisation au cœur du métier (C16, C17, C18 = Business Intelligence / tableaux de bord, bloc **BC06**) et aux compétences transversales (CT6, CT7). |
+| **Objectifs** | Sensibilisation au cœur du métier (Business Intelligence / conception de tableaux de bord) et aux compétences transversales (communication, collaboration). Aucune évaluation technique à ce stade. |
 | **Pré-requis** | **Aucun.** Bienvenue, tu pars de zéro et c'est normal. |
 
 ---
@@ -17,8 +17,8 @@
 1. **Expliquer avec tes propres mots** ce que fait un Data Analyst au quotidien et pourquoi l'entreprise paie pour ça.
 2. **Distinguer** le Data Analyst du Data Engineer et du Data Scientist (et arrêter de confondre les trois en entretien).
 3. **Décrire les 5 grandes activités** du métier (A1 à A5) et repérer celle qui sera le cœur de ta formation.
-4. **Lire et décoder un référentiel de compétences** RNCP : comprendre ce qu'est la certification **RNCP-38616**, ce qu'est le **bloc BC06**, et ce que veulent dire les codes C1-C18, CT1-CT9.
-5. **Comprendre les 3 niveaux de maîtrise** Simplon (imiter / adapter / transposer) et savoir te situer.
+4. **Lire et décoder un référentiel de compétences** : comprendre comment un métier data est structuré en activités et en compétences (techniques et transversales), pour savoir ce qui sera évalué.
+5. **Comprendre les 3 niveaux de maîtrise** (découvrir → adapter → transposer) et savoir te situer.
 6. **Analyser une fiche de poste** réelle pour en extraire missions, compétences et outils attendus.
 7. **Identifier les débouchés** concrets dans les Hauts-de-France et avoir une idée réaliste des salaires.
 
@@ -33,10 +33,10 @@ Tu es en reconversion. Tu vas passer 7 mois intensifs à apprendre du SQL, du Py
 Ce module répond à trois questions simples mais vitales :
 
 - **« Je vais faire quoi, concrètement, dans une entreprise ? »**
-- **« Cette certification, le RNCP-38616, ça vaut quoi et ça contient quoi ? »**
+- **« Ce métier, ça consiste en quoi exactement, et qu'est-ce qu'on va m'apprendre ? »**
 - **« Est-ce qu'on recrute, près de chez moi, et combien je peux espérer gagner ? »**
 
-Comprendre le référentiel te donne aussi un **super-pouvoir** : pendant toute la formation, chaque brief, chaque exercice sera rattaché à une compétence codée (C16, CT6...). Si tu sais lire ces codes, tu sais **exactement ce qu'on évalue chez toi** et tu peux piloter ta progression. Les apprenants qui réussissent leur certif sont ceux qui ont compris le référentiel dès le début.
+Comprendre le référentiel te donne aussi un **super-pouvoir** : pendant toute la formation, chaque brief, chaque exercice est rattaché à une compétence précise. Si tu sais lire ces attendus, tu sais **exactement ce qu'on évalue chez toi** et tu peux piloter ta progression. Les apprenants qui réussissent sont ceux qui ont compris les objectifs de leur parcours dès le début.
 
 ---
 
@@ -83,7 +83,7 @@ Le référentiel découpe le métier en **5 activités**. Garde-les en tête, el
 | **A5** | **Concevoir des tableaux de bord avancés** | **Le cœur du métier Data Analyst : la Business Intelligence (BI).** |
 
 > 🎯 **Le cœur de ta formation = A5.**
-> C'est l'activité reliée au **bloc BC06**, celui que tu vas chercher à valider. A1, A2 et A4 sont les fondations qui alimentent A5. A3 (le machine learning) n'est qu'une **introduction** pour toi : c'est le terrain principal du Data Scientist, pas du Data Analyst.
+> C'est l'activité que tu vas chercher à maîtriser en priorité : concevoir des tableaux de bord avancés. A1, A2 et A4 sont les fondations qui alimentent A5. A3 (le machine learning) n'est qu'une **introduction** pour toi : c'est le terrain principal du Data Scientist, pas du Data Analyst.
 
 ---
 
@@ -108,41 +108,33 @@ Les trois métiers travaillent avec la donnée mais ne font **pas du tout** la m
 
 ---
 
-### La certification RNCP-38616 et le bloc BC06
+### Le métier structuré en compétences
 
-#### C'est quoi le RNCP ?
+#### Une formation reconnue
 
-Le **RNCP** = Répertoire National des Certifications Professionnelles. C'est le catalogue officiel de l'État (géré par **France Compétences**) qui liste tous les diplômes et titres professionnels reconnus en France. Une certification au RNCP, c'est un titre **reconnu par l'État et les employeurs**, et **éligible au CPF**.
+Cette formation prépare à un métier data **reconnu et recherché** sur le marché de l'emploi. Elle vise un titre de **niveau Bac+3/4** (niveau licence/master 1), qui couvre plusieurs métiers data. Toi, tu suis le **parcours Data Analyse**.
 
-#### Le titre que tu prépares
+#### Les grandes familles de compétences
 
-- **Numéro :** RNCP-38616
-- **Intitulé :** *Concepteur développeur en intelligence artificielle et analyse big data*
-- **Niveau :** 6 (équivalent **Bac+3/4**, niveau licence/master 1)
+Le métier se découpe en **familles de compétences** que tu vas travailler tout au long du parcours. Certaines sont regroupées par thème et peuvent être validées de façon indépendante.
 
-Ce titre couvre plusieurs métiers data. Toi, tu suis l'**option Data Analyse**.
-
-#### Les blocs de compétences
-
-Un titre RNCP est découpé en **blocs de compétences** (les « BC »). Chaque bloc est **indépendant** et peut être validé séparément. C'est important : tu peux valider un bloc même sans avoir tout le titre.
-
-| Bloc | Thème |
+| Thème | Contenu |
 |------|-------|
-| BC01 → BC05 | Collecte, analyse, IA, gestion de projet... |
-| **BC06** | **Concevoir des tableaux de bord avancés (Business Intelligence)** |
+| Fondations data | Collecte, analyse, introduction à l'IA, gestion de projet... |
+| **Business Intelligence** | **Concevoir des tableaux de bord avancés** |
 
-> 🎯 **Ta cible principale : le BC06.**
-> Sur cette formation intensive de 7 mois, l'objectif est le **passage du bloc BC06 du RNCP-38616**. C'est le bloc Business Intelligence, celui qui correspond pile au cœur du métier de Data Analyst (activité A5 : concevoir des tableaux de bord avancés).
+> 🎯 **Ta cible principale : la Business Intelligence.**
+> Sur cette formation intensive de 7 mois, l'objectif est de maîtriser la **conception de tableaux de bord avancés**. C'est le cœur du métier de Data Analyst (activité A5).
 
-#### Ce que contient le BC06
+#### Ce que contient le cœur BI
 
-Le BC06 repose principalement sur **3 compétences** :
+La partie Business Intelligence repose principalement sur **3 compétences** :
 
-- **C16** — Identifier les indicateurs clés (KPI) à calculer en interrogeant les besoins métier.
-- **C17** — Choisir des visualisations pertinentes (en tenant compte de l'accessibilité, normes WCAG).
-- **C18** — Créer des tableaux de bord avec des outils de BI (Power BI, Looker Studio...).
+- **Identifier les indicateurs clés (KPI)** à calculer en interrogeant les besoins métier.
+- **Choisir des visualisations pertinentes** (en tenant compte de l'accessibilité, normes WCAG).
+- **Créer des tableaux de bord** avec des outils de BI (Power BI, Looker Studio...).
 
-Ces trois compétences vont progresser tout au long de la formation, du **niveau 1 en Prairie** jusqu'au **niveau 3 en Phase 3**, où se joue le passage de la certification.
+Ces trois compétences vont progresser tout au long de la formation, du **niveau débutant en Prairie** jusqu'à la **maîtrise en Phase 3**.
 
 ---
 
@@ -150,22 +142,22 @@ Ces trois compétences vont progresser tout au long de la formation, du **niveau
 
 Un référentiel, ça ressemble à une longue liste de phrases bizarres. Apprends à les décoder, c'est ta boussole pour 7 mois.
 
-#### Les familles de codes
+#### Les deux familles de compétences
 
-- **C1 à C18** = compétences **techniques** (faire de la data : collecter, nettoyer, analyser, visualiser).
-- **CT1 à CT9** = compétences **transversales** (travailler en équipe, résoudre des problèmes, communiquer). Elles comptent **autant** que les techniques en certification !
+- Les compétences **techniques** : faire de la data (collecter, nettoyer, analyser, visualiser).
+- Les compétences **transversales** : travailler en équipe, résoudre des problèmes, communiquer. Elles comptent **autant** que les techniques dans l'évaluation !
 
 #### Anatomie d'une compétence
 
-Chaque compétence suit toujours la structure : **[ACTION] + [MOYEN] + [BUT/finalité]**. Exemple avec **C16** :
+Chaque compétence suit toujours la structure : **[ACTION] + [MOYEN] + [BUT/finalité]**. Exemple :
 
 > « **Identifier les indicateurs clés à calculer** *(action)* **en interrogeant les besoins métier** *(moyen)* **afin de structurer les tableaux de bord nécessaires à des prises de décisions stratégiques** *(but)*. »
 
 Quand tu lis une compétence, repère toujours ces 3 morceaux. Le « afin de » t'explique **pourquoi** la compétence existe.
 
-#### Les 3 niveaux de maîtrise Simplon
+#### Les 3 niveaux de maîtrise (découvrir → adapter → transposer)
 
-Chez Simplon, on évalue ta maîtrise sur **3 niveaux progressifs**. Sache toujours à quel niveau on t'attend.
+Dans une pédagogie par projet, on évalue ta maîtrise sur **3 niveaux progressifs**. Sache toujours à quel niveau on t'attend.
 
 | Niveau | Nom | Ce qu'on attend de toi |
 |:------:|-----|------------------------|
@@ -173,7 +165,7 @@ Chez Simplon, on évalue ta maîtrise sur **3 niveaux progressifs**. Sache toujo
 | **2** | **Adapter** | Tu **transposes** une solution existante à un **nouveau contexte**, en documentant ce que tu fais. |
 | **3** | **Transposer** | Tu **conçois une solution complète** à partir d'un simple besoin métier, et tu **justifies tes choix**. |
 
-> 📌 **Exemple concret sur C18 (créer un tableau de bord)**
+> 📌 **Exemple concret sur la création d'un tableau de bord**
 > - **Niveau 1 (Prairie/Phase 1)** : on te donne un modèle de dashboard et des données, tu refais le même.
 > - **Niveau 2 (Phase 2)** : on te donne de nouvelles données et un nouveau besoin, tu adaptes le dashboard.
 > - **Niveau 3 (Phase 3)** : on te donne juste un besoin métier (« le directeur veut suivre la rentabilité »), tu conçois le dashboard de A à Z et tu expliques pourquoi tu as fait ces choix.
@@ -189,7 +181,7 @@ Savoir lire une offre d'emploi est une compétence en soi. Une fiche de poste co
 1. **Le contexte / l'entreprise** — qui recrute et pourquoi.
 2. **Les missions** — ce que tu feras (mappe-les sur A1-A5 !).
 3. **Les compétences techniques attendues** — les outils (SQL, Power BI, Python, Excel...).
-4. **Les compétences humaines** (soft skills) — communication, rigueur, esprit d'équipe (mappe-les sur CT1-CT9 !).
+4. **Les compétences humaines** (soft skills) — communication, rigueur, esprit d'équipe (relie-les aux compétences transversales !).
 5. **Le profil / formation** — niveau attendu, expérience.
 6. **Conditions** — salaire, localisation, télétravail.
 
@@ -245,7 +237,7 @@ Bonne nouvelle : **les Hauts-de-France sont une terre de retail et d'e-commerce*
 | 3 missions principales | | |
 | Activités du métier concernées (A1-A5) | | |
 | Outils techniques demandés | | |
-| Soft skills demandés (relie à CT1-CT9) | | |
+| Soft skills demandés (compétences transversales) | | |
 | Niveau / expérience attendu | | |
 | Salaire affiché (s'il y en a) | | |
 
@@ -254,10 +246,10 @@ Bonne nouvelle : **les Hauts-de-France sont une terre de retail et d'e-commerce*
 <details>
 <summary>💡 Pistes de corrigé</summary>
 
-- **Missions → activités** : « créer des reportings / dashboards » → **A5** ; « extraire et nettoyer les données » → **A1/A2** ; « présenter aux équipes métier » → **A4 + CT6**.
+- **Missions → activités** : « créer des reportings / dashboards » → **A5** ; « extraire et nettoyer les données » → **A1/A2** ; « présenter aux équipes métier » → **A4 + communication**.
 - **Outils récurrents attendus** : tu devrais voir **SQL** (quasi systématique), **Power BI** ou **Tableau** ou **Looker**, **Excel**, souvent **Python**, parfois un cloud (GCP/Azure/AWS) ou dbt.
-- **Soft skills → transversales** : « bon relationnel / vulgarisation » → **CT6, CT7, CT8** ; « autonomie / rigueur » → **CT3, CT4** ; « travail en équipe » → **CT1, CT2**.
-- **Conclusion attendue** : SQL + un outil de BI reviennent presque partout. **Bonne nouvelle : c'est exactement le cœur de ta formation (BC06).** Si tu vois beaucoup de Python/ML, c'est souvent des postes hybrides Analyst/Scientist.
+- **Soft skills → transversales** : « bon relationnel / vulgarisation » → **communication, pédagogie** ; « autonomie / rigueur » → **cadrage de problème, recherche d'information** ; « travail en équipe » → **collaboration**.
+- **Conclusion attendue** : SQL + un outil de BI reviennent presque partout. **Bonne nouvelle : c'est exactement le cœur de ta formation (la Business Intelligence).** Si tu vois beaucoup de Python/ML, c'est souvent des postes hybrides Analyst/Scientist.
 - **Erreur fréquente** : confondre une offre « Data Analyst » avec une offre « Data Engineer » (beaucoup d'Airflow, Spark, pipelines) ou « Data Scientist » (machine learning, modèles). Vérifie le livrable principal : **dashboards = Analyst**.
 </details>
 
@@ -280,7 +272,7 @@ Bonne nouvelle : **les Hauts-de-France sont une terre de retail et d'e-commerce*
 - **La Redoute** : taux de conversion du site, paniers abandonnés, performance des campagnes marketing. Dashboard « funnel e-commerce ».
 - **Cofidis** : taux d'acceptation des crédits, suivi du risque, performance des offres. Dashboard « performance des produits financiers ».
 - **OVHcloud** : usage et performance des serveurs, suivi de la facturation, satisfaction client. Dashboard « usage infrastructure & churn ».
-- **Ce qui est valorisé** : que tu relies un **besoin métier réel** à un **livrable Data Analyst concret** (un dashboard, une analyse). C'est exactement le raisonnement C16 → C18.
+- **Ce qui est valorisé** : que tu relies un **besoin métier réel** à un **livrable Data Analyst concret** (un dashboard, une analyse). C'est exactement le raisonnement « du besoin métier au tableau de bord ».
 </details>
 
 ---
@@ -312,7 +304,7 @@ Bonne nouvelle : **les Hauts-de-France sont une terre de retail et d'e-commerce*
 - C) Développer des modèles de machine learning prédictifs
 - D) Administrer les serveurs cloud
 
-**Q2.** Quelle activité (A1-A5) constitue le **cœur** de la formation Data Analyst et correspond au bloc BC06 ?
+**Q2.** Quelle activité (A1-A5) constitue le **cœur** de la formation Data Analyst (la Business Intelligence) ?
 - A) A1 — Automatiser la collecte
 - B) A3 — Appliquer des algorithmes d'IA
 - C) A5 — Concevoir des tableaux de bord avancés
@@ -324,26 +316,26 @@ Bonne nouvelle : **les Hauts-de-France sont une terre de retail et d'e-commerce*
 - C) Data Scientist
 - D) Product Owner
 
-**Q4.** Dans la pédagogie Simplon, que signifie le **niveau 3 « Transposer »** ?
+**Q4.** Dans une pédagogie par projet, que signifie le **niveau 3 « Transposer »** ?
 - A) Reproduire une solution à partir d'un exemple identique
 - B) Adapter une solution existante à un nouveau contexte
 - C) Concevoir une solution complète à partir d'un simple besoin métier et justifier ses choix
 - D) Copier-coller du code trouvé en ligne
 
-**Q5.** Que désignent les codes **CT1 à CT9** dans le référentiel ?
+**Q5.** Que désignent les compétences **transversales** dans le référentiel ?
 - A) Les compétences techniques de collecte
-- B) Les compétences transversales (équipe, résolution de problème, communication)
+- B) Travailler en équipe, résoudre des problèmes, communiquer
 - C) Les chapitres du cours de Python
-- D) Les niveaux de certification
+- D) Les niveaux de progression
 
 <details>
 <summary>✅ Réponses</summary>
 
 1. **B** — Le Data Analyst fait le pont entre les données et la décision (analyses + dashboards).
-2. **C** — A5 (tableaux de bord avancés) = cœur du métier, relié au bloc BC06.
+2. **C** — A5 (tableaux de bord avancés) = cœur du métier, la Business Intelligence.
 3. **B** — Le Data Engineer construit l'infrastructure (les tuyaux).
 4. **C** — « Transposer » = concevoir une solution complète depuis un besoin et justifier ses choix.
-5. **B** — CT1-CT9 = compétences transversales (soft skills professionnelles).
+5. **B** — Les compétences transversales = soft skills professionnelles (équipe, résolution de problème, communication).
 </details>
 
 ---
@@ -351,10 +343,10 @@ Bonne nouvelle : **les Hauts-de-France sont une terre de retail et d'e-commerce*
 ## À retenir
 
 - Le **Data Analyst** est un **traducteur entre données et décisions** : question métier → données → réponse claire (souvent un **tableau de bord**).
-- Le métier se découpe en **5 activités (A1-A5)**. Le **cœur de ta formation = A5** (tableaux de bord avancés), relié au **bloc BC06**.
+- Le métier se découpe en **5 activités (A1-A5)**. Le **cœur de ta formation = A5** (tableaux de bord avancés), c'est la **Business Intelligence**.
 - **Analyst ≠ Engineer ≠ Scientist** : l'Engineer construit les tuyaux, l'Analyst sert le verre d'eau (analyse/BI), le Scientist invente la machine à prédire.
-- Tu prépares le titre **RNCP-38616** (niveau 6, Bac+3/4), et cette formation vise le **passage du bloc BC06** (Business Intelligence).
-- Le référentiel se lit avec des codes : **C1-C18** (techniques), **CT1-CT9** (transversales, tout aussi importantes). Le **BC06 = C16, C17, C18**.
-- 3 niveaux de maîtrise Simplon : **Imiter (1) → Adapter (2) → Transposer (3)**. En Prairie, tu es en découverte ; on attend de la **curiosité**.
+- Tu prépares un titre reconnu de **niveau Bac+3/4**, et cette formation vise la maîtrise de la **Business Intelligence**.
+- Le référentiel distingue deux familles : les compétences **techniques** et les compétences **transversales** (tout aussi importantes). Le cœur BI = identifier les KPI, choisir les visualisations, créer les tableaux de bord.
+- 3 niveaux de maîtrise : **Imiter (1) → Adapter (2) → Transposer (3)**. En Prairie, tu es en découverte ; on attend de la **curiosité**.
 - Les **Hauts-de-France** recrutent (retail/e-commerce : Decathlon, Auchan, Leroy Merlin, La Redoute, Cofidis, OVHcloud). Salaire junior indicatif : **~30-38 k€** brut/an.
 - L'outil roi de l'Analyst : **SQL + un outil de BI** (Power BI / Tableau / Looker). C'est exactement ce que tu vas apprendre.

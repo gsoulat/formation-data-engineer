@@ -4,7 +4,7 @@
 |---|---|
 | **Phase** | Phase 3 — Flux de données & alimentation de la BI |
 | **Durée indicative** | ~22 h |
-| **Compétence visée** | **C1 — Concevoir et mettre en place un processus de collecte de données** (niveau 1) |
+| **Objectif** | Concevoir et mettre en place un processus de collecte de données |
 | **Pré-requis** | Module 2.5 (RGPD & éthique des données), notions de bases de données relationnelles, savoir lire un fichier CSV/Excel, première idée de ce qu'est une API |
 | **Posture** | **Conception / architecture** : on dessine le processus de collecte sur le papier. L'implémentation technique (scripts, connecteurs, automatisation) viendra au module 3.2. |
 

@@ -1,7 +1,7 @@
 # 06 — Mathématiques pour la dataviz
 
-> **Compétence visée : C17 — Choisir des visualisations pertinentes**
-> Formation Data Analyst · RNCP-38616 · Simplon
+> **Objectif : Choisir des visualisations pertinentes**
+> Formation Data Analyst
 > Bloc « Mathématiques pour l'analyse de données »
 
 ---
@@ -579,7 +579,7 @@ print(agg)   # A ~0.076  >  B ~0.054
 | Titre | Chaîne | Langue | Durée | Lien | Ce que tu y apprends |
 |---|---|---|---|---|---|
 | 200 Countries, 200 Years, 4 Minutes (The Joy of Stats) | BBC | EN | ~5 min | https://www.youtube.com/watch?v=jbkSRLYSojo | Le chef-d'œuvre de Hans Rosling : data animée, échelles et bulles pour raconter 200 ans d'évolution mondiale. Référence absolue de la dataviz pertinente. |
-| Calling Bullshit 6.2: Misleading Axes | Carl Bergstrom (Calling Bullshit) | EN | ~10 min | https://www.youtube.com/watch?v=9pNWVMxaFuM | Le piège de l'axe tronqué et des échelles trompeuses, exemples réels décortiqués. Indispensable pour C17. |
+| Calling Bullshit 6.2: Misleading Axes | Carl Bergstrom (Calling Bullshit) | EN | ~10 min | https://www.youtube.com/watch?v=9pNWVMxaFuM | Le piège de l'axe tronqué et des échelles trompeuses, exemples réels décortiqués. Indispensable pour choisir des visualisations pertinentes. |
 | How to Lie with Data \| Misleading Graphs | (recherche) | EN | ~10 min | https://www.youtube.com/watch?v=hgp91KvbJV4 | Panorama des graphiques mensongers : axes, surfaces, troncatures — et comment les repérer. |
 | L'échelle logarithmique, utilisation et construction | (recherche) | FR | ~15 min | https://www.youtube.com/watch?v=6fMLp5WOx08 | Qu'est-ce qu'une échelle log, comment elle se construit, et quand l'utiliser. En français. |
 | StatQuest (chaîne) — Normalization, Standardization, Z-scores | StatQuest with Josh Starmer | EN | varié | https://www.youtube.com/@statquest/search?query=normalization | Min-max, standardisation et z-score expliqués simplement et visuellement. Cherche « normalization » ou « standardization » sur la chaîne. |
@@ -683,7 +683,7 @@ Le commercial de la Ch'ti Boutique a préparé 5 slides pour la grande réunion.
 4. **Camembert déformé** (§4.9). La 3D grossit le premier plan. Correction : camembert **plat**, ou mieux un **diagramme en barres** au-delà de 4-5 parts.
 5. **Moyenne qui cache tout** (§4.8). L'outlier B2B à 800 € gonfle la moyenne. Le client typique = **médiane = 30 €**. Correction : afficher la **médiane**, signaler l'outlier à part.
 
-🎉 5/5 ? Tu es officiellement **détective des graphiques menteurs**. C'est exactement la compétence C17.
+🎉 5/5 ? Tu es officiellement **détective des graphiques menteurs**. C'est exactement l'art de choisir des visualisations pertinentes.
 </details>
 
 ---
@@ -742,6 +742,6 @@ d) une moyenne pondérée
 - **Moyenne mobile** pour lisser le bruit d'une série temporelle — sans cacher la donnée brute.
 - **Médiane** plutôt que moyenne sur les distributions **asymétriques** (paniers, revenus).
 - **Paradoxe de Simpson** : segmente avant de conclure sur un agrégat.
-- Une viz honnête = bon choix d'**échelle**, d'**origine**, d'**agrégation**. C'est ça, la compétence C17.
+- Une viz honnête = bon choix d'**échelle**, d'**origine**, d'**agrégation**. C'est ça, choisir des visualisations pertinentes.
 
 > 🕵️ **Le serment du détective des graphiques.** *Avant d'envoyer un graphe : « Mon axe de barres part-il de 0 ? Mon échelle est-elle annoncée ? Ma moyenne cache-t-elle un outlier ? Mon total cache-t-il une inversion de Simpson ? Mon double axe ment-il ? »* Si tu te poses ces 5 questions à chaque dashboard, tu ne te feras plus jamais avoir — et tu ne feras plus jamais avaler une décision business sur une illusion d'optique à ton patron de la Ch'ti Boutique. 🎬

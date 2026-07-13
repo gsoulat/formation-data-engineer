@@ -1,6 +1,6 @@
 # 02 — Algèbre & fonctions
 
-> **Cours apprenant** — Formation Data Analyst (RNCP-38616, Simplon)
+> **Cours apprenant** — Formation Data Analyst
 
 ---
 
@@ -22,7 +22,7 @@ Tu n'as pas encore ouvert un seul tableur, mais tu vas répondre à **toutes** c
 |---|---|
 | **Titre** | Algèbre & Fonctions : modéliser une tendance |
 | **Durée estimée** | 4 h (2 h théorie + 2 h pratique Python) |
-| **Compétence visée** | Socle mathématique + **C17** (lire et interpréter des graphiques) |
+| **Objectif** | Socle mathématique — lire et interpréter des graphiques |
 | **Pré-requis** | Chapitre 1 (arithmétique : pourcentages, proportions, opérations de base) |
 | **Outils** | Python 3, `numpy`, `matplotlib`, papier + crayon |
 
@@ -370,7 +370,7 @@ print(variations)                   # [1200 1200 1200 1200] -> pente constante =
 
 ---
 
-### Repère cartésien & lecture de graphiques (C17)
+### Repère cartésien & lecture de graphiques
 
 #### Définition
 Un **repère cartésien** est formé de deux axes perpendiculaires :
@@ -381,7 +381,7 @@ Un **point** se note `(x ; y)` : on lit d'abord l'abscisse, puis l'ordonnée.
 
 > 🧠 **Moyen mnémo.** « **x avant y, comme dans l'alphabet** » : on cite toujours l'horizontal (x) en premier, le vertical (y) ensuite. Et pour l'origine `b` : c'est là où la courbe **perce l'axe vertical** (la « porte d'entrée » du graphe, à gauche).
 
-> 🎯 **Ça te servira pour…** **toute la dataviz**. Un dashboard Power BI / Tableau / Looker Studio n'est qu'un empilement de repères cartésiens. Savoir lire (et faire dire) un point, une pente, une échelle = la compétence **C17**, celle qu'on te demandera de prouver en jury.
+> 🎯 **Ça te servira pour…** **toute la dataviz**. Un dashboard Power BI / Tableau / Looker Studio n'est qu'un empilement de repères cartésiens. Savoir lire (et faire dire) un point, une pente, une échelle, c'est ce qu'on te demandera de prouver en jury.
 
 #### Exemple chiffré métier
 Sur le graphe du CA de Lille, le point `(6 ; 25200)` se lit : « **en juin (mois 6), le CA prévu est 25 200 €** ». Lire un graphe = traduire un point en phrase métier.
@@ -434,7 +434,7 @@ plt.show()
 |---|---|---|---|---|---|
 | LE COURS : Fonctions affines (3e–2nde) | Yvan Monka (maths-et-tiques) | 🇫🇷 FR | ~18 min | [Recherche YouTube](https://www.youtube.com/results?search_query=yvan+monka+le+cours+fonctions+affines) | Définition, pente, ordonnée à l'origine, croissance — le cours complet et clair |
 | Déterminer une fonction affine avec le taux d'accroissement | Yvan Monka | 🇫🇷 FR | ~7 min | [Recherche YouTube](https://www.youtube.com/results?search_query=yvan+monka+fonction+affine+taux+d%27accroissement) | Calculer la pente `a` à partir de 2 points (le taux de variation en pratique) |
-| Déterminer graphiquement la pente d'une droite | Khan Academy (FR) | 🇫🇷 FR | ~5 min | [YouTube](https://www.youtube.com/watch?v=jzbNANey-58) | Lire et calculer la pente directement sur un graphique (compétence C17) |
+| Déterminer graphiquement la pente d'une droite | Khan Academy (FR) | 🇫🇷 FR | ~5 min | [YouTube](https://www.youtube.com/watch?v=jzbNANey-58) | Lire et calculer la pente directement sur un graphique |
 | Intro to slope-intercept form (y = mx + b) | Khan Academy | 🇬🇧 EN | ~10 min | [Khan Academy](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:forms-of-linear-equations/x2f8bb11595b61c86:intro-to-slope-intercept-form/v/slope-intercept-form) | La forme `y = mx + b` : rôle de la pente `m` et de l'ordonnée `b` |
 | Slope-intercept form (Algebra I) | Khan Academy | 🇬🇧 EN | ~14 min | [YouTube](https://www.youtube.com/watch?v=IL3UCuXrUzE) | Construire l'équation d'une droite à partir d'infos partielles |
 
@@ -610,7 +610,7 @@ print(np.roots([700, -10000]))   # [14.2857...]
   - **`a` = pente = taux de variation** = vitesse d'évolution (€/mois, %/an…). `a > 0` monte, `a < 0` descend.
   - **`b` = ordonnée à l'origine** = valeur de départ (en `x = 0`).
 - 🧮 **Pente entre 2 points** : `a = (y₂ − y₁)/(x₂ − x₁) = Δy/Δx`. En Python : `np.diff` repère une tendance affine (écarts constants).
-- 🗺️ **Lire un graphe (C17)** : identifier axes + échelle → ordonnée à l'origine → tendance → pente → **traduire en phrase métier**. Attention à l'échelle qui peut tromper l'œil.
+- 🗺️ **Lire un graphe** : identifier axes + échelle → ordonnée à l'origine → tendance → pente → **traduire en phrase métier**. Attention à l'échelle qui peut tromper l'œil.
 - 🐍 **Réflexe data** : avec `numpy`, on applique une expression/fonction à **toute une colonne** en une ligne ; avec `matplotlib`, on visualise la tendance.
 - 🔗 **Et après ?** Garde ta **pente** au chaud : elle revient dès le **module 1.3 (Phase 1)** pour **analyser les tendances** d'un vrai jeu de données. Ce chapitre est la rampe de lancement de toute ton analyse de données.
 

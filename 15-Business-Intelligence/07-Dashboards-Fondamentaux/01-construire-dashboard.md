@@ -6,7 +6,7 @@
 |---|---|
 | **Phase** | Phase 1 — Ajuster et analyser un tableau de bord métier |
 | **Durée** | ≈ 30 h (≈ 4 jours) |
-| **Compétences visées** | **C17** niv.1→2 — Réaliser des représentations visuelles · **C18** niv.1→2 — Construire un tableau de bord (RNCP-38616, bloc BC06) |
+| **Objectifs** | Réaliser des représentations visuelles · Construire un tableau de bord |
 | **Pré-requis** | Modules **1.1** (SQL) · **1.2** (pandas/EDA) · **1.3** (tendances) · **1.4** (KPI & arborescence du dashboard) |
 | **Outils** | **Power BI Desktop** (Windows / VM / Service web) + **Looker Studio** (navigateur, tout OS) |
 

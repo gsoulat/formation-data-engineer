@@ -6,7 +6,7 @@
 |---|---|
 | **Phase** | 0 — La Prairie (S1–S2) |
 | **Durée** | ≈ 18 h |
-| **Compétence visée** | **C18 — Créer des tableaux de bord avec des outils de BI** (RNCP-38616) — **niveau 1 (découverte)** |
+| **Objectif** | Créer des tableaux de bord avec des outils de BI — **niveau 1 (découverte)** |
 | **Pré-requis** | Module 0.1 (le métier & le référentiel) · savoir naviguer sur le web · avoir (ou créer) un **compte Google** · notions de tableur (lignes/colonnes, somme, moyenne) |
 | **Outils** | Navigateur web · **Looker Studio** (gratuit) · **Google Sheets** · un compte Google |
 
@@ -32,7 +32,7 @@ Un Data Analyst passe une grande partie de son temps à **restituer** : transfor
 Trois raisons de maîtriser ce panorama dès maintenant :
 
 - **À l'embauche, on te demandera « Tu connais Power BI ? Tableau ? »** Savoir te situer, comparer, et avoir déjà construit un dashboard te donne une longueur d'avance, même débutant.
-- **Le bon outil dépend du contexte** (budget, OS, équipe, source de données). Un Data Analyst n'est pas « le gars de Power BI » : il sait **choisir** l'outil adapté au besoin. C'est exactement ce que mesure la compétence C18.
+- **Le bon outil dépend du contexte** (budget, OS, équipe, source de données). Un Data Analyst n'est pas « le gars de Power BI » : il sait **choisir** l'outil adapté au besoin.
 - **Tu es sur Mac ? Tu n'es pas bloqué.** Beaucoup d'apprenants paniquent en découvrant que Power BI Desktop n'existe pas sur Mac. Ce module te montre que tu peux apprendre la BI **dès aujourd'hui**, gratuitement, avec Looker Studio — et contourner la contrainte Power BI quand le moment viendra.
 
 > 🧭 **Image à retenir.** Les données brutes, c'est de la farine, des œufs, du sucre. L'outil de BI, c'est **le four et le moule** : il transforme les ingrédients en un gâteau présentable. Le Data Analyst est le pâtissier — il doit savoir quel four utiliser selon ce qu'il veut cuire.
@@ -372,4 +372,4 @@ c) Mets le KPI des ventes au **format devise €**.
 - Les 5 outils repères : **Power BI** (standard France, Windows), **Tableau** (beau, cher, Mac+Win), **Looker Studio** (gratuit, web, idéal débutant), **Superset & Metabase** (open source à héberger).
 - **Contrainte Mac : Power BI Desktop n'existe pas sur macOS.** Contournements : **Power BI Service (web)**, **VM Parallels**, ou apprendre sur **Looker Studio** (cross-OS).
 - **Dans le Nord**, Power BI est la compétence la plus demandée (retail + Microsoft) → on apprend les concepts sur Looker Studio, ils se transfèrent.
-- Tu sais désormais **construire un dashboard** : source Sheets → KPI + graphiques → filtre → partage. C'est le geste de base du métier (C18, niveau 1). 🚀
+- Tu sais désormais **construire un dashboard** : source Sheets → KPI + graphiques → filtre → partage. C'est le geste de base du métier. 🚀

@@ -7,7 +7,7 @@
 | **Phase** | Phase 0 — La Prairie (semaine 1–2) |
 | **Place dans le parcours** | **Tout au début**, AVANT le module de Maths et AVANT le module 1.2 (pandas) |
 | **Durée indicative** | ≈ 14 h |
-| **Compétences visées** | Pré-requis technique transversal (socle Python pour C5 — analyses exploratoires) |
+| **Objectif** | Pré-requis technique transversal (socle Python pour les analyses exploratoires) |
 | **Pré-requis** | Module 0.4 (posture & méthode). Savoir allumer un ordinateur, naviguer sur le web, créer un compte. **Aucun pré-requis en programmation.** |
 | **Outils** | Un navigateur web + **Google Colab** (gratuit, rien à installer) ou Jupyter/Anaconda |
 

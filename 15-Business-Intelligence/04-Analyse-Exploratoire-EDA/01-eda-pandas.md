@@ -37,7 +37,7 @@
 |---|---|
 | **Phase** | Phase 1 — Construire un tableau de bord |
 | **Durée** | ≈ 30 h |
-| **Compétence visée** | **C5 — Mener des analyses exploratoires (EDA)** — niveau 1 (RNCP-38616) |
+| **Objectif** | Mener des analyses exploratoires (EDA) |
 | **Pré-requis** | Module **0.5 « Initiation à Python »** (variables, types, listes/dictionnaires, conditions, boucles, fonctions, `import`, premier `read_csv`/`.head()`) — **indispensable** si tu n'as jamais programmé · Module **Maths — Chapitre 3 « Statistiques descriptives »** (moyenne/médiane, dispersion, quantiles, outliers, histogramme & boxplot) · Module 1.1 SQL (notion de table, ligne, colonne) |
 | **Outils** | Python 3.11+, Jupyter / Anaconda, `pandas`, `numpy`, `matplotlib`, `seaborn` |
 

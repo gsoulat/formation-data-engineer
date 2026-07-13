@@ -4,7 +4,7 @@
 |---|---|
 | **Phase** | Phase 3 — Flux & BI |
 | **Durée estimée** | ~25 h |
-| **Compétence visée** | **C3** — Nettoyer et préparer les données (niveau 1) |
+| **Objectif** | Nettoyer et préparer les données |
 | **Pré-requis** | Module **1.2** (manipulation pandas : `read_csv`, `DataFrame`, `Series`, filtres, `groupby`) · **Maths chapitre 3** (statistiques descriptives : moyenne, médiane, mode, quartiles, IQR, écart-type) |
 | **Format** | Cours + TP guidés + quiz |
 

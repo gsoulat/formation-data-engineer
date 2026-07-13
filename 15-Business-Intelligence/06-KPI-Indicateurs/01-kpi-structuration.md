@@ -4,7 +4,7 @@
 |---|---|
 | **Phase** | Phase 1 — Concevoir un tableau de bord |
 | **Durée** | ~20 heures |
-| **Compétences visées** | **C16** (niveau 1 → 2) : Identifier et formaliser les indicateurs de performance répondant à un besoin métier · **C11** : Traduire un besoin métier en spécifications fonctionnelles |
+| **Objectifs** | Identifier et formaliser les indicateurs de performance répondant à un besoin métier · Traduire un besoin métier en spécifications fonctionnelles |
 | **Pré-requis** | Module 0.3 (analyse de besoin en Prairie), 1.2 (Python & pandas pour l'EDA), 1.3 (Identifier les tendances). Savoir lire un tableau de chiffres simple. Aucune compétence technique BI n'est requise pour ce module. |
 
 ---
@@ -33,7 +33,7 @@ Concrètement, dans ta future mission :
 - Un tableau de bord mal **structuré** noie l'information : le décideur ne trouve pas ce qu'il cherche en 5 secondes et n'utilise plus l'outil. Savoir hiérarchiser (synthèse → détail) est aussi important que savoir calculer.
 - **Maquetter avant de construire** te fait gagner des heures : tu valides le besoin avec le métier sur une esquisse papier au lieu de refaire trois fois un dashboard Power BI complet.
 
-> C16 et C11 sont au cœur du métier : elles sont évaluées dans **chaque** brief de la certification. Ce module est la fondation de toute la Phase 1.
+> L'identification des KPI et la traduction du besoin métier sont au cœur du métier : elles sont évaluées dans **chaque** brief de la certification. Ce module est la fondation de toute la Phase 1.
 
 ---
 

@@ -4,7 +4,7 @@
 |---|---|
 | **Phase** | Phase 2 — BI avancée |
 | **Durée estimée** | ~20 h |
-| **Compétence visée** | **C12 — Garantir la conformité juridique et éthique d'un projet data** (niveau 1) |
+| **Objectif** | Garantir la conformité juridique et éthique d'un projet data |
 | **Pré-requis** | Module 1.x (manipulation d'un fichier clients, SQL de base), notions de tableur, savoir décrire une source de données |
 
 ---

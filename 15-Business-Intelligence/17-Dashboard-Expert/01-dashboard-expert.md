@@ -5,8 +5,7 @@
 | **Titre** | Concevoir un tableau de bord BI complet, de bout en bout, au niveau expert |
 | **Phase** | Phase 3 — Flux & restitution BI |
 | **Durée indicative** | ~35 h |
-| **Compétences visées** | **C16** (concevoir et réaliser un tableau de bord), **C17** (sélectionner et représenter les indicateurs), **C18** (rendre la restitution accessible et interactive) — **NIVEAU 3 (transposer)** |
-| **Bloc** | **BC06** — cœur de la certification |
+| **Objectifs** | Concevoir et réaliser un tableau de bord, sélectionner et représenter les indicateurs, rendre la restitution accessible et interactive — **NIVEAU 3 (transposer)** |
 | **Pré-requis** | Tous les modules BI précédents : 1.4 (besoin métier & KPI), 2.1 (data viz & règles de représentation), 2.2 (modèle en étoile), 2.3 (DAX & mesures), 2.4 (interactivité & accessibilité de base), plus la chaîne ETL de la Phase 3 (3.1 à 3.4) |
 
 > **Ce module est l'aboutissement de toute la formation BI.** Tu ne vas pas apprendre une nouvelle fonctionnalité isolée : tu vas **assembler, justifier et optimiser** tout ce que tu sais déjà pour livrer un tableau de bord directionnel professionnel, comme on l'attend d'un Data Analyst junior en poste.

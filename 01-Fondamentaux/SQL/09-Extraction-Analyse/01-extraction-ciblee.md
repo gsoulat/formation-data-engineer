@@ -7,7 +7,7 @@
 | | |
 |---|---|
 | **Durée indicative** | ~25 heures (pratique incluse) |
-| **Compétence visée** | **C4 (niveau 1)** — Requêter une base de données relationnelle pour extraire les données nécessaires à une analyse |
+| **Objectif** | Requêter une base de données relationnelle pour extraire les données nécessaires à une analyse |
 | **Prérequis** | [Module 01 (SELECT, WHERE)](../01-Introduction-Select/README.md), [Module 02 (Agrégations)](../02-Agregations-Groupby/README.md), [Module 03 (Jointures)](../03-Jointures/README.md) |
 | **Outils** | DB Browser for SQLite (ou PostgreSQL/DuckDB) + le jeu de données « Ventes Retail Nord » |
 

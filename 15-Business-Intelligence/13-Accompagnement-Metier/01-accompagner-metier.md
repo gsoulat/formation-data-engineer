@@ -4,7 +4,7 @@
 |---|---|
 | **Phase** | Phase 2 — Mettre en place une solution de BI pour un traitement analytique avancé |
 | **Durée indicative** | ~25 h |
-| **Compétences visées** | **C11 niv.2** (formaliser une problématique métier dans un cahier des charges) · **C15 niv.2** (présenter et argumenter les résultats auprès d'une équipe métier) |
+| **Objectifs** | Formaliser une problématique métier dans un cahier des charges · Présenter et argumenter les résultats auprès d'une équipe métier |
 | **Pré-requis** | Avoir construit au moins un tableau de bord (modules 2.3 et 2.4), connaître les bases de la restitution (Phase 1), maîtriser les notions de KPI et d'indicateur |
 
 ---

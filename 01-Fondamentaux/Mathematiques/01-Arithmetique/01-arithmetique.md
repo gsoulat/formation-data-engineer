@@ -1,7 +1,7 @@
 # 01 — Arithmétique & pré-requis
 
 > **Durée estimée** : 4 h (3 h en présentiel + 1 h d'auto-formation)
-> **Compétence visée** : socle pour **C5** (analyser des données, produire des indicateurs) et **C6** (restituer des résultats chiffrés fiables). RNCP-38616 — option Data Analyse.
+> **Objectif** : socle pour analyser des données, produire des indicateurs et restituer des résultats chiffrés fiables.
 > **Pré-requis** : savoir poser une addition, une multiplication, une division. Aucune connaissance avancée n'est attendue.
 
 ---

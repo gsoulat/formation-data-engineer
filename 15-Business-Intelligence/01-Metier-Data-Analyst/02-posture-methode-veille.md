@@ -4,7 +4,7 @@
 |---|---|
 | **Phase** | Phase 0 — La Prairie |
 | **Durée indicative** | ~18 h |
-| **Compétences visées** | **CT3** (Définir le périmètre d'un problème) niv. 1 · **CT4** (Rechercher méthodiquement de l'information) niv. 1 |
+| **Objectifs** | Définir le périmètre d'un problème (niv. 1) · Rechercher méthodiquement de l'information (niv. 1) |
 | **Pré-requis** | Module 0.1 (découverte du métier de Data Analyst), savoir naviguer sur le web, avoir une adresse e-mail active. Aucun pré-requis technique. |
 
 ---
@@ -13,9 +13,9 @@
 
 À la fin de ce module, tu seras capable de :
 
-- **Comprendre la pédagogie Simplon** : apprentissage par projet, les 3 niveaux (imiter / adapter / transposer), le droit à l'erreur et l'autonomie.
-- **Définir le périmètre d'un problème** avant de chercher à le résoudre (CT3) : reformuler, délimiter, poser les bonnes questions.
-- **Rechercher méthodiquement de l'information** (CT4) : recherche documentaire, lecture de documentation, savoir poser une question technique qui obtient une réponse.
+- **Comprendre la pédagogie active** : apprentissage par projet, les 3 niveaux (imiter / adapter / transposer), le droit à l'erreur et l'autonomie.
+- **Définir le périmètre d'un problème** avant de chercher à le résoudre : reformuler, délimiter, poser les bonnes questions.
+- **Rechercher méthodiquement de l'information** : recherche documentaire, lecture de documentation, savoir poser une question technique qui obtient une réponse.
 - **Mettre en place une routine de veille** technique et professionnelle avec des outils concrets (Feedly/RSS, LinkedIn, newsletters, blogs, podcasts).
 - **Utiliser les IA génératives de façon raisonnée et éthique** dans ton apprentissage et ton futur métier (ce qui est permis, ce qui est interdit, comment vérifier, RGPD).
 
@@ -37,9 +37,9 @@ Trois réalités du terrain :
 
 ## Contenu
 
-### La pédagogie Simplon
+### La pédagogie active
 
-Simplon n'est pas une école classique où un prof récite un cours pendant que tu prends des notes. C'est une **pédagogie active**, centrée sur le projet et sur toi.
+Cette formation n'est pas une école classique où un prof récite un cours pendant que tu prends des notes. C'est une **pédagogie active**, centrée sur le projet et sur toi.
 
 #### L'apprentissage par projet
 
@@ -49,7 +49,7 @@ Concrètement, ta formation est rythmée par des **briefs** : des missions qui r
 
 #### Les 3 niveaux de compétence : imiter / adapter / transposer
 
-Chaque compétence se travaille à trois niveaux de maîtrise croissants. C'est le cœur de la progression Simplon.
+Chaque compétence se travaille à trois niveaux de maîtrise croissants (découvrir → adapter → transposer). C'est le cœur de la progression pédagogique.
 
 | Niveau | Nom | Ce que tu fais | Exemple Data Analyst |
 |---|---|---|---|
@@ -57,7 +57,7 @@ Chaque compétence se travaille à trois niveaux de maîtrise croissants. C'est 
 | **2** | **Adapter** | Tu prends une solution connue et tu la modifies pour un contexte un peu différent. | Tu reprends ce graphique mais avec **tes** données et **tes** filtres. |
 | **3** | **Transposer** | Tu fais face à un problème nouveau, sans modèle, et tu construis ta propre solution. | On te donne un jeu de données inconnu et un besoin métier : tu choisis seul la visualisation pertinente. |
 
-> 📌 **Pourquoi c'est utile pour toi** : ne culpabilise pas si, en début de formation, tu n'es qu'au niveau « imiter ». C'est normal et attendu. La certification RNCP évalue ta capacité à **transposer** ; tu y arriveras par étapes.
+> 📌 **Pourquoi c'est utile pour toi** : ne culpabilise pas si, en début de formation, tu n'es qu'au niveau « imiter ». C'est normal et attendu. L'évaluation finale porte sur ta capacité à **transposer** ; tu y arriveras par étapes.
 
 #### Le droit à l'erreur
 
@@ -67,14 +67,14 @@ L'erreur n'est pas un échec, c'est de l'information. Un bug, un graphique faux,
 
 #### L'autonomie (et ses limites saines)
 
-Simplon développe ton autonomie : on ne va pas te mâcher chaque réponse. **Mais autonomie ≠ solitude.** Être autonome, c'est :
+La formation développe ton autonomie : on ne va pas te mâcher chaque réponse. **Mais autonomie ≠ solitude.** Être autonome, c'est :
 - chercher par toi-même **avant** de demander,
 - savoir **où** chercher (doc, forums, pairs, formateur),
 - et savoir **poser une question claire** quand tu es vraiment bloqué.
 
 ---
 
-### Définir le périmètre d'un problème (CT3) et rechercher méthodiquement (CT4)
+### Définir le périmètre d'un problème et rechercher méthodiquement
 
 #### La démarche inductive
 
@@ -84,7 +84,7 @@ C'est l'inverse de la démarche déductive (partir d'une théorie pour la vérif
 
 > **Exemple.** Tu observes que les ventes chutent chaque mardi (fait concret, particulier). Tu explores les données, tu croises avec d'autres infos, et tu finis par formuler une explication générale : « les mardis sont en baisse car la newsletter promo part le lundi soir et l'effet retombe en 24 h ». Tu es parti des données, pas d'une hypothèse de départ.
 
-#### Étape 0 : définir le périmètre AVANT de chercher (CT3)
+#### Étape 0 : définir le périmètre AVANT de chercher
 
 L'erreur n°1 du débutant : foncer sur l'outil sans avoir compris le problème. On code, on cherche, on s'épuise… sur le mauvais problème.
 
@@ -111,7 +111,7 @@ L'erreur n°1 du débutant : foncer sur l'outil sans avoir compris le problème.
 6. **Vérifier la solution** : le problème est-il vraiment réglé, et n'as-tu rien cassé ailleurs ?
 7. **Capitaliser** : note la cause et la solution dans tes notes perso. La prochaine fois, tu gagnes 2 h.
 
-#### Rechercher méthodiquement de l'information (CT4)
+#### Rechercher méthodiquement de l'information
 
 **La recherche documentaire efficace :**
 
@@ -241,9 +241,9 @@ Un bon prompt = **rôle + contexte + tâche claire + format attendu**.
 <details>
 <summary>💡 Pistes</summary>
 
-- **Cadre d'abord** (CT3) : écris la phrase de problème précise avant de toucher quoi que ce soit. « Quoi exactement ? Depuis quand ? Quel message d'erreur ? »
+- **Cadre d'abord** : écris la phrase de problème précise avant de toucher quoi que ce soit. « Quoi exactement ? Depuis quand ? Quel message d'erreur ? »
 - **Une hypothèse à la fois** : ne change qu'un paramètre, note l'effet.
-- **Recherche** (CT4) : copie le message d'erreur exact entre guillemets dans ton moteur de recherche ; vise la doc officielle ; recoupe 2 sources.
+- **Recherche** : copie le message d'erreur exact entre guillemets dans ton moteur de recherche ; vise la doc officielle ; recoupe 2 sources.
 - **Question modèle** si tu bloques : contexte + ce que tu as essayé + attendu vs obtenu + message d'erreur exact + version de l'outil.
 - **Capitalise** : ajoute une ligne dans un fichier `mes-erreurs-resolues.md` (cause → solution). Ce fichier deviendra ton trésor.
 - **Rubber duck** : avant de demander de l'aide, explique ton problème à voix haute. Note si ça t'a débloqué.
@@ -279,7 +279,7 @@ Un bon prompt = **rôle + contexte + tâche claire + format attendu**.
 
 ## Quiz (5 QCM)
 
-**Q1.** Dans la pédagogie Simplon, le niveau de compétence où tu construis ta propre solution face à un problème **nouveau, sans modèle**, s'appelle :
+**Q1.** Dans une pédagogie par projet, le niveau de compétence où tu construis ta propre solution face à un problème **nouveau, sans modèle**, s'appelle :
 - a) Imiter
 - b) Adapter
 - c) Transposer
@@ -291,7 +291,7 @@ Un bon prompt = **rôle + contexte + tâche claire + format attendu**.
 - c) Copier la solution d'un collègue
 - d) Demander directement à une IA
 
-**Q3.** Avant de chercher à résoudre un problème (compétence CT3), la **première** chose à faire est :
+**Q3.** Avant de chercher à résoudre un problème, la **première** chose à faire est :
 - a) Ouvrir l'outil et commencer à coder
 - b) Demander à ChatGPT de tout faire
 - c) Définir et reformuler précisément le périmètre du problème (ex. QQOQCP)
@@ -315,7 +315,7 @@ Un bon prompt = **rôle + contexte + tâche claire + format attendu**.
 |---|---|---|
 | Q1 | **c) Transposer** | Niveau 3 : problème nouveau, sans modèle, solution construite seul. |
 | Q2 | **b)** | L'induction va du particulier (faits/données) vers le général (explication). |
-| Q3 | **c)** | CT3 = définir le périmètre **avant** d'agir (QQOQCP, reformulation). |
+| Q3 | **c)** | Définir le périmètre **avant** d'agir (QQOQCP, reformulation). |
 | Q4 | **b)** | RGPD : ne jamais coller de données personnelles/confidentielles dans une IA. |
 | Q5 | **c)** | Peu de sources de qualité + fréquence courte et régulière = veille durable. |
 
@@ -323,9 +323,9 @@ Un bon prompt = **rôle + contexte + tâche claire + format attendu**.
 
 ## À retenir
 
-- **Pédagogie Simplon** : on apprend **par projet**, par étapes (**imiter → adapter → transposer**), avec un **droit à l'erreur** réel. Autonomie ≠ solitude : tu cherches d'abord, tu demandes ensuite.
-- **CT3 — cadrer avant d'agir** : reformule le problème (**QQOQCP**), délimite le périmètre, écris une phrase de problème précise. Le périmètre d'abord, l'outil ensuite.
-- **CT4 — chercher méthodiquement** : doc officielle d'abord, mots-clés précis (souvent en anglais), message d'erreur exact entre guillemets, recoupe 2 sources. **Pose des questions structurées** (contexte + essayé + attendu/obtenu + erreur exacte).
+- **Pédagogie par projet** : on apprend **en faisant**, par étapes (**imiter → adapter → transposer**), avec un **droit à l'erreur** réel. Autonomie ≠ solitude : tu cherches d'abord, tu demandes ensuite.
+- **Cadrer avant d'agir** : reformule le problème (**QQOQCP**), délimite le périmètre, écris une phrase de problème précise. Le périmètre d'abord, l'outil ensuite.
+- **Chercher méthodiquement** : doc officielle d'abord, mots-clés précis (souvent en anglais), message d'erreur exact entre guillemets, recoupe 2 sources. **Pose des questions structurées** (contexte + essayé + attendu/obtenu + erreur exacte).
 - **Démarche inductive** : pars des données concrètes, une hypothèse à la fois, capitalise tes solutions.
 - **Veille** : peu de sources de qualité, **10-15 min/jour + 30-45 min/semaine**, outils = Feedly/RSS, LinkedIn, newsletters, podcasts. Mieux vaut 8 sources lues que 80 ignorées.
 - **IA générative** : super assistant, mauvais oracle. **Comprendre, vérifier, ne jamais coller de données personnelles (RGPD).** L'IA propose, **tu** disposes — et tu restes responsable.
