@@ -1,3 +1,10 @@
+# [2.15.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.14.0...v2.15.0) (2026-07-14)
+
+
+### Features
+
+* **pratique:** carte de la pratique + 4 notebooks-cours DA exécutables ([35af464](https://github.com/gsoulat/formation-data-engineer/commit/35af46497a88faecc426ec871352351544ab5d99))
+
 # [2.14.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.13.0...v2.14.0) (2026-07-14)
 
 
