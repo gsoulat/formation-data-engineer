@@ -23,7 +23,7 @@ Ce parcours est conçu pour vous emmener de la maîtrise du terminal à la mise 
 | **Bash & Zsh** | [Automatisation CLI en Bash/Zsh](99-Brief/00-Tronc-Commun/brief-bash-zsh.md) |
 | **Git** | [Versionnage avec Git](99-Brief/00-Tronc-Commun/brief-git.md) |
 | **GitHub** | [Collaboration sur GitHub](99-Brief/00-Tronc-Commun/brief-github.md) |
-| **Bonnes Pratiques** | `[brief à créer]` |
+| **Bonnes Pratiques** | [Du script spaghetti au code propre (Clean Code)](99-Brief/Data-Engineer/Clean-Code/BRIEF_CLEAN_CODE.md) |
 
 ### 🟡 Phase 2 : L'Artisanat (Mois 2-3)
 *Objectif : Manipuler la donnée de manière robuste et isolée.*
@@ -33,7 +33,7 @@ Ce parcours est conçu pour vous emmener de la maîtrise du terminal à la mise 
 
 | Module associé | 🎯 Brief |
 | :--- | :--- |
-| **Python Avancé** | `[brief à créer]` |
+| **Python Avancé** | [Framework d'ingestion orienté objet (POO)](99-Brief/Data-Engineer/Python-POO/BRIEF_PYTHON_POO.md) |
 | **SQL Pro / Administration BDD** | [Administration PostgreSQL pour une plateforme logistique](99-Brief/Data-Engineer/PostgreSQL-Logistique/README.md) |
 | **Python & Collecte (API + Scraping)** | [Veille concurrentielle : pipeline batch API + scraping vers PostgreSQL](99-Brief/Data-Engineer/API-Scraping/BRIEF_API_SCRAPING.md) |
 | **Docker** | [Conteneuriser un environnement de données](99-Brief/00-Tronc-Commun/brief-docker.md) |
@@ -66,7 +66,7 @@ Ce parcours est conçu pour vous emmener de la maîtrise du terminal à la mise 
 | **Streaming temps réel** | [Pipeline de streaming Kafka (ventes flash)](99-Brief/Data-Engineer/Kafka-Streaming/BRIEF_KAFKA_STREAMING.md) |
 | **Pipeline Cloud (Azure)** | [Pipeline Azure : qualité de l'eau en France](99-Brief/Data-Engineer/BRIEF_QUALITE_EAU_FRANCE.md) |
 | **Pipeline complet (end-to-end)** | [Pipeline Data Engineering NYC Taxi](99-Brief/Data-Engineer/brief-pipeline-data-engineering.md) |
-| **Terraform / CI-CD** | `[brief à créer]` |
+| **Terraform / CI-CD** | [Provisionner l'infra data (Terraform + CI/CD)](99-Brief/Data-Engineer/Terraform-CICD/BRIEF_TERRAFORM_CICD.md) |
 
 ---
 

@@ -37,7 +37,7 @@ Ce parcours vous forme à concevoir, entraîner et déployer des modèles d'inte
 - [ ] [MLOps Pipeline](08-Machine-Learning/MLOps/) — DVC, GitHub Actions ML, Docker ML, monitoring **(C12, C13)**
 - [ ] [ORM Python](05-Databases/ORM/Python/) — SQLAlchemy, SQLModel, Alembic **(C4)**
 
-> 🎯 **Brief à créer** : classification supervisée end-to-end avec suivi d'expériences MLflow, model registry et détection de drift (Evidently AI / PSI).
+> 🎯 **[Brief — Prédiction de churn & industrialisation MLflow](99-Brief/Dev-IA/ML-Classification/BRIEF_ML_CLASSIFICATION.md)** — classification supervisée end-to-end, MLflow (tracking + registry) et détection de drift.
 
 ---
 
@@ -50,7 +50,7 @@ Ce parcours vous forme à concevoir, entraîner et déployer des modèles d'inte
 - [ ] [Streamlit](12-Frontend-IA/Streamlit/) — Interface cliente consommant une API modèle **(C10)**
 - [ ] [Gradio](12-Frontend-IA/Gradio/) — Interface ML avec composants interactifs **(C10, C17)**
 
-> 🎯 **Brief à créer** : intégration d'un service IA cloud managé (OCR / vision / génération) exposé via une API FastAPI et une interface cliente Streamlit ou Gradio.
+> 🎯 **[Brief — Intégration d'un service IA cloud managé](99-Brief/Dev-IA/Services-IA-Cloud/BRIEF_SERVICES_IA_CLOUD.md)** — service OCR/vision/génération exposé via une API FastAPI + interface Streamlit/Gradio.
 
 ---
 
@@ -62,7 +62,7 @@ Ce parcours vous forme à concevoir, entraîner et déployer des modèles d'inte
 - [ ] [C4 Architecture](11-Gestion-Projet/C4-Architecture/) — Diagrammes C4, PlantUML, Structurizr **(C14, C15)**
 - [ ] [Django](01-Fondamentaux/Python/09-Django/) — Application web, DRF, auth JWT **(C17)**
 
-> 🎯 **Brief à créer** : cadrage d'un projet IA avec diagrammes C4, ADRs (Architecture Decision Records) et découpage Agile en User Stories et sprints.
+> 🎯 **[Brief — Cadrage & architecture d'un projet IA](99-Brief/Dev-IA/Architecture-Projet/BRIEF_ARCHITECTURE_PROJET.md)** — diagrammes C4, ADRs et découpage Agile (user stories, sprints).
 
 ---
 
@@ -77,7 +77,7 @@ Ce parcours vous forme à concevoir, entraîner et déployer des modèles d'inte
 - [ ] [RAG](10-Large-Language-Model/RAG/) — Pipeline RAG, chunking, retrieval, évaluation RAGAS **(C17)**
 - [ ] [LangGraph & CrewAI](10-Large-Language-Model/Agents/) — Agents multi-outils, graphes d'état, crews **(C17)**
 
-> 🎯 **Brief à créer** : assistant conversationnel RAG (chunking, base vectorielle, retrieval, mémoire) avec évaluation systématique de la qualité via RAGAS.
+> 🎯 **[Brief — Assistant conversationnel RAG](99-Brief/Dev-IA/RAG-LLM/BRIEF_RAG_LLM.md)** — chunking, base vectorielle, retrieval, mémoire, évaluation RAGAS.
 
 ---
 
@@ -88,7 +88,7 @@ Ce parcours vous forme à concevoir, entraîner et déployer des modèles d'inte
 - [ ] [Monitoring Prometheus/Grafana](07-DevOps/02-Monitoring/) — Instrumentation, dashboards **(C20)**
 - [ ] [MLOps Pipeline](08-Machine-Learning/MLOps/) — Drift en production, alertes, réentraînement **(C20, C21)**
 
-> 🎯 **Brief à créer** : industrialisation d'une API IA avec pipeline CI/CD (GitHub Actions, tests, build Docker) et monitoring Prometheus / Grafana + alerting.
+> 🎯 **[Brief — Industrialiser une API IA](99-Brief/Dev-IA/MLOps-Monitoring/BRIEF_MLOPS_MONITORING.md)** — CI/CD (GitHub Actions, tests, Docker) + monitoring Prometheus/Grafana + alerting.
 
 ---
 

@@ -71,7 +71,33 @@ Ce module vous emmène du **vrai zéro** jusqu'à la **mise en production** d'un
 
 | - | [Cheatsheet ML](cours/CHEATSHEET-ml.md) | - | Référence |
 
+### 🧩 Modèles complémentaires (supervisé & non-supervisé)
+
+| # | Chapitre | Durée | Niveau |
+|---|---------|-------|--------|
+| 19 | [Support Vector Machines (SVM)](cours/19-svm.md) | 3h | Avancé |
+| 20 | [Naive Bayes](cours/20-naive-bayes.md) | 2h | Intermédiaire |
+| 21 | [Clustering non supervisé : K-Means](cours/21-clustering-kmeans.md) | 3h | Intermédiaire |
+| 22 | [Réduction de dimension : PCA](cours/22-reduction-dimension-pca.md) | 3h | Intermédiaire |
+
 **Durée totale estimée : ~50 heures** (cours + exercices + projet)
+
+## 🎯 Mini-briefs par modèle — pratique délibérée
+
+La théorie ne suffit pas à *maîtriser l'usage* d'un modèle. Après chaque chapitre, entraîne-toi avec un **mini-brief court (~1-2 h)**, autonome, sur un jeu de données réel : **charger → entraîner → régler les hyperparamètres → évaluer → interpréter**.
+
+| # | Modèle | Mini-brief |
+|---|--------|-----------|
+| 01 | KNN | [mini-brief-01](mini-briefs/mini-brief-01-knn.md) |
+| 02 | Régression linéaire | [mini-brief-02](mini-briefs/mini-brief-02-regression-lineaire.md) |
+| 03 | Régression logistique | [mini-brief-03](mini-briefs/mini-brief-03-regression-logistique.md) |
+| 04 | Arbre de décision | [mini-brief-04](mini-briefs/mini-brief-04-arbre-decision.md) |
+| 05 | Random Forest | [mini-brief-05](mini-briefs/mini-brief-05-random-forest.md) |
+| 06 | Gradient Boosting / XGBoost | [mini-brief-06](mini-briefs/mini-brief-06-xgboost-boosting.md) |
+| 07 | SVM | [mini-brief-07](mini-briefs/mini-brief-07-svm.md) |
+| 08 | K-Means (clustering) | [mini-brief-08](mini-briefs/mini-brief-08-kmeans.md) |
+| 09 | PCA (réduction de dimension) | [mini-brief-09](mini-briefs/mini-brief-09-pca.md) |
+| 10 | Naive Bayes | [mini-brief-10](mini-briefs/mini-brief-10-naive-bayes.md) |
 
 ## 🗺️ Progression recommandée
 
