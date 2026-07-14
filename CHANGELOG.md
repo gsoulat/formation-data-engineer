@@ -1,3 +1,10 @@
+# [2.14.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.13.0...v2.14.0) (2026-07-14)
+
+
+### Features
+
+* **ml,briefs:** mini-briefs ML par modèle + chapitres SVM/NB/KMeans/PCA + 8 briefs DE & Dev IA ([f7ee2b3](https://github.com/gsoulat/formation-data-engineer/commit/f7ee2b35e8ebdc7b7350bd8fd1a0ea85701c44d9))
+
 # [2.13.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.12.0...v2.13.0) (2026-07-13)
 
 
