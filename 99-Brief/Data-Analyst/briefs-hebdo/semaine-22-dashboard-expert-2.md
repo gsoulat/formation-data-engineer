@@ -142,4 +142,4 @@ Phases 1 à 5 complètes : 3 à 4 pages cohérentes et navigables, interactivit�
 - Principes WCAG : usage de la couleur (1.4.1) et redimensionnement du texte (1.4.4) ; palettes sûres pour daltoniens (Okabe-Ito, ColorBrewer)
 - Documentation Power BI — accessibilité des rapports : https://learn.microsoft.com/power-bi/create-reports/desktop-accessibility-overview
 - Documentation Power BI — Performance Analyzer : https://learn.microsoft.com/power-bi/create-reports/desktop-performance-analyzer
-- Prochaine étape du parcours — projet certificatif : [BRIEF_3 — Projet certificatif BC06](../BRIEF_3_CERTIFICATIF_BC06.md)
+- Prochaine étape du parcours — projet final : [BRIEF_3 — Projet final](../BRIEF_3_PROJET_FINAL.md)

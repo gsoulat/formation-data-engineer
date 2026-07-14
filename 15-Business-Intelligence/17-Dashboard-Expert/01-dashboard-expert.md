@@ -27,11 +27,11 @@
 
 ---
 
-## Pourquoi c'est l'aboutissement (certification BC06)
+## Pourquoi c'est l'aboutissement du parcours
 
-Le bloc **BC06** ne valide pas « savoir faire un graphique ». Il valide ta capacité à **transformer un besoin métier en outil de décision fiable, lisible et défendable**.
+Ce module ne se limite pas à « savoir faire un graphique ». Il développe ta capacité à **transformer un besoin métier en outil de décision fiable, lisible et défendable**.
 
-En certification, on ne te donnera pas une recette. On te donnera **un contexte et un besoin** (« la direction veut piloter la performance commerciale du réseau de magasins du Nord »). À toi de :
+Lors de l'évaluation finale, on ne te donnera pas une recette. On te donnera **un contexte et un besoin** (« la direction veut piloter la performance commerciale du réseau de magasins du Nord »). À toi de :
 
 - décider **quels indicateurs** répondent vraiment au besoin (et écarter le superflu),
 - décider **comment les représenter** (et pourquoi cette visualisation plutôt qu'une autre),

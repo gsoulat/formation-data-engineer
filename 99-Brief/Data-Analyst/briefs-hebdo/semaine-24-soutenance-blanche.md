@@ -4,12 +4,12 @@
 
 | Critère | Valeur |
 |---------|--------|
-| **Semaine** | S24 — Phase 3 : Préparer la certification & la soutenance finale |
+| **Semaine** | S24 — Phase 3 : Préparer l'évaluation finale & la soutenance |
 | **Durée** | 1 semaine (5 jours) |
 | **Niveau** | Confirmé |
 | **Modalité** | Individuel |
 | **Technologies** | Outil de présentation (PowerPoint / Google Slides / Canva) · Power BI (démo du dashboard) · outil de test de contraste · Git/GitHub |
-| **Prérequis** | [Restitution & storytelling](../../../15-Business-Intelligence/08-Restitution-Storytelling/) · [Accompagnement métier](../../../15-Business-Intelligence/13-Accompagnement-Metier/) · [Préparation à la certification](../../../15-Business-Intelligence/18-Preparation-Certification/) |
+| **Prérequis** | [Restitution & storytelling](../../../15-Business-Intelligence/08-Restitution-Storytelling/) · [Accompagnement métier](../../../15-Business-Intelligence/13-Accompagnement-Metier/) · [Préparation à l'évaluation finale](../../../15-Business-Intelligence/18-Preparation-Certification/) |
 
 ## Contexte
 
@@ -47,7 +47,7 @@ Votre tableau de bord Power BI et vos rapports de synthèse antérieurs sont le 
 - **Rendre une restitution accessible à tous**, y compris aux personnes en situation de handicap : contrastes suffisants, information jamais portée par la seule couleur, texte lisible, propos qui n'exige pas de « voir » l'écran pour être suivi.
 - **Démontrer un tableau de bord en direct** sur un scénario d'usage concret, sans se perdre dans l'outil.
 - **Défendre ses choix et gérer les questions** : justifier un indicateur, un visuel, un traitement de données personnelles, et répondre à une objection avec honnêteté et méthode.
-- **Tenir la posture et le temps** d'un oral certificatif, et transformer un retour critique en axes de progression concrets.
+- **Tenir la posture et le temps** d'un oral d'évaluation finale, et transformer un retour critique en axes de progression concrets.
 
 ## Données fournies
 
@@ -75,7 +75,7 @@ Passez votre soutenance devant un « comité de direction » (le formateur et un
 
 ### Phase 5 — Retour, axes de progression et mise en ligne (J5)
 
-Recueillez le **retour du jury** à l'aide d'une grille de restitution (clarté, structure, gestion du temps, qualité des réponses, accessibilité, posture). Identifiez **trois axes d'amélioration concrets** pour le vrai oral de certification, et pour chacun l'action précise que vous mènerez (ex. « raccourcir la partie ETL de 4 à 2 slides », « répéter la démo pour tenir sous 3 min »). Finalisez votre support, votre fiche de passage et poussez l'ensemble sur GitHub avec un README clair. Cette semaine ne se juge pas à la perfection du passage, mais à la **lucidité du diagnostic** que vous en tirez.
+Recueillez le **retour du jury** à l'aide d'une grille de restitution (clarté, structure, gestion du temps, qualité des réponses, accessibilité, posture). Identifiez **trois axes d'amélioration concrets** pour le vrai oral de soutenance finale, et pour chacun l'action précise que vous mènerez (ex. « raccourcir la partie ETL de 4 à 2 slides », « répéter la démo pour tenir sous 3 min »). Finalisez votre support, votre fiche de passage et poussez l'ensemble sur GitHub avec un README clair. Cette semaine ne se juge pas à la perfection du passage, mais à la **lucidité du diagnostic** que vous en tirez.
 
 ### Socle commun (obligatoire)
 
@@ -132,6 +132,6 @@ Phases 1 à 5 complètes : cadrage d'audience documenté, support de 10-15 slide
 
 - Module de cours — [Restitution & storytelling](../../../15-Business-Intelligence/08-Restitution-Storytelling/)
 - Module de cours — [Accompagnement métier](../../../15-Business-Intelligence/13-Accompagnement-Metier/)
-- Module de cours — [Préparation à la certification](../../../15-Business-Intelligence/18-Preparation-Certification/)
+- Module de cours — [Préparation à l'évaluation finale](../../../15-Business-Intelligence/18-Preparation-Certification/)
 - Rappels accessibilité — [Visualisations avancées & WCAG](../../../15-Business-Intelligence/11-Visualisations-Avancees/)
-- Aboutissement du parcours — projet certificatif : [BRIEF_3 — Projet certificatif BC06](../BRIEF_3_CERTIFICATIF_BC06.md)
+- Aboutissement du parcours — projet final : [BRIEF_3 — Projet final](../BRIEF_3_PROJET_FINAL.md)

@@ -1,4 +1,4 @@
-# 01 — Préparation à la certification BC06
+# 01 — Préparation à l'évaluation finale
 
 > **Le dernier kilomètre.** Tu sais collecter, nettoyer, analyser et restituer des données. Ce module ne t'apprend pas une nouvelle technique : il t'apprend à **prouver** au jury que tu maîtrises tout cela. C'est la différence entre « savoir faire » et « savoir montrer qu'on sait faire ».
 
@@ -6,9 +6,9 @@
 |---|---|
 | **Phase** | Phase 3 — Flux & Business Intelligence |
 | **Durée** | ≈ 20 h (module méthodologique, non technique) |
-| **Synthèse** | Comprendre l'épreuve du bloc **RNCP38616BC06** (Concevoir des tableaux de bord avancés / BI), préparer ses livrables, structurer son dossier professionnel, construire et répéter sa soutenance orale, anticiper les questions du jury et gérer son stress le jour J. |
-| **Compétences certifiées** | **C16** (indicateurs clés) · **C17** (visualisations) · **C18** (tableaux de bord BI) — toutes au **niveau 3 (Transposer)** |
-| **Pré-requis** | **L'ensemble du parcours.** Phase 0 (maths, Python, SQL), Phase 1 (collecte, EDA, dataviz), Phase 2 (ML, statistiques, modélisation), Phase 3 (flux, ETL, nettoyage, extraction avancée, dashboards experts). Le projet certificatif (brief Phase 3) doit être réalisé ou en cours. |
+| **Synthèse** | Comprendre l'épreuve finale (Concevoir des tableaux de bord avancés / BI), préparer ses livrables, structurer son dossier professionnel, construire et répéter sa soutenance orale, anticiper les questions du jury et gérer son stress le jour J. |
+| **Compétences visées** | Identifier les **indicateurs clés** · choisir des **visualisations pertinentes** · créer des **tableaux de bord BI** — toutes au niveau **avancé** |
+| **Pré-requis** | **L'ensemble du parcours.** Phase 0 (maths, Python, SQL), Phase 1 (collecte, EDA, dataviz), Phase 2 (ML, statistiques, modélisation), Phase 3 (flux, ETL, nettoyage, extraction avancée, dashboards experts). Le projet final (brief Phase 3) doit être réalisé ou en cours. |
 
 ---
 
@@ -16,13 +16,13 @@
 
 À la fin de ce module, tu sauras :
 
-1. **Décrire précisément l'épreuve du bloc BC06** : ce qui est évalué, comment, par qui, avec quel barème.
+1. **Décrire précisément l'épreuve finale** : ce qui est évalué, comment, par qui, avec quel barème.
 2. **Identifier et préparer tous les livrables attendus** : dossier projet, tableau de bord livré, documentation technique.
-3. **Structurer ton dossier professionnel** de façon claire, traçable et conforme aux attentes du référentiel.
+3. **Structurer ton dossier professionnel** de façon claire, traçable et conforme aux attentes de l'évaluation.
 4. **Construire un support de soutenance efficace** (plan type, fil rouge, gestion du temps).
 5. **Anticiper les questions du jury** et préparer des réponses solides, même sur tes points faibles.
 6. **Gérer ton stress** avant et pendant l'oral grâce à des techniques concrètes.
-7. **T'auto-évaluer** honnêtement sur la grille de compétences C16/C17/C18 niveau 3, et **prendre en compte les retours** pour t'améliorer.
+7. **T'auto-évaluer** honnêtement sur la grille de compétences (indicateurs, visualisations, tableaux de bord) au niveau avancé, et **prendre en compte les retours** pour t'améliorer.
 
 ---
 
@@ -30,44 +30,44 @@
 
 Pose-toi mentalement dans la salle. Voici, concrètement, comment se déroule l'épreuve.
 
-> 🎬 **Le scénario type d'une session de certification BC06**
+> 🎬 **Le scénario type d'une session d'évaluation finale**
 >
 > 1. **Tu arrives 15-20 min avant.** Ton support est prêt (clé USB + version cloud + PDF de secours). Ton dashboard fonctionne en local **et** tu as des captures d'écran si jamais la connexion lâche.
 > 2. **Tu installes ton matériel** (3-5 min). Tu vérifies l'affichage, le son si vidéo, l'accès au tableau de bord.
 > 3. **Tu présentes** (≈ 20 min) : contexte métier → besoin → indicateurs → visualisations → dashboard → démonstration live.
 > 4. **Le jury te questionne** (≈ 15-20 min) : sur tes choix, ta démarche, des cas « et si… ».
-> 5. **Tu sors.** Le jury délibère. Tu sauras plus tard si le bloc est validé.
+> 5. **Tu sors.** Le jury délibère. Tu sauras plus tard si l'évaluation est validée.
 
-**Qui est en face de toi ?** Un jury de **2 personnes minimum**, généralement un·e professionnel·le du métier (data/BI) et un·e formateur·rice ou représentant·e du certificateur. Ils ne cherchent pas à te piéger : ils cherchent à **vérifier que tu sais faire le métier**. Une question difficile n'est pas une attaque, c'est une **invitation à montrer ta réflexion**.
+**Qui est en face de toi ?** Un jury de **2 personnes minimum**, généralement un·e professionnel·le du métier (data/BI) et un·e formateur·rice. Ils ne cherchent pas à te piéger : ils cherchent à **vérifier que tu sais faire le métier**. Une question difficile n'est pas une attaque, c'est une **invitation à montrer ta réflexion**.
 
-**Ce qui est évalué (en une phrase) :** ta capacité à **partir d'un besoin métier**, à en **déduire les bons indicateurs**, à **choisir des visualisations pertinentes et accessibles**, et à **livrer un tableau de bord BI exploitable** — le tout en sachant **justifier chaque choix**. C'est le niveau 3 : on ne te demande pas de reproduire un exemple, on te demande de **concevoir** et d'**argumenter**.
+**Ce qui est évalué (en une phrase) :** ta capacité à **partir d'un besoin métier**, à en **déduire les bons indicateurs**, à **choisir des visualisations pertinentes et accessibles**, et à **livrer un tableau de bord BI exploitable** — le tout en sachant **justifier chaque choix**. C'est le niveau **avancé** : on ne te demande pas de reproduire un exemple, on te demande de **concevoir** et d'**argumenter**.
 
-> ⚠️ **L'erreur n°1 des candidats.** Passer 18 minutes sur la technique (« voici ma requête SQL, voici ma mesure DAX… ») et 2 minutes sur le métier. Le jury BC06 évalue avant tout le **lien entre les données et la décision**. Un dashboard magnifique qui ne répond à aucun besoin métier clair échoue. Un dashboard sobre qui répond précisément à un besoin réel passe.
+> ⚠️ **L'erreur n°1 des candidats.** Passer 18 minutes sur la technique (« voici ma requête SQL, voici ma mesure DAX… ») et 2 minutes sur le métier. Le jury évalue avant tout le **lien entre les données et la décision**. Un dashboard magnifique qui ne répond à aucun besoin métier clair échoue. Un dashboard sobre qui répond précisément à un besoin réel passe.
 
 ---
 
-## L'épreuve BC06 en détail
+## L'épreuve finale en détail
 
-### Ce que dit le référentiel
+### Les compétences évaluées
 
-Le bloc **RNCP38616BC06 — « Concevoir des tableaux de bord avancés »** repose sur trois compétences :
+L'épreuve **« Concevoir des tableaux de bord avancés »** repose sur trois compétences :
 
-| Code | Compétence | Ce que le jury vérifie |
+| Compétence | Description | Ce que le jury vérifie |
 |---|---|---|
-| **C16** | **Identifier les indicateurs clés** à calculer en interrogeant les besoins métier afin de structurer les tableaux de bord nécessaires aux prises de décision stratégiques. | Tu pars d'un **vrai besoin métier**, tu le traduis en **KPI mesurables** (avec formule, unité, cible). |
-| **C17** | **Choisir des visualisations pertinentes** en tenant compte de la nature massive des données et du profil des usagers (y compris les personnes en situation de handicap, directives **WCAG**) afin de faciliter la compréhension. | Chaque graphique est **justifié** (bon type pour la bonne donnée), **lisible** et **accessible**. |
-| **C18** | **Créer des tableaux de bord** avec des outils de BI (Power BI, Looker Studio…) afin de rendre les analyses accessibles et interactives. | Le dashboard est **fonctionnel, interactif, structuré** et livrable à un commanditaire. |
+| **Indicateurs clés** | **Identifier les indicateurs clés** à calculer en interrogeant les besoins métier afin de structurer les tableaux de bord nécessaires aux prises de décision stratégiques. | Tu pars d'un **vrai besoin métier**, tu le traduis en **KPI mesurables** (avec formule, unité, cible). |
+| **Visualisations** | **Choisir des visualisations pertinentes** en tenant compte de la nature massive des données et du profil des usagers (y compris les personnes en situation de handicap, directives **WCAG**) afin de faciliter la compréhension. | Chaque graphique est **justifié** (bon type pour la bonne donnée), **lisible** et **accessible**. |
+| **Tableaux de bord** | **Créer des tableaux de bord** avec des outils de BI (Power BI, Looker Studio…) afin de rendre les analyses accessibles et interactives. | Le dashboard est **fonctionnel, interactif, structuré** et livrable à un commanditaire. |
 
-> 🧭 **Image à retenir.** C16, c'est **décider quoi mesurer** (le cerveau). C17, c'est **décider comment le montrer** (l'œil). C18, c'est **construire l'outil** (la main). Le jury vérifie que les trois sont reliés : un KPI sans visualisation adaptée, ou une belle viz qui ne mesure rien d'utile, fait perdre des points.
+> 🧭 **Image à retenir.** Les indicateurs, c'est **décider quoi mesurer** (le cerveau). Les visualisations, c'est **décider comment le montrer** (l'œil). Le tableau de bord, c'est **construire l'outil** (la main). Le jury vérifie que les trois sont reliés : un KPI sans visualisation adaptée, ou une belle viz qui ne mesure rien d'utile, fait perdre des points.
 
 ### Format de l'épreuve
 
 | Élément | Détail indicatif |
 |---|---|
-| **Modalité** | Soutenance orale individuelle devant jury, à partir d'un projet réalisé (le projet certificatif de la Phase 3). |
+| **Modalité** | Soutenance orale individuelle devant jury, à partir d'un projet réalisé (le projet final de la Phase 3). |
 | **Support** | Un **dossier professionnel** écrit + une **présentation orale** + une **démonstration du tableau de bord**. |
-| **Durée** | ≈ 20 min de présentation + 15-20 min d'échange avec le jury (variable selon le centre). |
-| **Évaluation** | Validation du bloc = les compétences C16, C17, C18 sont jugées **acquises au niveau 3**. C'est une logique **acquis / non acquis par compétence**, pas une note sur 20. |
+| **Durée** | ≈ 20 min de présentation + 15-20 min d'échange avec le jury (variable selon le contexte). |
+| **Évaluation** | Validation de l'épreuve = les trois compétences (indicateurs, visualisations, tableaux de bord) sont jugées **acquises au niveau avancé**. C'est une logique **acquis / non acquis par compétence**, pas une note sur 20. |
 
 > 📌 **À vérifier auprès de ton centre.** Les durées exactes, la composition précise du jury et la date limite de dépôt du dossier dépendent de ta session. **Demande la convocation officielle dès qu'elle est disponible** et note les échéances dans ton agenda.
 
@@ -79,7 +79,7 @@ Tu dois arriver avec **trois livrables** cohérents entre eux. Le jury les confr
 
 ### Le dossier projet (document écrit)
 
-C'est la **colonne vertébrale** de ta certification. Il raconte ton projet de bout en bout.
+C'est la **colonne vertébrale** de ton évaluation finale. Il raconte ton projet de bout en bout.
 
 **Contenu attendu :**
 
@@ -87,15 +87,15 @@ C'est la **colonne vertébrale** de ta certification. Il raconte ton projet de b
 2. **Problématique métier** — La question décisionnelle à laquelle le tableau de bord répond.
 3. **Sources de données** — D'où viennent les données, comment elles sont collectées, leur volumétrie, leur qualité.
 4. **Préparation des données** — Nettoyage, transformations, modèle de données (ex. schéma en étoile).
-5. **Identification des indicateurs (C16)** — Tableau des KPI : nom, définition, formule, unité, cible, fréquence.
-6. **Choix des visualisations (C17)** — Pour chaque indicateur, le type de graphique choisi **et pourquoi**, avec la dimension accessibilité (WCAG).
-7. **Construction du dashboard (C18)** — Outil utilisé, structure des pages, interactivité (filtres, drill-down).
+5. **Identification des indicateurs** — Tableau des KPI : nom, définition, formule, unité, cible, fréquence.
+6. **Choix des visualisations** — Pour chaque indicateur, le type de graphique choisi **et pourquoi**, avec la dimension accessibilité (WCAG).
+7. **Construction du dashboard** — Outil utilisé, structure des pages, interactivité (filtres, drill-down).
 8. **Restitution & limites** — Ce que le dashboard apporte à la décision, ses limites, ses pistes d'amélioration.
 9. **Annexes** — Captures d'écran, dictionnaire de données, code/requêtes clés.
 
-> 💡 **Conseil rédaction.** Écris ton dossier pour quelqu'un qui **ne connaît pas ton projet**. Chaque choix doit être justifié par une phrase « j'ai choisi X **parce que** le besoin métier était Y ». Le mot magique du niveau 3, c'est **« parce que »**.
+> 💡 **Conseil rédaction.** Écris ton dossier pour quelqu'un qui **ne connaît pas ton projet**. Chaque choix doit être justifié par une phrase « j'ai choisi X **parce que** le besoin métier était Y ». Le mot magique du niveau avancé, c'est **« parce que »**.
 
-### Le tableau de bord livré (C18)
+### Le tableau de bord livré
 
 Le dashboard lui-même est un livrable. Il doit être :
 
@@ -126,7 +126,7 @@ Un bon dossier se **lit en diagonale** et se **comprend en profondeur**. Quelque
 - **Traçabilité.** Chaque indicateur du dashboard doit être retrouvable dans le dossier (et inversement). Numérote-les.
 - **Sobriété.** Mieux vaut 25 pages claires que 60 pages noyées. Le jury n'évalue pas le poids du document.
 - **Preuves visuelles.** Captures d'écran annotées valent mille mots. Montre des **avant/après** (donnée brute → KPI lisible).
-- **Honnêteté sur les limites.** Citer les limites de ton projet est un **signe de maturité**, pas un aveu de faiblesse. Le niveau 3 sait critiquer son propre travail.
+- **Honnêteté sur les limites.** Citer les limites de ton projet est un **signe de maturité**, pas un aveu de faiblesse. Le niveau avancé sait critiquer son propre travail.
 
 > 💡 **Encadré : le test des 30 secondes.** Donne ton dossier à quelqu'un d'extérieur. En 30 secondes de feuilletage, doit-il pouvoir répondre à : « C'est pour qui ? Ça répond à quelle question ? Combien d'indicateurs ? » Si oui, ta structure est bonne.
 
@@ -134,16 +134,16 @@ Un bon dossier se **lit en diagonale** et se **comprend en profondeur**. Quelque
 
 ## Préparer la soutenance orale
 
-### Le plan type d'une soutenance BC06 (≈ 20 min)
+### Le plan type d'une soutenance (≈ 20 min)
 
 | Temps | Partie | Contenu | Objectif |
 |---|---|---|---|
 | **2 min** | **Accroche & contexte** | Qui est le commanditaire, quel problème métier. | Capter l'attention, planter le décor. |
 | **2 min** | **Problématique** | La question décisionnelle précise + objectifs du dashboard. | Cadrer ce que le dashboard doit résoudre. |
 | **3 min** | **Données & préparation** | Sources, volumétrie, nettoyage, modèle. | Montrer la rigueur amont (sans s'y noyer). |
-| **4 min** | **Indicateurs clés (C16)** | Les KPI retenus, pourquoi eux, comment ils se calculent. | Prouver le lien besoin → mesure. |
-| **3 min** | **Choix de visualisation (C17)** | Pourquoi tel graphique, accessibilité WCAG. | Justifier la forme. |
-| **4 min** | **Démonstration live (C18)** | Naviguer dans le dashboard, montrer l'interactivité. | Prouver que ça marche pour de vrai. |
+| **4 min** | **Indicateurs clés** | Les KPI retenus, pourquoi eux, comment ils se calculent. | Prouver le lien besoin → mesure. |
+| **3 min** | **Choix de visualisation** | Pourquoi tel graphique, accessibilité WCAG. | Justifier la forme. |
+| **4 min** | **Démonstration live** | Naviguer dans le dashboard, montrer l'interactivité. | Prouver que ça marche pour de vrai. |
 | **2 min** | **Conclusion** | Apport métier, limites, perspectives. | Finir sur la valeur et la lucidité. |
 
 > ⏱️ **Encadré : gérer le temps.** Répète **chronomètre en main**. Vise 18 min pour garder une marge. Si tu débordes, le jury te coupera et tu perdras ta conclusion (la partie qui laisse la dernière impression). Prépare une version « courte » de chaque section au cas où.
@@ -158,7 +158,7 @@ Un bon dossier se **lit en diagonale** et se **comprend en profondeur**. Quelque
 
 ### La démonstration live (le moment clé)
 
-C'est là que C18 se prouve. Prépare un **scénario de démo** : un parcours précis (« je filtre sur la région Nord, je clique sur ce mois, le détail s'ouvre… »).
+C'est là que la maîtrise du **tableau de bord** se prouve. Prépare un **scénario de démo** : un parcours précis (« je filtre sur la région Nord, je clique sur ce mois, le détail s'ouvre… »).
 
 > ⚠️ **Toujours un plan B.** Connexion qui lâche, fichier qui ne s'ouvre pas, donnée qui ne charge pas : ça arrive. Aie **toujours** une vidéo de capture d'écran de ta démo + des screenshots dans tes slides. Un candidat préparé qui dit « ma connexion a un souci, voici l'enregistrement de la démo » impressionne plus qu'un candidat paniqué.
 
@@ -218,16 +218,16 @@ Le stress est **normal et même utile** (il te rend alerte). L'objectif n'est pa
 
 ### Activité 1 — Auto-évaluation sur la grille de compétences
 
-Note-toi honnêtement de 1 à 4 sur chaque critère (1 = pas du tout, 4 = totalement maîtrisé). Pour le bloc, vise **au moins 3 partout**.
+Note-toi honnêtement de 1 à 4 sur chaque critère (1 = pas du tout, 4 = totalement maîtrisé). Vise **au moins 3 partout**.
 
-| Critère (niveau 3 attendu) | 1 | 2 | 3 | 4 |
+| Critère (niveau avancé attendu) | 1 | 2 | 3 | 4 |
 |---|:--:|:--:|:--:|:--:|
-| **C16** — Je pars d'un besoin métier réel et je le traduis en KPI mesurables (formule, unité, cible). | | | | |
-| **C16** — Je sais expliquer *pourquoi* chaque indicateur a été retenu (et pourquoi d'autres ont été écartés). | | | | |
-| **C17** — Je justifie chaque type de graphique par la nature de la donnée et le profil de l'usager. | | | | |
-| **C17** — Mon dashboard respecte les règles d'accessibilité (contraste, pas d'info par couleur seule, WCAG). | | | | |
-| **C18** — Mon tableau de bord est fonctionnel, interactif et structuré (du général au détail). | | | | |
-| **C18** — Je sais faire une démonstration live fluide avec un plan B. | | | | |
+| **Indicateurs** — Je pars d'un besoin métier réel et je le traduis en KPI mesurables (formule, unité, cible). | | | | |
+| **Indicateurs** — Je sais expliquer *pourquoi* chaque indicateur a été retenu (et pourquoi d'autres ont été écartés). | | | | |
+| **Visualisations** — Je justifie chaque type de graphique par la nature de la donnée et le profil de l'usager. | | | | |
+| **Visualisations** — Mon dashboard respecte les règles d'accessibilité (contraste, pas d'info par couleur seule, WCAG). | | | | |
+| **Tableaux de bord** — Mon tableau de bord est fonctionnel, interactif et structuré (du général au détail). | | | | |
+| **Tableaux de bord** — Je sais faire une démonstration live fluide avec un plan B. | | | | |
 | **Transversal** — Je sais présenter à l'oral en 20 min et répondre aux questions sans me déstabiliser. | | | | |
 
 > 🎯 Pour chaque ligne notée **1 ou 2**, écris **une action concrète** pour progresser d'ici l'examen (ex. « refaire la slide KPI avec les formules », « répéter la démo 3 fois »).
@@ -281,7 +281,7 @@ Entraîne-toi à répondre **à voix haute** avant de lire les réponses types.
 <details>
 <summary><strong>Q6 — « Quelle est la principale limite de votre travail ? »</strong></summary>
 
-**Réponse type.** « La principale limite est [limite honnête, ex. : la fraîcheur des données dépend d'un export manuel quotidien]. Pour la lever, je [piste concrète]. » → **L'honnêteté lucide est valorisée au niveau 3. Ne réponds jamais "aucune limite".**
+**Réponse type.** « La principale limite est [limite honnête, ex. : la fraîcheur des données dépend d'un export manuel quotidien]. Pour la lever, je [piste concrète]. » → **L'honnêteté lucide est valorisée au niveau avancé. Ne réponds jamais "aucune limite".**
 </details>
 
 <details>
@@ -313,9 +313,9 @@ Entraîne-toi à répondre **à voix haute** avant de lire les réponses types.
 Réponds par **Oui / À faire**. Tu es prêt·e quand tout est « Oui ».
 
 1. Je peux énoncer en une phrase le **besoin métier** auquel répond mon dashboard. ☐
-2. Je peux citer **chacun de mes KPI**, sa **formule** et **pourquoi** je l'ai retenu (C16). ☐
-3. Pour chaque graphique, je sais dire **pourquoi ce type** et en quoi il est **accessible** (C17). ☐
-4. Mon dashboard est **interactif** et je sais le **démontrer en live** (C18). ☐
+2. Je peux citer **chacun de mes KPI**, sa **formule** et **pourquoi** je l'ai retenu. ☐
+3. Pour chaque graphique, je sais dire **pourquoi ce type** et en quoi il est **accessible**. ☐
+4. Mon dashboard est **interactif** et je sais le **démontrer en live**. ☐
 5. J'ai un **plan B** si la technique lâche (vidéo + captures). ☐
 6. Ma soutenance tient en **≤ 20 min**, chronomètre testé. ☐
 7. Je connais **3 questions probables du jury** et mes réponses. ☐
@@ -327,10 +327,10 @@ Réponds par **Oui / À faire**. Tu es prêt·e quand tout est « Oui ».
 
 ## À retenir
 
-- **Le BC06 évalue le lien données → décision**, pas la prouesse technique. Pars **toujours** du besoin métier.
-- **C16 = quoi mesurer · C17 = comment le montrer · C18 = construire l'outil.** Les trois doivent être reliés et justifiés.
+- **L'évaluation finale porte sur le lien données → décision**, pas la prouesse technique. Pars **toujours** du besoin métier.
+- **Indicateurs = quoi mesurer · visualisations = comment le montrer · tableau de bord = construire l'outil.** Les trois doivent être reliés et justifiés.
 - **Trois livrables cohérents** : dossier projet, dashboard fonctionnel, documentation. Le jury les croise.
-- **« Parce que »** est le mot du niveau 3 : justifie chaque choix par le besoin et l'usager (dont l'accessibilité WCAG).
+- **« Parce que »** est le mot du niveau avancé : justifie chaque choix par le besoin et l'usager (dont l'accessibilité WCAG).
 - **Répète à voix haute, chronomètre en main**, et prépare ta **première phrase** + ta **conclusion** par cœur.
 - **Aie toujours un plan B technique.** Un candidat préparé à l'imprévu inspire confiance.
 - **Le stress est normal** : respiration, débit lent, contact visuel, « coffee shop test ».

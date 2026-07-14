@@ -1,4 +1,4 @@
-# Étude de marché — Outils de Data Visualization / BI pour la formation Data Analyst (RNCP 38616)
+# Étude de marché — Outils de Data Visualization / BI pour la formation Data Analyst
 ### Focus : marché national français & Hauts-de-France · contrainte multi-OS (formateur Mac)
 *Date : juin 2026 · Étude documentaire pour le choix des outils à enseigner*
 

@@ -1,15 +1,13 @@
 # Brief — Administration PostgreSQL pour une plateforme logistique
 
-## Competences et niveaux
+## Objectifs
 
-| Competence | Niveau |
-|---|---|
-| **C2.** Cartographier les donnees disponibles | Niveau 3 — Transposer |
-| **C3.** Concevoir un cadre technique d'exploitation | Niveau 3 — Transposer |
-| **C9.** Developper des requetes SQL | Niveau 3 — Transposer |
-| **C10.** Developper des regles d'agregation | Niveau 3 — Transposer |
-| **C11.** Creer une base de donnees | Niveau 3 — Transposer |
-| **C16.** Gerer l'entrepot de donnees | Niveau 3 — Transposer |
+- Cartographier les donnees disponibles
+- Concevoir un cadre technique d'exploitation
+- Developper des requetes SQL
+- Developper des regles d'agregation
+- Creer une base de donnees
+- Gerer l'entrepot de donnees
 
 ---
 

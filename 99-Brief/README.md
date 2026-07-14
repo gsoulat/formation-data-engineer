@@ -7,7 +7,7 @@ les compétences partagées par toutes les formations.
 99-Brief/
 ├── 00-Tronc-Commun/        ← briefs communs à tous les parcours (Bash, Git, Docker, K8s…)
 ├── Data-Engineer/          ← briefs du parcours Data Engineer
-├── Data-Analyst/           ← briefs du parcours Data Analyst (RNCP-38616, BC06)
+├── Data-Analyst/           ← briefs du parcours Data Analyst
 ├── DevOps/                 ← briefs du parcours DevOps / Cloud
 ├── Dev-IA/                 ← briefs du parcours Développeur IA
 └── FINAL_PROJECT_TEMPLATES/← gabarits de projets finaux (transverses)
@@ -29,7 +29,7 @@ Collecte, stockage, transformation et industrialisation de la donnée.
 - [Lakehouse Éolien (Medallion)](Data-Engineer/Eolienne/) · [eCO2mix RTE](Data-Engineer/ECO2-RTE/) · [Qualité de l'eau (Azure)](Data-Engineer/BRIEF_QUALITE_EAU_FRANCE.md)
 
 ## 📊 [Data-Analyst](Data-Analyst/)
-Recueil du besoin, analyse et tableaux de bord BI (certification **BC06**).
+Recueil du besoin, analyse et tableaux de bord BI.
 - 4 briefs fil rouge (0 → 3) + 22 missions hebdomadaires — voir l'[index détaillé](Data-Analyst/README.md).
 
 ## 🟣 [DevOps](DevOps/) · 🧠 [Dev-IA](Dev-IA/)

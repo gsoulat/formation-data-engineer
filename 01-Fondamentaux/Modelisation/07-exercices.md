@@ -8,7 +8,7 @@
 
 - Mettre en pratique toutes les competences acquises dans les lecons precedentes
 - Progresser du niveau debutant (lecture) au niveau avance (projet complet)
-- Se preparer a la certification RNCP avec des exercices realistes
+- S'entrainer avec des exercices realistes
 - Appliquer la modelisation dans un contexte Data Engineering
 
 ---
@@ -1003,7 +1003,7 @@ CREATE INDEX idx_pipeline_destination ON pipeline(id_destination);
 | **N2 - Conception** | Dictionnaire → MCD → MLD → SQL pour un domaine classique | Maitrise du workflow complet |
 | **N3 - Projet** | Interview → RG → Dictionnaire → MCD → MLD → MPD → SQL optimise dans un contexte Data Engineering | Autonomie professionnelle |
 
-💡 **Conseil pour la certification** : l'exercice de Niveau 3 est representatif de ce qui est attendu en certification RNCP. Entralnez-vous a realiser le workflow complet en moins de 3 heures.
+💡 **Conseil** : l'exercice de Niveau 3 est representatif d'un projet de synthese complet. Entralnez-vous a realiser le workflow complet en moins de 3 heures.
 
 ---
 

@@ -7,7 +7,7 @@
 - Mettre en pratique les concepts des 7 lecons
 - Progresser du niveau debutant au niveau avance
 - Travailler sur des cas realistes issus du monde professionnel
-- Preparer la certification RNCP
+- Se preparer a un projet de synthese en conditions reelles
 
 ---
 

@@ -191,7 +191,7 @@ Notation Crow's Foot dans MySQL Workbench :
   ──○<──  : zero ou plusieurs (0:N)
 ```
 
-⚠️ **Attention** : MySQL Workbench n'utilise PAS la notation MERISE. Si vous preparez une certification RNCP, utilisez Looping pour les MCD MERISE.
+⚠️ **Attention** : MySQL Workbench n'utilise PAS la notation MERISE. Si vous devez produire des MCD MERISE, utilisez Looping.
 
 ---
 
@@ -387,7 +387,7 @@ ref: badge.id_employe - employe.id_employe
 
 ## 7. Recommandations par contexte
 
-### 7.1 Pour la formation et la certification RNCP
+### 7.1 Pour la formation et la modelisation MERISE
 
 📐 **Utilisez Looping** : c'est le seul outil gratuit qui supporte nativement MERISE avec la transformation automatique MCD → MLD → SQL. C'est l'outil attendu dans les certifications.
 
@@ -435,7 +435,7 @@ ref: badge.id_employe - employe.id_employe
 
 ## 📝 Auto-evaluation
 
-1. Quel outil utiliseriez-vous pour preparer votre certification RNCP ? Pourquoi ?
+1. Quel outil utiliseriez-vous pour produire un MCD en notation MERISE ? Pourquoi ?
 2. Ecrivez le code DBML pour le schema IoT (capteur, zone, mesure, alerte).
 3. Quel est l'avantage du reverse engineering ? Dans quelle situation l'utiliseriez-vous ?
 4. Pourquoi est-il recommande de commencer par un brouillon papier avant d'utiliser un outil ?

@@ -27,9 +27,9 @@
 
 ---
 
-## Pourquoi c'est utile au Data Analyst (cœur du bloc BC06)
+## Pourquoi c'est utile au Data Analyst (cœur du métier)
 
-Le bloc **BC06** de la certification, c'est *« Analyser des données massives et en restituer les résultats »*. La **restitution**, c'est exactement ce module. Un Data Analyst peut produire l'analyse la plus juste du monde : si personne ne la comprend, elle ne sert à rien.
+Le cœur du métier, c'est *« analyser des données et en restituer les résultats »*. La **restitution**, c'est exactement ce module. Un Data Analyst peut produire l'analyse la plus juste du monde : si personne ne la comprend, elle ne sert à rien.
 
 Concrètement, dans ton futur poste :
 
@@ -397,7 +397,7 @@ Sur Windows ou en VM : importe le CSV, **nettoie dans Power Query** (types, espa
 
 ## À retenir 🧠
 
-- **Restituer fait partie du métier** : le dashboard est le livrable BC06 qui rend ton analyse utile à un décideur.
+- **Restituer fait partie du métier** : le dashboard est le livrable qui rend ton analyse utile à un décideur.
 - **Deux outils, une logique commune** : importer une source → (nettoyer) → poser des **dimensions** et des **mesures** → choisir les bons visuels → ajouter des **filtres** → mettre en page → partager.
 - **Power BI** : standard du marché, puissant (Power Query, DAX, modèle), mais **Windows uniquement** + licence Pro pour partager. Sur Mac : **Service web / VM**.
 - **Looker Studio** : gratuit, **cross-OS**, partage par lien immédiat → c'est l'**outil du TP noté**, personne n'est bloqué.

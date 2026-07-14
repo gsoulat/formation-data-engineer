@@ -21,7 +21,7 @@ L'objectif n’est pas de tout faire, mais de suivre un parcours clair et progre
 *Objectif : Être capable de concevoir, entraîner et déployer des modèles d'IA, du Machine Learning aux agents LLM.*
 
 ### [📊 Parcours 5 : Data Analyst](PATH_DATA_ANALYST.md)
-*Objectif : Être capable de recueillir un besoin métier, analyser des données et concevoir des tableaux de bord BI (certification RNCP-38616, bloc BC06).*
+*Objectif : Être capable de recueillir un besoin métier, analyser des données et concevoir des tableaux de bord BI.*
 
 ---
 
@@ -57,7 +57,7 @@ formation-data-engineer/
 ├── 12-Frontend-IA/            # Gradio, Streamlit
 ├── 13-Developpement-Web/      # JavaScript, React, VueJS, Angular
 ├── 14-Mobile/                 # React Native
-├── 15-Business-Intelligence/  # Data Analyst : BI, KPI, Power BI, DAX, dashboards (RNCP-38616 BC06)
+├── 15-Business-Intelligence/  # Data Analyst : BI, KPI, Power BI, DAX, dashboards
 └── 99-Brief/                  # Projets finaux et évaluations
 ```
 

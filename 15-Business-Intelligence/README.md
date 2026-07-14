@@ -4,7 +4,7 @@
 
 La **Business Intelligence (BI)** regroupe les méthodes et les outils qui transforment les données brutes d'une organisation en informations exploitables pour la décision : recueil du besoin métier, collecte, nettoyage, modélisation, analyse et restitution sous forme de tableaux de bord.
 
-Ce module couvre le cœur du métier de **Data Analyst** : analyser des données et concevoir des tableaux de bord. Il progresse des fondamentaux du métier jusqu'au tableau de bord de niveau expert et à la préparation de la certification.
+Ce module couvre le cœur du métier de **Data Analyst** : analyser des données et concevoir des tableaux de bord. Il progresse des fondamentaux du métier jusqu'au tableau de bord de niveau expert et à la préparation de l'évaluation finale.
 
 ---
 
@@ -21,7 +21,7 @@ Ce module couvre le cœur du métier de **Data Analyst** : analyser des données
 - Concevoir un processus de **collecte de données** et automatiser des pipelines **ETL**
 - Appliquer des stratégies de **nettoyage** (valeurs manquantes, valeurs aberrantes)
 - Construire un **tableau de bord expert** et accompagner son adoption par les équipes métier
-- Préparer la **certification BC06** : portfolio, dossier de projet, soutenance
+- Préparer l'**évaluation finale** : portfolio, dossier de projet, soutenance
 
 ---
 
@@ -40,7 +40,7 @@ Ce module couvre le cœur du métier de **Data Analyst** : analyser des données
 ```
 15-Business-Intelligence/
 ├── README.md                              ← Ce fichier
-├── 01-Metier-Data-Analyst/                ← Métier, référentiel, posture, méthode & veille
+├── 01-Metier-Data-Analyst/                ← Métier, posture, méthode & veille
 ├── 02-Panorama-Outils-BI/                 ← Installation des outils, panorama SQL / Python / Power BI / Looker Studio / Tableau
 ├── 03-Analyse-Besoin-Metier/              ← Recueil du besoin métier, formalisation d'une problématique
 ├── 04-Analyse-Exploratoire-EDA/           ← Analyse exploratoire des données avec pandas
@@ -56,8 +56,8 @@ Ce module couvre le cœur du métier de **Data Analyst** : analyser des données
 ├── 14-Collecte-Donnees/                   ← Processus de collecte, RGPD by design
 ├── 15-ETL-Automatisation/                 ← Pipelines ETL, automatisation de la collecte
 ├── 16-Nettoyage-Donnees/                  ← Valeurs manquantes, valeurs aberrantes
-├── 17-Dashboard-Expert/                   ← Tableau de bord BI niveau expert (niveau 3)
-└── 18-Preparation-Certification/          ← Révisions, portfolio, dossier de projet, soutenance BC06
+├── 17-Dashboard-Expert/                   ← Tableau de bord BI niveau expert (avancé)
+└── 18-Preparation-Certification/          ← Révisions, portfolio, dossier de projet, soutenance finale
 ```
 
 ---
@@ -66,24 +66,24 @@ Ce module couvre le cœur du métier de **Data Analyst** : analyser des données
 
 | # | Sous-module | Contenu | Niveau |
 |---|---|---|---|
-| 01 | [Metier-Data-Analyst](01-Metier-Data-Analyst/) | Le métier de Data Analyst, le référentiel, la posture professionnelle, méthode & veille | Découverte |
+| 01 | [Metier-Data-Analyst](01-Metier-Data-Analyst/) | Le métier de Data Analyst, la posture professionnelle, méthode & veille | Découverte |
 | 02 | [Panorama-Outils-BI](02-Panorama-Outils-BI/) | Installation des outils, panorama SQL / Python / Power BI / Looker Studio / Tableau | Outillage, socle |
-| 03 | [Analyse-Besoin-Metier](03-Analyse-Besoin-Metier/) | Recueil du besoin métier, formalisation d'une problématique | Niveau 1→3 |
-| 04 | [Analyse-Exploratoire-EDA](04-Analyse-Exploratoire-EDA/) | Analyse exploratoire des données (EDA) avec pandas | Niveau 1 |
-| 05 | [Tendances-Series-Temporelles](05-Tendances-Series-Temporelles/) | Analyse de tendances, séries temporelles | Niveau 1 |
-| 06 | [KPI-Indicateurs](06-KPI-Indicateurs/) | Définir des KPI pertinents, objectifs SMART | Niveau 1→2 |
-| 07 | [Dashboards-Fondamentaux](07-Dashboards-Fondamentaux/) | Construire un premier tableau de bord | Niveau 1→2 |
-| 08 | [Restitution-Storytelling](08-Restitution-Storytelling/) | Restituer et présenter les résultats d'une analyse | Niveau 1→3 |
+| 03 | [Analyse-Besoin-Metier](03-Analyse-Besoin-Metier/) | Recueil du besoin métier, formalisation d'une problématique | Débutant→avancé |
+| 04 | [Analyse-Exploratoire-EDA](04-Analyse-Exploratoire-EDA/) | Analyse exploratoire des données (EDA) avec pandas | Débutant |
+| 05 | [Tendances-Series-Temporelles](05-Tendances-Series-Temporelles/) | Analyse de tendances, séries temporelles | Débutant |
+| 06 | [KPI-Indicateurs](06-KPI-Indicateurs/) | Définir des KPI pertinents, objectifs SMART | Débutant→intermédiaire |
+| 07 | [Dashboards-Fondamentaux](07-Dashboards-Fondamentaux/) | Construire un premier tableau de bord | Débutant→intermédiaire |
+| 08 | [Restitution-Storytelling](08-Restitution-Storytelling/) | Restituer et présenter les résultats d'une analyse | Débutant→avancé |
 | 09 | [Modelisation-Etoile-PowerQuery](09-Modelisation-Etoile-PowerQuery/) | Table de faits et dimensions, granularité, schéma en étoile, relations Power BI, table de dates | BI avancée |
 | 10 | [DAX](10-DAX/) | Mesures DAX, colonnes calculées, contexte de filtre, CALCULATE, Time Intelligence | BI avancée |
-| 11 | [Visualisations-Avancees](11-Visualisations-Avancees/) | Drill-down, hiérarchies, interactivité, infobulles, accessibilité WCAG | Niveau 2 |
-| 12 | [Ethique-Biais-RGPD](12-Ethique-Biais-RGPD/) | RGPD appliqué au projet data, éthique, biais des données | Niveau 1 |
-| 13 | [Accompagnement-Metier](13-Accompagnement-Metier/) | Accompagner une équipe métier : conduite du changement, adoption, cahier des charges | Niveau 2 |
-| 14 | [Collecte-Donnees](14-Collecte-Donnees/) | Concevoir un processus de collecte de données, RGPD by design | Niveau 1 |
-| 15 | [ETL-Automatisation](15-ETL-Automatisation/) | Automatiser la collecte : pipelines ETL, extraction et préparation des données | Niveau 1 |
-| 16 | [Nettoyage-Donnees](16-Nettoyage-Donnees/) | Stratégies de nettoyage : valeurs manquantes, valeurs aberrantes | Niveau 1 |
-| 17 | [Dashboard-Expert](17-Dashboard-Expert/) | Tableau de bord BI de niveau expert : conception complète, interactivité, accessibilité | Niveau 3 |
-| 18 | [Preparation-Certification](18-Preparation-Certification/) | Préparer la certification : révisions, portfolio, dossier de projet, soutenance | Niveau 3 |
+| 11 | [Visualisations-Avancees](11-Visualisations-Avancees/) | Drill-down, hiérarchies, interactivité, infobulles, accessibilité WCAG | Intermédiaire |
+| 12 | [Ethique-Biais-RGPD](12-Ethique-Biais-RGPD/) | RGPD appliqué au projet data, éthique, biais des données | Débutant |
+| 13 | [Accompagnement-Metier](13-Accompagnement-Metier/) | Accompagner une équipe métier : conduite du changement, adoption, cahier des charges | Intermédiaire |
+| 14 | [Collecte-Donnees](14-Collecte-Donnees/) | Concevoir un processus de collecte de données, RGPD by design | Débutant |
+| 15 | [ETL-Automatisation](15-ETL-Automatisation/) | Automatiser la collecte : pipelines ETL, extraction et préparation des données | Débutant |
+| 16 | [Nettoyage-Donnees](16-Nettoyage-Donnees/) | Stratégies de nettoyage : valeurs manquantes, valeurs aberrantes | Débutant |
+| 17 | [Dashboard-Expert](17-Dashboard-Expert/) | Tableau de bord BI de niveau expert : conception complète, interactivité, accessibilité | Avancé |
+| 18 | [Preparation-Certification](18-Preparation-Certification/) | Préparer l'évaluation finale : révisions, portfolio, dossier de projet, soutenance | Avancé |
 
 ---
 
@@ -91,7 +91,7 @@ Ce module couvre le cœur du métier de **Data Analyst** : analyser des données
 
 1. **Fondamentaux du métier et de l'analyse** (01 → 08) : découverte du métier, des outils, du besoin métier, de l'EDA et de la restitution.
 2. **BI avancée** (09 → 13) : modélisation en étoile, DAX, visualisations avancées, conformité et accompagnement métier.
-3. **Flux de données & certification** (14 → 18) : collecte, ETL, nettoyage, dashboard expert et préparation de la certification.
+3. **Flux de données & évaluation finale** (14 → 18) : collecte, ETL, nettoyage, dashboard expert et préparation de l'évaluation finale.
 
 Ce module s'inscrit dans le parcours complet du Data Analyst : voir [PATH_DATA_ANALYST.md](../PATH_DATA_ANALYST.md) à la racine du dépôt.
 
@@ -110,7 +110,7 @@ Ce module s'inscrit dans le parcours complet du Data Analyst : voir [PATH_DATA_A
 | 15 — ETL & automatisation | ~30 h |
 | 16 — Nettoyage de données | ~25 h |
 | 17 — Dashboard expert | ~35 h |
-| 18 — Préparation à la certification | ~20 h |
+| 18 — Préparation à l'évaluation finale | ~20 h |
 | **Total (09-18)** | **~267 h** |
 
 Les durées des modules 01 à 08 sont indiquées dans leurs fichiers respectifs.

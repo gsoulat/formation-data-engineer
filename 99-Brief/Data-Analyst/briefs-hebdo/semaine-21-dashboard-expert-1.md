@@ -140,4 +140,4 @@ Phases 1 à 5 complètes : note de cadrage (utilisateurs, décisions, 5+ questio
 - Rappel — [Analyse du besoin métier](../../../15-Business-Intelligence/03-Analyse-Besoin-Metier/)
 - Documentation Power BI — modèle en étoile : https://learn.microsoft.com/power-bi/guidance/star-schema
 - Documentation DAX — fonctions `CALCULATE`, `DIVIDE` : https://learn.microsoft.com/dax/
-- Prochaine étape du parcours — projet de fin de phase : [BRIEF_3 — Projet certificatif BC06](../BRIEF_3_PROJET_CERTIFICATIF_BC06.md)
+- Prochaine étape du parcours — projet de fin de phase : [BRIEF_3 — Projet final](../BRIEF_3_PROJET_FINAL.md)

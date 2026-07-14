@@ -2,9 +2,8 @@
 
 [🏠 Retour à l'accueil](README.md)
 
-Ce parcours prépare au métier de **Data Analyst** et à la certification **RNCP-38616**
-(*Concepteur développeur en IA et analyse big data*), **option Data Analyse — bloc BC06 :
-Concevoir des tableaux de bord avancés (Business Intelligence)**.
+Ce parcours prépare au métier de **Data Analyst**, spécialisé en **Business Intelligence** :
+concevoir des tableaux de bord avancés pour éclairer la décision.
 
 Le Data Analyst fait le lien entre les métiers et les données : il **recueille un besoin**,
 **collecte**, **nettoie**, **analyse** et surtout **restitue la donnée sous forme de
@@ -74,36 +73,33 @@ le SQL et des ponts vers le ML et la gestion de projet.
 | **S20** | [Extraction multi-sources (SQL avancé)](01-Fondamentaux/SQL/09-Extraction-Analyse/) | [S20 — Extraction multi-sources](99-Brief/Data-Analyst/briefs-hebdo/semaine-20-extraction-multisources.md) |
 | **S21** | [Tableau de bord expert (WCAG)](15-Business-Intelligence/17-Dashboard-Expert/) | [S21 — Dashboard expert en autonomie (1/2)](99-Brief/Data-Analyst/briefs-hebdo/semaine-21-dashboard-expert-1.md) |
 | **S22** | Tableau de bord expert (suite) | [S22 — Dashboard expert en autonomie (2/2)](99-Brief/Data-Analyst/briefs-hebdo/semaine-22-dashboard-expert-2.md) |
-| **S23** | [Préparation à la certification](15-Business-Intelligence/18-Preparation-Certification/) | [S23 — Examen blanc](99-Brief/Data-Analyst/briefs-hebdo/semaine-23-examen-blanc.md) |
+| **S23** | [Préparation à l'évaluation finale](15-Business-Intelligence/18-Preparation-Certification/) | [S23 — Examen blanc](99-Brief/Data-Analyst/briefs-hebdo/semaine-23-examen-blanc.md) |
 | **S24** | Préparation à la soutenance | [S24 — Soutenance blanche](99-Brief/Data-Analyst/briefs-hebdo/semaine-24-soutenance-blanche.md) |
 | **S25** | Portfolio & révisions ciblées | [S25 — Portfolio & révisions](99-Brief/Data-Analyst/briefs-hebdo/semaine-25-revisions-portfolio.md) |
-| **S26-28** | *Projet final de bout en bout* | 🏁 [Brief 3 — Projet final certificatif (bout en bout)](99-Brief/Data-Analyst/BRIEF_3_CERTIFICATIF_BC06.md) |
+| **S26-28** | *Projet final de bout en bout* | 🏁 [Brief 3 — Projet final (bout en bout)](99-Brief/Data-Analyst/BRIEF_3_PROJET_FINAL.md) |
 
 > 🗓️ **26 briefs sur 28 semaines** : 22 briefs hebdomadaires + 4 projets capstone 🏁
 > (S2, S9, S16, S26-28). Index complet : [briefs & projets Data Analyst](99-Brief/Data-Analyst/README.md).
 
 ---
 
-## 🧩 Couverture du référentiel (18 compétences)
+## 🗺️ Ce que couvre le parcours
 
-L'option Data Analyse couvre le tronc commun **BC01→BC04** + l'option **BC06**. Certaines
-compétences hors BI s'appuient sur des modules **déjà présents dans ce dépôt** :
+Au-delà de la Business Intelligence (le cœur du parcours), la formation s'appuie sur des
+modules **déjà présents dans ce dépôt** pour couvrir toute la chaîne de la donnée :
 
-| Bloc | Compétences | Couvert par |
-| :--- | :--- | :--- |
-| **BC06** (option BI) | C16, C17, C18 | [15-Business-Intelligence](15-Business-Intelligence/) (cœur du parcours) |
-| **BC01** Collecte/ETL/nettoyage | C1, C2, C3 | 15-BI modules 14-16 |
-| **BC02** Analyse & stats | C4, C5, C6 | [Mathématiques](01-Fondamentaux/Mathematiques/) + 15-BI 04-05 |
-| **BC03** Machine Learning | C7, C8, C9 | [08-Machine-Learning](08-Machine-Learning/) |
-| **BC04** Gestion de projet & veille | C10, C13, C14 | [11-Gestion-Projet](11-Gestion-Projet/) + [Veille-Technologique](01-Fondamentaux/Veille-Technologique/) |
-| **BC04** Problématique & restitution | C11, C12, C15 | 15-BI 03, 12, 13 |
-
-> Détail : voir la [note de conformité RNCP-38616](15-Business-Intelligence/CONFORMITE-RNCP.md).
-> La correspondance détaillée brief ↔ compétence est maintenue séparément, hors du support apprenant.
+| Domaine | Couvert par |
+| :--- | :--- |
+| **Business Intelligence** (tableaux de bord) | [15-Business-Intelligence](15-Business-Intelligence/) |
+| Collecte / ETL / nettoyage | 15-BI modules 14-16 |
+| Analyse & statistiques | [Mathématiques](01-Fondamentaux/Mathematiques/) + 15-BI 04-05 |
+| Initiation au Machine Learning | [08-Machine-Learning](08-Machine-Learning/) |
+| Gestion de projet & veille | [11-Gestion-Projet](11-Gestion-Projet/) + [Veille-Technologique](01-Fondamentaux/Veille-Technologique/) |
+| Problématique & restitution | 15-BI 03, 12, 13 |
 
 ---
 
-## 🎯 Passeport de Compétences
+## 🎯 Ce que vous saurez faire
 
 | Domaine | Compétence clé | Livrable attendu |
 | :--- | :--- | :--- |
@@ -116,9 +112,9 @@ compétences hors BI s'appuient sur des modules **déjà présents dans ce dép�
 
 ---
 
-## 🎓 Évaluation : le Projet Final
-Pour valider le bloc **BC06**, vous réalisez un tableau de bord BI de bout en bout :
-👉 **[Brief 3 — Projet final certificatif](99-Brief/Data-Analyst/BRIEF_3_CERTIFICATIF_BC06.md)**
+## 🎓 Évaluation : le projet final
+En fin de parcours, vous réalisez un tableau de bord BI de bout en bout :
+👉 **[Brief 3 — Projet final](99-Brief/Data-Analyst/BRIEF_3_PROJET_FINAL.md)**
 (collecte → nettoyage → modélisation → dashboard expert → soutenance).
 
 ---

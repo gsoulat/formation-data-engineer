@@ -22,7 +22,7 @@ Ce parcours vous apprendra à automatiser l'infrastructure et à sécuriser les 
 
 ---
 
-## 🎯 Passeport de Compétences
+## 🎯 Objectifs & Livrables
 
 | Module | Compétence Clé | Livrable attendu |
 | :--- | :--- | :--- |

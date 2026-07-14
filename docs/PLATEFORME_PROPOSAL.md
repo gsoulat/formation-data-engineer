@@ -26,7 +26,7 @@ Là où Stéphane Robert a fait pour le DevSecOps ce que personne n'avait fait e
 
 ### Public cible
 
-1. **Apprenants Simplon** (cible principale) — reconversion, formation intensive
+1. **Public en reconversion** (cible principale) — reconversion, formation intensive
 2. **Autodidactes en reconversion** — cherchent une structure claire
 3. **Développeurs juniors** — souhaitent monter en compétences Data/IA
 4. **Recruteurs et entreprises** — références aux compétences validées
@@ -203,7 +203,7 @@ Chaque module de cours peut avoir une vidéo associée. Deux approches possibles
 Chaque brief inclut :
 - Contexte métier réaliste (ex. "Vous êtes Data Engineer chez une startup éolienne")
 - Données réelles ou simulées
-- Critères de performance clairs (RNCP-compatible)
+- Critères de performance clairs
 - Grille d'évaluation
 - Solution de référence (après soumission)
 
@@ -456,7 +456,7 @@ MkDocs + Material Theme
 - *"Préparation aux certifications Azure & GCP"*
 
 **Social proof :**
-- Nombre d'apprenants Simplon formés
+- Nombre d'apprenants formés
 - Témoignages (avec accord)
 - Taux de placement / reconversion
 - Stars GitHub du repo

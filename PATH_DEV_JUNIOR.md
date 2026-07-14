@@ -22,7 +22,7 @@ Ce parcours est focalisé sur la création d'applications robustes, maintenables
 
 ---
 
-## 🎯 Passeport de Compétences
+## 🎯 Objectifs & Livrables
 
 | Module | Compétence Clé | Livrable attendu |
 | :--- | :--- | :--- |

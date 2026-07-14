@@ -136,4 +136,4 @@ Phases 1 à 5 complètes : les 4 sources chargées malgré leurs formats, harmon
 - Semaine précédente sur la fiabilité des données — [Audit & EDA (S06)](semaine-06-eda-ventes-nordretail.md)
 - Documentation pandas : https://pandas.pydata.org/docs/ — voir `read_csv(sep=...)`, `rename`, `assign`, `concat`
 - Power Query : Append Queries, Rename/Replace, Change Type
-- Prochaine étape du parcours — projet certificatif de bout en bout : [BRIEF_3 — Tableau de bord BI](../BRIEF_3_CERTIFICATIF_BC06.md)
+- Prochaine étape du parcours — projet final de bout en bout : [BRIEF_3 — Tableau de bord BI](../BRIEF_3_PROJET_FINAL.md)

@@ -160,7 +160,7 @@ Le MPD repond a la question **"COMMENT implementer ?"** : quel code SQL ecrire c
 | 1980s | Adoption massive dans les administrations et entreprises francaises |
 | 1990s | MERISE/2 : evolution pour integrer l'oriente objet |
 | 2000s | Concurrence avec UML, mais MERISE reste la reference pour la modelisation de donnees |
-| Aujourd'hui | Toujours enseigne et utilise en France, notamment pour la certification RNCP |
+| Aujourd'hui | Toujours enseigne et utilise en France, notamment dans les formations et certifications |
 
 ### 3.2 Les principes fondamentaux de MERISE
 
@@ -174,7 +174,7 @@ Le MPD repond a la question **"COMMENT implementer ?"** : quel code SQL ecrire c
 
 - **Rigueur** : les regles de passage MCD → MLD sont automatiques et sans ambiguite
 - **Pedagogie** : la notation est simple a apprendre et a enseigner
-- **Certification** : exigee dans de nombreuses certifications RNCP en France
+- **Certification** : exigee dans de nombreuses certifications en France
 - **Universalite** : le MCD MERISE se transforme vers n'importe quel SGBD relationnel
 - **Outils** : des logiciels gratuits comme Looping automatisent le workflow
 
@@ -197,7 +197,7 @@ Le MPD repond a la question **"COMMENT implementer ?"** : quel code SQL ecrire c
 
 ### 4.2 Quand utiliser quoi ?
 
-- **MERISE** : quand vous concevez une base de donnees relationnelle, pour une certification RNCP, ou dans un contexte francais
+- **MERISE** : quand vous concevez une base de donnees relationnelle, ou dans un contexte francais
 - **UML** : quand vous concevez une application objet complete (classes, sequences, cas d'utilisation)
 - **Entity-Relationship** : quand vous avez besoin d'un schema simple et rapide, ou dans un contexte international
 

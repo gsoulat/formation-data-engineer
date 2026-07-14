@@ -4,12 +4,12 @@
 
 | Critère | Valeur |
 |---------|--------|
-| **Semaine** | S23 — Phase 3 : Se préparer à la certification |
+| **Semaine** | S23 — Phase 3 : Se préparer à l'évaluation finale |
 | **Durée** | 1 semaine (5 jours) |
 | **Niveau** | Intermédiaire → avancé |
 | **Modalité** | Individuel |
 | **Technologies** | Python 3, pandas, SQL (SQLite/PostgreSQL), Power BI ou Looker Studio, Git/GitHub |
-| **Prérequis** | [Extraction & analyse SQL](../../../15-Business-Intelligence/03-Analyse-Besoin-Metier/) · [Nettoyage des données](../../../15-Business-Intelligence/16-Nettoyage-Donnees/) · [KPI & indicateurs](../../../15-Business-Intelligence/06-KPI-Indicateurs/) · [Préparation à la certification](../../../15-Business-Intelligence/18-Preparation-Certification/) |
+| **Prérequis** | [Extraction & analyse SQL](../../../15-Business-Intelligence/03-Analyse-Besoin-Metier/) · [Nettoyage des données](../../../15-Business-Intelligence/16-Nettoyage-Donnees/) · [KPI & indicateurs](../../../15-Business-Intelligence/06-KPI-Indicateurs/) · [Préparation à l'évaluation finale](../../../15-Business-Intelligence/18-Preparation-Certification/) |
 
 ## Contexte
 
@@ -74,7 +74,7 @@ Esquissez une **maquette de tableau de bord** (dans Power BI / Looker Studio, ou
 
 ### Phase 5 — Débrief, auto-évaluation et plan d'action (J4-J5)
 
-L'épreuve terminée, prenez du recul. **Auto-évaluez-vous honnêtement** sur chaque étape de la chaîne (préparation des données, SQL, indicateurs, restitution, tenue du temps) : pour chacune, êtes-vous à l'aise, en progrès, ou fragile ? Justifiez chaque position par un élément concret de votre journée d'épreuve — pas une impression, un fait (« ma jointure était fausse », « je n'ai pas fini la maquette »). Identifiez ensuite vos **trois points les plus fragiles** et fixez, pour chacun, **une action concrète et datée** avant le projet certificatif. Consolidez le tout dans votre dépôt : code de l'épreuve, requêtes, maquette (ou photo), auto-évaluation justifiée, plan d'action. Soignez le README : quelqu'un doit comprendre ce que vous avez fait et où vous en êtes.
+L'épreuve terminée, prenez du recul. **Auto-évaluez-vous honnêtement** sur chaque étape de la chaîne (préparation des données, SQL, indicateurs, restitution, tenue du temps) : pour chacune, êtes-vous à l'aise, en progrès, ou fragile ? Justifiez chaque position par un élément concret de votre journée d'épreuve — pas une impression, un fait (« ma jointure était fausse », « je n'ai pas fini la maquette »). Identifiez ensuite vos **trois points les plus fragiles** et fixez, pour chacun, **une action concrète et datée** avant le projet final. Consolidez le tout dans votre dépôt : code de l'épreuve, requêtes, maquette (ou photo), auto-évaluation justifiée, plan d'action. Soignez le README : quelqu'un doit comprendre ce que vous avez fait et où vous en êtes.
 
 ### Socle commun (obligatoire)
 
@@ -84,7 +84,7 @@ Phases 1 à 5 complètes : procédure personnelle rédigée, source nettoyée av
 
 - Ajoutez un indicateur d'**atteinte des objectifs** (réalisé / objectif) en croisant vos ventes avec [`objectifs_2024.csv`](../data/objectifs_2024.csv).
 - Rendez votre maquette **accessible** : palette lisible par un décideur daltonien, information non codée par la seule couleur (voir [Visualisations avancées](../../../15-Business-Intelligence/11-Visualisations-Avancees/)).
-- Chronométrez chaque volet et analysez votre **répartition du temps** : où avez-vous dérapé, et comment vous organiserez-vous mieux au projet certificatif ?
+- Chronométrez chaque volet et analysez votre **répartition du temps** : où avez-vous dérapé, et comment vous organiserez-vous mieux au projet final ?
 
 ## Livrables attendus
 
@@ -129,7 +129,7 @@ Phases 1 à 5 complètes : procédure personnelle rédigée, source nettoyée av
 
 ## Ressources
 
-- Module de cours — [Préparation à la certification](../../../15-Business-Intelligence/18-Preparation-Certification/)
+- Module de cours — [Préparation à l'évaluation finale](../../../15-Business-Intelligence/18-Preparation-Certification/)
 - Rappels — [Nettoyage des données](../../../15-Business-Intelligence/16-Nettoyage-Donnees/) · [KPI & indicateurs](../../../15-Business-Intelligence/06-KPI-Indicateurs/) · [Tableaux de bord](../../../15-Business-Intelligence/07-Dashboards-Fondamentaux/)
 - Documentation pandas : https://pandas.pydata.org/docs/
 - Documentation SQLite : https://www.sqlite.org/docs.html

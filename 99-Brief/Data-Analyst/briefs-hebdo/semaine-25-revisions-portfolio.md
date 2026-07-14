@@ -9,7 +9,7 @@
 | **Niveau** | Consolidation (autonomie) |
 | **Modalité** | Individuel |
 | **Technologies** | Support de portfolio au choix (PDF, site, Notion), + relecture SQL / Python / Power BI |
-| **Prérequis** | L'ensemble des briefs de la formation, en particulier [S17→S24](.) et le projet final [BRIEF_3](../BRIEF_3_CERTIFICATIF_BC06.md) |
+| **Prérequis** | L'ensemble des briefs de la formation, en particulier [S17→S24](.) et le projet final [BRIEF_3](../BRIEF_3_PROJET_FINAL.md) |
 
 ## Contexte
 
@@ -39,7 +39,7 @@ Vous ne partez pas d'un nouveau jeu de données : votre matière première, ce s
 - **Structurer un portfolio professionnel** lisible, cohérent et présentable à un jury ou un recruteur.
 - **Formaliser votre projet professionnel** : profil, stack technique, positionnement.
 - **Mener une révision ciblée et autonome** : identifier vos points faibles, les retravailler, et tracer votre progression.
-- **Préparer méthodiquement une échéance certificative** (données, environnement, dossier, soutenance).
+- **Préparer méthodiquement l'échéance finale** (données, environnement, dossier, soutenance).
 
 ## Données fournies
 
@@ -113,7 +113,7 @@ Portfolio structuré rassemblant vos meilleures preuves, fiche d'identité profe
 
 ## Ressources
 
-- Aboutissement du parcours — [Projet final de bout en bout (BRIEF_3)](../BRIEF_3_CERTIFICATIF_BC06.md) : ce portfolio en est la rampe de lancement.
+- Aboutissement du parcours — [Projet final de bout en bout (BRIEF_3)](../BRIEF_3_PROJET_FINAL.md) : ce portfolio en est la rampe de lancement.
 - Retour sur votre projet professionnel — [Brief S01 — Découverte du métier](semaine-01-decouverte-metier.md)
-- Module de cours — [Préparation à la certification](../../../15-Business-Intelligence/18-Preparation-Certification/)
+- Module de cours — [Préparation à l'évaluation finale](../../../15-Business-Intelligence/18-Preparation-Certification/)
 - Inspiration portfolio data : https://github.com/ (GitHub Pages / README soignés) · https://www.notion.so/

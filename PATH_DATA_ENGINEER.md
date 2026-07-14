@@ -70,7 +70,7 @@ Ce parcours est conçu pour vous emmener de la maîtrise du terminal à la mise 
 
 ---
 
-## 🎯 Passeport de Compétences
+## 🎯 Objectifs & Livrables
 
 | Module | Compétence Clé | Livrable attendu |
 | :--- | :--- | :--- |

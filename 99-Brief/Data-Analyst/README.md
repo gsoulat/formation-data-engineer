@@ -40,7 +40,7 @@ Le parcours fonctionne au rythme d'**un brief par semaine**, articulé avec le m
 | S23 | Phase 3 | [S23 — Examen blanc](briefs-hebdo/semaine-23-examen-blanc.md) | Simulation en temps limité |
 | S24 | Phase 3 | [S24 — Soutenance blanche](briefs-hebdo/semaine-24-soutenance-blanche.md) | Présentation & argumentation |
 | S25 | Phase 3 | [S25 — Portfolio & révisions](briefs-hebdo/semaine-25-revisions-portfolio.md) | Portfolio professionnel |
-| **S26-28** 🏁 | Phase 3 | **[BRIEF 3 — Projet final (bout en bout)](BRIEF_3_CERTIFICATIF_BC06.md)** | Projet final de synthèse |
+| **S26-28** 🏁 | Phase 3 | **[BRIEF 3 — Projet final (bout en bout)](BRIEF_3_PROJET_FINAL.md)** | Projet final de synthèse |
 
 **28 semaines** : 22 briefs hebdomadaires + 4 projets capstone 🏁 (S2, S9, S16, S26-28).
 

@@ -69,4 +69,4 @@
 - **Évite le flocon** par défaut (aplatis tes dimensions) et **évite le many-to-many** subi (= doublons dans la dimension).
 - Crée une **table de dates dédiée**, marque-la comme table de dates, désactive l'Auto Date/Time.
 - Dans la **vue Modèle** : vérifie **cardinalité (\* : 1)** et **sens du filtre (unique)** ; le bidirectionnel se réserve aux cas précis.
-- Un bon dashboard repose sur un bon modèle : **la modélisation est la fondation du BC06.**
+- Un bon dashboard repose sur un bon modèle : **la modélisation est la fondation d'un bon tableau de bord.**

@@ -273,7 +273,7 @@ UML / Crow's Foot :
 | (0,n) | 0..* | ─○─<< |
 | (1,n) | 1..* | ──<< |
 
-💡 **Pour la certification RNCP** : assurez-vous de maitriser la notation MERISE. C'est celle qui sera utilisee dans les epreuves.
+💡 **À retenir** : assurez-vous de maitriser la notation MERISE. C'est une notation de reference dans les formations et epreuves en France.
 
 ---
 

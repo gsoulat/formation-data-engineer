@@ -23,7 +23,7 @@
 
 ---
 
-## Pourquoi c'est utile au Data Analyst (cœur du BC06)
+## Pourquoi c'est utile au Data Analyst (cœur du métier BI)
 
 Quand on débute, on charge souvent **un seul gros fichier Excel/CSV** dans Power BI et on fonce sur les graphiques. Ça marche… jusqu'au jour où :
 
@@ -32,7 +32,7 @@ Quand on débute, on charge souvent **un seul gros fichier Excel/CSV** dans Powe
 - on ne peut pas **filtrer proprement** par mois, par région, par catégorie ;
 - ajouter une nouvelle source (objectifs, stocks) **casse tout**.
 
-Le **BC06** demande au Data Analyst de produire des **tableaux de bord fiables et performants**. Or un bon dashboard repose à 80 % sur un **bon modèle de données** en amont. La modélisation, c'est la **fondation invisible** : un visuel mal fichu se corrige en 2 minutes, un modèle mal fichu se traîne sur tout le projet.
+Le métier de Data Analyst demande de produire des **tableaux de bord fiables et performants**. Or un bon dashboard repose à 80 % sur un **bon modèle de données** en amont. La modélisation, c'est la **fondation invisible** : un visuel mal fichu se corrige en 2 minutes, un modèle mal fichu se traîne sur tout le projet.
 
 Concrètement, maîtriser la modélisation te permet de :
 
