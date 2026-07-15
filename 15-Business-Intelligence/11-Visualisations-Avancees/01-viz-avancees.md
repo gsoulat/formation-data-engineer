@@ -1,5 +1,12 @@
 # 01 — Visualisations avancées & interactivité
 
+### 🎥 En vidéo (FR)
+
+[![Power BI — drill down & exploration au détail](https://img.youtube.com/vi/GyHAt67Tyu0/hqdefault.jpg)](https://www.youtube.com/watch?v=GyHAt67Tyu0)
+
+▶️ *Power BI — drill down & exploration au détail* — si le lien est mort, cherche « power bi drill down filtres segments français » sur YouTube.
+
+
 | | |
 |---|---|
 | **Phase** | Phase 2 — BI avancée |

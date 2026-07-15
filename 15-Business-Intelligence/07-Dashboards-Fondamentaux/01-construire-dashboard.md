@@ -1,5 +1,12 @@
 # 01 — Construire un tableau de bord BI
 
+### 🎥 En vidéo (FR)
+
+[![Power BI — créer un tableau de bord pas à pas (FR)](https://img.youtube.com/vi/_P2m9GZvBh4/hqdefault.jpg)](https://www.youtube.com/watch?v=_P2m9GZvBh4)
+
+▶️ *Power BI — créer un tableau de bord pas à pas (FR)* — si le lien est mort, cherche « power bi créer tableau de bord débutant français » sur YouTube.
+
+
 > **Le moment où ton analyse devient un produit.** Jusqu'ici tu as extrait des données (1.1), tu les as explorées et nettoyées (1.2), tu as repéré des tendances (1.3) et tu as défini les bons KPI (1.4). Maintenant, tu **assembles tout ça dans un écran** que ton responsable de magasin pourra lire en 30 secondes, le café à la main.
 
 | | |

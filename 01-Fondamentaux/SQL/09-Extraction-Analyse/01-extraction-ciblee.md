@@ -1,5 +1,12 @@
 # 01 - Extraction ciblée pour l'analyse
 
+### 🎥 En vidéo (FR)
+
+[![SQL — croiser les données avec les jointures](https://img.youtube.com/vi/LrB6oFIYC8c/hqdefault.jpg)](https://www.youtube.com/watch?v=LrB6oFIYC8c)
+
+▶️ *SQL — croiser les données avec les jointures* — si le lien est mort, cherche « sql jointures select tutoriel français » sur YouTube.
+
+
 [🏠 Accueil](../README.md) | [📂 Module 09](README.md) | [02 - SQL avancé pour l'analyse →](02-sql-avance-analyse.md)
 
 ---

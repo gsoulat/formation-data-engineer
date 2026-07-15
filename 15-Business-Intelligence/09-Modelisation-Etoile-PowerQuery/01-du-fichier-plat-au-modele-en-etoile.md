@@ -1,5 +1,13 @@
 # 01 — Du fichier plat au modèle en étoile
 
+### 🎥 En vidéo (FR)
+
+[![Comprendre le modèle en étoile (table de faits & dimensions)](https://img.youtube.com/vi/naXjcM8DnEw/hqdefault.jpg)](https://www.youtube.com/watch?v=naXjcM8DnEw)
+
+▶️ *Comprendre le modèle en étoile (table de faits & dimensions)* — si le lien est mort, cherche « modèle en étoile power bi français » sur YouTube.
+> 💡 Voir aussi : [Power Query — les bases](https://www.youtube.com/watch?v=uRMrWQDBAZ4)
+
+
 | | |
 |---|---|
 | **Durée du module** | ~30 h |

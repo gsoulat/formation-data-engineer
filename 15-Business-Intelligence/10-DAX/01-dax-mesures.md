@@ -1,5 +1,12 @@
 # 01 — DAX & mesures avancées (Power BI)
 
+### 🎥 En vidéo (FR)
+
+[![Power BI — le langage DAX pour débutant](https://img.youtube.com/vi/zA1zdGENyaI/hqdefault.jpg)](https://www.youtube.com/watch?v=zA1zdGENyaI)
+
+▶️ *Power BI — le langage DAX pour débutant* — si le lien est mort, cherche « dax power bi mesures français débutant » sur YouTube.
+
+
 | | |
 |---|---|
 | **Titre** | DAX & mesures avancées (Power BI) |

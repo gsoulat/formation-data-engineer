@@ -1,5 +1,12 @@
 # 01 — Python & pandas pour l'analyse exploratoire (EDA)
 
+### 🎥 En vidéo (FR)
+
+[![Analyse exploratoire des données avec Python & Pandas](https://img.youtube.com/vi/k8pifdQjtEA/hqdefault.jpg)](https://www.youtube.com/watch?v=k8pifdQjtEA)
+
+▶️ *Analyse exploratoire des données avec Python & Pandas* — si le lien est mort, cherche « analyse exploratoire pandas python français » sur YouTube.
+
+
 > **Le couteau suisse du Data Analyst.** Excel s'essouffle vers 100 000 lignes ; pandas en avale des millions sans broncher, et garde la trace exacte de chaque manipulation. C'est l'outil que tu ouvriras **tous les jours** dès qu'un fichier de données arrivera sur ton bureau.
 
 ---

@@ -1,5 +1,12 @@
 # 01 — Tableau de bord BI niveau expert
 
+### 🎥 En vidéo (FR)
+
+[![Power BI — tableau de bord professionnel de A à Z](https://img.youtube.com/vi/Kk6QtM8dWus/hqdefault.jpg)](https://www.youtube.com/watch?v=Kk6QtM8dWus)
+
+▶️ *Power BI — tableau de bord professionnel de A à Z* — si le lien est mort, cherche « power bi tableau de bord professionnel complet français » sur YouTube.
+
+
 | | |
 |---|---|
 | **Titre** | Concevoir un tableau de bord BI complet, de bout en bout, au niveau expert |
