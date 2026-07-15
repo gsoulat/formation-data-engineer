@@ -87,6 +87,7 @@ Ce parcours vous forme à concevoir, entraîner et déployer des modèles d'inte
 - [ ] [Tests & CI/CD Applicatif](07-DevOps/01-CI-CD/) — GitHub Actions, mocking LLM, couverture
 - [ ] [Monitoring Prometheus/Grafana](07-DevOps/02-Monitoring/) — Instrumentation, dashboards
 - [ ] [MLOps Pipeline](08-Machine-Learning/MLOps/) — Drift en production, alertes, réentraînement
+- [ ] [LLMOps](10-Large-Language-Model/LLMOps/) — versioning de prompts, guardrails, caching, coût/latence, API LLM conteneurisée
 
 > 🎯 **[Brief — Industrialiser une API IA](99-Brief/Dev-IA/MLOps-Monitoring/BRIEF_MLOPS_MONITORING.md)** — CI/CD (GitHub Actions, tests, Docker) + monitoring Prometheus/Grafana + alerting.
 
