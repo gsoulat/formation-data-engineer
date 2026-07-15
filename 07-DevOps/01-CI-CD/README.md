@@ -57,17 +57,7 @@ Ce cours couvre l'ensemble des pratiques, outils et stratégies pour mettre en p
 **Fichiers d'exemple :**
 - [.gitlab-ci.yml](./04-GitLab-CI/.gitlab-ci.yml) - Pipeline GitLab complet
 
-### [05-Jenkins](./05-Jenkins/README.md)
-- Introduction à Jenkins
-- Installation et configuration
-- Jenkinsfile (déclaratif et scripté)
-- Pipelines et plugins
-- Exemples pratiques
-
-**Fichiers d'exemple :**
-- [Jenkinsfile](./05-Jenkins/Jenkinsfile) - Pipeline Jenkins complet
-
-### [06-Azure-DevOps](./06-Azure-DevOps/README.md)
+### [05-Azure-DevOps](./05-Azure-DevOps/README.md)
 - Introduction à Azure DevOps
 - Azure Pipelines
 - Syntaxe YAML
@@ -75,16 +65,12 @@ Ce cours couvre l'ensemble des pratiques, outils et stratégies pour mettre en p
 - Intégration avec les services Azure
 
 **Fichiers d'exemple :**
-- [azure-pipelines.yml](./06-Azure-DevOps/azure-pipelines.yml) - Pipeline Azure complet
+- [azure-pipelines.yml](./05-Azure-DevOps/azure-pipelines.yml) - Pipeline Azure complet
 
-### [07-Best-Practices](./07-Best-Practices/README.md)
-- Principes fondamentaux
-- Configuration des pipelines
-- Tests et qualité du code
-- Sécurité
-- Performance et optimisation
-- Stratégies de déploiement
-- Monitoring et observabilité
+> 🔧 **Jenkins** n'a pas de module dédié ici — il est traité en comparaison dans le tableau plus bas. Un lab Jenkins dédié fait partie des ajouts prévus.
+
+### Bonnes pratiques CI/CD *(module dédié à venir)*
+Les principes clés — sécurité (scan d'images, gestion des secrets), tests & qualité, stratégies de déploiement, monitoring — sont pour l'instant intégrés dans les modules **03-GitHub-Actions** et **04-GitLab-CI** ci-dessus (voir leurs workflows avec Trivy, Snyk, environnements et approbations).
 
 ---
 
@@ -94,21 +80,17 @@ Ce cours couvre l'ensemble des pratiques, outils et stratégies pour mettre en p
 1. 01-Introduction
 2. 02-Git-Workflows (GitHub Flow uniquement)
 3. 03-GitHub-Actions (workflows de base)
-4. 07-Best-Practices (principes fondamentaux)
 
 ### Intermédiaire (1 semaine)
 1. Parcours Débutant
 2. 02-Git-Workflows (tous les workflows)
 3. 03-GitHub-Actions (workflows avancés)
-4. 04-GitLab-CI ou 06-Azure-DevOps (selon votre stack)
-5. 07-Best-Practices (toutes les sections)
+4. 04-GitLab-CI ou 05-Azure-DevOps (selon votre stack)
 
 ### Avancé (2 semaines)
 1. Parcours Intermédiaire
-2. 05-Jenkins
-3. Implémenter un pipeline complet de A à Z
-4. Tous les aspects de 07-Best-Practices
-5. Projet pratique : CI/CD pour une application complète
+2. Implémenter un pipeline complet de A à Z (multi-environnements, scan de sécurité, déploiement sur approbation)
+3. Projet pratique : CI/CD pour une application complète
 
 ---
 
