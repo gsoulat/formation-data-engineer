@@ -1,3 +1,10 @@
+# [2.18.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.17.0...v2.18.0) (2026-07-15)
+
+
+### Features
+
+* **briefs:** projets finaux Dév Junior + DevOps (répare les liens morts des PATH) ([229c57b](https://github.com/gsoulat/formation-data-engineer/commit/229c57b4bc59b460b2dd2c8378eb07820a4df5c1))
+
 # [2.17.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.16.1...v2.17.0) (2026-07-15)
 
 
