@@ -1,3 +1,10 @@
+# [2.19.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.18.1...v2.19.0) (2026-07-15)
+
+
+### Features
+
+* **devops:** module GitOps / ArgoCD (concepts + lab self-healing) + câblage PATH ([ee6b494](https://github.com/gsoulat/formation-data-engineer/commit/ee6b49452cf8812d9ac75763c87318664de0e9f7))
+
 ## [2.18.1](https://github.com/gsoulat/formation-data-engineer/compare/v2.18.0...v2.18.1) (2026-07-15)
 
 
