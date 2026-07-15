@@ -19,7 +19,8 @@ Ce parcours vous apprendra à automatiser l'infrastructure et à sécuriser les 
 - [ ] [Ansible](03-Infrastructure-as-Code/Ansible/)
 - [ ] [CI/CD Advanced](07-DevOps/01-CI-CD/)
 - [ ] [GitOps avec ArgoCD](07-DevOps/03-GitOps/) — déploiement pull-based & self-healing
-- [ ] [Monitoring](07-DevOps/02-Monitoring/)
+- [ ] [Monitoring](07-DevOps/02-Monitoring/) — métriques (Prometheus/Grafana)
+- [ ] [Observabilité : alerting, logs & traces](07-DevOps/04-Observabilite/) — Alertmanager, Loki, Tempo
 
 ---
 
