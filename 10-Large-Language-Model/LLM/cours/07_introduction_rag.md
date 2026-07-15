@@ -9,6 +9,8 @@ category: 10-Large-Language-Model
 
 Bienvenue dans cette deuxième journée de formation ! Hier, nous avons appris à dialoguer avec un LLM et à lui faire utiliser des outils. Aujourd'hui, nous allons résoudre l'un de ses plus grands problèmes : son ignorance de vos données personnelles et du monde récent. Pour cela, nous allons utiliser une technique fondamentale : le **RAG (Retrieval-Augmented Generation)**.
 
+> 🧭 **Deux niveaux de RAG dans ce dépôt** — ce chapitre est l'**introduction** (comprendre et construire un premier pipeline RAG). Pour la version **production** (chunking avancé, recherche hybride, reranking, évaluation RAGAS + CI), va au module dédié [**RAG/**](../../RAG/). Voir la [carte des deux pistes](../../README.md).
+
 ---
 
 ## 1. Le Double Handicap d'un LLM Standard

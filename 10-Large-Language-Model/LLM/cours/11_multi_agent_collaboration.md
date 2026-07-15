@@ -9,6 +9,8 @@ category: 10-Large-Language-Model
 
 La collaboration multi-agents (Multi-Agent Collaboration - MAC) est un paradigme où plusieurs agents intelligents, souvent basés sur des Large Language Models (LLM), travaillent ensemble pour accomplir des tâches complexes qui seraient difficiles ou impossibles pour un seul agent. Chaque agent peut avoir un rôle, des compétences ou des connaissances spécifiques, et ils interagissent pour atteindre un objectif commun.
 
+> 🧭 **Introduction vs production** — ce chapitre pose les **concepts** du multi-agents. Pour l'**implémentation avancée** (LangGraph = graphes d'état, CrewAI = crews multi-rôles), voir le module dédié [**Agents/**](../../Agents/). Voir la [carte des deux pistes](../../README.md).
+
 ## 1. Qu'est-ce que la Collaboration Multi-Agents ?
 
 Dans le contexte des LLM, un "agent" est un LLM doté de capacités supplémentaires :

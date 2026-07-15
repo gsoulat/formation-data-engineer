@@ -10,6 +10,8 @@ category: 10-Large-Language-Model
 
 Bienvenue dans cette dernière journée de formation ! Après avoir exploré le RAG pour étendre les connaissances d'un LLM, nous allons découvrir une autre technique de personnalisation : le **fine-tuning** (ou affinage).
 
+> 🧭 **Introduction vs production** — ce chapitre **introduit** le fine-tuning. Pour la **pratique approfondie** (Transformers, LoRA/PEFT, préparation de datasets), voir le module dédié [**HuggingFace/04-Fine-Tuning**](../../HuggingFace/04-Fine-Tuning/). Voir la [carte des deux pistes](../../README.md).
+
 ## Qu'est-ce que le Fine-Tuning ?
 
 Le fine-tuning est le processus qui consiste à prendre un modèle de base pré-entraîné (comme `llama3`) et à continuer son entraînement sur un jeu de données plus petit et spécifique à une tâche.
