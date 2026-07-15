@@ -1,3 +1,10 @@
+## [2.16.1](https://github.com/gsoulat/formation-data-engineer/compare/v2.16.0...v2.16.1) (2026-07-15)
+
+
+### Bug Fixes
+
+* **data-analyst:** chemin data d'onboarding cassé + numérotation de modules fantôme ([366b085](https://github.com/gsoulat/formation-data-engineer/commit/366b08585aef3747f4f71c675c551911f8567322))
+
 # [2.16.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.15.0...v2.16.0) (2026-07-15)
 
 
