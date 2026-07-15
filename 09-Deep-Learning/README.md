@@ -47,6 +47,15 @@ Ce module vous forme au Deep Learning, des bases (neurones, backpropagation) aux
 | 07 | BERT et GPT | 4h | 🔴 Avancé |
 | 08 | Déploiement en production | 3h | 🔴 Avancé |
 
+### [04-Génératif – Créer avec l'IA](Generatif/)
+*Comment un réseau apprend à générer (images, sons).*
+| # | Leçon | Durée | Niveau |
+|:--|:------|:------|:-------|
+| 01 | Autoencodeurs | 1h30 | 🟡 Intermédiaire |
+| 02 | VAE (autoencodeurs variationnels) | 2h | 🔴 Avancé |
+| 03 | GAN (réseaux antagonistes) | 2h | 🔴 Avancé |
+| 04 | Modèles de diffusion (Stable Diffusion) | 2h | 🔴 Avancé |
+
 ## 🛠️ Technologies utilisées
 
 **PyTorch** | **torchvision** | **Hugging Face Transformers** | **NLTK** | **spaCy** | **NumPy**
@@ -66,12 +75,17 @@ Ce module vous forme au Deep Learning, des bases (neurones, backpropagation) aux
     10-LLM (suite)
 ```
 
+**04-Génératif** (autoencodeurs, VAE, GAN, diffusion) se fait après CNN — c'est le pont naturel vers
+les **LLM** (qui sont des modèles génératifs de texte).
+
 Vous pouvez faire CNN et NLP en parallèle ou séquentiellement. Les deux nécessitent les Fondamentaux DL.
 
-## 🎯 Briefs projet
+## 🎯 Briefs projet (un par module)
 
-- [**Classificateur d'images (transfer learning)**](../99-Brief/Dev-IA/Deep-Learning-Vision/BRIEF_CLASSIFICATION_IMAGES.md) — CNN pré-entraîné, fine-tuning, Grad-CAM, démo (Oxford-IIIT Pet).
-- [**Computer Vision YOLOv8**](CNN/yolo_brief.md) — détection d'objets en temps réel.
+- **Fondamentaux** — [Ton premier réseau de neurones](../99-Brief/Dev-IA/Deep-Learning-Fondamentaux/BRIEF_PREMIER_RESEAU.md) (Fashion-MNIST, MLP→CNN).
+- **Vision** — [Classificateur d'images (transfer learning)](../99-Brief/Dev-IA/Deep-Learning-Vision/BRIEF_CLASSIFICATION_IMAGES.md) + [YOLOv8 détection](CNN/yolo_brief.md).
+- **NLP** — [Analyse de sentiments](../99-Brief/Dev-IA/Deep-Learning-NLP/BRIEF_ANALYSE_SENTIMENTS.md) (TF-IDF → Transformer).
+- **Génératif** — [Générer des images](../99-Brief/Dev-IA/Deep-Learning-Generatif/BRIEF_GENERATIF.md) (autoencodeur, VAE, GAN).
 
 ---
 [🏠 Retour à l'accueil](../README.md)

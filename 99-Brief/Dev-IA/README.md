@@ -9,6 +9,7 @@ un livrable évalué (repo GitHub public).
 | [Premier réseau de neurones](Deep-Learning-Fondamentaux/BRIEF_PREMIER_RESEAU.md) | Fondamentaux DL : MLP → CNN, boucle d'entraînement, overfitting (Fashion-MNIST) | [09-DL/Fondamentaux](../../09-Deep-Learning/01-Fondamentaux-DL/) |
 | [Classificateur d'images (Deep Learning)](Deep-Learning-Vision/BRIEF_CLASSIFICATION_IMAGES.md) | Vision, CNN, transfer learning, Grad-CAM | [09-Deep-Learning](../../09-Deep-Learning/) |
 | [Analyse de sentiments (NLP)](Deep-Learning-NLP/BRIEF_ANALYSE_SENTIMENTS.md) | NLP : TF-IDF → Transformer (CamemBERT), fine-tuning | [09-DL/NLP](../../09-Deep-Learning/NLP/) |
+| [Génération d'images (génératif)](Deep-Learning-Generatif/BRIEF_GENERATIF.md) | Autoencodeur, VAE, GAN sur MNIST | [09-DL/Génératif](../../09-Deep-Learning/Generatif/) |
 | [MLOps & Monitoring](MLOps-Monitoring/BRIEF_MLOPS_MONITORING.md) | Industrialisation, suivi de modèle, drift | [08-ML/MLOps](../../08-Machine-Learning/MLOps/) |
 | [Assistant conversationnel RAG](RAG-LLM/BRIEF_RAG_LLM.md) | LLM, RAG, base vectorielle, évaluation | [10-LLM](../../10-Large-Language-Model/) |
 | [Services IA Cloud](Services-IA-Cloud/BRIEF_SERVICES_IA_CLOUD.md) | Intégration de services IA managés | [04-Cloud/AI-Services](../../04-Cloud-Platforms/AI-Services/) |
