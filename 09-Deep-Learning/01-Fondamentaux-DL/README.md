@@ -38,6 +38,10 @@ Chapitre 03 (PyTorch en pratique)
 Chapitre 04 (Entrainement et methodologie)
 ```
 
+## 🎯 Brief du module
+
+- [**Ton premier réseau de neurones**](../../99-Brief/Dev-IA/Deep-Learning-Fondamentaux/BRIEF_PREMIER_RESEAU.md) — classer des images de vêtements (Fashion-MNIST) avec un MLP puis un petit CNN en PyTorch, et diagnostiquer l'overfitting.
+
 ## Apres ce module
 
 - **02-CNN/** : Vision par ordinateur (Convolutional Neural Networks)

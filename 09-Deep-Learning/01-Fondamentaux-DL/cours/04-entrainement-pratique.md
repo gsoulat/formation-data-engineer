@@ -972,3 +972,13 @@ fixer_seed(42)
 **Chapitre précédent :** [03 - PyTorch](./03-frameworks-pytorch.md)
 
 [Retour au sommaire](../README.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Overfitting & regularization](https://www.youtube.com/results?search_query=statquest+regularization+ridge+lasso) | StatQuest | EN | Pourquoi et comment régulariser |
+| [Transfer learning expliqué](https://www.youtube.com/results?search_query=transfer+learning+deep+learning+explained) | EN | EN | Réutiliser un réseau pré-entraîné |
+| [Bien régler le learning rate](https://www.youtube.com/results?search_query=learning+rate+tuning+deep+learning) | EN | EN | L'hyperparamètre n°1 |

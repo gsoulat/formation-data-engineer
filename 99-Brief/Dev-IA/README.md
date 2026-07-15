@@ -6,6 +6,7 @@ un livrable évalué (repo GitHub public).
 | Brief | Thème | Modules liés |
 |---|---|---|
 | [Classification ML](ML-Classification/BRIEF_ML_CLASSIFICATION.md) | Machine Learning supervisé de bout en bout | [08-Machine-Learning](../../08-Machine-Learning/) |
+| [Premier réseau de neurones](Deep-Learning-Fondamentaux/BRIEF_PREMIER_RESEAU.md) | Fondamentaux DL : MLP → CNN, boucle d'entraînement, overfitting (Fashion-MNIST) | [09-DL/Fondamentaux](../../09-Deep-Learning/01-Fondamentaux-DL/) |
 | [Classificateur d'images (Deep Learning)](Deep-Learning-Vision/BRIEF_CLASSIFICATION_IMAGES.md) | Vision, CNN, transfer learning, Grad-CAM | [09-Deep-Learning](../../09-Deep-Learning/) |
 | [MLOps & Monitoring](MLOps-Monitoring/BRIEF_MLOPS_MONITORING.md) | Industrialisation, suivi de modèle, drift | [08-ML/MLOps](../../08-Machine-Learning/MLOps/) |
 | [Assistant conversationnel RAG](RAG-LLM/BRIEF_RAG_LLM.md) | LLM, RAG, base vectorielle, évaluation | [10-LLM](../../10-Large-Language-Model/) |

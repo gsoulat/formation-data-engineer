@@ -787,3 +787,15 @@ def afficher_metriques(epoch, train_loss, val_loss, train_acc, val_acc):
 **Prochain chapitre :** [03 - PyTorch](./03-frameworks-pytorch.md)
 
 [Retour au sommaire](../README.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Gradient descent, how networks learn](https://www.youtube.com/results?search_query=3blue1brown+gradient+descent+how+neural+networks+learn) | 3Blue1Brown | EN | La descente de gradient visualisée |
+| [Backpropagation, intuitively](https://www.youtube.com/results?search_query=3blue1brown+backpropagation) | 3Blue1Brown | EN | La backpropagation rendue intuitive |
+| [La backpropagation expliquée](https://www.youtube.com/results?search_query=machine+learnia+backpropagation+francais) | Machine Learnia | FR | Le calcul des gradients en français |
+
+> 💡 Concepts durs de ce chapitre (gradient, backprop) : leurs analogies sont au [chapitre 0](00-intuition-analogies.md) §6-7.

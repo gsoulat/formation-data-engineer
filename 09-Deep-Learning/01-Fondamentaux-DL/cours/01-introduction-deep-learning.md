@@ -568,3 +568,15 @@ print(f"Résultat sur : {z.device}")
 **Prochain chapitre :** [02 - Réseaux de neurones](./02-reseaux-neurones.md)
 
 [Retour au sommaire](../README.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [But what is a neural network?](https://www.youtube.com/results?search_query=3blue1brown+but+what+is+a+neural+network) | 3Blue1Brown | EN | L'intuition visuelle d'un réseau (la référence absolue) |
+| [Introduction au Deep Learning](https://www.youtube.com/results?search_query=machine+learnia+deep+learning+introduction) | Machine Learnia | FR | ML vs DL, à quoi sert un réseau |
+| [Neural Networks explained](https://www.youtube.com/results?search_query=statquest+neural+networks+part+1) | StatQuest | EN | Le neurone et les couches, pas à pas |
+
+> 🧭 Rappel : garde le [chapitre 0 — intuition & analogies](00-intuition-analogies.md) sous les yeux.

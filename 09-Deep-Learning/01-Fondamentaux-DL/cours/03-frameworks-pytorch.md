@@ -853,3 +853,13 @@ def log_epoch(epoch, epochs, train_loss, val_loss, train_acc, val_acc, lr):
 **Prochain chapitre :** [04 - Entraînement pratique](./04-entrainement-pratique.md)
 
 [Retour au sommaire](../README.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [PyTorch in 100 seconds](https://www.youtube.com/results?search_query=pytorch+in+100+seconds+fireship) | Fireship | EN | Vue d'ensemble ultra-rapide |
+| [PyTorch pour débutant](https://www.youtube.com/results?search_query=pytorch+tutoriel+francais+debutant) | FR | FR | Tensors, autograd, nn.Module |
+| [PyTorch full course](https://www.youtube.com/results?search_query=pytorch+beginner+full+course+freecodecamp) | freeCodeCamp | EN | Cours complet PyTorch |
