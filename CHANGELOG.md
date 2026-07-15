@@ -1,3 +1,10 @@
+## [2.18.1](https://github.com/gsoulat/formation-data-engineer/compare/v2.18.0...v2.18.1) (2026-07-15)
+
+
+### Bug Fixes
+
+* **devops:** réparer les liens morts du README CI/CD (Jenkins/Best-Practices fantômes, Azure mal numéroté) ([51bee54](https://github.com/gsoulat/formation-data-engineer/commit/51bee5411492a9ab7e3551d9ae3b98ff03293d1e))
+
 # [2.18.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.17.0...v2.18.0) (2026-07-15)
 
 
