@@ -39,5 +39,20 @@ Configurez le routage HTTP/HTTPS avancé et le SSL/TLS.
 ### [09 - Déploiement sur Azure (AKS)](09-azure-aks.md)
 Mise en situation réelle sur Azure Kubernetes Service.
 
+### [10 - Sondes de santé (Probes)](10-probes-sante.md)
+Fiabilisez vos Pods : liveness, readiness et startup probes.
+
+### [11 - Autoscaling (HPA)](11-autoscaling-hpa.md)
+Ajustez automatiquement le nombre de Pods selon la charge (CPU, métriques métier).
+
+### [12 - RBAC & sécurité](12-rbac-securite.md)
+Contrôlez qui peut faire quoi (ServiceAccounts, Roles, moindre privilège).
+
+### [13 - Helm](13-helm.md)
+Empaquetez et déployez vos applications avec le gestionnaire de paquets de Kubernetes.
+
+> 🚀 **Suite production** : déploiements progressifs (canary / blue-green) avec
+> [Argo Rollouts](../../07-DevOps/03-GitOps/04-argo-rollouts-canary-bluegreen.md).
+
 ---
 **Academy** - Formation Data Engineer

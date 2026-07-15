@@ -142,7 +142,7 @@ Puis fais un **vrai** changement : modifie le nombre de replicas **dans Git**, `
 ## 5. 🏗️ Aller plus loin
 
 - **App of Apps** : une `Application` racine qui pointe vers un dossier d'autres `Application`s → tu gères des dizaines d'apps de façon déclarative.
-- **Déploiements progressifs** : [Argo Rollouts](https://argoproj.github.io/rollouts/) remplace le `Deployment` par un `Rollout` qui fait du **canary** (5% → 25% → 100%) ou du **blue/green** avec analyse automatique des métriques et rollback si les SLO se dégradent.
+- **Déploiements progressifs** : [**Argo Rollouts — canary & blue/green**](04-argo-rollouts-canary-bluegreen.md) remplace le `Deployment` par un `Rollout` qui fait du **canary** (20% → 50% → 100%) ou du **blue/green**, avec **analyse automatique des métriques Prometheus** et **rollback** si les SLO se dégradent. → leçon complète avec manifests et lab.
 - **Secrets** : ne mets jamais de secret en clair dans Git → **Sealed Secrets** (Bitnami) ou **External Secrets Operator** (référence un coffre : Vault, AWS Secrets Manager, Key Vault).
 - **Structure de dépôts** : sépare le dépôt *applicatif* (code) du dépôt *manifests* (état désiré) ; le pipeline CI construit l'image et met à jour le tag dans le dépôt manifests → ArgoCD déploie.
 
