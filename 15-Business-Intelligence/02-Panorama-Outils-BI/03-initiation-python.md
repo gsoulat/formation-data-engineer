@@ -5,10 +5,10 @@
 | | |
 |---|---|
 | **Phase** | Phase 0 — La Prairie (semaine 1–2) |
-| **Place dans le parcours** | **Tout au début**, AVANT le module de Maths et AVANT le module 1.2 (pandas) |
+| **Place dans le parcours** | **Tout au début**, AVANT le module de Maths et AVANT le module « pandas » |
 | **Durée indicative** | ≈ 14 h |
 | **Objectif** | Pré-requis technique transversal (socle Python pour les analyses exploratoires) |
-| **Pré-requis** | Module 0.4 (posture & méthode). Savoir allumer un ordinateur, naviguer sur le web, créer un compte. **Aucun pré-requis en programmation.** |
+| **Pré-requis** | le module « posture & méthode ». Savoir allumer un ordinateur, naviguer sur le web, créer un compte. **Aucun pré-requis en programmation.** |
 | **Outils** | Un navigateur web + **Google Colab** (gratuit, rien à installer) ou Jupyter/Anaconda |
 
 ---
@@ -25,7 +25,7 @@
 - **Répéter une action** avec une boucle `for` (notion simple).
 - **Écrire et appeler une fonction** (`def`, `return`, arguments).
 - **Importer une bibliothèque** (ex. `import numpy as np`) et comprendre à quoi ça sert.
-- **Lire un tout petit fichier de données** avec pandas (`read_csv`, `.head()`) — un avant-goût du module 1.2.
+- **Lire un tout petit fichier de données** avec pandas (`read_csv`, `.head()`) — un avant-goût du module « analyse exploratoire (EDA) ».
 - **Lire un message d'erreur** sans paniquer et **commenter ton code**.
 
 > 🎯 **L'objectif n'est PAS de devenir développeur.** L'objectif est que tu puisses **lire, comprendre et modifier** du code data. Tu n'as pas besoin de tout retenir par cœur : tu as besoin de **comprendre la logique**.
@@ -41,7 +41,7 @@ Tu es là pour devenir Data Analyst, pas codeur. Alors pourquoi apprendre à pro
 3. **Le code est reproductible et traçable.** Avec Excel, si tu cliques 40 fois pour nettoyer un fichier, personne ne peut refaire exactement la même chose. Avec Python, tes manipulations sont **écrites** : tu peux les rejouer, les corriger, les partager.
 4. **C'est plus simple qu'on ne le croit.** Python a été conçu pour être **lisible**, proche de l'anglais courant. `if age >= 18:` se lit « si âge supérieur ou égal à 18 ». Tu vas voir, ça se dompte.
 
-> 💡 **Le pont avec la suite.** Tout ce que tu calcules au module de Maths (moyenne, médiane, écart-type…), tu le **reproduiras en une ligne de code** au module 1.2 avec pandas. Ce module 0.5 te donne les fondations pour que ce moment se passe bien — sans décrochage.
+> 💡 **Le pont avec la suite.** Tout ce que tu calcules au module de Maths (moyenne, médiane, écart-type…), tu le **reproduiras en une ligne de code** au module « analyse exploratoire (EDA) » avec pandas. Ce module te donne les fondations pour que ce moment se passe bien — sans décrochage.
 
 > ⚠️ **Le piège qu'on veut t'éviter.** Sans cette initiation, le code surgit brutalement dès les maths puis « explose » avec pandas. Beaucoup décrochent à ce moment-là. C'est exactement pour **toi** que ce module existe : prends-le au sérieux et tu aborderas la suite sereinement.
 
@@ -265,7 +265,7 @@ client["email"] = "c@x.fr"   # ajoute une nouvelle clé
 print(client)
 ```
 
-> 💡 **Pourquoi c'est utile en data ?** Un tableau de données (un DataFrame pandas) ressemble beaucoup à une **liste de dictionnaires** : chaque ligne est un dictionnaire `{colonne: valeur}`. Tu retrouveras cette logique au module 1.2.
+> 💡 **Pourquoi c'est utile en data ?** Un tableau de données (un DataFrame pandas) ressemble beaucoup à une **liste de dictionnaires** : chaque ligne est un dictionnaire `{colonne: valeur}`. Tu retrouveras cette logique au module « analyse exploratoire (EDA) ».
 
 > 🎯 **Mini-exercice 4.** (a) Crée une liste `temperatures = [18, 21, 25, 19, 22]` et affiche la **dernière** valeur et la **moyenne** (somme / nombre). (b) Crée un dictionnaire `produit` avec les clés `nom`, `prix`, `stock`, puis affiche le prix.
 
@@ -495,7 +495,7 @@ print(np.max(temperatures))    # 25
 
 ## Le pont vers pandas : ta première manipulation de données 🐼
 
-Voici un **tout petit aperçu** de `pandas`, l'outil-roi du Data Analyst. **On ne fait que regarder** : tu approfondiras tout au module 1.2. L'objectif ici est juste de **voir à quoi ça ressemble** pour ne pas être surpris.
+Voici un **tout petit aperçu** de `pandas`, l'outil-roi du Data Analyst. **On ne fait que regarder** : tu approfondiras tout au module « analyse exploratoire (EDA) ». L'objectif ici est juste de **voir à quoi ça ressemble** pour ne pas être surpris.
 
 `pandas` range les données dans un **DataFrame** : un **tableau** avec des lignes et des colonnes, comme dans Excel — mais piloté par du code.
 
@@ -530,9 +530,9 @@ df["ville"]     # une seule colonne (on l'appelle par son nom)
 df.describe()   # statistiques automatiques (moyenne, min, max...) sur les colonnes numériques
 ```
 
-> 🔗 **Tu vois le lien ?** Un DataFrame = un tableau. Chaque colonne ressemble à une **liste**, chaque ligne à un **dictionnaire** `{colonne: valeur}`. Tout ce que tu viens d'apprendre (variables, types, listes, dicos, fonctions, import) sert directement ici. **C'est exactement la porte d'entrée du module 1.2.**
+> 🔗 **Tu vois le lien ?** Un DataFrame = un tableau. Chaque colonne ressemble à une **liste**, chaque ligne à un **dictionnaire** `{colonne: valeur}`. Tout ce que tu viens d'apprendre (variables, types, listes, dicos, fonctions, import) sert directement ici. **C'est exactement la porte d'entrée du module « analyse exploratoire (EDA) ».**
 
-> ⚠️ Pas de panique si `read_csv` te renvoie une erreur « FileNotFoundError » quand tu testeras : ça veut juste dire que le fichier `ventes.csv` n'existe pas à l'endroit attendu. C'est normal, tu auras de vrais fichiers fournis au module 1.2.
+> ⚠️ Pas de panique si `read_csv` te renvoie une erreur « FileNotFoundError » quand tu testeras : ça veut juste dire que le fichier `ventes.csv` n'existe pas à l'endroit attendu. C'est normal, tu auras de vrais fichiers fournis au module « analyse exploratoire (EDA) ».
 
 > 🎯 **Mini-exercice 9 (lecture).** Sans rien exécuter, réponds : dans `df.head()`, combien de lignes sont affichées par défaut ? Et que renvoie `df.shape` ?
 
@@ -573,7 +573,7 @@ Les erreurs que tu croiseras le plus en débutant :
 | `KeyError` | tu demandes une clé qui n'existe pas dans un dictionnaire | vérifie le nom de la clé |
 | `FileNotFoundError` | le fichier n'est pas là où tu l'as demandé | vérifie le chemin / le nom du fichier |
 
-> 💡 **Réflexe gagnant.** Copie-colle le message d'erreur **exact** (entre guillemets) dans ton moteur de recherche, ou demande à une IA de te l'expliquer (sans jamais coller de données confidentielles — cf. module 0.4). Tu n'es jamais le premier à tomber dessus.
+> 💡 **Réflexe gagnant.** Copie-colle le message d'erreur **exact** (entre guillemets) dans ton moteur de recherche, ou demande à une IA de te l'expliquer (sans jamais coller de données confidentielles — cf. le module « posture & méthode »). Tu n'es jamais le premier à tomber dessus.
 
 ### Commenter son code
 
@@ -603,7 +603,7 @@ compteur_clients = compteur_clients + 1   # un client de plus a été traité
 | Apprendre le Python #2 — Les variables | Graven | 🇫🇷 FR | ~15 min | https://www.youtube.com/watch?v=nvyX8JfoOWY | Variables et types de base, affectation, affichage. |
 | Apprendre le Python #3 — Les conditions | Graven | 🇫🇷 FR | ~15 min | https://www.youtube.com/watch?v=_AgUOsvMt8s | `if / elif / else`, comparaisons, indentation. |
 | Apprendre le Python (playlist complète A→Z) | Graven | 🇫🇷 FR | série | https://www.youtube.com/playlist?list=PLwIeJQbjgLC6gIxxaPlnXiPlR9NDAhCay | Listes, boucles, fonctions… toute la base, dans l'ordre. |
-| Python spécial Machine Learning (intro + numpy/pandas) | Machine Learnia | 🇫🇷 FR | série | https://www.youtube.com/playlist?list=PLO_fdPEVlfKqMDNmCFzQISI2H_nJcEDJq | Orientation **data** : numpy, pandas — fait le pont vers le module 1.2. |
+| Python spécial Machine Learning (intro + numpy/pandas) | Machine Learnia | 🇫🇷 FR | série | https://www.youtube.com/playlist?list=PLO_fdPEVlfKqMDNmCFzQISI2H_nJcEDJq | Orientation **data** : numpy, pandas — fait le pont vers le module « analyse exploratoire (EDA) ». |
 | Cours / exercices Python débutant | Docstring | 🇫🇷 FR | varié | https://www.youtube.com/@docstring_fr | Tutos courts et exercices corrigés pour consolider chaque notion. |
 
 > 💡 **Conseil.** Ne regarde pas en mode « film ». **Mets en pause, recopie le code dans ton notebook, modifie une valeur, observe.** On apprend à coder en codant, pas en regardant.
@@ -663,7 +663,7 @@ compteur_clients = compteur_clients + 1   # un client de plus a été traité
 - **Conditions** `if / elif / else` (n'oublie pas le `:` et l'**indentation**). **Boucle `for`** = répéter pour chaque élément.
 - **Fonction** : `def nom(arguments): ... return resultat`. `return` ≠ `print`.
 - **`import ... as ...`** charge une **bibliothèque** (`numpy as np`, `pandas as pd`) : la caisse à outils de la data.
-- **pandas** range les données dans un **DataFrame** ; `read_csv` + `.head()` = ta porte d'entrée vers le **module 1.2**.
+- **pandas** range les données dans un **DataFrame** ; `read_csv` + `.head()` = ta porte d'entrée vers le **module « analyse exploratoire (EDA) »**.
 - **Une erreur est un message d'aide** : lis-la du bas vers le haut. **Commente le pourquoi**, nomme bien tes variables.
 
 > 🚀 **Tu as posé les fondations.** Tu n'as pas besoin de tout maîtriser : tu as besoin de **reconnaître** ces briques quand elles réapparaîtront. À partir d'ici, le code des modules de Maths puis de pandas ne sera plus du chinois — ce seront des assemblages de ce que tu viens de voir. Bravo, le plus dur (oser commencer) est fait.

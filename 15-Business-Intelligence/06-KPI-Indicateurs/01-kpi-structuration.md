@@ -5,7 +5,7 @@
 | **Phase** | Phase 1 — Concevoir un tableau de bord |
 | **Durée** | ~20 heures |
 | **Objectifs** | Identifier et formaliser les indicateurs de performance répondant à un besoin métier · Traduire un besoin métier en spécifications fonctionnelles |
-| **Pré-requis** | Module 0.3 (analyse de besoin en Prairie), 1.2 (Python & pandas pour l'EDA), 1.3 (Identifier les tendances). Savoir lire un tableau de chiffres simple. Aucune compétence technique BI n'est requise pour ce module. |
+| **Pré-requis** | le module « analyse de besoin en Prairie », le module « Python & pandas pour l'EDA », le module « Identifier les tendances ». Savoir lire un tableau de chiffres simple. Aucune compétence technique BI n'est requise pour ce module. |
 
 ---
 

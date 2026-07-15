@@ -5,7 +5,7 @@
 | **Phase** | 0 — La Prairie (mise à niveau / découverte) |
 | **Durée** | ~20 heures |
 | **Objectifs** | *Identifier les indicateurs clés (KPI)* · *Choisir des visualisations pertinentes* · *Élaborer la problématique métier* |
-| **Pré-requis** | Module 0.1 (découverte du métier de Data Analyst), Module 0.2 (vocabulaire de la donnée). Savoir lire un tableau de chiffres simple. Aucun outil technique requis. |
+| **Pré-requis** | le module « découverte du métier de Data Analyst ». Savoir lire un tableau de chiffres simple. Aucun outil technique requis. |
 | **Type** | **Initiation.** Le niveau 2 (adapter / transposer) sera travaillé en Phase 1. Ici, on découvre et on imite. |
 
 ---

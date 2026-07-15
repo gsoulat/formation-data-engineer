@@ -5,7 +5,7 @@
 | **Phase** | Phase 0 — La Prairie |
 | **Durée indicative** | ~18 h |
 | **Objectifs** | Définir le périmètre d'un problème (niv. 1) · Rechercher méthodiquement de l'information (niv. 1) |
-| **Pré-requis** | Module 0.1 (découverte du métier de Data Analyst), savoir naviguer sur le web, avoir une adresse e-mail active. Aucun pré-requis technique. |
+| **Pré-requis** | le module « découverte du métier de Data Analyst », savoir naviguer sur le web, avoir une adresse e-mail active. Aucun pré-requis technique. |
 
 ---
 

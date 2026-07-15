@@ -298,7 +298,7 @@ SQLite est une **base de données dans un simple fichier** (extension `.db` ou `
 On va utiliser une base fournie avec la formation.
 
 1. Dans DB Browser : bouton **« Ouvrir une base de données »** (Open Database).
-2. Navigue jusqu'à **`ressources/datasets/`** et ouvre **`setup.sql`**… 
+2. Navigue jusqu'à **`99-Brief/Data-Analyst/data/`** et ouvre **`setup.sql`**… 
    > ⚠️ `setup.sql` est un **script**, pas une base. Pour créer la base depuis ce script : menu **Fichier → Importer → Base de données depuis un fichier SQL**, choisis `setup.sql`, nomme la base `ventes.db`. *(Si une vraie base `.db` t'est fournie, ouvre-la directement.)*
 3. Une fois la base ouverte, va dans l'onglet **« Exécuter le SQL »** (Execute SQL).
 4. Tape cette requête simple :
@@ -383,7 +383,7 @@ Looker Studio (ex-Google Data Studio) est **100 % gratuit, dans le navigateur, s
 3. Accepte les conditions ; Looker peut demander ton **pays** et ton **secteur** (réponds « Formation/Éducation » par exemple).
 4. Tu arrives sur la page d'accueil avec **« Créer »** en haut à gauche. C'est bon, **ton compte est prêt.** 🎉
 
-> ✅ Pas besoin de créer un rapport maintenant — on le fera dans le module 0.2.
+> ✅ Pas besoin de créer un rapport maintenant — on le fera dans le module « panorama des outils BI ».
 
 ### Power BI : la contrainte à connaître ⚠️
 
@@ -397,7 +397,7 @@ Voici quoi faire selon ton OS :
 | **🍎 Mac** | Pas de Desktop. Utilise **Power BI Service** dans le navigateur : **[app.powerbi.com](https://app.powerbi.com)** (version web). Ou plus tard, une **VM Parallels + Windows**. |
 | **🐧 Linux** | Idem Mac : **Power BI Service web** uniquement. |
 
-> 📌 **Pour tout comprendre sur la contrainte Power BI** (pourquoi le Nord de la France le demande malgré tout, les contournements détaillés, le marché de l'emploi local) → **lis l'étude dédiée : [l'étude de marché dédiée](etude-dataviz-nord-france.md)** et le **module 0.2**.
+> 📌 **Pour tout comprendre sur la contrainte Power BI** (pourquoi le Nord de la France le demande malgré tout, les contournements détaillés, le marché de l'emploi local) → **lis l'étude dédiée : [l'étude de marché dédiée](etude-dataviz-nord-france.md)** et le **module « panorama des outils BI »**.
 
 > 🎯 **À retenir.** En Phase 0, **personne n'installe Power BI Desktop.** On apprend les concepts BI sur **Looker Studio** (qui marche pour tout le monde). Power BI viendra dans les phases avancées.
 
@@ -457,7 +457,7 @@ C'est **le test ultime** : si ce notebook tourne, ton atelier est opérationnel 
 4. Dans la **cellule 2**, charge le vrai fichier de ventes et affiche les premières lignes :
    ```python
    # Adapte le chemin si besoin (voir l'encadré ci-dessous)
-   df = pd.read_csv("../../../ressources/datasets/ventes_magasins.csv")
+   df = pd.read_csv("99-Brief/Data-Analyst/data/ventes_magasins.csv")
    df.head()
    ```
 5. Dans la **cellule 3**, regarde la taille et un mini-graphique :
@@ -477,7 +477,7 @@ C'est **le test ultime** : si ce notebook tourne, ton atelier est opérationnel 
 > 🎉 **Si tu vois le tableau ET le graphique : FÉLICITATIONS.** Ton environnement Data Analyst est 100 % opérationnel. Tu peux attaquer la formation sereinement.
 
 > ⚠️ **Si ça ne marche pas — le chemin du fichier (`FileNotFoundError`).**
-> C'est l'erreur n°1, et elle est **facile** à régler. Le chemin `../../../ressources/datasets/ventes_magasins.csv` dépend de **l'endroit d'où tu as lancé Jupyter**.
+> C'est l'erreur n°1, et elle est **facile** à régler. Le chemin `99-Brief/Data-Analyst/data/ventes_magasins.csv` dépend de **l'endroit d'où tu as lancé Jupyter**.
 > - **Solution simple** : place une **copie** de `ventes_magasins.csv` dans le **même dossier** que ton notebook, puis remplace la ligne par :
 >   ```python
 >   df = pd.read_csv("ventes_magasins.csv")
@@ -502,6 +502,6 @@ C'est **le test ultime** : si ce notebook tourne, ton atelier est opérationnel 
 - **Jupyter** : on écrit du code dans une **cellule**, on fait **`Maj + Entrée`**, le résultat s'affiche dessous.
 - **VS Code** est l'éditeur pour les scripts/projets ; l'**extension Python** est un plus.
 - **DB Browser for SQLite** ouvre une base et exécute des requêtes (`SELECT * FROM table LIMIT 5`) **sans coder**.
-- **Looker Studio** (gratuit, web, tous OS) est l'outil BI de départ ; **Power BI Desktop = Windows uniquement** (Mac/Linux → Power BI Service web) — détails dans l'étude Nord & le module 0.2.
+- **Looker Studio** (gratuit, web, tous OS) est l'outil BI de départ ; **Power BI Desktop = Windows uniquement** (Mac/Linux → Power BI Service web) — détails dans l'étude Nord & le module « panorama des outils BI ».
 - Les **6 bibliothèques** du parcours : `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `openpyxl`.
 - **La vraie validation = le notebook « hello data »** qui charge `ventes_magasins.csv` et affiche `.head()`. S'il tourne, ton atelier est prêt. 🚀

@@ -7,7 +7,7 @@
 | **Phase** | 0 — La Prairie (S1–S2) |
 | **Durée** | ≈ 18 h |
 | **Objectif** | Créer des tableaux de bord avec des outils de BI — **niveau 1 (découverte)** |
-| **Pré-requis** | Module 0.1 (le métier & le référentiel) · savoir naviguer sur le web · avoir (ou créer) un **compte Google** · notions de tableur (lignes/colonnes, somme, moyenne) |
+| **Pré-requis** | le module « le métier & le référentiel » · savoir naviguer sur le web · avoir (ou créer) un **compte Google** · notions de tableur (lignes/colonnes, somme, moyenne) |
 | **Outils** | Navigateur web · **Looker Studio** (gratuit) · **Google Sheets** · un compte Google |
 
 ---
