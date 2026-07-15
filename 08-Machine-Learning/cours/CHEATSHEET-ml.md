@@ -309,6 +309,9 @@ CMD ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ## 🗺️ Guide de choix rapide
 
+> 📖 Pour la **méthode de décision complète** (problème → métrique selon le coût métier → modèle),
+> voir le [chapitre 23 — Choisir son modèle et ses métriques](23-choisir-modele-et-metriques.md).
+
 ```
 Quel type de problème ?
 ├── Classification (catégorie)

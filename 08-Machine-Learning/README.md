@@ -79,8 +79,12 @@ Ce module vous emmène du **vrai zéro** jusqu'à la **mise en production** d'un
 | 20 | [Naive Bayes](cours/20-naive-bayes.md) | 2h | Intermédiaire |
 | 21 | [Clustering non supervisé : K-Means](cours/21-clustering-kmeans.md) | 3h | Intermédiaire |
 | 22 | [Réduction de dimension : PCA](cours/22-reduction-dimension-pca.md) | 3h | Intermédiaire |
+| 23 | [🧭 Choisir son modèle et ses métriques](cours/23-choisir-modele-et-metriques.md) | 2h | Synthèse |
 
 **Durée totale estimée : ~50 heures** (cours + exercices + projet)
+
+> 🧭 Le [chapitre 23](cours/23-choisir-modele-et-metriques.md) est une **synthèse méthodologique** :
+> comment décider *problème → métrique (selon le coût métier) → modèle*, sans choisir au hasard.
 
 ## 🎯 Mini-briefs par modèle — pratique délibérée
 
