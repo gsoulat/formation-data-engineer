@@ -22,3 +22,12 @@ Réduit la dimensionnalité en ne gardant que la valeur maximale d'une région (
 ---
 
 [← 01 - Fondamentaux](01-introduction-concepts.md) | [🏠 Accueil](README.md) | [03 - Techniques Avancées →](03-techniques-avancees.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Convolution & pooling](https://www.youtube.com/results?search_query=convolution+pooling+cnn+explained+visualized) | EN | EN | Le filtre qui glisse, le pooling qui résume |
+| [Kernels/filtres visualisés](https://www.youtube.com/results?search_query=cnn+kernel+filter+edge+detection+visualized) | EN | EN | Ce qu'un filtre détecte concrètement |

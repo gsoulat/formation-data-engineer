@@ -13,5 +13,15 @@ Bienvenue dans cette formation complète sur les CNN. Ce module vous emmènera d
 7. [07 - Métriques et Optimisation](07-metriques-optimisation.md)
 8. [08 - Couches et Activations Avancées](08-couches-activations-avancees.md)
 
+## 🧪 Pratique
+
+- [📓 Notebook — La convolution à la main (NumPy)](notebooks/01-convolution-numpy.ipynb) — voir *ce que fait* un filtre, sans framework.
+- [📝 Quiz — 20 questions](quiz_cnn_20_questions.md)
+
+## 🎯 Briefs
+
+- [Classificateur d'images (transfer learning)](../../99-Brief/Dev-IA/Deep-Learning-Vision/BRIEF_CLASSIFICATION_IMAGES.md) — CNN pré-entraîné, Grad-CAM, démo.
+- [Computer Vision YOLOv8 (détection d'objets)](yolo_brief.md) — proof of concept temps réel.
+
 ---
 [🏠 Retour au menu principal](../../README.md)

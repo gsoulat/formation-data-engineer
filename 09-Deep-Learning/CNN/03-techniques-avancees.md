@@ -21,3 +21,12 @@ Permet au modèle de se focaliser sur les régions les plus importantes de l'ima
 ---
 
 [← 02 - Opérations](02-operations-base.md) | [🏠 Accueil](README.md) | [04 - Architectures Célèbres →](04-architectures-celebres.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [BatchNorm & Dropout](https://www.youtube.com/results?search_query=batch+normalization+dropout+explained) | EN | EN | Stabiliser et régulariser un CNN |
+| [Data augmentation](https://www.youtube.com/results?search_query=data+augmentation+deep+learning+images) | EN | EN | Multiplier les données d'images |

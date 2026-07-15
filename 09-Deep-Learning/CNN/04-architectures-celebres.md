@@ -14,3 +14,12 @@
 ---
 
 [← 03 - Avancé](03-techniques-avancees.md) | [🏠 Accueil](README.md) | [05 - Applications Pratiques →](05-applications-pratiques.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [ResNet expliqué](https://www.youtube.com/results?search_query=resnet+residual+network+explained) | EN | EN | Les connexions résiduelles |
+| [LeNet→AlexNet→VGG→ResNet](https://www.youtube.com/results?search_query=cnn+architectures+lenet+alexnet+vgg+resnet) | EN | EN | L'évolution des architectures |

@@ -23,3 +23,12 @@
 ---
 
 [← 06 - Projets](06-projets-exercices.md) | [🏠 Accueil](README.md) | [08 - Couches et Activations Avancées →](08-couches-activations-avancees.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Matrice de confusion](https://www.youtube.com/results?search_query=statquest+confusion+matrix) | StatQuest | EN | Bien évaluer un classifieur |
+| [Régler les hyperparamètres](https://www.youtube.com/results?search_query=cnn+hyperparameter+tuning+deep+learning) | EN | EN | Optimiser un CNN |

@@ -23,3 +23,12 @@
 ---
 
 [← 07 - Métriques](07-metriques-optimisation.md) | [🏠 Accueil](README.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Attention dans les CNN](https://www.youtube.com/results?search_query=attention+mechanism+cnn+vision) | EN | EN | Les couches modernes |
+| [EfficientNet & CNN modernes](https://www.youtube.com/results?search_query=efficientnet+modern+cnn+architectures) | EN | EN | L'état de l'art |

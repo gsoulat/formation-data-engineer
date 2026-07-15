@@ -23,3 +23,12 @@ Un **Réseau de Neurones Convolutionnel (CNN)** est un type spécialisé de rés
 ---
 
 [🏠 Accueil](README.md) | [02 - Opérations de Base →](02-operations-base.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [CNN, c'est quoi ?](https://www.youtube.com/results?search_query=cnn+convolutional+neural+network+explained+3blue1brown) | 3Blue1Brown/StatQuest | EN | L'intuition du réseau convolutif |
+| [Les CNN expliqués](https://www.youtube.com/results?search_query=machine+learnia+cnn+reseaux+convolutifs+francais) | Machine Learnia | FR | Convolution et vision par ordinateur |
