@@ -1,3 +1,10 @@
+# [2.21.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.20.0...v2.21.0) (2026-07-15)
+
+
+### Features
+
+* **dev-ia:** module LLMOps de production (le seul vrai trou de l'audit Dev IA) ([1532f8c](https://github.com/gsoulat/formation-data-engineer/commit/1532f8c0b54643c98949c798c96e9cb34937e97e))
+
 # [2.20.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.19.0...v2.20.0) (2026-07-15)
 
 
