@@ -1,3 +1,10 @@
+# [2.20.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.19.0...v2.20.0) (2026-07-15)
+
+
+### Features
+
+* **devops:** module Observabilité (alerting Alertmanager + logs Loki + traces Tempo/OTel) ([db7807b](https://github.com/gsoulat/formation-data-engineer/commit/db7807b292b5d376ee21750f8a2ac852b163ad9c))
+
 # [2.19.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.18.1...v2.19.0) (2026-07-15)
 
 
