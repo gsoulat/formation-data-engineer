@@ -1,3 +1,10 @@
+# [2.16.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.15.0...v2.16.0) (2026-07-15)
+
+
+### Features
+
+* **pratique:** 10 mini-briefs ML en notebooks exécutables ([140d6d9](https://github.com/gsoulat/formation-data-engineer/commit/140d6d93c158b713c53536c5b6125854a45d8b6a))
+
 # [2.15.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.14.0...v2.15.0) (2026-07-14)
 
 
