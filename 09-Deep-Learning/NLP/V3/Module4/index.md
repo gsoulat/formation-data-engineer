@@ -127,3 +127,12 @@ De la théorie aux outils pratiques
 [Module 5: Deep Learning →](../Module5/index.html)
 
 // Animation d'apparition progressive des cartes document.addEventListener('DOMContentLoaded', function() { const cards = document.querySelectorAll('.lesson-card'); const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }; const observer = new IntersectionObserver(function(entries) { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, observerOptions); cards.forEach(card => { card.style.opacity = '0'; card.style.transform = 'translateY(30px)'; observer.observe(card); }); }); // Effet de hover interactif sur les cartes document.querySelectorAll('.lesson-card').forEach(card => { card.addEventListener('mouseenter', function() { this.style.background = 'rgba(255, 255, 255, 1)'; }); card.addEventListener('mouseleave', function() { this.style.background = 'rgba(255, 255, 255, 0.95)'; }); }); // Animation des statistiques au scroll function animateStats() { const statNumbers = document.querySelectorAll('.stat-number'); const targets = \['3', '300', '95%', '2013'\]; statNumbers.forEach((stat, index) => { if (index < 2) { // Animer les chiffres let current = 0; const target = parseInt(targets\[index\]); const increment = target / 30; const timer = setInterval(() => { current += increment; if (current >= target) { current = target; clearInterval(timer); } stat.textContent = Math.floor(current); }, 50); } }); } // Observer pour les statistiques const statsSection = document.querySelector('.stats-section'); const statsObserver = new IntersectionObserver(function(entries) { entries.forEach(entry => { if (entry.isIntersecting) { animateStats(); statsObserver.unobserve(entry.target); } }); }, { threshold: 0.5 }); statsObserver.observe(statsSection);
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Word2Vec expliqué](https://www.youtube.com/results?search_query=word2vec+explained+statquest) | StatQuest | EN | Un mot = un vecteur de sens |
+| [Word embeddings](https://www.youtube.com/results?search_query=word+embeddings+explained+glove+word2vec) | EN | EN | GloVe, Word2Vec, FastText |

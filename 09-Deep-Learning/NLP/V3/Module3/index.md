@@ -119,3 +119,12 @@ Projet](classification_final.html)
 [🏠 Accueil Formation](../index.html) [← Module 2](../module2/index.html) [🚀 Commencer le Module](module3_intro.html) [Module 4 →](../module4/index.html)
 
 // Animation de la barre de progression window.addEventListener('load', function () { setTimeout(() => { document.querySelector('.progress-fill').style.width = '60%'; }, 1000); }); // Animation au scroll function animateOnScroll() { const cards = document.querySelectorAll('.section-card'); const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.1 }); cards.forEach(card => { observer.observe(card); }); } // Initialisation document.addEventListener('DOMContentLoaded', animateOnScroll);
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [TF-IDF expliqué](https://www.youtube.com/results?search_query=tf+idf+explained+simply) | EN | EN | Transformer des mots en nombres |
+| [Bag of Words](https://www.youtube.com/results?search_query=bag+of+words+nlp+explained) | EN | EN | La représentation la plus simple |

@@ -88,3 +88,12 @@ Consolidez vos connaissances avec un résumé complet et testez votre compréhen
 ### 🔮 Modules Suivants
 
 Après avoir terminé ce module d'introduction, vous explorerez le préprocessing des données textuelles, les méthodes statistiques, les word embeddings, et bien plus encore !
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Introduction au NLP](https://www.youtube.com/results?search_query=nlp+natural+language+processing+introduction) | EN | EN | Le panorama du domaine |
+| [Le NLP expliqué](https://www.youtube.com/results?search_query=machine+learnia+nlp+traitement+langage+francais) | Machine Learnia | FR | Bases et cas d'usage |

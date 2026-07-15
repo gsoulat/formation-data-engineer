@@ -162,3 +162,12 @@ Réseaux de neurones récurrents
 [Module 6: Transformers →](../Module6/index.html)
 
 // Animation de fade-in progressive document.addEventListener('DOMContentLoaded', function() { const cards = document.querySelectorAll('.module-card'); cards.forEach((card, index) => { card.style.animation = \`slideUp 0.5s ease-out ${index \* 0.1}s forwards\`; }); });
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [LSTM clairement expliqué](https://www.youtube.com/results?search_query=statquest+lstm+long+short+term+memory) | StatQuest | EN | La mémoire des RNN |
+| [RNN & LSTM](https://www.youtube.com/results?search_query=recurrent+neural+network+lstm+explained) | EN | EN | Lire une séquence mot à mot |

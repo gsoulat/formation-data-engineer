@@ -135,3 +135,12 @@ Pandas
 ### 💡 Ce que Vous Allez Apprendre
 
 Ce module vous donnera les compétences essentielles pour transformer n'importe quel texte brut en données propres et exploitables. Vous découvrirez les pièges courants, les bonnes pratiques, et comment adapter votre preprocessing selon le contexte (tweets, articles, emails...).
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Tokenisation NLP](https://www.youtube.com/results?search_query=nlp+tokenization+explained+spacy+nltk) | EN | EN | Découper le texte proprement |
+| [Preprocessing du texte](https://www.youtube.com/results?search_query=nlp+text+preprocessing+lemmatization+stemming) | EN | EN | Nettoyage, lemmatisation |

@@ -162,3 +162,12 @@ Les modèles qui dominent l'IA moderne
 [Module 8: Production →](../Module8/index.html)
 
 // Animation de fade-in progressive document.addEventListener('DOMContentLoaded', function() { const cards = document.querySelectorAll('.module-card'); cards.forEach((card, index) => { card.style.animation = \`slideUp 0.5s ease-out ${index \* 0.1}s forwards\`; }); });
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [BERT expliqué](https://www.youtube.com/results?search_query=bert+explained+nlp) | EN | EN | Comprendre le texte (encodeur) |
+| [GPT expliqué](https://www.youtube.com/results?search_query=gpt+explained+how+it+works) | EN | EN | Générer du texte (décodeur) |

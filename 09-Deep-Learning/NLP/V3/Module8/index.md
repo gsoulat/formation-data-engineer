@@ -124,3 +124,12 @@ Compétences Business
 [Formation →](../index.html)
 
 // Animation d'entrée document.addEventListener('DOMContentLoaded', function() { const cards = document.querySelectorAll('.topic-card'); cards.forEach((card, index) => { card.style.opacity = '0'; card.style.transform = 'translateY(50px)'; setTimeout(() => { card.style.transition = 'all 0.6s ease'; card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, index \* 200); }); }); // Effet hover sur les cartes document.querySelectorAll('.topic-card').forEach(card => { card.addEventListener('mouseenter', function() { this.style.transform = 'translateY(-8px) scale(1.02)'; }); card.addEventListener('mouseleave', function() { this.style.transform = 'translateY(0) scale(1)'; }); }); // Animation de la barre de progression setTimeout(() => { document.querySelector('.progress-bar').style.width = '100%'; }, 1000);
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Déployer un modèle NLP](https://www.youtube.com/results?search_query=deploy+nlp+model+production+huggingface) | EN | EN | Servir un modèle en production |
+| [Optimisation & monitoring](https://www.youtube.com/results?search_query=nlp+model+optimization+quantization+production) | EN | EN | Quantization, latence, suivi |
