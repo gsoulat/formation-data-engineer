@@ -56,6 +56,15 @@ Ce module vous forme au Deep Learning, des bases (neurones, backpropagation) aux
 | 03 | GAN (réseaux antagonistes) | 2h | 🔴 Avancé |
 | 04 | Modèles de diffusion (Stable Diffusion) | 2h | 🔴 Avancé |
 
+### [05-Avancé – Au-delà des CNN et RNN](Avance/)
+*Panorama conceptuel des architectures modernes.*
+| # | Leçon | Durée | Niveau |
+|:--|:------|:------|:-------|
+| 01 | Vision Transformers (ViT) | 1h30 | 🔴 Avancé |
+| 02 | Modèles multimodaux (CLIP) | 1h30 | 🔴 Avancé |
+| 03 | Auto-supervision (BERT/GPT) | 1h30 | 🔴 Expert |
+| 04 | Graph Neural Networks (GNN) | 1h30 | 🔴 Expert |
+
 ## 🛠️ Technologies utilisées
 
 **PyTorch** | **torchvision** | **Hugging Face Transformers** | **NLTK** | **spaCy** | **NumPy**
@@ -76,7 +85,8 @@ Ce module vous forme au Deep Learning, des bases (neurones, backpropagation) aux
 ```
 
 **04-Génératif** (autoencodeurs, VAE, GAN, diffusion) se fait après CNN — c'est le pont naturel vers
-les **LLM** (qui sont des modèles génératifs de texte).
+les **LLM** (qui sont des modèles génératifs de texte). **05-Avancé** (ViT, multimodal, auto-supervision,
+GNN) est un panorama conceptuel des architectures modernes, à faire en dernier.
 
 Vous pouvez faire CNN et NLP en parallèle ou séquentiellement. Les deux nécessitent les Fondamentaux DL.
 
