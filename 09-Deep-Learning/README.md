@@ -68,5 +68,10 @@ Ce module vous forme au Deep Learning, des bases (neurones, backpropagation) aux
 
 Vous pouvez faire CNN et NLP en parallèle ou séquentiellement. Les deux nécessitent les Fondamentaux DL.
 
+## 🎯 Briefs projet
+
+- [**Classificateur d'images (transfer learning)**](../99-Brief/Dev-IA/Deep-Learning-Vision/BRIEF_CLASSIFICATION_IMAGES.md) — CNN pré-entraîné, fine-tuning, Grad-CAM, démo (Oxford-IIIT Pet).
+- [**Computer Vision YOLOv8**](CNN/yolo_brief.md) — détection d'objets en temps réel.
+
 ---
 [🏠 Retour à l'accueil](../README.md)

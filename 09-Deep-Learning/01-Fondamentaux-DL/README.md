@@ -14,6 +14,7 @@ Ce module pose les bases du Deep Learning avant de plonger dans les architecture
 
 | # | Chapitre | Duree | Niveau | Description |
 |---|----------|-------|--------|-------------|
+| 00 | [🧭 Comprendre le DL par l'intuition](./cours/00-intuition-analogies.md) | 1h | Fondamental | **À lire en premier** — analogies pour tous les concepts durs (neurone, activation, loss, gradient, backprop, convolution, attention) |
 | 01 | [Introduction au Deep Learning](./cours/01-introduction-deep-learning.md) | 2h | Fondamental | ML vs DL, neurone artificiel, architectures, GPU |
 | 02 | [Reseaux de neurones](./cours/02-reseaux-neurones.md) | 3h | Fondamental | Forward/backward propagation, activations, loss, optimizers |
 | 03 | [PyTorch](./cours/03-frameworks-pytorch.md) | 3h | Intermediaire | Tensors, autograd, nn.Module, DataLoader, boucle d'entrainement |
@@ -22,6 +23,9 @@ Ce module pose les bases du Deep Learning avant de plonger dans les architecture
 ## Progression recommandee
 
 ```
+Chapitre 00 (Intuition & analogies)  ← pose les images mentales
+     |
+     v
 Chapitre 01 (Introduction)
      |
      v
