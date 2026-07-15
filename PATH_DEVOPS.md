@@ -18,6 +18,7 @@ Ce parcours vous apprendra à automatiser l'infrastructure et à sécuriser les 
 - [ ] [Terraform](03-Infrastructure-as-Code/Terraform/)
 - [ ] [Ansible](03-Infrastructure-as-Code/Ansible/)
 - [ ] [CI/CD Advanced](07-DevOps/01-CI-CD/)
+- [ ] [GitOps avec ArgoCD](07-DevOps/03-GitOps/) — déploiement pull-based & self-healing
 - [ ] [Monitoring](07-DevOps/02-Monitoring/)
 
 ---
