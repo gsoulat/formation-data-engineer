@@ -8,5 +8,6 @@
 - [01 — Du fichier plat au modèle en étoile](01-du-fichier-plat-au-modele-en-etoile.md)
 - [02 — Granularité, clés et flocon](02-granularite-cles-flocon.md)
 - [03 — Table de dates et relations dans Power BI](03-table-de-dates-relations-power-bi.md)
+- [03b — Construire les dimensions dans Power Query](03b-power-query-construire-dimensions.md)
 - [04 — Travaux pratiques](04-travaux-pratiques.md)
 - [05 — Quiz & ressources](05-quiz-et-ressources.md)

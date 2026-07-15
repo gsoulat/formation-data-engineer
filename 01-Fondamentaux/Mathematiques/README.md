@@ -15,9 +15,9 @@ quiz d'auto-évaluation.
 |---|---|---|
 | 01 | [Arithmétique & pré-requis](01-Arithmetique/01-arithmetique.md) | Pourcentages & variations, proportions, fractions, ratios, puissances, notation scientifique, ordres de grandeur, arrondis |
 | 02 | [Algèbre & fonctions](02-Algebre-Fonctions/01-algebre-fonctions.md) | Variables, équations du 1er degré, fonctions linéaires/affines, pente comme taux de variation |
-| 03 | [Statistiques descriptives ⭐](03-Statistiques-Descriptives/01-statistiques-descriptives.md) | Types de variables, tendance centrale, dispersion, quantiles, distribution, outliers, boxplot, bivarié |
+| 03 | [Statistiques descriptives ⭐](03-Statistiques-Descriptives/01-statistiques-descriptives.md) | Types de variables, tendance centrale, dispersion, quantiles, distribution, outliers, boxplot, bivarié · [**Régression linéaire**](03-Statistiques-Descriptives/02-regression-lineaire.md) |
 | 04 | [Probabilités](04-Probabilites/01-probabilites.md) | Notions de probabilité, événements, indépendance, loi normale, application data |
-| 05 | [Statistique inférentielle](05-Statistique-Inferentielle/01-statistique-inferentielle.md) | Échantillon vs population, intervalle de confiance, test d'hypothèse, **corrélation ≠ causalité** |
+| 05 | [Statistique inférentielle](05-Statistique-Inferentielle/01-statistique-inferentielle.md) | Échantillon vs population, intervalle de confiance, test d'hypothèse, **corrélation ≠ causalité** · [**Tests avancés : t de Student & χ²**](05-Statistique-Inferentielle/02-tests-hypotheses-avances.md) |
 | 06 | [Mathématiques pour la dataviz](06-Mathematiques-Dataviz/01-maths-dataviz.md) | Échelles, axes, agrégations, choix de représentation, pièges visuels & dataviz honnête |
 
 > ⭐ Le chapitre **03 — Statistiques descriptives** est le cœur du métier de Data Analyst.

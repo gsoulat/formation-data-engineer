@@ -6,3 +6,4 @@
 ## Cours
 
 - [01 — DAX & mesures avancées (Power BI)](01-dax-mesures.md)
+- [02 — DAX avancé & sécurité (RLS)](02-dax-avance-rls.md)

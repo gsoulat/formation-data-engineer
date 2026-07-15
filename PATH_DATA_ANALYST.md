@@ -93,9 +93,27 @@ modules **déjà présents dans ce dépôt** pour couvrir toute la chaîne de la
 | **Business Intelligence** (tableaux de bord) | [15-Business-Intelligence](15-Business-Intelligence/) |
 | Collecte / ETL / nettoyage | 15-BI modules 14-16 |
 | Analyse & statistiques | [Mathématiques](01-Fondamentaux/Mathematiques/) + 15-BI 04-05 |
-| Initiation au Machine Learning | [08-Machine-Learning](08-Machine-Learning/) |
+| Initiation au Machine Learning *(périmètre ciblé, voir ci-dessous)* | [08-Machine-Learning](08-Machine-Learning/) |
 | Gestion de projet & veille | [11-Gestion-Projet](11-Gestion-Projet/) + [Veille-Technologique](01-Fondamentaux/Veille-Technologique/) |
 | Problématique & restitution | 15-BI 03, 12, 13 |
+
+### 🤖 Machine Learning pour Data Analyst — périmètre ciblé
+
+Le module [08-Machine-Learning](08-Machine-Learning/) est un cursus complet qui va jusqu'au
+MLOps (niveau Data Scientist). **Un Data Analyst n'en suit qu'un sous-ensemble « comprendre &
+utiliser »** — pas les maths lourdes (gradient, SVM) ni l'industrialisation (Docker, MLflow).
+Chapitres au programme du parcours DA :
+
+- [01 — Qu'est-ce que le ML ?](08-Machine-Learning/cours/01-quest-ce-que-le-ml.md) · [02 — Anatomie d'un problème ML](08-Machine-Learning/cours/02-anatomie-probleme-ml.md)
+- [06 — Comprendre les données](08-Machine-Learning/cours/06-comprendre-donnees.md) · [07 — Feature engineering](08-Machine-Learning/cours/07-feature-engineering.md)
+- [09 — Modèles linéaires (régression)](08-Machine-Learning/cours/09-modeles-lineaires.md) · [12 — Métriques de classification](08-Machine-Learning/cours/12-metriques-classification.md)
+- [13 — Validation & généralisation (overfitting)](08-Machine-Learning/cours/13-validation-generalisation.md) · [21 — Clustering (K-Means)](08-Machine-Learning/cours/21-clustering-kmeans.md)
+
+**Objectif DA** : savoir dialoguer avec un Data Scientist, lire un modèle, faire une
+régression ou une segmentation simple — pas entraîner des modèles en production. Les chapitres
+03-05, 08, 10-11, 14-20 et 22 relèvent de l'approfondissement Data Scientist (**hors périmètre DA**).
+
+> 💡 Notebooks exécutables alignés DA : dossier [`08-Machine-Learning/notebooks/`](08-Machine-Learning/notebooks/) (régression de prix, classification de churn, clustering de produits).
 
 ---
 
