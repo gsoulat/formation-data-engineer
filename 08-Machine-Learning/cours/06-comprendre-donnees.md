@@ -950,3 +950,13 @@ print("\n✅ Rapport complet sauvegardé : audit_clients_churn.html")
 **Précédent** : [Chapitre 5 : Classification](05-classification.md)
 
 **Suivant** : [Chapitre 7 : Feature Engineering — L'Art de Préparer les Données](07-feature-engineering.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Analyse exploratoire pour le ML](https://www.youtube.com/results?search_query=exploratory+data+analysis+machine+learning) | freeCodeCamp | EN | Explorer avant de modéliser |
+| [Comprendre ses données](https://www.youtube.com/results?search_query=machine+learnia+analyse+des+donnees+francais) | Machine Learnia | FR | Types, distributions, valeurs manquantes |
+| [Prétraitement des données](https://www.youtube.com/results?search_query=statquest+data+preprocessing) | StatQuest | EN | Normalisation, encodage |

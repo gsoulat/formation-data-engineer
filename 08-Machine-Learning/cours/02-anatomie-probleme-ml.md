@@ -806,3 +806,13 @@ Avant de passer au chapitre suivant, vérifiez que vous pouvez :
 ---
 
 **Précédent** : [← Chapitre 1 — Qu'est-ce que le ML ?](01-quest-ce-que-le-ml.md) | **Suivant** : [Chapitre 3 — Préparation des données →](03-preprocessing.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Les étapes d'un projet ML](https://www.youtube.com/results?search_query=machine+learnia+etapes+projet+machine+learning) | Machine Learnia | FR | Du problème métier au modèle |
+| [Train / Test split expliqué](https://www.youtube.com/results?search_query=statquest+training+testing+data) | StatQuest | EN | Pourquoi séparer les données |
+| [Anatomie d'un modèle](https://www.youtube.com/results?search_query=machine+learnia+train+test+split+francais) | Machine Learnia | FR | Features, cible, jeu d'entraînement |

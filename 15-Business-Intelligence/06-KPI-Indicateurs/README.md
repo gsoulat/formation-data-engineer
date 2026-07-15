@@ -6,3 +6,7 @@
 ## Cours
 
 - [01 — KPI & structuration du tableau de bord](01-kpi-structuration.md)
+
+## Notebook (pratique guidée)
+
+- [📓 KPI métier & segmentation RFM](notebook-kpi-rfm.ipynb) — CA, panier moyen, marge, évolution mensuelle et segmentation RFM des clients (données réelles).

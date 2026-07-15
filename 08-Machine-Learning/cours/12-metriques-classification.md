@@ -646,3 +646,13 @@ print(f"Seuil optimal → F1 = {f1_score(y_test, y_pred_optimal):.4f}")
 **Précédent** : [Chapitre 11 : Réduction de dimensionnalité](11-reduction-dimensionnalite.md)
 
 **Suivant** : [Chapitre 13 : Validation et Généralisation](13-validation-generalisation.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Matrice de confusion](https://www.youtube.com/results?search_query=statquest+confusion+matrix) | StatQuest | EN | TP, FP, FN, TN sans se perdre |
+| [Précision & rappel](https://www.youtube.com/results?search_query=statquest+precision+recall) | StatQuest | EN | Quand privilégier l'un ou l'autre |
+| [Courbe ROC & AUC](https://www.youtube.com/results?search_query=statquest+ROC+AUC+clearly+explained) | StatQuest | EN | Évaluer un classifieur |

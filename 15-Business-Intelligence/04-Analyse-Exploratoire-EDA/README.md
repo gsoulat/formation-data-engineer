@@ -7,3 +7,7 @@
 
 - [01 — Python & pandas pour l'analyse exploratoire (EDA)](01-eda-pandas.md)
 - [02 — Statistiques descriptives appliquées](02-statistiques-appliquees.md)
+
+## Notebook (pratique guidée)
+
+- [📓 EDA guidée sur les ventes NordRetail](notebook-eda-nordretail.ipynb) — chargement, jointures, qualité, distributions, agrégations, corrélations (données réelles).

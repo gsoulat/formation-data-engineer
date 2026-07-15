@@ -838,3 +838,13 @@ print(f"Probabilité de churn : {proba[0]:.2%}")
 **Précédent** : [Chapitre 6 : Comprendre ses Données](06-comprendre-donnees.md)
 
 **Suivant** : [Chapitre 8 : Data Leakage — Le Crime Parfait du ML](08-data-leakage.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Feature engineering, l'essentiel](https://www.youtube.com/results?search_query=feature+engineering+machine+learning+tutorial) | Simplilearn | EN | Créer de bonnes variables |
+| [Encodage & normalisation](https://www.youtube.com/results?search_query=statquest+one+hot+encoding) | StatQuest | EN | Variables catégorielles et numériques |
+| [Feature engineering en pratique](https://www.youtube.com/results?search_query=machine+learnia+feature+engineering+francais) | Machine Learnia | FR | Transformer les données brutes |

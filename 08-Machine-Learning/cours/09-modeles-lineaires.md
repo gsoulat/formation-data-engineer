@@ -901,3 +901,13 @@ print(df_resultats.to_string(index=False))
 **Précédent** : [Chapitre 8 : Évaluation et Métriques](08-evaluation-metriques.md)
 
 **Suivant** : [Chapitre 10 : Arbres de Décision et Forêts Aléatoires](10-arbres-forets.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Régression linéaire](https://www.youtube.com/results?search_query=statquest+linear+regression) | StatQuest | EN | La droite des moindres carrés |
+| [Régression logistique](https://www.youtube.com/results?search_query=statquest+logistic+regression) | StatQuest | EN | Classer avec un modèle linéaire |
+| [Régression linéaire (FR)](https://www.youtube.com/results?search_query=machine+learnia+regression+lineaire+francais) | Machine Learnia | FR | Intuition et code Python |

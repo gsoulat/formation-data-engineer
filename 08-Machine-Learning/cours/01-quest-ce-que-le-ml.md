@@ -665,3 +665,15 @@ Avant de passer au chapitre suivant, vérifiez que vous pouvez :
 ---
 
 **Précédent** : — (début de la formation) | **Suivant** : [Chapitre 2 — Anatomie d'un Problème ML →](02-anatomie-probleme-ml.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Introduction au Machine Learning](https://www.youtube.com/results?search_query=machine+learnia+introduction+machine+learning) | Machine Learnia | FR | Vue d'ensemble du ML, cas d'usage |
+| [A Gentle Intro to Machine Learning](https://www.youtube.com/results?search_query=statquest+machine+learning+introduction) | StatQuest | EN | Les grandes familles d'algorithmes |
+| [Supervisé vs non-supervisé](https://www.youtube.com/results?search_query=statquest+supervised+vs+unsupervised+learning) | StatQuest | EN | La distinction fondamentale |
+
+> 💡 Liens de recherche YouTube (toujours valides) : clique, la meilleure vidéo est en tête.

@@ -699,3 +699,13 @@ print(f"F1 test              : {f1_score(y_test, y_pred_random):.4f}")
 **Précédent** : [Chapitre 12 : Métriques — Au-delà de l'Accuracy](12-metriques-classification.md)
 
 **Suivant** : [Chapitre 14 : Interpréter ses Modèles et Éthique du ML](14-interpretabilite-ethique.md)
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [Overfitting & underfitting](https://www.youtube.com/results?search_query=machine+learnia+overfitting+underfitting+francais) | Machine Learnia | FR | Le sur/sous-apprentissage |
+| [Validation croisée](https://www.youtube.com/results?search_query=statquest+cross+validation) | StatQuest | EN | Évaluer sans se mentir |
+| [Compromis biais-variance](https://www.youtube.com/results?search_query=statquest+bias+variance+tradeoff) | StatQuest | EN | Le dilemme central du ML |

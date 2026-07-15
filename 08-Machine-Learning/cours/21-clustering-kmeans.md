@@ -738,3 +738,13 @@ Pas la simple liste des labels de cluster, mais la **description des personas** 
 **Précédent** : [Chapitre 18 : Data Drift](18-data-drift.md)
 
 **Suivant** : *(à venir)*
+
+---
+
+## 🎥 Vidéos pour approfondir
+
+| Vidéo | Chaîne | Langue | Ce que tu y apprends |
+|---|---|:---:|---|
+| [K-Means clustering](https://www.youtube.com/results?search_query=statquest+k+means+clustering) | StatQuest | EN | Le fonctionnement pas à pas |
+| [Clustering K-Means (FR)](https://www.youtube.com/results?search_query=machine+learnia+k+means+francais) | Machine Learnia | FR | Segmenter sans étiquettes |
+| [Choisir le nombre de clusters](https://www.youtube.com/results?search_query=statquest+k+means+elbow+method) | StatQuest | EN | La méthode du coude |
