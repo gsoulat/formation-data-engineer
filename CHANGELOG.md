@@ -1,3 +1,10 @@
+# [2.17.0](https://github.com/gsoulat/formation-data-engineer/compare/v2.16.1...v2.17.0) (2026-07-15)
+
+
+### Features
+
+* **data-analyst:** vignettes vidéo YouTube (FR) sur les modules visuels ([032938a](https://github.com/gsoulat/formation-data-engineer/commit/032938aef79c81cfc8db3c3af1f9b2f98f15c370))
+
 ## [2.16.1](https://github.com/gsoulat/formation-data-engineer/compare/v2.16.0...v2.16.1) (2026-07-15)
 
 
