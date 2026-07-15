@@ -68,7 +68,7 @@ Ce parcours forme des **développeurs backend** capables de livrer une **API pro
 
 ## 🎓 Évaluation : le projet final
 Vous assemblez tout dans une application backend réelle :
-👉 **[Projet Final — API de gestion de stock](99-Brief/FINAL_PROJECT_TEMPLATES/DEV_JUNIOR_APP.md)**
+👉 **[Projet Final — API de gestion de stock](99-Brief/FINAL_PROJECT_TEMPLATES/DEV_BACKEND_APP.md)**
 (FastAPI + PostgreSQL/ORM + auth JWT + tests > 80 % + Docker).
 
 ---

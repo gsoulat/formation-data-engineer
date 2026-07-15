@@ -8,7 +8,7 @@ Bienvenue dans cette plateforme de formation complète orientée développement 
 
 L'objectif n’est pas de tout faire, mais de suivre un parcours clair et progressif. Cliquez sur un parcours pour voir la roadmap détaillée et les livrables attendus.
 
-### [🟢 Parcours 1 : Développeur Backend](PATH_DEV_JUNIOR.md)
+### [🟢 Parcours 1 : Développeur Backend](PATH_DEV_BACKEND.md)
 *Objectif : Concevoir, tester et déployer une API backend propre (FastAPI + base de données) — de zéro à un projet employable.*
 
 ### [🔵 Parcours 2 : Data Engineer Junior](PATH_DATA_ENGINEER.md)
